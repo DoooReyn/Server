@@ -1,0 +1,26 @@
+2018-01-19 12:32:48 [LS][INFO]:[login_main.cpp:17]==>[pid = 21704 tid =21704]
+2018-01-19 12:32:48 [LS][DEBUG]:[login_account_client.cpp:49]==>tid:21704 onConnection 127.0.0.1:50108 -> 127.0.0.1:3100
+2018-01-19 12:32:48 [LS][INFO]:[login_server.cpp:252]==>Verify Return Src IP:127.0.0.1:3100
+2018-01-19 12:32:48 [LS][INFO]:[login_server.cpp:209]==>onVerify 127.0.0.1:46688 -> 127.0.0.1:3000
+2018-01-19 12:32:48 [LS][INFO]:[login_server.cpp:173]==>current pid:21704 status:connect conntype:4
+2018-01-19 12:32:48 [LS][INFO]:[login_server.cpp:209]==>onVerify 127.0.0.1:46690 -> 127.0.0.1:3000
+2018-01-19 12:32:48 [LS][INFO]:[login_server.cpp:173]==>current pid:21704 status:connect conntype:4
+2018-01-19 12:32:49 [LS][INFO]:[login_server.cpp:209]==>onVerify 127.0.0.1:46698 -> 127.0.0.1:3000
+2018-01-19 12:32:49 [LS][INFO]:[login_server.cpp:173]==>current pid:21704 status:connect conntype:5
+2018-01-19 12:32:49 [LS][DEBUG]:[login_gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2018-01-19 12:32:49 [LS][DEBUG]:[login_gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2018-01-19 12:32:54 [LS][INFO]:[login_server.cpp:209]==>onVerify 127.0.0.1:46700 -> 127.0.0.1:3000
+2018-01-19 12:32:54 [LS][INFO]:[login_server.cpp:173]==>current pid:21704 status:connect conntype:1
+2018-01-19 12:33:03 [LS][DEBUG]:[login_server.cpp:283]==>ParseZoneInfoRequest accid:13 best gateid:1
+2018-01-19 12:33:07 [LS][INFO]:[login_server.cpp:173]==>current pid:21704 status:disconnect conntype:0
+2018-01-19 12:33:20 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x1b44258 stop looping
+2018-01-19 12:33:20 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f18fd79e910 stop looping
+2018-01-19 12:33:20 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f18fcf9d910 stop looping
+2018-01-19 12:33:20 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f18f7fee910 stop looping
+2018-01-19 12:33:20 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f18f77ed910 stop looping
+2018-01-19 12:33:20 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f18f6fec910 stop looping
+2018-01-19 12:33:20 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f18f67eb910 stop looping
+2018-01-19 12:33:20 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f18f5fea910 stop looping
+2018-01-19 12:33:20 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f18f57e9910 stop looping
+2018-01-19 12:33:20 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f18f4fe8910 stop looping
+2018-01-19 12:33:20 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f18d3fee910 stop looping

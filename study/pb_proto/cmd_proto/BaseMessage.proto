@@ -1,0 +1,5 @@
+package lm;     
+message MessageBase  
+{  
+    required int32 opcode = 1;   
+}  

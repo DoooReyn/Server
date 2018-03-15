@@ -1,0 +1,61 @@
+2017-11-16 09:59:31 [LS][DEBUG]:[login_main.cpp:17]==>pid = 2065, tid =2065
+2017-11-16 09:59:31 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x1103e78 in thread :2065
+2017-11-16 09:59:31 [LS][DEBUG]:[mysql_pool.cpp:106]==>MysqlHandle InitMysql:2
+2017-11-16 09:59:31 [LS][INFO]:[login_server.cpp:94]==>Mysql Connect Success
+2017-11-16 09:59:31 [LS][INFO]:[account_client.cpp:43]==>AccountServer IP:127.0.0.1 Port:3100
+2017-11-16 09:59:31 [LS][DEBUG]:[connector.cpp:18]==>Connector ctor[0x1109100]
+2017-11-16 09:59:31 [LS][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[LS] - connector 0x1109100
+2017-11-16 09:59:31 [LS][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[LS] - connecting to 127.0.0.1:3100
+2017-11-16 09:59:31 [LS][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 09:59:31 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f9b14a52910 in thread :2070
+2017-11-16 09:59:31 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f9b0ffee910 in thread :2071
+2017-11-16 09:59:31 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f9b0f7ed910 in thread :2072
+2017-11-16 09:59:31 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f9b0efec910 in thread :2073
+2017-11-16 09:59:31 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f9b0e7eb910 in thread :2074
+2017-11-16 09:59:31 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f9b0dfea910 in thread :2075
+2017-11-16 09:59:31 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f9b0d7e9910 in thread :2076
+2017-11-16 09:59:31 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f9b0cfe8910 in thread :2077
+2017-11-16 09:59:31 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f9aeffee910 in thread :2078
+2017-11-16 09:59:31 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f9aef7ed910 in thread :2079
+2017-11-16 09:59:31 [LS][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[LS:127.0.0.1:3100#1] at 0x7f9b16bce010 fd=10
+2017-11-16 09:59:31 [LS][INFO]:[account_client.cpp:50]==>onConnection 127.0.0.1:54404 -> 127.0.0.1:3100 is 1
+2017-11-16 09:59:31 [LS][INFO]:[account_client.cpp:51]==>current tid :2065
+2017-11-16 09:59:31 [LS][INFO]:[login_server.cpp:221]==>onVerify Return
+2017-11-16 09:59:32 [LS][INFO]:[tcp_server.cpp:72]==>new connect [LS-0.0.0.0:3000#1] form 127.0.0.1:37152
+2017-11-16 09:59:32 [LS][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[LS-0.0.0.0:3000#1] at 0x7f9b16ba5010 fd=41
+2017-11-16 09:59:32 [LS][DEBUG]:[login_server.cpp:162]==>onConnection 127.0.0.1:37152 -> 127.0.0.1:3000 is 1
+2017-11-16 09:59:32 [LS][DEBUG]:[login_server.cpp:176]==>onVerify 127.0.0.1:37152 -> 127.0.0.1:3000 is 1 cid:17179869185
+2017-11-16 09:59:32 [LS][INFO]:[tcp_server.cpp:72]==>new connect [LS-0.0.0.0:3000#2] form 127.0.0.1:37154
+2017-11-16 09:59:32 [LS][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[LS-0.0.0.0:3000#2] at 0x7f9b16b7c010 fd=42
+2017-11-16 09:59:32 [LS][DEBUG]:[login_server.cpp:162]==>onConnection 127.0.0.1:37154 -> 127.0.0.1:3000 is 1
+2017-11-16 09:59:32 [LS][DEBUG]:[login_server.cpp:176]==>onVerify 127.0.0.1:37154 -> 127.0.0.1:3000 is 1 cid:17179869186
+2017-11-16 09:59:32 [LS][DEBUG]:[gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2017-11-16 09:59:32 [LS][DEBUG]:[gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2017-11-16 09:59:35 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x1103e78 stop looping
+2017-11-16 09:59:35 [LS][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[LS] - connector 0x1109100
+2017-11-16 09:59:35 [LS][DEBUG]:[connector.cpp:23]==>Connector dctor[0x1109100]
+2017-11-16 09:59:35 [LS][DEBUG]:[tcp_server.cpp:25]==>TcpServer::~TcpServer [ LS ] destructing
+2017-11-16 09:59:35 [LS][DEBUG]:[login_server.cpp:167]==>onDisconnect 127.0.0.1:37152 -> 127.0.0.1:3000 is 0
+2017-11-16 09:59:35 [LS][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[LS-0.0.0.0:3000#1] at 0x7f9b16ba5010 fd=41 state=kDisconnected
+2017-11-16 09:59:35 [LS][DEBUG]:[login_server.cpp:167]==>onDisconnect 127.0.0.1:37154 -> 127.0.0.1:3000 is 0
+2017-11-16 09:59:35 [LS][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[LS-0.0.0.0:3000#2] at 0x7f9b16b7c010 fd=42 state=kDisconnected
+2017-11-16 09:59:35 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f9b14a52910 stop looping
+2017-11-16 09:59:35 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f9b14a52910 of thread : 2070 destructs in thread : 2070
+2017-11-16 09:59:35 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f9b0ffee910 stop looping
+2017-11-16 09:59:35 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f9b0ffee910 of thread : 2071 destructs in thread : 2071
+2017-11-16 09:59:35 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f9b0f7ed910 stop looping
+2017-11-16 09:59:35 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f9b0f7ed910 of thread : 2072 destructs in thread : 2072
+2017-11-16 09:59:35 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f9b0efec910 stop looping
+2017-11-16 09:59:35 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f9b0efec910 of thread : 2073 destructs in thread : 2073
+2017-11-16 09:59:35 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f9b0e7eb910 stop looping
+2017-11-16 09:59:35 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f9b0e7eb910 of thread : 2074 destructs in thread : 2074
+2017-11-16 09:59:35 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f9b0dfea910 stop looping
+2017-11-16 09:59:35 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f9b0dfea910 of thread : 2075 destructs in thread : 2075
+2017-11-16 09:59:35 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f9b0d7e9910 stop looping
+2017-11-16 09:59:35 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f9b0d7e9910 of thread : 2076 destructs in thread : 2076
+2017-11-16 09:59:35 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f9b0cfe8910 stop looping
+2017-11-16 09:59:35 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f9b0cfe8910 of thread : 2077 destructs in thread : 2077
+2017-11-16 09:59:35 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f9aeffee910 stop looping
+2017-11-16 09:59:35 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f9aeffee910 of thread : 2078 destructs in thread : 2078
+2017-11-16 09:59:35 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f9aef7ed910 stop looping
+2017-11-16 09:59:35 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f9aef7ed910 of thread : 2079 destructs in thread : 2079

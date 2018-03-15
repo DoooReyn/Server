@@ -1,0 +1,12 @@
+2017-11-22 16:00:02 [AS][DEBUG]:[account_main.cpp:18]==>pid = 9934, tid =9934
+2017-11-22 16:00:02 [AS][INFO]:[account_server.cpp:71]==>Mysql Connect Success
+2017-11-22 16:00:02 [AS][ERROR]:[socket_ops.cpp:51]==>bind error
+2017-11-22 16:00:02 [AS][ERROR]:[account_server.cpp:90]==>TcpServer Bind Failed IP:0.0.0.0:3100
+2017-11-22 16:00:04 [AS][DEBUG]:[account_main.cpp:18]==>pid = 9938, tid =9938
+2017-11-22 16:00:04 [AS][INFO]:[account_server.cpp:71]==>Mysql Connect Success
+2017-11-22 16:00:04 [AS][ERROR]:[socket_ops.cpp:51]==>bind error
+2017-11-22 16:00:04 [AS][ERROR]:[account_server.cpp:90]==>TcpServer Bind Failed IP:0.0.0.0:3100
+2017-11-22 16:00:05 [AS][DEBUG]:[account_main.cpp:18]==>pid = 9941, tid =9941
+2017-11-22 16:00:05 [AS][INFO]:[account_server.cpp:71]==>Mysql Connect Success
+2017-11-22 16:00:05 [AS][ERROR]:[socket_ops.cpp:51]==>bind error
+2017-11-22 16:00:05 [AS][ERROR]:[account_server.cpp:90]==>TcpServer Bind Failed IP:0.0.0.0:3100

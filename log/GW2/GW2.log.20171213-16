@@ -1,0 +1,22 @@
+2017-12-13 16:25:42 [GW_2][INFO]:[gate_main.cpp:27]==>[pid = 10302 tid =10302]
+2017-12-13 16:25:42 [GW_2][DEBUG]:[login_client.cpp:40]==>onConnection 127.0.0.1:35122 -> 127.0.0.1:3000
+2017-12-13 16:25:42 [GW_2][INFO]:[login_client.cpp:79]==>Verify Return Src IP:127.0.0.1:3000
+2017-12-13 16:25:42 [GW_2][INFO]:[gate_server.cpp:210]==>onVerify 192.168.81.128:56204 -> 192.168.81.128:3202
+2017-12-13 16:25:42 [GW_2][INFO]:[gate_server.cpp:179]==>current pid:10302 status:connect
+2017-12-13 16:42:34 [GW_2][INFO]:[login_client.cpp:54]==>onDisconnect 127.0.0.1:35122 -> 127.0.0.1:3000
+2017-12-13 16:42:34 [GW_2][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GW_2] - Reconnecting to 127.0.0.1:3000
+2017-12-13 16:42:34 [GW_2][WARN]:[channel.cpp:113]==>fd=41 Channel::HandleEvent() POLLHUP
+2017-12-13 16:42:34 [GW_2][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-12-13 16:42:34 [GW_2][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-12-13 16:42:34 [GW_2][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:41 Retry connecting to 127.0.0.1:3000 in 500 milliseconds. 
+2017-12-13 16:42:34 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0xd442e0 stop looping
+2017-12-13 16:42:34 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f1f64460910 stop looping
+2017-12-13 16:42:34 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f1f63c5f910 stop looping
+2017-12-13 16:42:34 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f1f6345e910 stop looping
+2017-12-13 16:42:34 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f1f62c5d910 stop looping
+2017-12-13 16:42:34 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f1f6245c910 stop looping
+2017-12-13 16:42:34 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f1f61c5b910 stop looping
+2017-12-13 16:42:34 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f1f6145a910 stop looping
+2017-12-13 16:42:34 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f1f60c59910 stop looping
+2017-12-13 16:42:34 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f1f43fee910 stop looping
+2017-12-13 16:42:34 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f1f437ed910 stop looping

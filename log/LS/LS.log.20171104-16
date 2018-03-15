@@ -1,0 +1,27 @@
+2017-11-04 16:08:15 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0xedbe78 stop looping
+2017-11-04 16:08:15 [LS][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[LS] - connector 0xee1100
+2017-11-04 16:08:15 [LS][DEBUG]:[connector.cpp:23]==>Connector dctor[0xee1100]
+2017-11-04 16:08:15 [LS][DEBUG]:[tcp_server.cpp:25]==>TcpServer::~TcpServer [ LS ] destructing
+2017-11-04 16:08:15 [LS][DEBUG]:[login_server.cpp:167]==>onDisconnect 127.0.0.1:40678 -> 127.0.0.1:3000 is 0
+2017-11-04 16:08:15 [LS][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[LS-0.0.0.0:3000#2] at 0x7fd9dc12b010 fd=42 state=kDisconnected
+2017-11-04 16:08:15 [LS][DEBUG]:[login_server.cpp:167]==>onDisconnect 127.0.0.1:40676 -> 127.0.0.1:3000 is 0
+2017-11-04 16:08:15 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fd9da001910 stop looping
+2017-11-04 16:08:15 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7fd9da001910 of thread : 12166 destructs in thread : 12166
+2017-11-04 16:08:15 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fd9d9800910 stop looping
+2017-11-04 16:08:15 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7fd9d9800910 of thread : 12167 destructs in thread : 12167
+2017-11-04 16:08:15 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fd9d8fff910 stop looping
+2017-11-04 16:08:15 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7fd9d8fff910 of thread : 12168 destructs in thread : 12168
+2017-11-04 16:08:15 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fd9d87fe910 stop looping
+2017-11-04 16:08:15 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7fd9d87fe910 of thread : 12169 destructs in thread : 12169
+2017-11-04 16:08:15 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fd9cbfee910 stop looping
+2017-11-04 16:08:15 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7fd9cbfee910 of thread : 12170 destructs in thread : 12170
+2017-11-04 16:08:15 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fd9cb7ed910 stop looping
+2017-11-04 16:08:15 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7fd9cb7ed910 of thread : 12171 destructs in thread : 12171
+2017-11-04 16:08:15 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fd9cafec910 stop looping
+2017-11-04 16:08:15 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7fd9cafec910 of thread : 12172 destructs in thread : 12172
+2017-11-04 16:08:15 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fd9ca7eb910 stop looping
+2017-11-04 16:08:15 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7fd9ca7eb910 of thread : 12173 destructs in thread : 12173
+2017-11-04 16:08:15 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fd9c9fea910 stop looping
+2017-11-04 16:08:15 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7fd9c9fea910 of thread : 12174 destructs in thread : 12174
+2017-11-04 16:08:15 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fd9c97e9910 stop looping
+2017-11-04 16:08:15 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7fd9c97e9910 of thread : 12175 destructs in thread : 12175

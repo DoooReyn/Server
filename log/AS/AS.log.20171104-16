@@ -1,0 +1,3 @@
+2017-11-04 16:08:15 [AS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x1bf0658 stop looping
+2017-11-04 16:08:15 [AS][DEBUG]:[tcp_server.cpp:25]==>TcpServer::~TcpServer [ AS ] destructing
+2017-11-04 16:08:15 [AS][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[AS-0.0.0.0:3100#1] at 0x7f01c1d3e010 fd=10 state=kDisconnected

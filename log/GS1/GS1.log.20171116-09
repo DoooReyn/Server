@@ -1,0 +1,39 @@
+2017-11-16 09:59:32 [GS_1][DEBUG]:[game_main.cpp:28]==>pid = 2108, tid =2108 ServerId:1
+2017-11-16 09:59:32 [GS_1][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x13ede78 in thread :2108
+2017-11-16 09:59:32 [GS_1][DEBUG]:[mysql_pool.cpp:106]==>MysqlHandle InitMysql:2
+2017-11-16 09:59:32 [GS_1][DEBUG]:[mysql_pool.cpp:123]==>FinalHandle():The mysql connect will been closed... way:1
+2017-11-16 09:59:32 [GS_1][DEBUG]:[connector.cpp:18]==>Connector ctor[0x13f2d50]
+2017-11-16 09:59:32 [GS_1][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[GS_1] - connector 0x13f2d50
+2017-11-16 09:59:32 [GS_1][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[GS_1] - connecting to 192.168.81.128:3201
+2017-11-16 09:59:32 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 09:59:32 [GS_1][DEBUG]:[connector.cpp:18]==>Connector ctor[0x13f3430]
+2017-11-16 09:59:32 [GS_1][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[GS_1] - connector 0x13f3430
+2017-11-16 09:59:32 [GS_1][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[GS_1] - connecting to 192.168.81.128:3202
+2017-11-16 09:59:32 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 09:59:32 [GS_1][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GS_1:192.168.81.128:3201#1] at 0x7f8b39654010 fd=7
+2017-11-16 09:59:32 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:37376 -> 192.168.81.128:3201 is 1 Pid:2108
+2017-11-16 09:59:32 [GS_1][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GS_1:192.168.81.128:3202#1] at 0x7f8b3962b010 fd=8
+2017-11-16 09:59:32 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:40970 -> 192.168.81.128:3202 is 1 Pid:2108
+2017-11-16 09:59:32 [GS_1][INFO]:[gate_client.cpp:128]==>onVerify Return
+2017-11-16 09:59:32 [GS_1][INFO]:[gate_client.cpp:128]==>onVerify Return
+2017-11-16 09:59:35 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3202 -> 192.168.81.128:40970 is 0 Pid:2108
+2017-11-16 09:59:35 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3202
+2017-11-16 09:59:35 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 09:59:35 [GS_1][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GS_1:192.168.81.128:3202#1] at 0x7f8b3962b010 fd=8 state=kDisconnected
+2017-11-16 09:59:35 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3201 -> 192.168.81.128:37376 is 0 Pid:2108
+2017-11-16 09:59:35 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3201
+2017-11-16 09:59:35 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 09:59:35 [GS_1][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GS_1:192.168.81.128:3202#2] at 0x1405960 fd=9
+2017-11-16 09:59:35 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:40980 -> 192.168.81.128:3202 is 1 Pid:2108
+2017-11-16 09:59:35 [GS_1][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GS_1:192.168.81.128:3201#1] at 0x7f8b39654010 fd=7 state=kDisconnected
+2017-11-16 09:59:35 [GS_1][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GS_1:192.168.81.128:3201#2] at 0x142db80 fd=8
+2017-11-16 09:59:35 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:37390 -> 192.168.81.128:3201 is 1 Pid:2108
+2017-11-16 09:59:35 [GS_1][ERROR]:[tcp_connection.cpp:407]==>TcpConnection::handleError [ GS_1:192.168.81.128:3202#2 ] - SO_ERROR = 0 -- Success
+2017-11-16 09:59:35 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3202 -> 192.168.81.128:40980 is 0 Pid:2108
+2017-11-16 09:59:35 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3202
+2017-11-16 09:59:35 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 09:59:35 [GS_1][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GS_1:192.168.81.128:3202#2] at 0x1405960 fd=9 state=kDisconnected
+2017-11-16 09:59:35 [GS_1][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x13ede78 stop looping
+2017-11-16 09:59:35 [GS_1][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[GS_1] - connector 0x13f2d50
+2017-11-16 09:59:35 [GS_1][DEBUG]:[connector.cpp:23]==>Connector dctor[0x13f2d50]
+2017-11-16 09:59:35 [GS_1][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[GS_1] - connector 0x13f3430

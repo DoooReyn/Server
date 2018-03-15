@@ -1,0 +1,950 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	tolua/tolua++-1.0.93/src/tests/tconstant.h	/^class A {$/;"	c
+A	tolua/tolua++-1.0.93/src/tests/tnamespace.h	/^namespace A {$/;"	n
+A	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^struct A$/;"	s
+A	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^typedef struct A A;$/;"	t	typeref:struct:A
+A::B	tolua/tolua++-1.0.93/src/tests/tnamespace.h	/^	namespace B {$/;"	n	namespace:A
+A::B::C	tolua/tolua++-1.0.93/src/tests/tnamespace.h	/^  namespace C {$/;"	n	namespace:A::B
+A::FIRST	tolua/tolua++-1.0.93/src/tests/tnamespace.h	/^	enum {FIRST=1};$/;"	e	enum:A::__anon5
+A::ONE	tolua/tolua++-1.0.93/src/tests/tconstant.h	/^	 ONE = 1,$/;"	e	enum:A::__anon4
+A::TWO	tolua/tolua++-1.0.93/src/tests/tconstant.h	/^	 TWO = 2$/;"	e	enum:A::__anon4
+A::d	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^	double d;$/;"	m	struct:A	access:public
+A::f	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^	float f;$/;"	m	struct:A	access:public
+A::i	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^	int i;$/;"	m	struct:A	access:public
+A::n	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^	char n[64];$/;"	m	struct:A	access:public
+A::s	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^	char* s;$/;"	m	struct:A	access:public
+A::v	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^	void* v;$/;"	m	struct:A	access:public
+Array	tolua/tolua++-1.0.93/src/tests/tarray.h	/^struct Array$/;"	s
+Array	tolua/tolua++-1.0.93/src/tests/tarray.h	/^typedef struct Array Array;$/;"	t	typeref:struct:Array
+Array 	tolua/tolua++-1.0.93/src/bin/lua/array.lua	/^function Array (s)$/;"	f
+Array::a	tolua/tolua++-1.0.93/src/tests/tarray.h	/^ int a[10];$/;"	m	struct:Array	access:public
+Array::p	tolua/tolua++-1.0.93/src/tests/tarray.h	/^ Point p[10]; $/;"	m	struct:Array	access:public
+Array::pp	tolua/tolua++-1.0.93/src/tests/tarray.h	/^ Point* pp[10];$/;"	m	struct:Array	access:public
+B	tolua/tolua++-1.0.93/src/tests/tnamespace.h	/^	namespace B {$/;"	n	namespace:A
+B	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^struct B$/;"	s
+B	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^typedef struct B B;$/;"	t	typeref:struct:B
+B::a	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^	A a;$/;"	m	struct:B	access:public
+B::b	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^ B*	b;$/;"	m	struct:B	access:public
+Base	tolua/tolua++-1.0.93/src/tests/tclass.h	/^		Tst_AA* Base () { return this; }$/;"	f	class:Test::Tst_A::Tst_BB	access:public	signature:()
+C	tolua/tolua++-1.0.93/src/tests/tnamespace.h	/^  namespace C {$/;"	n	namespace:A::B
+CCFLAGS	tolua/tolua++-1.0.93/config_linux.py	/^CCFLAGS = ['-I\/usr\/include\/lua5.1', '-O2', '-ansi', '-Wall']$/;"	v
+CCFLAGS	tolua/tolua++-1.0.93/config_msvc.py	/^CCFLAGS = ['\/nologo']$/;"	v
+CCFLAGS	tolua/tolua++-1.0.93/config_posix.py	/^CCFLAGS = ['-O2', '-ansi', '-Wall']$/;"	v
+CCFLAGS	tolua/tolua++-1.0.93/custom-5.1.py	/^CCFLAGS = ['-I\/usr\/include\/lua5.1', '-O2', '-ansi']$/;"	v
+Class 	tolua/tolua++-1.0.93/src/bin/lua/class.lua	/^function Class (n,p,b)$/;"	f
+Code 	tolua/tolua++-1.0.93/src/bin/lua/code.lua	/^function Code (l)$/;"	f
+ColorPoint	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^ ColorPoint (float px, float py, float cr=0.0f, float cg=0.0f, float cb=0.0f)$/;"	f	class:ColorPoint	access:public	signature:(float px, float py, float cr=0.0f, float cg=0.0f, float cb=0.0f)
+ColorPoint	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^class ColorPoint : public Point   \/\/tolua_export$/;"	c	inherits:Point
+ColorPoint::ColorPoint	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^ ColorPoint (float px, float py, float cr=0.0f, float cg=0.0f, float cb=0.0f)$/;"	f	class:ColorPoint	access:public	signature:(float px, float py, float cr=0.0f, float cg=0.0f, float cb=0.0f)
+ColorPoint::MakeRed	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^ static ColorPoint* MakeRed (float x, float y)$/;"	f	class:ColorPoint	access:public	signature:(float x, float y)
+ColorPoint::b	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^ float r, g, b;$/;"	m	class:ColorPoint	access:private
+ColorPoint::g	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^ float r, g, b;$/;"	m	class:ColorPoint	access:private
+ColorPoint::getcolor	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^ virtual void getcolor (float* red, float *green, float *blue) const$/;"	f	class:ColorPoint	access:public	signature:(float* red, float *green, float *blue) const
+ColorPoint::r	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^ float r, g, b;$/;"	m	class:ColorPoint	access:private
+ColorPoint::~ColorPoint	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^ virtual ~ColorPoint () { }$/;"	f	class:ColorPoint	access:public	signature:()
+Declaration 	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^function Declaration (s,kind,is_parameter)$/;"	f
+Define 	tolua/tolua++-1.0.93/src/bin/lua/define.lua	/^function Define (n)$/;"	f
+ENV	tolua/tolua++-1.0.93/config_msvc.py	/^ENV = os.environ$/;"	v
+ERROR	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^		ERROR = 1$/;"	e	enum:Point::Error
+Enumerate 	tolua/tolua++-1.0.93/src/bin/lua/enumerate.lua	/^function Enumerate (n,b,varname)$/;"	f
+Error	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	enum Error {$/;"	g	class:Point	access:public
+FIRST	tolua/tolua++-1.0.93/src/tests/tconstant.h	1;"	d
+FIRST	tolua/tolua++-1.0.93/src/tests/tconstant.h	20;"	d
+FIRST	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^ FIRST = 1,$/;"	e	enum:__anon1
+FIRST	tolua/tolua++-1.0.93/src/tests/tnamespace.h	/^	enum {FIRST=1};$/;"	e	enum:A::__anon5
+Function 	tolua/tolua++-1.0.93/src/bin/lua/function.lua	/^function Function (d,a,c)$/;"	f
+LIBS	tolua/tolua++-1.0.93/config_linux.py	/^LIBS = ['lua5.1','dl', 'm']$/;"	v
+LIBS	tolua/tolua++-1.0.93/config_msvc.py	/^LIBS = ['lua', 'lualib']$/;"	v
+LIBS	tolua/tolua++-1.0.93/config_posix.py	/^LIBS = ['lua', 'lualib', 'm']$/;"	v
+LIBS	tolua/tolua++-1.0.93/custom-5.1.py	/^LIBS = ['lua5.1', 'dl', 'm']$/;"	v
+LINKFLAGS	tolua/tolua++-1.0.93/config_msvc.py	/^LINKFLAGS = ['\/nologo']$/;"	v
+M_FIRST	tolua/tolua++-1.0.93/src/tests/tconstant.h	9;"	d
+M_ONE	tolua/tolua++-1.0.93/src/tests/tconstant.h	/^	M_ONE = 1,$/;"	e	enum:__anon3
+M_SECOND	tolua/tolua++-1.0.93/src/tests/tconstant.h	10;"	d
+M_TWO	tolua/tolua++-1.0.93/src/tests/tconstant.h	/^	M_TWO = 2$/;"	e	enum:__anon3
+MakeRed	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^ static ColorPoint* MakeRed (float x, float y)$/;"	f	class:ColorPoint	access:public	signature:(float x, float y)
+Module 	tolua/tolua++-1.0.93/src/bin/lua/module.lua	/^function Module (n,b)$/;"	f
+Mtolua_delete	tolua/tolua++-1.0.93/include/tolua++.h	163;"	d
+Mtolua_delete_dim	tolua/tolua++-1.0.93/include/tolua++.h	171;"	d
+Mtolua_new	tolua/tolua++-1.0.93/include/tolua++.h	159;"	d
+Mtolua_new_dim	tolua/tolua++-1.0.93/include/tolua++.h	167;"	d
+Namespace 	tolua/tolua++-1.0.93/src/bin/lua/namespace.lua	/^function Namespace (n,b)$/;"	f
+ONE	tolua/tolua++-1.0.93/src/tests/tclass.h	/^		ONE,$/;"	e	enum:Test::Tst_E::Pete
+ONE	tolua/tolua++-1.0.93/src/tests/tconstant.h	/^	 ONE = 1,$/;"	e	enum:A::__anon4
+ONE	tolua/tolua++-1.0.93/src/tests/tconstant.h	/^	ONE = 1,$/;"	e	enum:__anon2
+Operator 	tolua/tolua++-1.0.93/src/bin/lua/operator.lua	/^function Operator (d,k,a,c)$/;"	f
+Order	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^} Order;$/;"	t	typeref:enum:__anon1
+Package 	tolua/tolua++-1.0.93/src/bin/lua/package.lua	/^function Package (name,fn)$/;"	f
+Pete	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	enum Pete {$/;"	g	class:Test::Tst_E	access:public
+Point	tolua/tolua++-1.0.93/src/tests/tarray.h	/^struct Point$/;"	s
+Point	tolua/tolua++-1.0.93/src/tests/tarray.h	/^typedef struct Point Point;$/;"	t	typeref:struct:Point
+Point	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	Point (float x=0, float y=0)$/;"	f	class:Point	access:public	signature:(float x=0, float y=0)
+Point	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^class Point$/;"	c
+Point::ERROR	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^		ERROR = 1$/;"	e	enum:Point::Error
+Point::Error	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	enum Error {$/;"	g	class:Point	access:public
+Point::Point	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	Point (float x=0, float y=0)$/;"	f	class:Point	access:public	signature:(float x=0, float y=0)
+Point::SUCCESS	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^		SUCCESS = 0,$/;"	e	enum:Point::Error
+Point::echo	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	static Error echo (Error e)$/;"	f	class:Point	access:public	signature:(Error e)
+Point::get	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	void get (float v[2]) const$/;"	f	class:Point	access:public	signature:(float v[2]) const
+Point::get	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	void get (float* x, float* y) const$/;"	f	class:Point	access:public	signature:(float* x, float* y) const
+Point::getconst	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	const Point* getconst () const$/;"	f	class:Point	access:public	signature:() const
+Point::getname	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	const char* getname () const$/;"	f	class:Point	access:public	signature:() const
+Point::getpointer	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	Point* getpointer ()$/;"	f	class:Point	access:public	signature:()
+Point::getref	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	Point& getref ()$/;"	f	class:Point	access:public	signature:()
+Point::getvalue	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	Point getvalue ()$/;"	f	class:Point	access:public	signature:()
+Point::m_s	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	char m_s[64];$/;"	m	class:Point	access:private
+Point::m_x	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^ float m_x;$/;"	m	class:Point	access:private
+Point::m_y	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	float m_y;$/;"	m	class:Point	access:private
+Point::operator *	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	Point operator* (const Point& p) const$/;"	f	class:Point	access:public	signature:(const Point& p) const
+Point::operator +	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	Point operator+ (const Point& p) const$/;"	f	class:Point	access:public	signature:(const Point& p) const
+Point::operator -	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	Point operator- (const Point& p) const$/;"	f	class:Point	access:public	signature:(const Point& p) const
+Point::operator /	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	Point operator\/ (float n) const$/;"	f	class:Point	access:public	signature:(float n) const
+Point::operator <	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	bool operator< (const Point& p) const$/;"	f	class:Point	access:public	signature:(const Point& p) const
+Point::operator <=	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	bool operator<= (const Point& p) const$/;"	f	class:Point	access:public	signature:(const Point& p) const
+Point::operator ==	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	bool operator== (const Point& p) const$/;"	f	class:Point	access:public	signature:(const Point& p) const
+Point::operator []	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	float& operator[] (int i)$/;"	f	class:Point	access:public	signature:(int i)
+Point::operator []	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^ float operator[] (int i) const$/;"	f	class:Point	access:public	signature:(int i) const
+Point::set	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	void set (float v[2]=0)$/;"	f	class:Point	access:public	signature:(float v[2]=0)
+Point::set	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	void set (float x, float y)$/;"	f	class:Point	access:public	signature:(float x, float y)
+Point::setconst	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	void setconst (const Point* p)$/;"	f	class:Point	access:public	signature:(const Point* p)
+Point::setname	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	void setname (const char* s)$/;"	f	class:Point	access:public	signature:(const char* s)
+Point::setpointer	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	void setpointer (Point* p)$/;"	f	class:Point	access:public	signature:(Point* p)
+Point::setref	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	void setref (Point& p)$/;"	f	class:Point	access:public	signature:(Point& p)
+Point::setvalue	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	void setvalue (Point p)$/;"	f	class:Point	access:public	signature:(Point p)
+Point::x	tolua/tolua++-1.0.93/src/tests/tarray.h	/^	float x;$/;"	m	struct:Point	access:public
+Point::y	tolua/tolua++-1.0.93/src/tests/tarray.h	/^	float y;$/;"	m	struct:Point	access:public
+Point::~Point	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	virtual ~Point ()$/;"	f	class:Point	access:public	signature:()
+Run	student.cpp	/^void Student::Run()$/;"	f	class:Student	signature:()
+Run	student.cpp	/^void Student::Run(int a)$/;"	f	class:Student	signature:(int a)
+Run	student.h	/^	void Run();$/;"	p	class:Student	access:public	signature:()
+Run	student.h	/^	void Run(int a);$/;"	p	class:Student	access:public	signature:(int a)
+Run	test.lua	/^function Run()$/;"	f
+Run2	test.lua	/^	function Run2(a)$/;"	f
+SECOND	tolua/tolua++-1.0.93/src/tests/tconstant.h	21;"	d
+SECOND	tolua/tolua++-1.0.93/src/tests/tconstant.h	2;"	d
+SECOND	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	SECOND = 2$/;"	e	enum:__anon1
+SUCCESS	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^		SUCCESS = 0,$/;"	e	enum:Point::Error
+Student	student.cpp	/^Student::Student()$/;"	f	class:Student	signature:()
+Student	student.h	/^	Student();$/;"	p	class:Student	access:public	signature:()
+Student	student.h	/^class Student$/;"	c
+Student::Run	student.cpp	/^void Student::Run()$/;"	f	class:Student	signature:()
+Student::Run	student.cpp	/^void Student::Run(int a)$/;"	f	class:Student	signature:(int a)
+Student::Run	student.h	/^	void Run();$/;"	p	class:Student	access:public	signature:()
+Student::Run	student.h	/^	void Run(int a);$/;"	p	class:Student	access:public	signature:(int a)
+Student::Student	student.cpp	/^Student::Student()$/;"	f	class:Student	signature:()
+Student::Student	student.h	/^	Student();$/;"	p	class:Student	access:public	signature:()
+Student::~Student	student.cpp	/^Student::~Student()$/;"	f	class:Student	signature:()
+Student::~Student	student.h	/^	~Student();$/;"	p	class:Student	access:public	signature:()
+TCLASS_H	tolua/tolua++-1.0.93/src/tests/tclass.h	2;"	d
+TEMPLATE_BIND	tolua/tolua++-1.0.93/include/tolua++.h	36;"	d
+TOLUAPP	tolua/tolua++-1.0.93/custom-5.1.py	/^TOLUAPP = 'tolua++5.1'$/;"	v
+TOLUA_API	tolua/tolua++-1.0.93/include/tolua++.h	20;"	d
+TOLUA_EVENT_H	tolua/tolua++-1.0.93/src/lib/tolua_event.h	16;"	d
+TOLUA_H	tolua/tolua++-1.0.93/include/tolua++.h	17;"	d
+TOLUA_NOPEER	tolua/tolua++-1.0.93/include/tolua++.h	57;"	d
+TOLUA_PROPERTY_TYPE	tolua/tolua++-1.0.93/include/tolua++.h	42;"	d
+TOLUA_PROTECTED_DESTRUCTOR	tolua/tolua++-1.0.93/include/tolua++.h	41;"	d
+TOLUA_TEMPLATE_BIND	tolua/tolua++-1.0.93/include/tolua++.h	39;"	d
+TOLUA_VERSION	tolua/tolua++-1.0.93/include/tolua++.h	23;"	d
+TWO	tolua/tolua++-1.0.93/src/tests/tclass.h	/^		TWO,$/;"	e	enum:Test::Tst_E::Pete
+TWO	tolua/tolua++-1.0.93/src/tests/tconstant.h	/^	 TWO = 2$/;"	e	enum:A::__anon4
+TWO	tolua/tolua++-1.0.93/src/tests/tconstant.h	/^	TWO = 2$/;"	e	enum:__anon2
+TemplateClass	tolua/tolua++-1.0.93/src/bin/lua/template_class.lua	/^function TemplateClass(name, parents, body, parameters)$/;"	f
+Test	tolua/tolua++-1.0.93/src/tests/tclass.h	/^namespace Test {$/;"	n
+Test::Tst_A	tolua/tolua++-1.0.93/src/tests/tclass.h	/^class Tst_A$/;"	c	namespace:Test
+Test::Tst_A::Tst_A	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	Tst_A () {last = this;}$/;"	f	class:Test::Tst_A	access:public	signature:()
+Test::Tst_A::Tst_AA	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	class Tst_AA$/;"	c	class:Test::Tst_A	access:public
+Test::Tst_A::Tst_AA::Tst_AA	tolua/tolua++-1.0.93/src/tests/tclass.h	/^		Tst_AA () {}$/;"	f	class:Test::Tst_A::Tst_AA	access:public	signature:()
+Test::Tst_A::Tst_AA::aa	tolua/tolua++-1.0.93/src/tests/tclass.h	/^		char* aa () { return "AA"; }$/;"	f	class:Test::Tst_A::Tst_AA	access:public	signature:()
+Test::Tst_A::Tst_AA::~Tst_AA	tolua/tolua++-1.0.93/src/tests/tclass.h	/^		~Tst_AA () { }$/;"	f	class:Test::Tst_A::Tst_AA	access:public	signature:()
+Test::Tst_A::Tst_BB	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	class Tst_BB : public Tst_AA$/;"	c	class:Test::Tst_A	inherits:Tst_AA	access:public
+Test::Tst_A::Tst_BB::Base	tolua/tolua++-1.0.93/src/tests/tclass.h	/^		Tst_AA* Base () { return this; }$/;"	f	class:Test::Tst_A::Tst_BB	access:public	signature:()
+Test::Tst_A::Tst_BB::Tst_BB	tolua/tolua++-1.0.93/src/tests/tclass.h	/^		Tst_BB () {}$/;"	f	class:Test::Tst_A::Tst_BB	access:public	signature:()
+Test::Tst_A::Tst_BB::~Tst_BB	tolua/tolua++-1.0.93/src/tests/tclass.h	/^		~Tst_BB () {}$/;"	f	class:Test::Tst_A::Tst_BB	access:public	signature:()
+Test::Tst_A::a	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	virtual char* a () { return "A"; }$/;"	f	class:Test::Tst_A	access:public	signature:()
+Test::Tst_A::get_number	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	int get_number() {return number*2;};$/;"	f	class:Test::Tst_A	access:public	signature:()
+Test::Tst_A::last	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	static Tst_A* last;$/;"	m	class:Test::Tst_A	access:public
+Test::Tst_A::number	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	int number;$/;"	m	class:Test::Tst_A	access:private
+Test::Tst_A::set_number	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	void set_number(int p_number) { number = p_number;};$/;"	f	class:Test::Tst_A	access:public	signature:(int p_number)
+Test::Tst_A::~Tst_A	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	virtual ~Tst_A() {};$/;"	f	class:Test::Tst_A	access:public	signature:()
+Test::Tst_B	tolua/tolua++-1.0.93/src/tests/tclass.h	/^class Tst_B : public Tst_A$/;"	c	namespace:Test	inherits:Tst_A
+Test::Tst_B::Tst_B	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	Tst_B () {last = this;}$/;"	f	class:Test::Tst_B	access:public	signature:()
+Test::Tst_B::b	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	virtual char* b () { return "B"; }$/;"	f	class:Test::Tst_B	access:public	signature:()
+Test::Tst_B::create	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	static Tst_A* create() {return new Tst_B;};$/;"	f	class:Test::Tst_B	access:public	signature:()
+Test::Tst_B::create_void	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	static void* create_void() {return new Tst_B;};$/;"	f	class:Test::Tst_B	access:public	signature:()
+Test::Tst_B::last	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	static Tst_B* last;$/;"	m	class:Test::Tst_B	access:public
+Test::Tst_B::~Tst_B	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	virtual ~Tst_B() {};$/;"	f	class:Test::Tst_B	access:public	signature:()
+Test::Tst_C	tolua/tolua++-1.0.93/src/tests/tclass.h	/^class Tst_C : public Tst_B$/;"	c	namespace:Test	inherits:Tst_B
+Test::Tst_C::Tst_C	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	Tst_C (int n) : i(n) {last = this;}$/;"	f	class:Test::Tst_C	access:public	signature:(int n)
+Test::Tst_C::c	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	virtual char* c () { return "C"; }$/;"	f	class:Test::Tst_C	access:public	signature:()
+Test::Tst_C::i	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	int i;$/;"	m	class:Test::Tst_C	access:private
+Test::Tst_C::last	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	static Tst_C* last;$/;"	m	class:Test::Tst_C	access:public
+Test::Tst_C::~Tst_C	tolua/tolua++-1.0.93/src/tests/tclass.h	/^ virtual ~Tst_C () { printf("deleting C: %d\\n",i); }$/;"	f	class:Test::Tst_C	access:public	signature:()
+Test::Tst_Dummy	tolua/tolua++-1.0.93/src/tests/tclass.h	/^class Tst_Dummy$/;"	c	namespace:Test
+Test::Tst_E	tolua/tolua++-1.0.93/src/tests/tclass.h	/^class Tst_E {$/;"	c	namespace:Test
+Test::Tst_E::ONE	tolua/tolua++-1.0.93/src/tests/tclass.h	/^		ONE,$/;"	e	enum:Test::Tst_E::Pete
+Test::Tst_E::Pete	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	enum Pete {$/;"	g	class:Test::Tst_E	access:public
+Test::Tst_E::TWO	tolua/tolua++-1.0.93/src/tests/tclass.h	/^		TWO,$/;"	e	enum:Test::Tst_E::Pete
+Test::Tst_E::Tst_E	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	Tst_E(int) {};$/;"	f	class:Test::Tst_E	access:public	signature:(int)
+Test::Tst_E::a	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	Tst_A a;$/;"	m	class:Test::Tst_E	access:public
+Test::Tst_E::get_pete	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	void get_pete(Pete p) {};$/;"	f	class:Test::Tst_E	access:public	signature:(Pete p)
+Test::Tst_E::get_pointer	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	void get_pointer(void* a) {};$/;"	f	class:Test::Tst_E	access:public	signature:(void* a)
+Test::Tst_E::get_ptr	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	void* get_ptr() {return ptr;};$/;"	f	class:Test::Tst_E	access:public	signature:()
+Test::Tst_E::get_t	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	T get_t() {T a=0; return a;};$/;"	f	class:Test::Tst_E	access:public	signature:()
+Test::Tst_E::operator +	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	Tst_E& operator+(const Tst_E& rvalue) {return *this;};$/;"	f	class:Test::Tst_E	access:public	signature:(const Tst_E& rvalue)
+Test::Tst_E::pars	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	void pars(int a=0, int b=0) {};$/;"	f	class:Test::Tst_E	access:public	signature:(int a=0, int b=0)
+Test::Tst_E::pete	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	} pete;$/;"	m	class:Test::Tst_E	typeref:enum:Test::Tst_E::Pete	access:public
+Test::Tst_E::ptr	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	void* ptr;$/;"	m	class:Test::Tst_E	access:private
+Test::Tst_E::set_ptr	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	void set_ptr(void* p_ptr) {$/;"	f	class:Test::Tst_E	access:public	signature:(void* p_ptr)
+Test::Tst_Outside	tolua/tolua++-1.0.93/src/tests/tclass.h	/^class Tst_Outside {$/;"	c	namespace:Test
+Test::Tst_Outside::Tst_Outside	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	Tst_Outside() {};$/;"	f	class:Test::Tst_Outside	access:public	signature:()
+Test::Tst_create_aa	tolua/tolua++-1.0.93/src/tests/tclass.h	/^inline Tst_A::Tst_AA* Tst_create_aa ()$/;"	f	namespace:Test	signature:()
+Test::Tst_is_aa	tolua/tolua++-1.0.93/src/tests/tclass.h	/^inline bool Tst_is_aa (Tst_A::Tst_AA* obj)$/;"	f	namespace:Test	signature:(Tst_A::Tst_AA* obj)
+Tst_A	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	Tst_A () {last = this;}$/;"	f	class:Test::Tst_A	access:public	signature:()
+Tst_A	tolua/tolua++-1.0.93/src/tests/tclass.h	/^class Tst_A$/;"	c	namespace:Test
+Tst_AA	tolua/tolua++-1.0.93/src/tests/tclass.h	/^		Tst_AA () {}$/;"	f	class:Test::Tst_A::Tst_AA	access:public	signature:()
+Tst_AA	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	class Tst_AA$/;"	c	class:Test::Tst_A	access:public
+Tst_B	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	Tst_B () {last = this;}$/;"	f	class:Test::Tst_B	access:public	signature:()
+Tst_B	tolua/tolua++-1.0.93/src/tests/tclass.h	/^class Tst_B : public Tst_A$/;"	c	namespace:Test	inherits:Tst_A
+Tst_BB	tolua/tolua++-1.0.93/src/tests/tclass.h	/^		Tst_BB () {}$/;"	f	class:Test::Tst_A::Tst_BB	access:public	signature:()
+Tst_BB	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	class Tst_BB : public Tst_AA$/;"	c	class:Test::Tst_A	inherits:Tst_AA	access:public
+Tst_C	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	Tst_C (int n) : i(n) {last = this;}$/;"	f	class:Test::Tst_C	access:public	signature:(int n)
+Tst_C	tolua/tolua++-1.0.93/src/tests/tclass.h	/^class Tst_C : public Tst_B$/;"	c	namespace:Test	inherits:Tst_B
+Tst_Dummy	tolua/tolua++-1.0.93/src/tests/tclass.h	/^class Tst_Dummy$/;"	c	namespace:Test
+Tst_E	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	Tst_E(int) {};$/;"	f	class:Test::Tst_E	access:public	signature:(int)
+Tst_E	tolua/tolua++-1.0.93/src/tests/tclass.h	/^class Tst_E {$/;"	c	namespace:Test
+Tst_Outside	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	Tst_Outside() {};$/;"	f	class:Test::Tst_Outside	access:public	signature:()
+Tst_Outside	tolua/tolua++-1.0.93/src/tests/tclass.h	/^class Tst_Outside {$/;"	c	namespace:Test
+Tst_create_aa	tolua/tolua++-1.0.93/src/tests/tclass.h	/^inline Tst_A::Tst_AA* Tst_create_aa ()$/;"	f	namespace:Test	signature:()
+Tst_is_aa	tolua/tolua++-1.0.93/src/tests/tclass.h	/^inline bool Tst_is_aa (Tst_A::Tst_AA* obj)$/;"	f	namespace:Test	signature:(Tst_A::Tst_AA* obj)
+Typedef 	tolua/tolua++-1.0.93/src/bin/lua/typedef.lua	/^function Typedef (s)$/;"	f
+U	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^typedef union U U;$/;"	t	typeref:union:U
+U	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^union U$/;"	u
+U::f	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^	float f;$/;"	m	union:U	access:public
+U::i	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^	int i;$/;"	m	union:U	access:public
+Variable 	tolua/tolua++-1.0.93/src/bin/lua/variable.lua	/^function Variable (s)$/;"	f
+Verbatim 	tolua/tolua++-1.0.93/src/bin/lua/verbatim.lua	/^function Verbatim (l,cond)$/;"	f
+[t] or search_base	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^	return _is_functions[t] or search_base(t, _base_is_functions) or "tolua_isusertype"$/;"	f
+[t] or search_base	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^	return _push_functions[t] or search_base(t, _base_push_functions) or "tolua_pushusertype"$/;"	f
+[t] or search_base	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^	return _to_functions[t] or search_base(t, _base_to_functions) or "tolua_tousertype"$/;"	f
+_Array 	tolua/tolua++-1.0.93/src/bin/lua/array.lua	/^function _Array (t)$/;"	f
+_Class 	tolua/tolua++-1.0.93/src/bin/lua/class.lua	/^function _Class (t)$/;"	f
+_Code 	tolua/tolua++-1.0.93/src/bin/lua/code.lua	/^function _Code (t)$/;"	f
+_Container 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function _Container (self)$/;"	f
+_Declaration 	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^function _Declaration (t)$/;"	f
+_Define 	tolua/tolua++-1.0.93/src/bin/lua/define.lua	/^function _Define (t)$/;"	f
+_Enumerate 	tolua/tolua++-1.0.93/src/bin/lua/enumerate.lua	/^function _Enumerate (t,varname)$/;"	f
+_Function 	tolua/tolua++-1.0.93/src/bin/lua/function.lua	/^function _Function (t)$/;"	f
+_Module 	tolua/tolua++-1.0.93/src/bin/lua/module.lua	/^function _Module (t)$/;"	f
+_Namespace 	tolua/tolua++-1.0.93/src/bin/lua/namespace.lua	/^function _Namespace (t)$/;"	f
+_Operator 	tolua/tolua++-1.0.93/src/bin/lua/operator.lua	/^function _Operator (t)$/;"	f
+_Package 	tolua/tolua++-1.0.93/src/bin/lua/package.lua	/^function _Package (self)$/;"	f
+_Typedef 	tolua/tolua++-1.0.93/src/bin/lua/typedef.lua	/^function _Typedef (t)$/;"	f
+_Variable 	tolua/tolua++-1.0.93/src/bin/lua/variable.lua	/^function _Variable (t)$/;"	f
+_Verbatim 	tolua/tolua++-1.0.93/src/bin/lua/verbatim.lua	/^function _Verbatim (t)$/;"	f
+__STUDENT_H__	student.h	2;"	d
+_base_is_functions 	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^_base_is_functions = {}$/;"	f
+_base_push_functions 	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^_base_push_functions = {}$/;"	f
+_base_to_functions 	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^_base_to_functions = {}$/;"	f
+_get 	tolua/tolua++-1.0.93/src/bin/lua/variable.lua	/^ _get = {},   -- mapped get functions$/;"	f
+_is_functions 	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^_is_functions = {}$/;"	f
+_push_functions 	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^_push_functions = {}$/;"	f
+_set 	tolua/tolua++-1.0.93/src/bin/lua/variable.lua	/^ _set = {},   -- mapped set functions$/;"	f
+_to_functions 	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^_to_functions = {}$/;"	f
+a	tolua/tolua++-1.0.93/src/tests/tarray.c	/^int a[10] = {1,2,3,4,5,6,7,8,9,10};$/;"	v
+a	tolua/tolua++-1.0.93/src/tests/tarray.h	/^ int a[10];$/;"	m	struct:Array	access:public
+a	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	Tst_A a;$/;"	m	class:Test::Tst_E	access:public
+a	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	virtual char* a () { return "A"; }$/;"	f	class:Test::Tst_A	access:public	signature:()
+a	tolua/tolua++-1.0.93/src/tests/tdirectivebind.c	/^int a;$/;"	v
+a	tolua/tolua++-1.0.93/src/tests/tmodule.c	/^int a = 1;$/;"	v
+a	tolua/tolua++-1.0.93/src/tests/tvariable.c	/^A a = {11,12.0f,13.0,"Hello world from class",(void*)1,"Hi there from class"};$/;"	v
+a	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^	A a;$/;"	m	struct:B	access:public
+aa	tolua/tolua++-1.0.93/src/tests/tclass.h	/^		char* aa () { return "AA"; }$/;"	f	class:Test::Tst_A::Tst_AA	access:public	signature:()
+acos 	tolua/tolua++-1.0.93/src/bin/lua/compat.lua	/^acos = function (x) return math.deg(math.acos(x)) end$/;"	f
+add	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^inline Point add (const Point& p1, const Point& p2)$/;"	f	signature:(const Point& p1, const Point& p2)
+add_extra	tolua/tolua++-1.0.93/src/bin/tolua.c	/^static void add_extra (lua_State* L, char* value) {$/;"	f	file:	signature:(lua_State* L, char* value)
+add_token	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^	function add_token(ofs)$/;"	f
+additional	tolua/tolua++-1.0.93/doc/tolua++.html	/^<A NAME="additional"><\/A><h3>Storing additional fields<\/H3>$/;"	a
+additional_features	tolua/tolua++-1.0.93/doc/tolua++.html	/^<a name="additional_features"><\/a><h3>Additional features on tolua++<\/h3>$/;"	a
+append 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function append (t)$/;"	f
+append_class_type	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function append_class_type(t,class)$/;"	f
+append_global_type	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function append_global_type(t, class)$/;"	f
+appendenum 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function appendenum (t)$/;"	f
+appendrenaming 	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function appendrenaming (s)$/;"	f
+appendto 	tolua/tolua++-1.0.93/src/bin/lua/compat.lua	/^function appendto (name)$/;"	f
+appendtypedef 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function appendtypedef (t)$/;"	f
+appendusertype 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function appendusertype (t)$/;"	f
+applyrenaming 	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function applyrenaming (s)$/;"	f
+applytypedef 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function applytypedef (mod,type)$/;"	f
+array	tolua/tolua++-1.0.93/include/tolua++.h	/^	int array;$/;"	m	struct:tolua_Error	access:public
+array	tolua/tolua++-1.0.93/src/tests/tarray.c	/^Array array;$/;"	v
+asin 	tolua/tolua++-1.0.93/src/bin/lua/compat.lua	/^asin = function (x) return math.deg(math.asin(x)) end$/;"	f
+atan 	tolua/tolua++-1.0.93/src/bin/lua/compat.lua	/^atan = function (x) return math.deg(math.atan(x)) end$/;"	f
+atan2 	tolua/tolua++-1.0.93/src/bin/lua/compat.lua	/^atan2 = function (x,y) return math.deg(math.atan2(x,y)) end$/;"	f
+availability	tolua/tolua++-1.0.93/doc/tolua++.html	/^<A NAME="availability"><\/A><B>Availability<\/B><\/H3>$/;"	a
+average	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^inline	Point average (int n, Point v[])$/;"	f	signature:(int n, Point v[])
+averagepointer	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^inline	Point averagepointer (int n, Point* v[])$/;"	f	signature:(int n, Point* v[])
+b	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	virtual char* b () { return "B"; }$/;"	f	class:Test::Tst_B	access:public	signature:()
+b	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^ float r, g, b;$/;"	m	class:ColorPoint	access:private
+b	tolua/tolua++-1.0.93/src/tests/tmodule.c	/^int b = 2;$/;"	v
+b	tolua/tolua++-1.0.93/src/tests/tvariable.c	/^B* b;$/;"	v
+b	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^ B*	b;$/;"	m	struct:B	access:public
+basics	tolua/tolua++-1.0.93/doc/tolua++.html	/^<A NAME="basics"><\/A>Basic Concepts<\/H3>$/;"	a
+break_template	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^function break_template(s)$/;"	f
+c	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	virtual char* c () { return "C"; }$/;"	f	class:Test::Tst_C	access:public	signature:()
+c	tolua/tolua++-1.0.93/src/tests/tmodule.c	/^int c = 3;$/;"	v
+c 	tolua/tolua++-1.0.93/src/bin/lua/compat-5.1.lua	/^    c = function (...) return oc(...) or '' end$/;"	f
+changes-v1	tolua/tolua++-1.0.93/doc/tolua++.html	/^<A NAME="changes-v1"><\/A>Changes since v. 1.*<\/H3>$/;"	a
+changes-v2	tolua/tolua++-1.0.93/doc/tolua++.html	/^<A NAME="changes-v2"><\/A>Changes since v. 2.0<\/H3>$/;"	a
+changes-v30	tolua/tolua++-1.0.93/doc/tolua++.html	/^<A NAME="changes-v30"><\/A>Changes since v. 3.0<\/H3>$/;"	a
+classArray:getvalue 	tolua/tolua++-1.0.93/src/bin/lua/array.lua	/^function classArray:getvalue (class,static)$/;"	f
+classArray:isvariable 	tolua/tolua++-1.0.93/src/bin/lua/array.lua	/^function classArray:isvariable ()$/;"	f
+classArray:print 	tolua/tolua++-1.0.93/src/bin/lua/array.lua	/^function classArray:print (ident,close)$/;"	f
+classArray:register 	tolua/tolua++-1.0.93/src/bin/lua/array.lua	/^function classArray:register (pre)$/;"	f
+classArray:supcode 	tolua/tolua++-1.0.93/src/bin/lua/array.lua	/^function classArray:supcode ()$/;"	f
+classClass:decltype 	tolua/tolua++-1.0.93/src/bin/lua/class.lua	/^function classClass:decltype ()$/;"	f
+classClass:print 	tolua/tolua++-1.0.93/src/bin/lua/class.lua	/^function classClass:print (ident,close)$/;"	f
+classClass:register 	tolua/tolua++-1.0.93/src/bin/lua/class.lua	/^function classClass:register (pre)$/;"	f
+classClass:requirecollection 	tolua/tolua++-1.0.93/src/bin/lua/class.lua	/^function classClass:requirecollection (t)$/;"	f
+classClass:set_protected_destructor	tolua/tolua++-1.0.93/src/bin/lua/class.lua	/^function classClass:set_protected_destructor(p)$/;"	f
+classCode:print 	tolua/tolua++-1.0.93/src/bin/lua/code.lua	/^function classCode:print (ident,close)$/;"	f
+classCode:register 	tolua/tolua++-1.0.93/src/bin/lua/code.lua	/^function classCode:register (pre)$/;"	f
+classContainer:append 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function classContainer:append (t)$/;"	f
+classContainer:appendenum 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function classContainer:appendenum (t)$/;"	f
+classContainer:appendtypedef 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function classContainer:appendtypedef (t)$/;"	f
+classContainer:appendusertype 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function classContainer:appendusertype (t)$/;"	f
+classContainer:applytypedef 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function classContainer:applytypedef (mod,type)$/;"	f
+classContainer:decltype 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function classContainer:decltype ()$/;"	f
+classContainer:doparse 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function classContainer:doparse (s)$/;"	f
+classContainer:findtype 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function classContainer:findtype (t)$/;"	f
+classContainer:get_property_type	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function classContainer:get_property_type()$/;"	f
+classContainer:hasvar 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function classContainer:hasvar ()$/;"	f
+classContainer:isenum 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function classContainer:isenum (type)$/;"	f
+classContainer:istypedef 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function classContainer:istypedef (type)$/;"	f
+classContainer:overload 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function classContainer:overload (lname)$/;"	f
+classContainer:parse 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function classContainer:parse (s)$/;"	f
+classContainer:requirecollection 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function classContainer:requirecollection (t)$/;"	f
+classContainer:set_property_type	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function classContainer:set_property_type(ptype)$/;"	f
+classContainer:supcode 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function classContainer:supcode ()$/;"	f
+classDeclaration:builddeclaration 	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^function classDeclaration:builddeclaration (narg, cplusplus)$/;"	f
+classDeclaration:checkname 	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^function classDeclaration:checkname ()$/;"	f
+classDeclaration:checktype 	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^function classDeclaration:checktype ()$/;"	f
+classDeclaration:declare 	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^function classDeclaration:declare (narg)$/;"	f
+classDeclaration:decltype 	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^function classDeclaration:decltype ()$/;"	f
+classDeclaration:freearray 	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^function classDeclaration:freearray ()$/;"	f
+classDeclaration:getarray 	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^function classDeclaration:getarray (narg)$/;"	f
+classDeclaration:outchecktype 	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^function classDeclaration:outchecktype (narg)$/;"	f
+classDeclaration:passpar 	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^function classDeclaration:passpar ()$/;"	f
+classDeclaration:print 	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^function classDeclaration:print (ident,close)$/;"	f
+classDeclaration:requirecollection 	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^function classDeclaration:requirecollection (t)$/;"	f
+classDeclaration:retvalue 	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^function classDeclaration:retvalue ()$/;"	f
+classDeclaration:setarray 	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^function classDeclaration:setarray (narg)$/;"	f
+classDefine:print 	tolua/tolua++-1.0.93/src/bin/lua/define.lua	/^function classDefine:print (ident,close)$/;"	f
+classDefine:register 	tolua/tolua++-1.0.93/src/bin/lua/define.lua	/^function classDefine:register (pre)$/;"	f
+classEnumerate:print 	tolua/tolua++-1.0.93/src/bin/lua/enumerate.lua	/^function classEnumerate:print (ident,close)$/;"	f
+classEnumerate:register 	tolua/tolua++-1.0.93/src/bin/lua/enumerate.lua	/^function classEnumerate:register (pre)$/;"	f
+classFeature:buildnames 	tolua/tolua++-1.0.93/src/bin/lua/feature.lua	/^function classFeature:buildnames ()$/;"	f
+classFeature:cfuncname 	tolua/tolua++-1.0.93/src/bin/lua/feature.lua	/^function classFeature:cfuncname (n)$/;"	f
+classFeature:check_public_access	tolua/tolua++-1.0.93/src/bin/lua/feature.lua	/^function classFeature:check_public_access()$/;"	f
+classFeature:decltype 	tolua/tolua++-1.0.93/src/bin/lua/feature.lua	/^function classFeature:decltype ()$/;"	f
+classFeature:inclass 	tolua/tolua++-1.0.93/src/bin/lua/feature.lua	/^function classFeature:inclass ()$/;"	f
+classFeature:incontainer 	tolua/tolua++-1.0.93/src/bin/lua/feature.lua	/^function classFeature:incontainer (which)$/;"	f
+classFeature:inmodule 	tolua/tolua++-1.0.93/src/bin/lua/feature.lua	/^function classFeature:inmodule ()$/;"	f
+classFeature:innamespace 	tolua/tolua++-1.0.93/src/bin/lua/feature.lua	/^function classFeature:innamespace ()$/;"	f
+classFeature:isvariable 	tolua/tolua++-1.0.93/src/bin/lua/feature.lua	/^function classFeature:isvariable ()$/;"	f
+classFeature:preamble 	tolua/tolua++-1.0.93/src/bin/lua/feature.lua	/^function classFeature:preamble ()$/;"	f
+classFeature:register 	tolua/tolua++-1.0.93/src/bin/lua/feature.lua	/^function classFeature:register (pre)$/;"	f
+classFeature:requirecollection 	tolua/tolua++-1.0.93/src/bin/lua/feature.lua	/^function classFeature:requirecollection (t)$/;"	f
+classFeature:supcode 	tolua/tolua++-1.0.93/src/bin/lua/feature.lua	/^function classFeature:supcode ()$/;"	f
+classFunction:decltype 	tolua/tolua++-1.0.93/src/bin/lua/function.lua	/^function classFunction:decltype ()$/;"	f
+classFunction:overload 	tolua/tolua++-1.0.93/src/bin/lua/function.lua	/^function classFunction:overload ()$/;"	f
+classFunction:print 	tolua/tolua++-1.0.93/src/bin/lua/function.lua	/^function classFunction:print (ident,close)$/;"	f
+classFunction:register 	tolua/tolua++-1.0.93/src/bin/lua/function.lua	/^function classFunction:register (pre)$/;"	f
+classFunction:requirecollection 	tolua/tolua++-1.0.93/src/bin/lua/function.lua	/^function classFunction:requirecollection (t)$/;"	f
+classFunction:supcode 	tolua/tolua++-1.0.93/src/bin/lua/function.lua	/^function classFunction:supcode (local_constructor)$/;"	f
+classModule:print 	tolua/tolua++-1.0.93/src/bin/lua/module.lua	/^function classModule:print (ident,close)$/;"	f
+classModule:register 	tolua/tolua++-1.0.93/src/bin/lua/module.lua	/^function classModule:register (pre)$/;"	f
+classNamespace:print 	tolua/tolua++-1.0.93/src/bin/lua/namespace.lua	/^function classNamespace:print (ident,close)$/;"	f
+classOperator:print 	tolua/tolua++-1.0.93/src/bin/lua/operator.lua	/^function classOperator:print (ident,close)$/;"	f
+classOperator:supcode_tmp	tolua/tolua++-1.0.93/src/bin/lua/operator.lua	/^function classOperator:supcode_tmp()$/;"	f
+classPackage:header 	tolua/tolua++-1.0.93/src/bin/lua/package.lua	/^function classPackage:header ()$/;"	f
+classPackage:preamble 	tolua/tolua++-1.0.93/src/bin/lua/package.lua	/^function classPackage:preamble ()$/;"	f
+classPackage:preprocess 	tolua/tolua++-1.0.93/src/bin/lua/package.lua	/^function classPackage:preprocess ()$/;"	f
+classPackage:print 	tolua/tolua++-1.0.93/src/bin/lua/package.lua	/^function classPackage:print ()$/;"	f
+classPackage:register 	tolua/tolua++-1.0.93/src/bin/lua/package.lua	/^function classPackage:register (pre)$/;"	f
+classTemplateClass:throw	tolua/tolua++-1.0.93/src/bin/lua/template_class.lua	/^function classTemplateClass:throw(types, local_scope)$/;"	f
+classTypedef:isvariable 	tolua/tolua++-1.0.93/src/bin/lua/typedef.lua	/^function classTypedef:isvariable ()$/;"	f
+classTypedef:print 	tolua/tolua++-1.0.93/src/bin/lua/typedef.lua	/^function classTypedef:print (ident,close)$/;"	f
+classVariable:cfuncname 	tolua/tolua++-1.0.93/src/bin/lua/variable.lua	/^function classVariable:cfuncname (prefix)$/;"	f
+classVariable:getpointervalue 	tolua/tolua++-1.0.93/src/bin/lua/variable.lua	/^function classVariable:getpointervalue (class,static)$/;"	f
+classVariable:getvalue 	tolua/tolua++-1.0.93/src/bin/lua/variable.lua	/^function classVariable:getvalue (class,static, prop_get)$/;"	f
+classVariable:isvariable 	tolua/tolua++-1.0.93/src/bin/lua/variable.lua	/^function classVariable:isvariable ()$/;"	f
+classVariable:print 	tolua/tolua++-1.0.93/src/bin/lua/variable.lua	/^function classVariable:print (ident,close)$/;"	f
+classVariable:register 	tolua/tolua++-1.0.93/src/bin/lua/variable.lua	/^function classVariable:register (pre)$/;"	f
+classVariable:supcode 	tolua/tolua++-1.0.93/src/bin/lua/variable.lua	/^function classVariable:supcode ()$/;"	f
+classVerbatim:preamble 	tolua/tolua++-1.0.93/src/bin/lua/verbatim.lua	/^function classVerbatim:preamble ()$/;"	f
+classVerbatim:print 	tolua/tolua++-1.0.93/src/bin/lua/verbatim.lua	/^function classVerbatim:print (ident,close)$/;"	f
+classVerbatim:register 	tolua/tolua++-1.0.93/src/bin/lua/verbatim.lua	/^function classVerbatim:register (pre)$/;"	f
+classVerbatim:supcode 	tolua/tolua++-1.0.93/src/bin/lua/verbatim.lua	/^function classVerbatim:supcode ()$/;"	f
+class_add_event	tolua/tolua++-1.0.93/src/lib/tolua_event.c	/^static int class_add_event (lua_State* L)$/;"	f	file:	signature:(lua_State* L)
+class_call_event	tolua/tolua++-1.0.93/src/lib/tolua_event.c	/^static int class_call_event(lua_State* L) {$/;"	f	file:	signature:(lua_State* L)
+class_div_event	tolua/tolua++-1.0.93/src/lib/tolua_event.c	/^static int class_div_event (lua_State* L)$/;"	f	file:	signature:(lua_State* L)
+class_eq_event	tolua/tolua++-1.0.93/src/lib/tolua_event.c	/^static int class_eq_event (lua_State* L)$/;"	f	file:	signature:(lua_State* L)
+class_gc_event	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int class_gc_event (lua_State* L);$/;"	p	signature:(lua_State* L)
+class_gc_event	tolua/tolua++-1.0.93/src/lib/tolua_event.c	/^TOLUA_API int class_gc_event (lua_State* L)$/;"	f	signature:(lua_State* L)
+class_index_event	tolua/tolua++-1.0.93/src/lib/tolua_event.c	/^static int class_index_event (lua_State* L)$/;"	f	file:	signature:(lua_State* L)
+class_le_event	tolua/tolua++-1.0.93/src/lib/tolua_event.c	/^static int class_le_event (lua_State* L)$/;"	f	file:	signature:(lua_State* L)
+class_lt_event	tolua/tolua++-1.0.93/src/lib/tolua_event.c	/^static int class_lt_event (lua_State* L)$/;"	f	file:	signature:(lua_State* L)
+class_mul_event	tolua/tolua++-1.0.93/src/lib/tolua_event.c	/^static int class_mul_event (lua_State* L)$/;"	f	file:	signature:(lua_State* L)
+class_newindex_event	tolua/tolua++-1.0.93/src/lib/tolua_event.c	/^static int class_newindex_event (lua_State* L)$/;"	f	file:	signature:(lua_State* L)
+class_sub_event	tolua/tolua++-1.0.93/src/lib/tolua_event.c	/^static int class_sub_event (lua_State* L)$/;"	f	file:	signature:(lua_State* L)
+classes	tolua/tolua++-1.0.93/doc/tolua++.html	/^<A NAME="classes"><\/A>Binding classes and methods<\/H3>$/;"	a
+clean 	tolua/tolua++-1.0.93/src/bin/lua/clean.lua	/^function clean (s)$/;"	f
+clean_template	tolua/tolua++-1.0.93/src/bin/lua/feature.lua	/^function clean_template(t)$/;"	f
+code,nsubst 	tolua/tolua++-1.0.93/src/bin/lua/package.lua	/^	code,nsubst = gsub(code,'\\n%s*%$renaming%s*(.-)%s*\\n', function (r) appendrenaming(r) return "\\n" end)$/;"	f
+compatibility	tolua/tolua++-1.0.93/doc/tolua++.html	/^<h3><a name="compatibility"><\/a>Compatibility with older versions.<\/h3>$/;"	a
+compgsub	tolua/tolua++-1.0.93/src/bin/lua/compat-5.1.lua	/^local function compgsub(a,b,c,d)$/;"	f
+concat 	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function concat (t,f,l,jstr)$/;"	f
+concatparam 	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function concatparam (line, ...)$/;"	f
+const_array	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^static int const_array (lua_State* L)$/;"	f	file:	signature:(lua_State* L)
+constants	tolua/tolua++-1.0.93/doc/tolua++.html	/^<A NAME="constants"><\/A>Binding constants<\/H3>$/;"	a
+copyvector	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^inline	void copyvector (int n, const Point v[], Point u[])$/;"	f	signature:(int n, const Point v[], Point u[])
+cos 	tolua/tolua++-1.0.93/src/bin/lua/compat.lua	/^cos = function (x) return math.cos(math.rad(x)) end$/;"	f
+create	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	static Tst_A* create() {return new Tst_B;};$/;"	f	class:Test::Tst_B	access:public	signature:()
+create_varname 	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^function create_varname ()$/;"	f
+create_void	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	static void* create_void() {return new Tst_B;};$/;"	f	class:Test::Tst_B	access:public	signature:()
+credits	tolua/tolua++-1.0.93/doc/tolua++.html	/^<A NAME="credits"><\/A>Credits<\/H3>$/;"	a
+customizing	tolua/tolua++-1.0.93/doc/tolua++.html	/^<h3><a name="customizing"><\/a>Customizing tolua++<\/h3>$/;"	a
+d	tolua/tolua++-1.0.93/src/tests/tmodule.c	/^int d = 4;$/;"	v
+d	tolua/tolua++-1.0.93/src/tests/tvariable.c	/^double d = 3.0;$/;"	v
+d	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^	double d;$/;"	m	struct:A	access:public
+div	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^inline Point div (const Point& p1, float n)$/;"	f	signature:(const Point& p1, float n)
+do_ 	tolua/tolua++-1.0.93/src/bin/lua/compat.lua	/^function do_ (f, err)$/;"	f
+do_operator	tolua/tolua++-1.0.93/src/lib/tolua_event.c	/^static int do_operator (lua_State* L, const char* op)$/;"	f	file:	signature:(lua_State* L, const char* op)
+documentation	tolua/tolua++-1.0.93/doc/index.html	/^<a name="documentation"><\/a>$/;"	a
+doit 	tolua/tolua++-1.0.93/src/bin/lua/doit.lua	/^function doit ()$/;"	f
+dostring	tolua/tolua++-1.0.93/src/bin/lua/compat.lua	/^function dostring(s) return do_(loadstring(s)) end$/;"	f
+download	tolua/tolua++-1.0.93/doc/index.html	/^<a name="download"><\/a>$/;"	a
+echo	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	static Error echo (Error e)$/;"	f	class:Point	access:public	signature:(Error e)
+embedded	tolua/tolua++-1.0.93/doc/tolua++.html	/^<A NAME="embedded"><\/A>Embedded Lua code<\/H3>$/;"	a
+error	tolua/tolua++-1.0.93/src/bin/tolua.c	/^static void error (char* o)$/;"	f	file:	signature:(char* o)
+extract_code	tolua/tolua++-1.0.93/src/bin/lua/custom.lua	/^function extract_code(fn,s)$/;"	f
+extract_code	tolua/tolua++-1.0.93/src/bin/lua/package.lua	/^function extract_code(fn,s)$/;"	f
+f	tolua/tolua++-1.0.93/src/tests/tvariable.c	/^float f = 2.0f;;$/;"	v
+f	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^	float f;$/;"	m	struct:A	access:public
+f	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^	float f;$/;"	m	union:U	access:public
+find_enum_var	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function find_enum_var(var)$/;"	f
+findtype 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function findtype (type)$/;"	f
+findtype_on_childs	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function findtype_on_childs(self, t)$/;"	f
+flush 	tolua/tolua++-1.0.93/src/bin/lua/compat.lua	/^function flush (f)$/;"	f
+fulltype 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function fulltype (t)$/;"	f
+func 	tolua/tolua++-1.0.93/src/tests/tdirectivelua.lua	/^function func ()$/;"	f
+functions	tolua/tolua++-1.0.93/doc/tolua++.html	/^<A NAME="functions"><\/A>Binding functions<\/H3>$/;"	a
+g	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^ float r, g, b;$/;"	m	class:ColorPoint	access:private
+get	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	void get (float v[2]) const$/;"	f	class:Point	access:public	signature:(float v[2]) const
+get	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	void get (float* x, float* y) const$/;"	f	class:Point	access:public	signature:(float* x, float* y) const
+get_is_function	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function get_is_function(t)$/;"	f
+get_number	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	int get_number() {return number*2;};$/;"	f	class:Test::Tst_A	access:public	signature:()
+get_pete	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	void get_pete(Pete p) {};$/;"	f	class:Test::Tst_E	access:public	signature:(Pete p)
+get_pointer	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	void get_pointer(void* a) {};$/;"	f	class:Test::Tst_E	access:public	signature:(void* a)
+get_property_methods	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function get_property_methods(ptype, name)$/;"	f
+get_property_methods_hook	tolua/tolua++-1.0.93/doc/tolua++.html	/^function get_property_methods_hook(ptype, name)$/;"	f
+get_property_methods_hook	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function get_property_methods_hook(property_type, name)$/;"	f
+get_property_type	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function get_property_type()$/;"	f
+get_ptr	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	void* get_ptr() {return ptr;};$/;"	f	class:Test::Tst_E	access:public	signature:()
+get_push_function	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function get_push_function(t)$/;"	f
+get_t	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	T get_t() {T a=0; return a;};$/;"	f	class:Test::Tst_E	access:public	signature:()
+get_to_function	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function get_to_function(t)$/;"	f
+getcolor	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^ virtual void getcolor (float* red, float *green, float *blue) const$/;"	f	class:ColorPoint	access:public	signature:(float* red, float *green, float *blue) const
+getconst	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	const Point* getconst () const$/;"	f	class:Point	access:public	signature:() const
+getcurrnamespace 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function getcurrnamespace ()$/;"	f
+getglobal 	tolua/tolua++-1.0.93/src/bin/lua/compat.lua	/^getglobal = function (n) return _G[n] end$/;"	f
+getname	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	const char* getname () const$/;"	f	class:Point	access:public	signature:() const
+getnamespace 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function getnamespace (curr)$/;"	f
+getonlynamespace 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function getonlynamespace ()$/;"	f
+getpoint	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^inline void getpoint (const Point* p, float* x, float* y)$/;"	f	signature:(const Point* p, float* x, float* y)
+getpointer	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	Point* getpointer ()$/;"	f	class:Point	access:public	signature:()
+getref	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	Point& getref ()$/;"	f	class:Point	access:public	signature:()
+getvalue	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	Point getvalue ()$/;"	f	class:Point	access:public	signature:()
+hello	tolua/tolua++-1.0.93/src/tests/tclass.lua	/^function hello()$/;"	f
+help	tolua/tolua++-1.0.93/src/bin/tolua.c	/^static void help (void)$/;"	f	file:	signature:(void)
+i	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	int i;$/;"	m	class:Test::Tst_C	access:private
+i	tolua/tolua++-1.0.93/src/tests/tvariable.c	/^int i = 1;$/;"	v
+i	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^	int i;$/;"	m	struct:A	access:public
+i	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^	int i;$/;"	m	union:U	access:public
+if type(c) 	tolua/tolua++-1.0.93/src/bin/lua/compat-5.1.lua	/^  if type(c) == "function" then$/;"	f
+include_file_hook	tolua/tolua++-1.0.93/doc/tolua++.html	/^function include_file_hook(t, filename, ...)$/;"	f
+include_file_hook	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function include_file_hook(t, filename, ...)$/;"	f
+include_file_hook	tolua/tolua++-1.0.93/src/bin/lua/custom.lua	/^function include_file_hook(p, filename)$/;"	f
+index	tolua/tolua++-1.0.93/include/tolua++.h	/^	int index;$/;"	m	struct:tolua_Error	access:public
+installing	tolua/tolua++-1.0.93/doc/index.html	/^<a name="installing"><\/a>$/;"	a
+introduction	tolua/tolua++-1.0.93/doc/tolua++.html	/^<A NAME="introduction"><\/A>How tolua works<\/H3>$/;"	a
+invert	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^inline Order invert (Order o)$/;"	f	signature:(Order o)
+isbasic 	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function isbasic (type)$/;"	f
+isenum 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function isenum (type)$/;"	f
+istypedef 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function istypedef (type)$/;"	f
+join	tolua/tolua++-1.0.93/src/bin/lua/function.lua	/^function join(t, sep, first, last)$/;"	f
+last	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	static Tst_A* last;$/;"	m	class:Test::Tst_A	access:public
+last	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	static Tst_B* last;$/;"	m	class:Test::Tst_B	access:public
+last	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	static Tst_C* last;$/;"	m	class:Test::Tst_C	access:public
+local b 	tolua/tolua++-1.0.93/src/bin/lua/code.lua	/^ local b = gsub(s,'(.)',function (c)$/;"	f
+local code 	tolua/tolua++-1.0.93/src/bin/lua/clean.lua	/^ local code = "return function ()\\n" .. s .. "\\n end"$/;"	f
+local f 	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^ local f = function (s)$/;"	f
+local func 	tolua/tolua++-1.0.93/src/bin/lua/function.lua	/^		local func = get_is_function(self.parent.type)$/;"	f
+local getfile 	tolua/tolua++-1.0.93/src/bin/lua/compat-5.1.lua	/^	local getfile = function()$/;"	f
+local is_func 	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^  local is_func = get_is_function(self.type)$/;"	f
+local is_func 	tolua/tolua++-1.0.93/src/bin/lua/operator.lua	/^	local is_func = get_is_function(self.parent.type)$/;"	f
+local push_func 	tolua/tolua++-1.0.93/src/bin/lua/array.lua	/^ local push_func = get_push_function(t)$/;"	f
+local push_func 	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^   local push_func = get_push_function(self.type)$/;"	f
+local push_func 	tolua/tolua++-1.0.93/src/bin/lua/function.lua	/^    local push_func = get_push_function(t)$/;"	f
+local push_func 	tolua/tolua++-1.0.93/src/bin/lua/operator.lua	/^		local push_func = get_push_function(t)$/;"	f
+local push_func 	tolua/tolua++-1.0.93/src/bin/lua/variable.lua	/^		local push_func = get_push_function(self.type)$/;"	f
+local push_func 	tolua/tolua++-1.0.93/src/bin/lua/variable.lua	/^	local push_func = get_push_function(self.type)$/;"	f
+local s1 	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^ local s1 = gsub(s,"(%b\\[\\])",function (n) return gsub(n,'%*','\\1') end)$/;"	f
+local to_func 	tolua/tolua++-1.0.93/src/bin/lua/array.lua	/^   local to_func = get_to_function(self.type)$/;"	f
+local to_func 	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^		local to_func = get_to_function(type)$/;"	f
+local to_func 	tolua/tolua++-1.0.93/src/bin/lua/function.lua	/^  local to_func = get_to_function(self.parent.type)$/;"	f
+local to_func 	tolua/tolua++-1.0.93/src/bin/lua/variable.lua	/^				local to_func = get_to_function(self.type)$/;"	f
+local to_func 	tolua/tolua++-1.0.93/src/bin/lua/variable.lua	/^   local to_func = get_to_function(self.parent.type)$/;"	f
+local to_func 	tolua/tolua++-1.0.93/src/bin/lua/variable.lua	/^  local to_func = get_to_function(self.parent.type)$/;"	f
+local v 	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^  local v = t[t.n]  -- last word is the function name$/;"	f
+lua_Object	tolua/tolua++-1.0.93/include/tolua++.h	/^typedef int lua_Object;$/;"	t
+lua_isusertable	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^static  int lua_isusertable (lua_State* L, int lo, const const char* type)$/;"	f	file:	signature:(lua_State* L, int lo, const const char* type)
+lua_isusertype	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^static int lua_isusertype (lua_State* L, int lo, const char* type)$/;"	f	file:	signature:(lua_State* L, int lo, const char* type)
+luaopen_student	lua_student.cpp	/^ TOLUA_API int luaopen_student (lua_State* tolua_S) {$/;"	f	signature:(lua_State* tolua_S)
+luaopen_tolua	tolua/tolua++-1.0.93/src/bin/toluabind.c	/^ TOLUA_API int luaopen_tolua (lua_State* tolua_S) {$/;"	f	signature:(lua_State* tolua_S)
+luaopen_tolua	tolua/tolua++-1.0.93/src/bin/toluabind_default.c	/^ TOLUA_API int luaopen_tolua (lua_State* tolua_S) {$/;"	f	signature:(lua_State* tolua_S)
+m_s	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	char m_s[64];$/;"	m	class:Point	access:private
+m_x	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^ float m_x;$/;"	m	class:Point	access:private
+m_y	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	float m_y;$/;"	m	class:Point	access:private
+ma	tolua/tolua++-1.0.93/src/tests/tarray.c	/^int ma[10];$/;"	v
+ma	tolua/tolua++-1.0.93/src/tests/tvariable.c	/^A ma = {31,32.0f,33.0,"Hello world from class in module",$/;"	v
+main	mian.cpp	/^int main(int argc, char* argv[])$/;"	f	signature:(int argc, char* argv[])
+main	tolua/tolua++-1.0.93/src/bin/tolua.c	/^int main (int argc, char* argv[])$/;"	f	signature:(int argc, char* argv[])
+main	tolua/tolua++-1.0.93/src/tests/tarray.c	/^int main (void)$/;"	f	signature:(void)
+main	tolua/tolua++-1.0.93/src/tests/tclass.cpp	/^int main ()$/;"	f	signature:()
+main	tolua/tolua++-1.0.93/src/tests/tdirectivebind.c	/^int main (void)$/;"	f	signature:(void)
+main	tolua/tolua++-1.0.93/src/tests/tmodule.c	/^int main ()$/;"	f
+main	tolua/tolua++-1.0.93/src/tests/tvariable.c	/^int main (void)$/;"	f	signature:(void)
+mapinheritance	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^static void mapinheritance (lua_State* L, const char* name, const char* base)$/;"	f	file:	signature:(lua_State* L, const char* name, const char* base)
+mapsuper	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^static void mapsuper (lua_State* L, const char* name, const char* base)$/;"	f	file:	signature:(lua_State* L, const char* name, const char* base)
+mask 	tolua/tolua++-1.0.93/src/bin/lua/clean.lua	/^function mask (s)$/;"	f
+match_type	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function match_type(childtype, regtype, st)$/;"	f
+mb	tolua/tolua++-1.0.93/src/tests/tvariable.c	/^B* mb;$/;"	v
+md	tolua/tolua++-1.0.93/src/tests/tvariable.c	/^double md = 23.0;$/;"	v
+mf	tolua/tolua++-1.0.93/src/tests/tvariable.c	/^float mf = 22.0f;$/;"	v
+mi	tolua/tolua++-1.0.93/src/tests/tvariable.c	/^int mi = 21;$/;"	v
+mn	tolua/tolua++-1.0.93/src/tests/tvariable.c	/^char mn[64] = "Hi there in module";$/;"	v
+module_index_event	tolua/tolua++-1.0.93/src/lib/tolua_event.c	/^static int module_index_event (lua_State* L)$/;"	f	file:	signature:(lua_State* L)
+module_newindex_event	tolua/tolua++-1.0.93/src/lib/tolua_event.c	/^static int module_newindex_event (lua_State* L)$/;"	f	file:	signature:(lua_State* L)
+modules	tolua/tolua++-1.0.93/doc/tolua++.html	/^<A NAME="modules"><\/A>Module definition<\/H3>$/;"	a
+mp	tolua/tolua++-1.0.93/src/tests/tarray.c	/^Point mp[10];$/;"	v
+mpp	tolua/tolua++-1.0.93/src/tests/tarray.c	/^Point* mpp[10];$/;"	v
+ms	tolua/tolua++-1.0.93/src/tests/tvariable.c	/^char* ms = "Hello world in module";$/;"	v
+mult	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^inline Point mult (const Point& p1, const Point& p2)$/;"	f	signature:(const Point& p1, const Point& p2)
+mv	tolua/tolua++-1.0.93/src/tests/tvariable.c	/^void* mv = NULL;$/;"	v
+n	tolua/tolua++-1.0.93/src/tests/tvariable.c	/^char n[64] = "Hi there";$/;"	v
+n	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^	char n[64];$/;"	m	struct:A	access:public
+news	tolua/tolua++-1.0.93/doc/index.html	/^<a name="news"><\/a>$/;"	a
+number	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	int number;$/;"	m	class:Test::Tst_A	access:private
+operator *	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	Point operator* (const Point& p) const$/;"	f	class:Point	access:public	signature:(const Point& p) const
+operator +	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	Tst_E& operator+(const Tst_E& rvalue) {return *this;};$/;"	f	class:Test::Tst_E	access:public	signature:(const Tst_E& rvalue)
+operator +	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	Point operator+ (const Point& p) const$/;"	f	class:Point	access:public	signature:(const Point& p) const
+operator -	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	Point operator- (const Point& p) const$/;"	f	class:Point	access:public	signature:(const Point& p) const
+operator /	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	Point operator\/ (float n) const$/;"	f	class:Point	access:public	signature:(float n) const
+operator <	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	bool operator< (const Point& p) const$/;"	f	class:Point	access:public	signature:(const Point& p) const
+operator <=	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	bool operator<= (const Point& p) const$/;"	f	class:Point	access:public	signature:(const Point& p) const
+operator ==	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	bool operator== (const Point& p) const$/;"	f	class:Point	access:public	signature:(const Point& p) const
+operator []	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	float& operator[] (int i)$/;"	f	class:Point	access:public	signature:(int i)
+operator []	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^ float operator[] (int i) const$/;"	f	class:Point	access:public	signature:(int i) const
+output 	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function output (...)$/;"	f
+output_error_hook	tolua/tolua++-1.0.93/doc/tolua++.html	/^function output_error_hook(...)$/;"	f
+output_error_hook	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function output_error_hook(...)$/;"	f
+outside_func	tolua/tolua++-1.0.93/src/tests/tclass.h	/^static void outside_func(Test::Tst_Outside* p_out, lua_State* ls) {$/;"	f	signature:(Test::Tst_Outside* p_out, lua_State* ls)
+p	tolua/tolua++-1.0.93/src/tests/tarray.c	/^Point p[10] = {{0,1},{1,2},{2,3},{3,4},{4,5},{5,6},{6,7},{7,8},{8,9},{9,10}};$/;"	v
+p	tolua/tolua++-1.0.93/src/tests/tarray.h	/^ Point p[10]; $/;"	m	struct:Array	access:public
+param_object	tolua/tolua++-1.0.93/src/bin/lua/function.lua	/^function param_object(par) -- returns true if the parameter has an object as its default value$/;"	f
+parray	tolua/tolua++-1.0.93/src/tests/tarray.c	/^Array* parray = &array;$/;"	v
+pars	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	void pars(int a=0, int b=0) {};$/;"	f	class:Test::Tst_E	access:public	signature:(int a=0, int b=0)
+parse_extra	tolua/tolua++-1.0.93/src/bin/lua/doit.lua	/^function parse_extra()$/;"	f
+parser_hook	tolua/tolua++-1.0.93/doc/tolua++.html	/^function parser_hook(code)$/;"	f
+parser_hook	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function parser_hook(s)$/;"	f
+pete	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	} pete;$/;"	m	class:Test::Tst_E	typeref:enum:Test::Tst_E::Pete	access:public
+pop 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function pop ()$/;"	f
+post_call_hook	tolua/tolua++-1.0.93/doc/tolua++.html	/^function post_call_hook(f)$/;"	f
+post_call_hook	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function post_call_hook(f)$/;"	f
+post_output_hook	tolua/tolua++-1.0.93/doc/tolua++.html	/^function post_output_hook(package)$/;"	f
+post_output_hook	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function post_output_hook(package)$/;"	f
+pp	tolua/tolua++-1.0.93/src/tests/tarray.c	/^Point* pp[10];$/;"	v
+pp	tolua/tolua++-1.0.93/src/tests/tarray.h	/^ Point* pp[10];$/;"	m	struct:Array	access:public
+pp_dofile	tolua/tolua++-1.0.93/src/bin/lua/compat-5.1.lua	/^local function pp_dofile(path)$/;"	f
+pre_call_hook	tolua/tolua++-1.0.93/doc/tolua++.html	/^function pre_call_hook(f)$/;"	f
+pre_call_hook	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function pre_call_hook(f)$/;"	f
+pre_output_hook	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function pre_output_hook(package)$/;"	f
+pre_register_hook	tolua/tolua++-1.0.93/doc/tolua++.html	/^function pre_register_hook(package)$/;"	f
+pre_register_hook	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function pre_register_hook(package)$/;"	f
+prefix	tolua/tolua++-1.0.93/config_linux.py	/^prefix = '\/usr\/local'$/;"	v
+prefix	tolua/tolua++-1.0.93/config_msvc.py	/^prefix = None # (it's a string)$/;"	v
+prefix	tolua/tolua++-1.0.93/config_posix.py	/^prefix = '\/usr\/local'$/;"	v
+prefix	tolua/tolua++-1.0.93/custom-5.1.py	/^prefix = '\/usr\/local'$/;"	v
+prep	tolua/tolua++-1.0.93/src/bin/lua/package.lua	/^function prep(file)$/;"	f
+preparse_hook	tolua/tolua++-1.0.93/doc/tolua++.html	/^function preparse_hook(package)$/;"	f
+preparse_hook	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function preparse_hook(package)$/;"	f
+preparse_hook	tolua/tolua++-1.0.93/src/bin/lua/custom.lua	/^function preparse_hook(p)$/;"	f
+preprocess_hook	tolua/tolua++-1.0.93/doc/tolua++.html	/^function preprocess_hook(p)$/;"	f
+preprocess_hook	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function preprocess_hook(p)$/;"	f
+preprocess_hook	tolua/tolua++-1.0.93/src/bin/lua/custom.lua	/^function preprocess_hook(p)$/;"	f
+properties	tolua/tolua++-1.0.93/doc/tolua++.html	/^<h3><a name="properties"><\/a>Binding Properties<\/h3>$/;"	a
+ptr	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	void* ptr;$/;"	m	class:Test::Tst_E	access:private
+push 	tolua/tolua++-1.0.93/src/bin/lua/container.lua	/^function push (t)$/;"	f
+push_collector	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^static void push_collector(lua_State* L, const char* type, lua_CFunction col) {$/;"	f	file:	signature:(lua_State* L, const char* type, lua_CFunction col)
+push_table_instance	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^int push_table_instance(lua_State* L, int lo) {$/;"	f	signature:(lua_State* L, int lo)
+push_table_instance	tolua/tolua++-1.0.93/src/lib/tolua_to.c	/^extern int push_table_instance(lua_State* L, int lo);$/;"	p	file:	signature:(lua_State* L, int lo)
+r	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^ float r, g, b;$/;"	m	class:ColorPoint	access:private
+read 	tolua/tolua++-1.0.93/src/bin/lua/compat.lua	/^function read (...)$/;"	f
+readfrom 	tolua/tolua++-1.0.93/src/bin/lua/compat.lua	/^function readfrom (name)$/;"	f
+rebuild_template	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^function rebuild_template(s, b, timpl)$/;"	f
+regtype 	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function regtype (t)$/;"	f
+renaming	tolua/tolua++-1.0.93/doc/tolua++.html	/^<A NAME="renaming"><\/A>Renaming constants, variables and functions<\/H3>$/;"	a
+resolve_template_types	tolua/tolua++-1.0.93/src/bin/lua/declaration.lua	/^function resolve_template_types(type)$/;"	f
+s	tolua/tolua++-1.0.93/src/tests/tvariable.c	/^char* s = "Hello world";$/;"	v
+s	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^	char* s;$/;"	m	struct:A	access:public
+search_base	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^local function search_base(t, funcs)$/;"	f
+self.code 	tolua/tolua++-1.0.93/src/bin/lua/package.lua	/^ self.code = gsub(self.code,"%#%<(%d+)%>%#",function (n)$/;"	f
+self.code 	tolua/tolua++-1.0.93/src/bin/lua/package.lua	/^ self.code = gsub(self.code,"%#%[(%d+)%]%#",function (n)$/;"	f
+self.code 	tolua/tolua++-1.0.93/src/bin/lua/package.lua	/^ self.code = gsub(self.code,"%#(%d+)%#",function (n)$/;"	f
+self.code 	tolua/tolua++-1.0.93/src/bin/lua/package.lua	/^ self.code = gsub(self.code,"(%b\\1\\2)",       function (c)$/;"	f
+self.code 	tolua/tolua++-1.0.93/src/bin/lua/package.lua	/^ self.code = gsub(self.code,"(%b\\3\\4)",       function (c)$/;"	f
+self.code 	tolua/tolua++-1.0.93/src/bin/lua/package.lua	/^ self.code = gsub(self.code,"(%b\\5\\6)",       function (c)$/;"	f
+self.code 	tolua/tolua++-1.0.93/src/bin/lua/package.lua	/^ self.code = gsub(self.code,"\\n(%s*%$[^%[%]][^\\n]*)",function (v)$/;"	f
+self.code 	tolua/tolua++-1.0.93/src/bin/lua/package.lua	/^ self.code = string.gsub(self.code, "\\n%s*%$([^\\n]+)", function (l)$/;"	f
+set	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	void set (float v[2]=0)$/;"	f	class:Point	access:public	signature:(float v[2]=0)
+set	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	void set (float x, float y)$/;"	f	class:Point	access:public	signature:(float x, float y)
+set_number	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	void set_number(int p_number) { number = p_number;};$/;"	f	class:Test::Tst_A	access:public	signature:(int p_number)
+set_ptr	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	void set_ptr(void* p_ptr) {$/;"	f	class:Test::Tst_E	access:public	signature:(void* p_ptr)
+set_ubox	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^static void set_ubox(lua_State* L) {$/;"	f	file:	signature:(lua_State* L)
+setcallhook 	tolua/tolua++-1.0.93/src/bin/lua/compat.lua	/^setcallhook = function () error"`setcallhook' is deprecated" end$/;"	f
+setconst	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	void setconst (const Point* p)$/;"	f	class:Point	access:public	signature:(const Point* p)
+setfield	tolua/tolua++-1.0.93/src/bin/tolua.c	/^static void setfield (lua_State* L, int table, char* f, char* v)$/;"	f	file:	signature:(lua_State* L, int table, char* f, char* v)
+setglobal 	tolua/tolua++-1.0.93/src/bin/lua/compat.lua	/^setglobal = function (n,v) _G[n] = v end$/;"	f
+setlinehook 	tolua/tolua++-1.0.93/src/bin/lua/compat.lua	/^setlinehook = function () error"`setlinehook' is deprecated" end$/;"	f
+setname	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	void setname (const char* s)$/;"	f	class:Point	access:public	signature:(const char* s)
+setpoint	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^inline void setpoint (Point* p, float x=0, float y=0)$/;"	f	signature:(Point* p, float x=0, float y=0)
+setpointer	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	void setpointer (Point* p)$/;"	f	class:Point	access:public	signature:(Point* p)
+setref	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	void setref (Point& p)$/;"	f	class:Point	access:public	signature:(Point& p)
+setvalue	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	void setvalue (Point p)$/;"	f	class:Point	access:public	signature:(Point p)
+show	test.lua	/^		function show()  $/;"	f
+sin 	tolua/tolua++-1.0.93/src/bin/lua/compat.lua	/^sin = function (x) return math.sin(math.rad(x)) end$/;"	f
+split 	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function split (s,t)$/;"	f
+split_c_tokens	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function split_c_tokens(s, pat)$/;"	f
+storeatubox	tolua/tolua++-1.0.93/src/lib/tolua_event.c	/^static void storeatubox (lua_State* L, int lo)$/;"	f	file:	signature:(lua_State* L, int lo)
+strip_defaults	tolua/tolua++-1.0.93/src/bin/lua/function.lua	/^function strip_defaults(s)$/;"	f
+strip_last_arg	tolua/tolua++-1.0.93/src/bin/lua/function.lua	/^function strip_last_arg(all_args, last_arg) -- strips the default value from the last argument$/;"	f
+strip_pars	tolua/tolua++-1.0.93/src/bin/lua/function.lua	/^function strip_pars(s)$/;"	f
+structs	tolua/tolua++-1.0.93/doc/tolua++.html	/^<A NAME="structs"><\/A>Binding struct fields<\/H3>$/;"	a
+sub	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^inline Point sub (const Point& p1, const Point& p2)$/;"	f	signature:(const Point& p1, const Point& p2)
+tan 	tolua/tolua++-1.0.93/src/bin/lua/compat.lua	/^tan = function (x) return math.tan(math.rad(x)) end$/;"	f
+templates	tolua/tolua++-1.0.93/doc/tolua++.html	/^<h3><a name="templates"><\/a>Class Templates<\/h3>$/;"	a
+tfunction_h	tolua/tolua++-1.0.93/src/tests/tfunction.h	2;"	d
+tolua_Error	tolua/tolua++-1.0.93/include/tolua++.h	/^struct tolua_Error$/;"	s
+tolua_Error	tolua/tolua++-1.0.93/include/tolua++.h	/^typedef struct tolua_Error tolua_Error;$/;"	t	typeref:struct:tolua_Error
+tolua_Error::array	tolua/tolua++-1.0.93/include/tolua++.h	/^	int array;$/;"	m	struct:tolua_Error	access:public
+tolua_Error::index	tolua/tolua++-1.0.93/include/tolua++.h	/^	int index;$/;"	m	struct:tolua_Error	access:public
+tolua_Error::type	tolua/tolua++-1.0.93/include/tolua++.h	/^	const char* type;$/;"	m	struct:tolua_Error	access:public
+tolua_Student_open	mian.cpp	/^extern int tolua_Student_open(lua_State* tolua_S);$/;"	p	file:	signature:(lua_State* tolua_S)
+tolua_array	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_array (lua_State* L,const char* name, lua_CFunction get, lua_CFunction set);$/;"	p	signature:(lua_State* L,const char* name, lua_CFunction get, lua_CFunction set)
+tolua_array	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^TOLUA_API void tolua_array (lua_State* L, const char* name, lua_CFunction get, lua_CFunction set)$/;"	f	signature:(lua_State* L, const char* name, lua_CFunction get, lua_CFunction set)
+tolua_beginmodule	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_beginmodule (lua_State* L, const char* name);$/;"	p	signature:(lua_State* L, const char* name)
+tolua_beginmodule	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^TOLUA_API void tolua_beginmodule (lua_State* L, const char* name)$/;"	f	signature:(lua_State* L, const char* name)
+tolua_bin	tolua/tolua++-1.0.93/custom-5.1.py	/^tolua_bin = 'tolua++5.1'$/;"	v
+tolua_bnd_cast	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^static int tolua_bnd_cast (lua_State* L)$/;"	f	file:	signature:(lua_State* L)
+tolua_bnd_getpeer	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^static int tolua_bnd_getpeer(lua_State* L) {$/;"	f	file:	signature:(lua_State* L)
+tolua_bnd_inherit	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^static int tolua_bnd_inherit (lua_State* L) {$/;"	f	file:	signature:(lua_State* L)
+tolua_bnd_releaseownership	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^static int tolua_bnd_releaseownership (lua_State* L)$/;"	f	file:	signature:(lua_State* L)
+tolua_bnd_setpeer	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^static int tolua_bnd_setpeer(lua_State* L) {$/;"	f	file:	signature:(lua_State* L)
+tolua_bnd_takeownership	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^static int tolua_bnd_takeownership (lua_State* L)$/;"	f	file:	signature:(lua_State* L)
+tolua_bnd_type	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^static int tolua_bnd_type (lua_State* L)$/;"	f	file:	signature:(lua_State* L)
+tolua_cclass	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_cclass (lua_State* L, const char* lname, const char* name, const char* base, lua_CFunction col);$/;"	p	signature:(lua_State* L, const char* lname, const char* name, const char* base, lua_CFunction col)
+tolua_cclass	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^TOLUA_API void tolua_cclass (lua_State* L, const char* lname, const char* name, const char* base, lua_CFunction col)$/;"	f	signature:(lua_State* L, const char* lname, const char* name, const char* base, lua_CFunction col)
+tolua_class	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_class (lua_State* L, const char* name, const char* base);$/;"	p	signature:(lua_State* L, const char* name, const char* base)
+tolua_classevents	tolua/tolua++-1.0.93/src/lib/tolua_event.c	/^TOLUA_API void tolua_classevents (lua_State* L)$/;"	f	signature:(lua_State* L)
+tolua_classevents	tolua/tolua++-1.0.93/src/lib/tolua_event.h	/^TOLUA_API void tolua_classevents (lua_State* L);$/;"	p	signature:(lua_State* L)
+tolua_collect_Point	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_collect_Point (lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_collect_Student	lua_student.cpp	/^static int tolua_collect_Student (lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_constant	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_constant (lua_State* L, const char* name, lua_Number value);$/;"	p	signature:(lua_State* L, const char* name, lua_Number value)
+tolua_constant	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^TOLUA_API void tolua_constant (lua_State* L, const char* name, lua_Number value)$/;"	f	signature:(lua_State* L, const char* name, lua_Number value)
+tolua_copy	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void* tolua_copy (lua_State* L, void* value, unsigned int size);$/;"	p	signature:(lua_State* L, void* value, unsigned int size)
+tolua_copy	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^TOLUA_API void* tolua_copy (lua_State* L, void* value, unsigned int size)$/;"	f	signature:(lua_State* L, void* value, unsigned int size)
+tolua_default_collect	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_default_collect (lua_State* tolua_S);$/;"	p	signature:(lua_State* tolua_S)
+tolua_default_collect	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^TOLUA_API int tolua_default_collect (lua_State* tolua_S)$/;"	f	signature:(lua_State* tolua_S)
+tolua_dobuffer	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_dobuffer(lua_State* L, char* B, unsigned int size, const char* name);$/;"	p	signature:(lua_State* L, char* B, unsigned int size, const char* name)
+tolua_dobuffer	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^TOLUA_API void tolua_dobuffer(lua_State* L, char* B, unsigned int size, const char* name) {$/;"	f	signature:(lua_State* L, char* B, unsigned int size, const char* name)
+tolua_endmodule	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_endmodule (lua_State* L);$/;"	p	signature:(lua_State* L)
+tolua_endmodule	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^TOLUA_API void tolua_endmodule (lua_State* L)$/;"	f	signature:(lua_State* L)
+tolua_error	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_error (lua_State* L, const char* msg, tolua_Error* err);$/;"	p	signature:(lua_State* L, const char* msg, tolua_Error* err)
+tolua_error	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^TOLUA_API void tolua_error (lua_State* L, const char* msg, tolua_Error* err)$/;"	f	signature:(lua_State* L, const char* msg, tolua_Error* err)
+tolua_error 	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function tolua_error (s,f)$/;"	f
+tolua_fast_isa	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_fast_isa(lua_State *L, int mt_indexa, int mt_indexb, int super_index);$/;"	p	signature:(lua_State *L, int mt_indexa, int mt_indexb, int super_index)
+tolua_fast_isa	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^TOLUA_API int tolua_fast_isa(lua_State *L, int mt_indexa, int mt_indexb, int super_index)$/;"	f	signature:(lua_State *L, int mt_indexa, int mt_indexb, int super_index)
+tolua_function	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_function (lua_State* L, const char* name, lua_CFunction func);$/;"	p	signature:(lua_State* L, const char* name, lua_CFunction func)
+tolua_function	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^TOLUA_API void tolua_function (lua_State* L, const char* name, lua_CFunction func)$/;"	f	signature:(lua_State* L, const char* name, lua_CFunction func)
+tolua_get_A_a	tolua/tolua++-1.0.93/src/tests/tmodulebind.c	/^static int tolua_get_A_a(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_A_d	tolua/tolua++-1.0.93/src/tests/tmodulebind.c	/^static int tolua_get_A_d(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_A_d	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_A_d(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_A_f	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_A_f(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_A_i	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_A_i(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_A_n	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_A_n(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_A_s	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_A_s(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_A_v	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_A_v(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_B_a	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_B_a(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_B_b	tolua/tolua++-1.0.93/src/tests/tmodulebind.c	/^static int tolua_get_B_b(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_B_b_ptr	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_B_b_ptr(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_C_c	tolua/tolua++-1.0.93/src/tests/tmodulebind.c	/^static int tolua_get_C_c(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_M_a	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_M_a(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_M_ma	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_M_ma(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_M_mb_ptr	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_M_mb_ptr(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_M_md	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_M_md(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_M_mf	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_M_mf(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_M_mi	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_M_mi(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_M_mn	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_M_mn(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_M_ms	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_M_ms(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_M_mv	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_M_mv(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_Point_x	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_get_Point_x(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_Point_y	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_get_Point_y(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_U_f	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_U_f(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_U_i	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_U_i(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_a	tolua/tolua++-1.0.93/src/tests/tdirectivebind.c	/^static int tolua_get_a(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_a	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_a(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_array	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_get_array(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_b_ptr	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_b_ptr(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_d	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_d(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_f	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_f(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_i	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_i(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_n	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_n(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_parray_ptr	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_get_parray_ptr(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_s	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_s(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_tarray_Array_a	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_get_tarray_Array_a(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_tarray_Array_p	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_get_tarray_Array_p(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_tarray_Array_pp	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_get_tarray_Array_pp(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_tarray_M_ma	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_get_tarray_M_ma(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_tarray_M_mp	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_get_tarray_M_mp(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_tarray_M_mpp	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_get_tarray_M_mpp(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_tarray_a	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_get_tarray_a(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_tarray_p	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_get_tarray_p(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_tarray_pp	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_get_tarray_pp(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_u	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_u(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_get_v	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_get_v(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_getfieldboolean	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_getfieldboolean (lua_State* L, int lo, int index, int def);$/;"	p	signature:(lua_State* L, int lo, int index, int def)
+tolua_getfieldboolean	tolua/tolua++-1.0.93/src/lib/tolua_to.c	/^TOLUA_API int tolua_getfieldboolean (lua_State* L, int lo, int index, int def)$/;"	f	signature:(lua_State* L, int lo, int index, int def)
+tolua_isboolean	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_isboolean (lua_State* L, int lo, int def, tolua_Error* err);$/;"	p	signature:(lua_State* L, int lo, int def, tolua_Error* err)
+tolua_isboolean	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^TOLUA_API int tolua_isboolean (lua_State* L, int lo, int def, tolua_Error* err)$/;"	f	signature:(lua_State* L, int lo, int def, tolua_Error* err)
+tolua_isbooleanarray	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_isbooleanarray$/;"	p	signature:(lua_State* L, int lo, int dim, int def, tolua_Error* err)
+tolua_isbooleanarray	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^TOLUA_API int tolua_isbooleanarray$/;"	f	signature:(lua_State* L, int lo, int dim, int def, tolua_Error* err)
+tolua_iscppstring	tolua/tolua++-1.0.93/include/tolua++.h	30;"	d
+tolua_iscppstringarray	tolua/tolua++-1.0.93/include/tolua++.h	32;"	d
+tolua_ismodulemetatable	tolua/tolua++-1.0.93/src/lib/tolua_event.c	/^TOLUA_API int tolua_ismodulemetatable (lua_State* L)$/;"	f	signature:(lua_State* L)
+tolua_ismodulemetatable	tolua/tolua++-1.0.93/src/lib/tolua_event.h	/^TOLUA_API int tolua_ismodulemetatable (lua_State* L);$/;"	p	signature:(lua_State* L)
+tolua_isnoobj	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_isnoobj (lua_State* L, int lo, tolua_Error* err);$/;"	p	signature:(lua_State* L, int lo, tolua_Error* err)
+tolua_isnoobj	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^TOLUA_API int tolua_isnoobj (lua_State* L, int lo, tolua_Error* err)$/;"	f	signature:(lua_State* L, int lo, tolua_Error* err)
+tolua_isnumber	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_isnumber (lua_State* L, int lo, int def, tolua_Error* err);$/;"	p	signature:(lua_State* L, int lo, int def, tolua_Error* err)
+tolua_isnumber	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^TOLUA_API int tolua_isnumber (lua_State* L, int lo, int def, tolua_Error* err)$/;"	f	signature:(lua_State* L, int lo, int def, tolua_Error* err)
+tolua_isnumberarray	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_isnumberarray$/;"	p	signature:(lua_State* L, int lo, int dim, int def, tolua_Error* err)
+tolua_isnumberarray	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^TOLUA_API int tolua_isnumberarray$/;"	f	signature:(lua_State* L, int lo, int dim, int def, tolua_Error* err)
+tolua_isstring	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_isstring (lua_State* L, int lo, int def, tolua_Error* err);$/;"	p	signature:(lua_State* L, int lo, int def, tolua_Error* err)
+tolua_isstring	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^TOLUA_API int tolua_isstring (lua_State* L, int lo, int def, tolua_Error* err)$/;"	f	signature:(lua_State* L, int lo, int def, tolua_Error* err)
+tolua_isstringarray	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_isstringarray$/;"	p	signature:(lua_State* L, int lo, int dim, int def, tolua_Error* err)
+tolua_isstringarray	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^TOLUA_API int tolua_isstringarray$/;"	f	signature:(lua_State* L, int lo, int dim, int def, tolua_Error* err)
+tolua_istable	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_istable (lua_State* L, int lo, int def, tolua_Error* err);$/;"	p	signature:(lua_State* L, int lo, int def, tolua_Error* err)
+tolua_istable	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^TOLUA_API int tolua_istable (lua_State* L, int lo, int def, tolua_Error* err)$/;"	f	signature:(lua_State* L, int lo, int def, tolua_Error* err)
+tolua_istablearray	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_istablearray$/;"	p	signature:(lua_State* L, int lo, int dim, int def, tolua_Error* err)
+tolua_istablearray	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^TOLUA_API int tolua_istablearray$/;"	f	signature:(lua_State* L, int lo, int dim, int def, tolua_Error* err)
+tolua_isuserdata	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_isuserdata (lua_State* L, int lo, int def, tolua_Error* err);$/;"	p	signature:(lua_State* L, int lo, int def, tolua_Error* err)
+tolua_isuserdata	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^TOLUA_API int tolua_isuserdata (lua_State* L, int lo, int def, tolua_Error* err)$/;"	f	signature:(lua_State* L, int lo, int def, tolua_Error* err)
+tolua_isuserdataarray	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_isuserdataarray$/;"	p	signature:(lua_State* L, int lo, int dim, int def, tolua_Error* err)
+tolua_isuserdataarray	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^TOLUA_API int tolua_isuserdataarray$/;"	f	signature:(lua_State* L, int lo, int dim, int def, tolua_Error* err)
+tolua_isusertable	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_isusertable (lua_State* L, int lo, const char* type, int def, tolua_Error* err);$/;"	p	signature:(lua_State* L, int lo, const char* type, int def, tolua_Error* err)
+tolua_isusertable	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^TOLUA_API int tolua_isusertable (lua_State* L, int lo, const char* type, int def, tolua_Error* err)$/;"	f	signature:(lua_State* L, int lo, const char* type, int def, tolua_Error* err)
+tolua_isusertype	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_isusertype (lua_State* L, int lo, const char* type, int def, tolua_Error* err);$/;"	p	signature:(lua_State* L, int lo, const char* type, int def, tolua_Error* err)
+tolua_isusertype	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^TOLUA_API int tolua_isusertype (lua_State* L, int lo, const char* type, int def, tolua_Error* err)$/;"	f	signature:(lua_State* L, int lo, const char* type, int def, tolua_Error* err)
+tolua_isusertypearray	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_isusertypearray$/;"	p	signature:(lua_State* L, int lo, const char* type, int dim, int def, tolua_Error* err)
+tolua_isusertypearray	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^TOLUA_API int tolua_isusertypearray$/;"	f	signature:(lua_State* L, int lo, const char* type, int dim, int def, tolua_Error* err)
+tolua_isvalue	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_isvalue (lua_State* L, int lo, int def, tolua_Error* err);$/;"	p	signature:(lua_State* L, int lo, int def, tolua_Error* err)
+tolua_isvalue	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^TOLUA_API int tolua_isvalue (lua_State* L, int lo, int def, tolua_Error* err)$/;"	f	signature:(lua_State* L, int lo, int def, tolua_Error* err)
+tolua_isvaluearray	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_isvaluearray$/;"	p	signature:(lua_State* L, int lo, int dim, int def, tolua_Error* err)
+tolua_isvaluearray	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^TOLUA_API int tolua_isvaluearray$/;"	f	signature:(lua_State* L, int lo, int dim, int def, tolua_Error* err)
+tolua_isvaluenil	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_isvaluenil (lua_State* L, int lo, tolua_Error* err);$/;"	p	signature:(lua_State* L, int lo, tolua_Error* err)
+tolua_isvaluenil	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^TOLUA_API int tolua_isvaluenil (lua_State* L, int lo, tolua_Error* err) {$/;"	f	signature:(lua_State* L, int lo, tolua_Error* err)
+tolua_lib	tolua/tolua++-1.0.93/custom-5.1.py	/^tolua_lib = 'tolua++5.1'$/;"	v
+tolua_module	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_module (lua_State* L, const char* name, int hasvar);$/;"	p	signature:(lua_State* L, const char* name, int hasvar)
+tolua_module	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^TOLUA_API void tolua_module (lua_State* L, const char* name, int hasvar)$/;"	f	signature:(lua_State* L, const char* name, int hasvar)
+tolua_moduleevents	tolua/tolua++-1.0.93/src/lib/tolua_event.c	/^TOLUA_API void tolua_moduleevents (lua_State* L)$/;"	f	signature:(lua_State* L)
+tolua_moduleevents	tolua/tolua++-1.0.93/src/lib/tolua_event.h	/^TOLUA_API void tolua_moduleevents (lua_State* L);$/;"	p	signature:(lua_State* L)
+tolua_newmetatable	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^static int tolua_newmetatable (lua_State* L, char* name)$/;"	f	file:	signature:(lua_State* L, char* name)
+tolua_open	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_open (lua_State* L);$/;"	p	signature:(lua_State* L)
+tolua_open	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^TOLUA_API void tolua_open (lua_State* L)$/;"	f	signature:(lua_State* L)
+tolua_outside	tolua/tolua++-1.0.93/include/tolua++.h	175;"	d
+tolua_owned	tolua/tolua++-1.0.93/include/tolua++.h	179;"	d
+tolua_pushboolean	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_pushboolean (lua_State* L, int value);$/;"	p	signature:(lua_State* L, int value)
+tolua_pushboolean	tolua/tolua++-1.0.93/src/lib/tolua_push.c	/^TOLUA_API void tolua_pushboolean (lua_State* L, int value)$/;"	f	signature:(lua_State* L, int value)
+tolua_pushcppstring	tolua/tolua++-1.0.93/include/tolua++.h	29;"	d
+tolua_pushfieldboolean	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_pushfieldboolean (lua_State* L, int lo, int index, int v);$/;"	p	signature:(lua_State* L, int lo, int index, int v)
+tolua_pushfieldboolean	tolua/tolua++-1.0.93/src/lib/tolua_push.c	/^TOLUA_API void tolua_pushfieldboolean (lua_State* L, int lo, int index, int v)$/;"	f	signature:(lua_State* L, int lo, int index, int v)
+tolua_pushfieldcppstring	tolua/tolua++-1.0.93/include/tolua++.h	33;"	d
+tolua_pushfieldnumber	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_pushfieldnumber (lua_State* L, int lo, int index, lua_Number v);$/;"	p	signature:(lua_State* L, int lo, int index, lua_Number v)
+tolua_pushfieldnumber	tolua/tolua++-1.0.93/src/lib/tolua_push.c	/^TOLUA_API void tolua_pushfieldnumber (lua_State* L, int lo, int index, lua_Number v)$/;"	f	signature:(lua_State* L, int lo, int index, lua_Number v)
+tolua_pushfieldstring	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_pushfieldstring (lua_State* L, int lo, int index, const char* v);$/;"	p	signature:(lua_State* L, int lo, int index, const char* v)
+tolua_pushfieldstring	tolua/tolua++-1.0.93/src/lib/tolua_push.c	/^TOLUA_API void tolua_pushfieldstring (lua_State* L, int lo, int index, const char* v)$/;"	f	signature:(lua_State* L, int lo, int index, const char* v)
+tolua_pushfielduserdata	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_pushfielduserdata (lua_State* L, int lo, int index, void* v);$/;"	p	signature:(lua_State* L, int lo, int index, void* v)
+tolua_pushfielduserdata	tolua/tolua++-1.0.93/src/lib/tolua_push.c	/^TOLUA_API void tolua_pushfielduserdata (lua_State* L, int lo, int index, void* v)$/;"	f	signature:(lua_State* L, int lo, int index, void* v)
+tolua_pushfieldusertype	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_pushfieldusertype (lua_State* L, int lo, int index, void* v, const char* type);$/;"	p	signature:(lua_State* L, int lo, int index, void* v, const char* type)
+tolua_pushfieldusertype	tolua/tolua++-1.0.93/src/lib/tolua_push.c	/^TOLUA_API void tolua_pushfieldusertype (lua_State* L, int lo, int index, void* v, const char* type)$/;"	f	signature:(lua_State* L, int lo, int index, void* v, const char* type)
+tolua_pushfieldusertype_and_takeownership	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_pushfieldusertype_and_takeownership (lua_State* L, int lo, int index, void* v, const char* type);$/;"	p	signature:(lua_State* L, int lo, int index, void* v, const char* type)
+tolua_pushfieldusertype_and_takeownership	tolua/tolua++-1.0.93/src/lib/tolua_push.c	/^TOLUA_API void tolua_pushfieldusertype_and_takeownership (lua_State* L, int lo, int index, void* v, const char* type)$/;"	f	signature:(lua_State* L, int lo, int index, void* v, const char* type)
+tolua_pushfieldvalue	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_pushfieldvalue (lua_State* L, int lo, int index, int v);$/;"	p	signature:(lua_State* L, int lo, int index, int v)
+tolua_pushfieldvalue	tolua/tolua++-1.0.93/src/lib/tolua_push.c	/^TOLUA_API void tolua_pushfieldvalue (lua_State* L, int lo, int index, int v)$/;"	f	signature:(lua_State* L, int lo, int index, int v)
+tolua_pushnumber	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_pushnumber (lua_State* L, lua_Number value);$/;"	p	signature:(lua_State* L, lua_Number value)
+tolua_pushnumber	tolua/tolua++-1.0.93/src/lib/tolua_push.c	/^TOLUA_API void tolua_pushnumber (lua_State* L, lua_Number value)$/;"	f	signature:(lua_State* L, lua_Number value)
+tolua_pushstring	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_pushstring (lua_State* L, const char* value);$/;"	p	signature:(lua_State* L, const char* value)
+tolua_pushstring	tolua/tolua++-1.0.93/src/lib/tolua_push.c	/^TOLUA_API void tolua_pushstring (lua_State* L, const char* value)$/;"	f	signature:(lua_State* L, const char* value)
+tolua_pushuserdata	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_pushuserdata (lua_State* L, void* value);$/;"	p	signature:(lua_State* L, void* value)
+tolua_pushuserdata	tolua/tolua++-1.0.93/src/lib/tolua_push.c	/^TOLUA_API void tolua_pushuserdata (lua_State* L, void* value)$/;"	f	signature:(lua_State* L, void* value)
+tolua_pushusertype	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_pushusertype (lua_State* L, void* value, const char* type);$/;"	p	signature:(lua_State* L, void* value, const char* type)
+tolua_pushusertype	tolua/tolua++-1.0.93/src/lib/tolua_push.c	/^TOLUA_API void tolua_pushusertype (lua_State* L, void* value, const char* type)$/;"	f	signature:(lua_State* L, void* value, const char* type)
+tolua_pushusertype_and_takeownership	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_pushusertype_and_takeownership(lua_State* L, void* value, const char* type);$/;"	p	signature:(lua_State* L, void* value, const char* type)
+tolua_pushusertype_and_takeownership	tolua/tolua++-1.0.93/src/lib/tolua_push.c	/^TOLUA_API void tolua_pushusertype_and_takeownership (lua_State* L, void* value, const char* type)$/;"	f	signature:(lua_State* L, void* value, const char* type)
+tolua_pushvalue	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_pushvalue (lua_State* L, int lo);$/;"	p	signature:(lua_State* L, int lo)
+tolua_pushvalue	tolua/tolua++-1.0.93/src/lib/tolua_push.c	/^TOLUA_API void tolua_pushvalue (lua_State* L, int lo)$/;"	f	signature:(lua_State* L, int lo)
+tolua_reg_types	lua_student.cpp	/^static void tolua_reg_types (lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_reg_types	tolua/tolua++-1.0.93/src/bin/toluabind.c	/^static void tolua_reg_types (lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_reg_types	tolua/tolua++-1.0.93/src/bin/toluabind_default.c	/^static void tolua_reg_types (lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_reg_types	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static void tolua_reg_types (lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_reg_types	tolua/tolua++-1.0.93/src/tests/tdirectivebind.c	/^static void tolua_reg_types (lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_reg_types	tolua/tolua++-1.0.93/src/tests/tmodulebind.c	/^static void tolua_reg_types (lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_reg_types	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static void tolua_reg_types (lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_register_gc	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_register_gc (lua_State* L, int lo);$/;"	p	signature:(lua_State* L, int lo)
+tolua_register_gc	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^TOLUA_API int tolua_register_gc (lua_State* L, int lo)$/;"	f	signature:(lua_State* L, int lo)
+tolua_set_A_a	tolua/tolua++-1.0.93/src/tests/tmodulebind.c	/^static int tolua_set_A_a(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_A_d	tolua/tolua++-1.0.93/src/tests/tmodulebind.c	/^static int tolua_set_A_d(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_A_d	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_A_d(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_A_f	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_A_f(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_A_i	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_A_i(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_A_n	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_A_n(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_A_s	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_A_s(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_A_v	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_A_v(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_B_a	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_B_a(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_B_b	tolua/tolua++-1.0.93/src/tests/tmodulebind.c	/^static int tolua_set_B_b(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_B_b_ptr	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_B_b_ptr(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_C_c	tolua/tolua++-1.0.93/src/tests/tmodulebind.c	/^static int tolua_set_C_c(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_M_a	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_M_a(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_M_ma	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_M_ma(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_M_mb_ptr	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_M_mb_ptr(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_M_md	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_M_md(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_M_mf	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_M_mf(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_M_mi	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_M_mi(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_M_mv	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_M_mv(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_Point_x	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_set_Point_x(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_Point_y	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_set_Point_y(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_U_f	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_U_f(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_U_i	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_U_i(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_a	tolua/tolua++-1.0.93/src/tests/tdirectivebind.c	/^static int tolua_set_a(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_a	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_a(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_array	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_set_array(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_b_ptr	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_b_ptr(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_d	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_d(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_f	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_f(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_i	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_i(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_n	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_n(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_parray_ptr	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_set_parray_ptr(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_tarray_Array_a	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_set_tarray_Array_a(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_tarray_Array_p	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_set_tarray_Array_p(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_tarray_Array_pp	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_set_tarray_Array_pp(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_tarray_M_ma	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_set_tarray_M_ma(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_tarray_M_mpp	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_set_tarray_M_mpp(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_tarray_a	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_set_tarray_a(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_tarray_pp	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^static int tolua_set_tarray_pp(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_u	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_u(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_set_v	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^static int tolua_set_v(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_student_Student_Run00	lua_student.cpp	/^static int tolua_student_Student_Run00(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_student_Student_Run200	lua_student.cpp	/^static int tolua_student_Student_Run200(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_student_Student_delete00	lua_student.cpp	/^static int tolua_student_Student_delete00(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_student_Student_new00	lua_student.cpp	/^static int tolua_student_Student_new00(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_student_Student_new00_local	lua_student.cpp	/^static int tolua_student_Student_new00_local(lua_State* tolua_S)$/;"	f	file:	signature:(lua_State* tolua_S)
+tolua_student_open	lua_student.cpp	/^TOLUA_API int  tolua_student_open (lua_State* tolua_S);$/;"	p	file:	signature:(lua_State* tolua_S)
+tolua_student_open	lua_student.cpp	/^TOLUA_API int tolua_student_open (lua_State* tolua_S)$/;"	f	signature:(lua_State* tolua_S)
+tolua_tarray_open	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^TOLUA_API int tolua_tarray_open (lua_State* tolua_S)$/;"	f	signature:(lua_State* tolua_S)
+tolua_tarray_open	tolua/tolua++-1.0.93/src/tests/tarraybind.c	/^TOLUA_API int tolua_tarray_open (lua_State* tolua_S);$/;"	p	file:	signature:(lua_State* tolua_S)
+tolua_tclass_open	tolua/tolua++-1.0.93/src/tests/tclass.cpp	/^	int  tolua_tclass_open (lua_State*);$/;"	p	file:	signature:(lua_State*)
+tolua_tdirective_open	tolua/tolua++-1.0.93/src/tests/tdirectivebind.c	/^TOLUA_API int tolua_tdirective_open (lua_State* tolua_S)$/;"	f	signature:(lua_State* tolua_S)
+tolua_tdirective_open	tolua/tolua++-1.0.93/src/tests/tdirectivebind.c	/^TOLUA_API int tolua_tdirective_open (lua_State* tolua_S);$/;"	p	file:	signature:(lua_State* tolua_S)
+tolua_tmodule_open	tolua/tolua++-1.0.93/src/tests/tmodulebind.c	/^TOLUA_API int tolua_tmodule_open (lua_State* tolua_S)$/;"	f	signature:(lua_State* tolua_S)
+tolua_tmodule_open	tolua/tolua++-1.0.93/src/tests/tmodulebind.c	/^TOLUA_API int tolua_tmodule_open (lua_State* tolua_S);$/;"	p	file:	signature:(lua_State* tolua_S)
+tolua_toboolean	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_toboolean (lua_State* L, int narg, int def);$/;"	p	signature:(lua_State* L, int narg, int def)
+tolua_toboolean	tolua/tolua++-1.0.93/src/lib/tolua_to.c	/^TOLUA_API int tolua_toboolean (lua_State* L, int narg, int def)$/;"	f	signature:(lua_State* L, int narg, int def)
+tolua_tocppstring	tolua/tolua++-1.0.93/include/tolua++.h	/^static inline const char* tolua_tocppstring (lua_State* L, int narg, const char* def) {$/;"	f	signature:(lua_State* L, int narg, const char* def)
+tolua_tocppstring	tolua/tolua++-1.0.93/include/tolua++.h	152;"	d
+tolua_tofieldcppstring	tolua/tolua++-1.0.93/include/tolua++.h	/^static inline const char* tolua_tofieldcppstring (lua_State* L, int lo, int index, const char* def) {$/;"	f	signature:(lua_State* L, int lo, int index, const char* def)
+tolua_tofieldcppstring	tolua/tolua++-1.0.93/include/tolua++.h	153;"	d
+tolua_tofieldnumber	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API lua_Number tolua_tofieldnumber (lua_State* L, int lo, int index, lua_Number def);$/;"	p	signature:(lua_State* L, int lo, int index, lua_Number def)
+tolua_tofieldnumber	tolua/tolua++-1.0.93/src/lib/tolua_to.c	/^TOLUA_API lua_Number tolua_tofieldnumber (lua_State* L, int lo, int index, lua_Number def)$/;"	f	signature:(lua_State* L, int lo, int index, lua_Number def)
+tolua_tofieldstring	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API const char* tolua_tofieldstring (lua_State* L, int lo, int index, const char* def);$/;"	p	signature:(lua_State* L, int lo, int index, const char* def)
+tolua_tofieldstring	tolua/tolua++-1.0.93/src/lib/tolua_to.c	/^TOLUA_API const char* tolua_tofieldstring$/;"	f	signature:(lua_State* L, int lo, int index, const char* def)
+tolua_tofielduserdata	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void* tolua_tofielduserdata (lua_State* L, int lo, int index, void* def);$/;"	p	signature:(lua_State* L, int lo, int index, void* def)
+tolua_tofielduserdata	tolua/tolua++-1.0.93/src/lib/tolua_to.c	/^TOLUA_API void* tolua_tofielduserdata (lua_State* L, int lo, int index, void* def)$/;"	f	signature:(lua_State* L, int lo, int index, void* def)
+tolua_tofieldusertype	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void* tolua_tofieldusertype (lua_State* L, int lo, int index, void* def);$/;"	p	signature:(lua_State* L, int lo, int index, void* def)
+tolua_tofieldusertype	tolua/tolua++-1.0.93/src/lib/tolua_to.c	/^TOLUA_API void* tolua_tofieldusertype (lua_State* L, int lo, int index, void* def)$/;"	f	signature:(lua_State* L, int lo, int index, void* def)
+tolua_tofieldvalue	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_tofieldvalue (lua_State* L, int lo, int index, int def);$/;"	p	signature:(lua_State* L, int lo, int index, int def)
+tolua_tofieldvalue	tolua/tolua++-1.0.93/src/lib/tolua_to.c	/^TOLUA_API int tolua_tofieldvalue (lua_State* L, int lo, int index, int def)$/;"	f	signature:(lua_State* L, int lo, int index, int def)
+tolua_tolua_open	tolua/tolua++-1.0.93/src/bin/toluabind.c	/^TOLUA_API int  tolua_tolua_open (lua_State* tolua_S);$/;"	p	file:	signature:(lua_State* tolua_S)
+tolua_tolua_open	tolua/tolua++-1.0.93/src/bin/toluabind.c	/^TOLUA_API int tolua_tolua_open (lua_State* tolua_S)$/;"	f	signature:(lua_State* tolua_S)
+tolua_tolua_open	tolua/tolua++-1.0.93/src/bin/toluabind.h	/^TOLUA_API int  tolua_tolua_open (lua_State* tolua_S);$/;"	p	signature:(lua_State* tolua_S)
+tolua_tolua_open	tolua/tolua++-1.0.93/src/bin/toluabind_default.c	/^TOLUA_API int  tolua_tolua_open (lua_State* tolua_S);$/;"	p	file:	signature:(lua_State* tolua_S)
+tolua_tolua_open	tolua/tolua++-1.0.93/src/bin/toluabind_default.c	/^TOLUA_API int tolua_tolua_open (lua_State* tolua_S)$/;"	f	signature:(lua_State* tolua_S)
+tolua_tolua_open	tolua/tolua++-1.0.93/src/bin/toluabind_default.h	/^TOLUA_API int  tolua_tolua_open (lua_State* tolua_S);$/;"	p	signature:(lua_State* tolua_S)
+tolua_tonumber	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API lua_Number tolua_tonumber (lua_State* L, int narg, lua_Number def);$/;"	p	signature:(lua_State* L, int narg, lua_Number def)
+tolua_tonumber	tolua/tolua++-1.0.93/src/lib/tolua_to.c	/^TOLUA_API lua_Number tolua_tonumber (lua_State* L, int narg, lua_Number def)$/;"	f	signature:(lua_State* L, int narg, lua_Number def)
+tolua_tostring	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API const char* tolua_tostring (lua_State* L, int narg, const char* def);$/;"	p	signature:(lua_State* L, int narg, const char* def)
+tolua_tostring	tolua/tolua++-1.0.93/src/lib/tolua_to.c	/^TOLUA_API const char* tolua_tostring (lua_State* L, int narg, const char* def)$/;"	f	signature:(lua_State* L, int narg, const char* def)
+tolua_touserdata	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void* tolua_touserdata (lua_State* L, int narg, void* def);$/;"	p	signature:(lua_State* L, int narg, void* def)
+tolua_touserdata	tolua/tolua++-1.0.93/src/lib/tolua_to.c	/^TOLUA_API void* tolua_touserdata (lua_State* L, int narg, void* def)$/;"	f	signature:(lua_State* L, int narg, void* def)
+tolua_tousertype	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void* tolua_tousertype (lua_State* L, int narg, void* def);$/;"	p	signature:(lua_State* L, int narg, void* def)
+tolua_tousertype	tolua/tolua++-1.0.93/src/lib/tolua_to.c	/^TOLUA_API void* tolua_tousertype (lua_State* L, int narg, void* def)$/;"	f	signature:(lua_State* L, int narg, void* def)
+tolua_tovalue	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API int tolua_tovalue (lua_State* L, int narg, int def);$/;"	p	signature:(lua_State* L, int narg, int def)
+tolua_tovalue	tolua/tolua++-1.0.93/src/lib/tolua_to.c	/^TOLUA_API int tolua_tovalue (lua_State* L, int narg, int def)$/;"	f	signature:(lua_State* L, int narg, int def)
+tolua_tvariable_open	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^TOLUA_API int tolua_tvariable_open (lua_State* tolua_S)$/;"	f	signature:(lua_State* tolua_S)
+tolua_tvariable_open	tolua/tolua++-1.0.93/src/tests/tvariablebind.c	/^TOLUA_API int tolua_tvariable_open (lua_State* tolua_S);$/;"	p	file:	signature:(lua_State* tolua_S)
+tolua_typename	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API const char* tolua_typename (lua_State* L, int lo);$/;"	p	signature:(lua_State* L, int lo)
+tolua_typename	tolua/tolua++-1.0.93/src/lib/tolua_is.c	/^TOLUA_API const char* tolua_typename (lua_State* L, int lo)$/;"	f	signature:(lua_State* L, int lo)
+tolua_usertype	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_usertype (lua_State* L, const char* type);$/;"	p	signature:(lua_State* L, const char* type)
+tolua_usertype	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^TOLUA_API void tolua_usertype (lua_State* L, const char* type)$/;"	f	signature:(lua_State* L, const char* type)
+tolua_variable	tolua/tolua++-1.0.93/include/tolua++.h	/^TOLUA_API void tolua_variable (lua_State* L, const char* name, lua_CFunction get, lua_CFunction set);$/;"	p	signature:(lua_State* L, const char* name, lua_CFunction get, lua_CFunction set)
+tolua_variable	tolua/tolua++-1.0.93/src/lib/tolua_map.c	/^TOLUA_API void tolua_variable (lua_State* L, const char* name, lua_CFunction get, lua_CFunction set)$/;"	f	signature:(lua_State* L, const char* name, lua_CFunction get, lua_CFunction set)
+type	tolua/tolua++-1.0.93/include/tolua++.h	/^	const char* type;$/;"	m	struct:tolua_Error	access:public
+type_renaming	tolua/tolua++-1.0.93/doc/tolua++.html	/^<a name="type_renaming"><\/a><h3>Renaming Types<\/h3>$/;"	a
+typevar	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function typevar(type)$/;"	f
+u	tolua/tolua++-1.0.93/src/tests/tvariable.c	/^U u;$/;"	v
+unmask 	tolua/tolua++-1.0.93/src/bin/lua/clean.lua	/^function unmask (s)$/;"	f
+using	tolua/tolua++-1.0.93/doc/tolua++.html	/^<A NAME="using"><\/A>How to use toLua<\/H3>$/;"	a
+utilities	tolua/tolua++-1.0.93/doc/tolua++.html	/^<A NAME="utilities"><\/A>Exported utility functions<\/H3>$/;"	a
+v	tolua/tolua++-1.0.93/src/tests/tvariable.c	/^void* v = (void*)1;$/;"	v
+v	tolua/tolua++-1.0.93/src/tests/tvariable.h	/^	void* v;$/;"	m	struct:A	access:public
+variables	tolua/tolua++-1.0.93/doc/tolua++.html	/^<A NAME="variables"><\/A>Binding external variables<\/H3>$/;"	a
+version	tolua/tolua++-1.0.93/src/bin/tolua.c	/^static void version (void)$/;"	f	file:	signature:(void)
+warning 	tolua/tolua++-1.0.93/src/bin/lua/basic.lua	/^function warning (msg)$/;"	f
+write 	tolua/tolua++-1.0.93/src/bin/lua/compat.lua	/^function write (...)$/;"	f
+writeto 	tolua/tolua++-1.0.93/src/bin/lua/compat.lua	/^function writeto (name)$/;"	f
+x	tolua/tolua++-1.0.93/src/tests/tarray.h	/^	float x;$/;"	m	struct:Point	access:public
+y	tolua/tolua++-1.0.93/src/tests/tarray.h	/^	float y;$/;"	m	struct:Point	access:public
+~ColorPoint	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^ virtual ~ColorPoint () { }$/;"	f	class:ColorPoint	access:public	signature:()
+~Point	tolua/tolua++-1.0.93/src/tests/tfunction.h	/^	virtual ~Point ()$/;"	f	class:Point	access:public	signature:()
+~Student	student.cpp	/^Student::~Student()$/;"	f	class:Student	signature:()
+~Student	student.h	/^	~Student();$/;"	p	class:Student	access:public	signature:()
+~Tst_A	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	virtual ~Tst_A() {};$/;"	f	class:Test::Tst_A	access:public	signature:()
+~Tst_AA	tolua/tolua++-1.0.93/src/tests/tclass.h	/^		~Tst_AA () { }$/;"	f	class:Test::Tst_A::Tst_AA	access:public	signature:()
+~Tst_B	tolua/tolua++-1.0.93/src/tests/tclass.h	/^	virtual ~Tst_B() {};$/;"	f	class:Test::Tst_B	access:public	signature:()
+~Tst_BB	tolua/tolua++-1.0.93/src/tests/tclass.h	/^		~Tst_BB () {}$/;"	f	class:Test::Tst_A::Tst_BB	access:public	signature:()
+~Tst_C	tolua/tolua++-1.0.93/src/tests/tclass.h	/^ virtual ~Tst_C () { printf("deleting C: %d\\n",i); }$/;"	f	class:Test::Tst_C	access:public	signature:()

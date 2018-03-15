@@ -1,0 +1,8 @@
+2018-02-26 09:57:40 [GW_1][INFO]:[gate_main.cpp:27]==>[pid = 18413 tid =18413]
+2018-02-26 09:57:40 [GW_1][DEBUG]:[gate_login_client.cpp:40]==>onConnection 127.0.0.1:45030 -> 127.0.0.1:3000
+2018-02-26 09:57:40 [GW_1][INFO]:[gate_login_client.cpp:79]==>Verify Return Src IP:127.0.0.1:3000
+2018-02-26 09:57:41 [GW_1][INFO]:[gate_server.cpp:206]==>onVerify 192.168.81.128:40476 -> 192.168.81.128:3201
+2018-02-26 09:57:41 [GW_1][INFO]:[gate_server.cpp:175]==>current pid:18413 status:connect
+2018-02-26 09:58:16 [GW_1][INFO]:[gate_server.cpp:206]==>onVerify 192.168.81.128:40484 -> 192.168.81.128:3201
+2018-02-26 09:58:16 [GW_1][INFO]:[gate_server.cpp:175]==>current pid:18413 status:connect
+2018-02-26 09:58:23 [GW_1][INFO]:[gate_server.cpp:175]==>current pid:18413 status:disconnect

@@ -1,0 +1,13 @@
+2017-12-09 16:04:26 [GW_2][INFO]:[login_client.cpp:54]==>onDisconnect 127.0.0.1:43352 -> 127.0.0.1:3000
+2017-12-09 16:04:26 [GW_2][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GW_2] - Reconnecting to 127.0.0.1:3000
+2017-12-09 16:04:26 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x12cb2e0 stop looping
+2017-12-09 16:04:26 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f56c5fdc910 stop looping
+2017-12-09 16:04:26 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f56c57db910 stop looping
+2017-12-09 16:04:26 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f56c4fda910 stop looping
+2017-12-09 16:04:26 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f56b7fee910 stop looping
+2017-12-09 16:04:26 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f56b77ed910 stop looping
+2017-12-09 16:04:26 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f56b6fec910 stop looping
+2017-12-09 16:04:26 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f56b67eb910 stop looping
+2017-12-09 16:04:26 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f56b5fea910 stop looping
+2017-12-09 16:04:26 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f56b57e9910 stop looping
+2017-12-09 16:04:26 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f56b4fe8910 stop looping

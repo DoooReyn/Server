@@ -1,0 +1,34 @@
+2018-01-17 16:23:20 [GS_1][INFO]:[game_main.cpp:28]==>[pid = 5605 tid =5605]
+2018-01-17 16:23:20 [GS_1][DEBUG]:[game_server.cpp:145]==>onConnection 192.168.81.128:33618 -> 192.168.81.128:3201
+2018-01-17 16:23:20 [GS_1][DEBUG]:[game_server.cpp:145]==>onConnection 192.168.81.128:45768 -> 192.168.81.128:3202
+2018-01-17 16:23:20 [GS_1][DEBUG]:[game_login_client.cpp:34]==>tid:5605 onConnection 127.0.0.1:46048 -> 127.0.0.1:3000
+2018-01-17 16:23:20 [GS_1][INFO]:[game_gate_client.cpp:144]==>Verify Return Src IP:192.168.81.128:3202
+2018-01-17 16:23:20 [GS_1][INFO]:[game_gate_client.cpp:144]==>Verify Return Src IP:192.168.81.128:3201
+2018-01-17 16:23:20 [GS_1][INFO]:[game_gate_client.cpp:144]==>Verify Return Src IP:127.0.0.1:3000
+2018-01-17 16:24:30 [GS_1][DEBUG]:[game_login_client.cpp:48]==>onDisconnect 127.0.0.1:46048 -> 127.0.0.1:3000
+2018-01-17 16:24:30 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 127.0.0.1:3000
+2018-01-17 16:24:30 [GS_1][WARN]:[channel.cpp:113]==>fd=10 Channel::HandleEvent() POLLHUP
+2018-01-17 16:24:30 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2018-01-17 16:24:30 [GS_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2018-01-17 16:24:30 [GS_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:10 Retry connecting to 127.0.0.1:3000 in 500 milliseconds. 
+2018-01-17 16:24:30 [GS_1][DEBUG]:[game_server.cpp:168]==>onDisconnect 192.168.81.128:3201 -> 192.168.81.128:33618 is 0 Pid:5605
+2018-01-17 16:24:30 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3201
+2018-01-17 16:24:30 [GS_1][DEBUG]:[game_server.cpp:168]==>onDisconnect 192.168.81.128:3202 -> 192.168.81.128:45768 is 0 Pid:5605
+2018-01-17 16:24:30 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3202
+2018-01-17 16:24:30 [GS_1][WARN]:[channel.cpp:113]==>fd=9 Channel::HandleEvent() POLLHUP
+2018-01-17 16:24:30 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2018-01-17 16:24:30 [GS_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2018-01-17 16:24:30 [GS_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:9 Retry connecting to 192.168.81.128:3201 in 500 milliseconds. 
+2018-01-17 16:24:30 [GS_1][WARN]:[channel.cpp:113]==>fd=10 Channel::HandleEvent() POLLHUP
+2018-01-17 16:24:30 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2018-01-17 16:24:30 [GS_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2018-01-17 16:24:30 [GS_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:10 Retry connecting to 192.168.81.128:3202 in 500 milliseconds. 
+2018-01-17 16:24:30 [GS_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0xfe8840 stop looping
+2018-01-17 16:24:31 [GS_1][INFO]:[game_main.cpp:28]==>[pid = 5769 tid =5769]
+2018-01-17 16:24:31 [GS_1][DEBUG]:[game_server.cpp:145]==>onConnection 192.168.81.128:33642 -> 192.168.81.128:3201
+2018-01-17 16:24:31 [GS_1][DEBUG]:[game_server.cpp:145]==>onConnection 192.168.81.128:45792 -> 192.168.81.128:3202
+2018-01-17 16:24:31 [GS_1][DEBUG]:[game_login_client.cpp:34]==>tid:5769 onConnection 127.0.0.1:46072 -> 127.0.0.1:3000
+2018-01-17 16:24:32 [GS_1][INFO]:[game_gate_client.cpp:144]==>Verify Return Src IP:192.168.81.128:3202
+2018-01-17 16:24:32 [GS_1][INFO]:[game_gate_client.cpp:144]==>Verify Return Src IP:192.168.81.128:3201
+2018-01-17 16:24:32 [GS_1][INFO]:[game_gate_client.cpp:144]==>Verify Return Src IP:127.0.0.1:3000
+2018-01-17 16:32:29 [GS_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0xcb1840 stop looping

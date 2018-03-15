@@ -1,0 +1,59 @@
+2018-01-20 15:00:02 [GS_1][DEBUG]:[game_gate_client.cpp:89]==>5678 message:我们 Test:0
+2018-01-20 15:00:02 [GS_1][DEBUG]:[game_gate_client.cpp:64]==>1234 message:WL Test:0
+2018-01-20 15:00:03 [GS_1][DEBUG]:[game_gate_client.cpp:89]==>5678 message:我们 Test:99999
+2018-01-20 15:00:03 [GS_1][DEBUG]:[game_gate_client.cpp:64]==>1234 message:WL Test:99999
+2018-01-20 15:00:03 [GS_1][WARN]:[game_gate_client.cpp:78]==>TestMessage count:1 average:570623.000000
+2018-01-20 15:00:11 [GS_1][DEBUG]:[game_gate_client.cpp:89]==>5678 message:我们 Test:0
+2018-01-20 15:00:11 [GS_1][DEBUG]:[game_gate_client.cpp:64]==>1234 message:WL Test:0
+2018-01-20 15:00:12 [GS_1][DEBUG]:[game_gate_client.cpp:89]==>5678 message:我们 Test:99999
+2018-01-20 15:00:12 [GS_1][DEBUG]:[game_gate_client.cpp:64]==>1234 message:WL Test:99999
+2018-01-20 15:00:12 [GS_1][WARN]:[game_gate_client.cpp:78]==>TestMessage count:2 average:573568.000000
+2018-01-20 15:00:12 [GS_1][DEBUG]:[game_gate_client.cpp:89]==>5678 message:我们 Test:0
+2018-01-20 15:00:12 [GS_1][DEBUG]:[game_gate_client.cpp:64]==>1234 message:WL Test:0
+2018-01-20 15:00:12 [GS_1][DEBUG]:[game_gate_client.cpp:89]==>5678 message:我们 Test:99999
+2018-01-20 15:00:12 [GS_1][DEBUG]:[game_gate_client.cpp:64]==>1234 message:WL Test:99999
+2018-01-20 15:00:12 [GS_1][WARN]:[game_gate_client.cpp:78]==>TestMessage count:3 average:548957.666667
+2018-01-20 15:00:12 [GS_1][DEBUG]:[game_gate_client.cpp:89]==>5678 message:我们 Test:0
+2018-01-20 15:00:12 [GS_1][DEBUG]:[game_gate_client.cpp:64]==>1234 message:WL Test:0
+2018-01-20 15:00:13 [GS_1][DEBUG]:[game_gate_client.cpp:89]==>5678 message:我们 Test:99999
+2018-01-20 15:00:13 [GS_1][DEBUG]:[game_gate_client.cpp:64]==>1234 message:WL Test:99999
+2018-01-20 15:00:13 [GS_1][WARN]:[game_gate_client.cpp:78]==>TestMessage count:4 average:556191.000000
+2018-01-20 15:00:13 [GS_1][DEBUG]:[game_gate_client.cpp:89]==>5678 message:我们 Test:0
+2018-01-20 15:00:13 [GS_1][DEBUG]:[game_gate_client.cpp:64]==>1234 message:WL Test:0
+2018-01-20 15:00:13 [GS_1][DEBUG]:[game_gate_client.cpp:89]==>5678 message:我们 Test:99999
+2018-01-20 15:00:13 [GS_1][DEBUG]:[game_gate_client.cpp:64]==>1234 message:WL Test:99999
+2018-01-20 15:00:13 [GS_1][WARN]:[game_gate_client.cpp:78]==>TestMessage count:5 average:561828.200000
+2018-01-20 15:00:13 [GS_1][DEBUG]:[game_gate_client.cpp:89]==>5678 message:我们 Test:0
+2018-01-20 15:00:13 [GS_1][DEBUG]:[game_gate_client.cpp:64]==>1234 message:WL Test:0
+2018-01-20 15:00:14 [GS_1][DEBUG]:[game_gate_client.cpp:89]==>5678 message:我们 Test:99999
+2018-01-20 15:00:14 [GS_1][DEBUG]:[game_gate_client.cpp:64]==>1234 message:WL Test:99999
+2018-01-20 15:00:14 [GS_1][WARN]:[game_gate_client.cpp:78]==>TestMessage count:6 average:548703.000000
+2018-01-20 15:00:14 [GS_1][DEBUG]:[game_gate_client.cpp:89]==>5678 message:我们 Test:0
+2018-01-20 15:00:14 [GS_1][DEBUG]:[game_gate_client.cpp:64]==>1234 message:WL Test:0
+2018-01-20 15:00:15 [GS_1][DEBUG]:[game_gate_client.cpp:89]==>5678 message:我们 Test:99999
+2018-01-20 15:00:15 [GS_1][DEBUG]:[game_gate_client.cpp:64]==>1234 message:WL Test:99999
+2018-01-20 15:00:15 [GS_1][WARN]:[game_gate_client.cpp:78]==>TestMessage count:7 average:549907.000000
+2018-01-20 15:00:15 [GS_1][DEBUG]:[game_gate_client.cpp:89]==>5678 message:我们 Test:0
+2018-01-20 15:00:15 [GS_1][DEBUG]:[game_gate_client.cpp:64]==>1234 message:WL Test:0
+2018-01-20 15:00:15 [GS_1][DEBUG]:[game_gate_client.cpp:89]==>5678 message:我们 Test:99999
+2018-01-20 15:00:15 [GS_1][DEBUG]:[game_gate_client.cpp:64]==>1234 message:WL Test:99999
+2018-01-20 15:00:15 [GS_1][WARN]:[game_gate_client.cpp:78]==>TestMessage count:8 average:544188.000000
+2018-01-20 15:00:15 [GS_1][DEBUG]:[game_gate_client.cpp:89]==>5678 message:我们 Test:0
+2018-01-20 15:00:15 [GS_1][DEBUG]:[game_gate_client.cpp:64]==>1234 message:WL Test:0
+2018-01-20 15:00:16 [GS_1][DEBUG]:[game_gate_client.cpp:89]==>5678 message:我们 Test:99999
+2018-01-20 15:00:16 [GS_1][DEBUG]:[game_gate_client.cpp:64]==>1234 message:WL Test:99999
+2018-01-20 15:00:16 [GS_1][WARN]:[game_gate_client.cpp:78]==>TestMessage count:9 average:542903.000000
+2018-01-20 15:00:16 [GS_1][DEBUG]:[game_gate_client.cpp:89]==>5678 message:我们 Test:0
+2018-01-20 15:00:16 [GS_1][DEBUG]:[game_gate_client.cpp:64]==>1234 message:WL Test:0
+2018-01-20 15:00:16 [GS_1][DEBUG]:[game_gate_client.cpp:89]==>5678 message:我们 Test:99999
+2018-01-20 15:00:16 [GS_1][DEBUG]:[game_gate_client.cpp:64]==>1234 message:WL Test:99999
+2018-01-20 15:00:16 [GS_1][WARN]:[game_gate_client.cpp:78]==>TestMessage count:10 average:541092.100000
+2018-01-20 15:00:29 [GS_1][DEBUG]:[game_gate_client.cpp:64]==>1234 message:WL Test:99999
+2018-01-20 15:00:29 [GS_1][WARN]:[game_gate_client.cpp:78]==>TestMessage count:11 average:1723497.000000
+2018-01-20 15:00:50 [GS_1][DEBUG]:[game_login_client.cpp:50]==>onDisconnect 127.0.0.1:59206 -> 127.0.0.1:3000
+2018-01-20 15:00:50 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 127.0.0.1:3000
+2018-01-20 15:00:50 [GS_1][WARN]:[channel.cpp:128]==>fd=10 Channel::HandleEvent() POLLHUP
+2018-01-20 15:00:50 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2018-01-20 15:00:50 [GS_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2018-01-20 15:00:50 [GS_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:10 Retry connecting to 127.0.0.1:3000 in 500 milliseconds. 
+2018-01-20 15:00:50 [GS_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x1d57280 stop looping

@@ -1,0 +1,26 @@
+2017-11-04 16:08:15 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x1d3b2e0 stop looping
+2017-11-04 16:08:15 [GW_2][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[GW_2] - connector 0x1d3a440
+2017-11-04 16:08:15 [GW_2][DEBUG]:[connector.cpp:23]==>Connector dctor[0x1d3a440]
+2017-11-04 16:08:15 [GW_2][DEBUG]:[tcp_server.cpp:25]==>TcpServer::~TcpServer [ GW_2 ] destructing
+2017-11-04 16:08:15 [GW_2][DEBUG]:[gate_server.cpp:159]==>onDisconnect 192.168.81.128:56120 -> 192.168.81.128:3202 is 0
+2017-11-04 16:08:15 [GW_2][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GW_2-0.0.0.0:3202#1] at 0x7f2dfd3fc010 fd=40 state=kDisconnected
+2017-11-04 16:08:15 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f2dfbcce910 stop looping
+2017-11-04 16:08:15 [GW_2][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f2dfbcce910 of thread : 12194 destructs in thread : 12194
+2017-11-04 16:08:15 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f2dfb4cd910 stop looping
+2017-11-04 16:08:15 [GW_2][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f2dfb4cd910 of thread : 12195 destructs in thread : 12195
+2017-11-04 16:08:15 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f2dfaccc910 stop looping
+2017-11-04 16:08:15 [GW_2][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f2dfaccc910 of thread : 12196 destructs in thread : 12196
+2017-11-04 16:08:15 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f2dfa4cb910 stop looping
+2017-11-04 16:08:15 [GW_2][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f2dfa4cb910 of thread : 12197 destructs in thread : 12197
+2017-11-04 16:08:15 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f2df9cca910 stop looping
+2017-11-04 16:08:15 [GW_2][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f2df9cca910 of thread : 12198 destructs in thread : 12198
+2017-11-04 16:08:15 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f2df94c9910 stop looping
+2017-11-04 16:08:15 [GW_2][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f2df94c9910 of thread : 12199 destructs in thread : 12199
+2017-11-04 16:08:15 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f2df8cc8910 stop looping
+2017-11-04 16:08:15 [GW_2][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f2df8cc8910 of thread : 12200 destructs in thread : 12200
+2017-11-04 16:08:15 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f2ddbfee910 stop looping
+2017-11-04 16:08:15 [GW_2][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f2ddbfee910 of thread : 12201 destructs in thread : 12201
+2017-11-04 16:08:15 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f2ddb7ed910 stop looping
+2017-11-04 16:08:15 [GW_2][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f2ddb7ed910 of thread : 12202 destructs in thread : 12202
+2017-11-04 16:08:15 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f2ddafec910 stop looping
+2017-11-04 16:08:15 [GW_2][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f2ddafec910 of thread : 12203 destructs in thread : 12203

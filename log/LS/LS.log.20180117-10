@@ -1,0 +1,37 @@
+2018-01-17 10:40:03 [LS][INFO]:[login_main.cpp:17]==>[pid = 2259 tid =2259]
+2018-01-17 10:40:03 [LS][DEBUG]:[account_client.cpp:49]==>tid:2259 onConnection 127.0.0.1:43244 -> 127.0.0.1:3100
+2018-01-17 10:40:03 [LS][INFO]:[login_server.cpp:236]==>Verify Return Src IP:127.0.0.1:3100
+2018-01-17 10:40:03 [LS][INFO]:[login_server.cpp:200]==>onVerify 127.0.0.1:49812 -> 127.0.0.1:3000
+2018-01-17 10:40:03 [LS][INFO]:[login_server.cpp:172]==>current pid:2259 status:connect
+2018-01-17 10:40:03 [LS][INFO]:[login_server.cpp:200]==>onVerify 127.0.0.1:49814 -> 127.0.0.1:3000
+2018-01-17 10:40:03 [LS][INFO]:[login_server.cpp:172]==>current pid:2259 status:connect
+2018-01-17 10:40:03 [LS][DEBUG]:[gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2018-01-17 10:40:03 [LS][DEBUG]:[gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2018-01-17 10:40:10 [LS][INFO]:[login_server.cpp:200]==>onVerify 127.0.0.1:49822 -> 127.0.0.1:3000
+2018-01-17 10:40:10 [LS][INFO]:[login_server.cpp:172]==>current pid:2259 status:connect
+2018-01-17 10:40:11 [LS][DEBUG]:[login_server.cpp:260]==>ParseZoneInfoRequest accid:13 best gateid:1
+2018-01-17 10:40:11 [LS][INFO]:[login_server.cpp:172]==>current pid:2259 status:disconnect
+2018-01-17 10:54:59 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0xcdae78 stop looping
+2018-01-17 10:54:59 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f2a85926910 stop looping
+2018-01-17 10:54:59 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f2a85125910 stop looping
+2018-01-17 10:54:59 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f2a84924910 stop looping
+2018-01-17 10:54:59 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f2a77fee910 stop looping
+2018-01-17 10:54:59 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f2a777ed910 stop looping
+2018-01-17 10:54:59 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f2a76fec910 stop looping
+2018-01-17 10:54:59 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f2a767eb910 stop looping
+2018-01-17 10:54:59 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f2a75fea910 stop looping
+2018-01-17 10:54:59 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f2a757e9910 stop looping
+2018-01-17 10:54:59 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f2a74fe8910 stop looping
+2018-01-17 10:54:59 [LS][INFO]:[login_main.cpp:17]==>[pid = 3098 tid =3098]
+2018-01-17 10:54:59 [LS][DEBUG]:[account_client.cpp:49]==>tid:3098 onConnection 127.0.0.1:43298 -> 127.0.0.1:3100
+2018-01-17 10:54:59 [LS][INFO]:[login_server.cpp:236]==>Verify Return Src IP:127.0.0.1:3100
+2018-01-17 10:55:00 [LS][INFO]:[login_server.cpp:200]==>onVerify 127.0.0.1:49866 -> 127.0.0.1:3000
+2018-01-17 10:55:00 [LS][INFO]:[login_server.cpp:172]==>current pid:3098 status:connect
+2018-01-17 10:55:00 [LS][INFO]:[login_server.cpp:200]==>onVerify 127.0.0.1:49868 -> 127.0.0.1:3000
+2018-01-17 10:55:00 [LS][INFO]:[login_server.cpp:172]==>current pid:3098 status:connect
+2018-01-17 10:55:00 [LS][DEBUG]:[gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2018-01-17 10:55:00 [LS][DEBUG]:[gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2018-01-17 10:55:06 [LS][INFO]:[login_server.cpp:200]==>onVerify 127.0.0.1:49876 -> 127.0.0.1:3000
+2018-01-17 10:55:06 [LS][INFO]:[login_server.cpp:172]==>current pid:3098 status:connect
+2018-01-17 10:55:06 [LS][DEBUG]:[login_server.cpp:260]==>ParseZoneInfoRequest accid:13 best gateid:1
+2018-01-17 10:55:06 [LS][INFO]:[login_server.cpp:172]==>current pid:3098 status:disconnect

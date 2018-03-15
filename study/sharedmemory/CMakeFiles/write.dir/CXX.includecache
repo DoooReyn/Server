@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/oschina/Server/study/sharedmemory/share_memory.cpp
+share_memory.h
+/root/oschina/Server/study/sharedmemory/share_memory.h
+
+/root/oschina/Server/study/sharedmemory/share_memory.h
+iostream
+-
+set
+-
+sys/mman.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+stdio.h
+-
+string.h
+-
+unistd.h
+-
+sys/types.h
+-
+errno.h
+-
+vector
+-
+map
+-
+
+/root/oschina/Server/study/sharedmemory/write.cpp
+share_memory.h
+/root/oschina/Server/study/sharedmemory/share_memory.h
+unistd.h
+-
+

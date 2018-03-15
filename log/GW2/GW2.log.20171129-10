@@ -1,0 +1,55 @@
+2017-11-29 10:11:00 [GW_2][DEBUG]:[gate_main.cpp:27]==>pid = 45114, tid =45114 ServerId:2
+2017-11-29 10:11:00 [GW_2][INFO]:[login_client.cpp:33]==>LoginServer IP:127.0.0.1 Port:3000
+2017-11-29 10:11:00 [GW_2][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[GW_2] - connecting to 127.0.0.1:3000
+2017-11-29 10:11:00 [GW_2][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-29 10:11:00 [GW_2][INFO]:[login_client.cpp:40]==>onConnection 127.0.0.1:59706 -> 127.0.0.1:3000 is 1
+2017-11-29 10:11:00 [GW_2][INFO]:[login_client.cpp:77]==>onVerify Return
+2017-11-29 10:11:00 [GW_2][INFO]:[tcp_server.cpp:72]==>new connect [GW_2-0.0.0.0:3202#1] form 192.168.81.128:49480
+2017-11-29 10:11:00 [GW_2][DEBUG]:[gate_server.cpp:166]==>onConnection 192.168.81.128:49480 -> 192.168.81.128:3202 is 1
+2017-11-29 10:11:00 [GW_2][DEBUG]:[gate_server.cpp:210]==>onVerify 192.168.81.128:49480 -> 192.168.81.128:3202 is 1 cid:21474836481 Pid:45118
+2017-11-29 10:11:00 [GW_2][DEBUG]:[gate_server.cpp:179]==>current pid:45114 status:connect
+2017-11-29 10:24:37 [GW_2][INFO]:[login_client.cpp:54]==>onDisconnect 127.0.0.1:59706 -> 127.0.0.1:3000 is 0
+2017-11-29 10:24:37 [GW_2][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GW_2] - Reconnecting to 127.0.0.1:3000
+2017-11-29 10:24:37 [GW_2][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-29 10:24:37 [GW_2][WARN]:[channel.cpp:113]==>fd=41 Channel::HandleEvent() POLLHUP
+2017-11-29 10:24:37 [GW_2][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-29 10:24:37 [GW_2][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-11-29 10:24:37 [GW_2][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:41 Retry connecting to 127.0.0.1:3000 in 500 milliseconds. 
+2017-11-29 10:24:37 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x235d2e0 stop looping
+2017-11-29 10:24:37 [GW_2][DEBUG]:[tcp_server.cpp:25]==>TcpServer::~TcpServer [ GW_2 ] destructing
+2017-11-29 10:24:37 [GW_2][DEBUG]:[gate_server.cpp:171]==>onDisconnect 192.168.81.128:49480 -> 192.168.81.128:3202 is 0
+2017-11-29 10:24:37 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7ffbc2131910 stop looping
+2017-11-29 10:24:37 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7ffbc1930910 stop looping
+2017-11-29 10:24:37 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7ffbc112f910 stop looping
+2017-11-29 10:24:37 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7ffbc092e910 stop looping
+2017-11-29 10:24:37 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7ffbb3fee910 stop looping
+2017-11-29 10:24:37 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7ffbb37ed910 stop looping
+2017-11-29 10:24:37 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7ffbb2fec910 stop looping
+2017-11-29 10:24:37 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7ffbb27eb910 stop looping
+2017-11-29 10:24:37 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7ffbb1fea910 stop looping
+2017-11-29 10:24:37 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7ffbb17e9910 stop looping
+2017-11-29 10:24:38 [GW_2][DEBUG]:[gate_main.cpp:27]==>pid = 45395, tid =45395 ServerId:2
+2017-11-29 10:24:38 [GW_2][INFO]:[login_client.cpp:33]==>LoginServer IP:127.0.0.1 Port:3000
+2017-11-29 10:24:38 [GW_2][INFO]:[login_client.cpp:40]==>onConnection 127.0.0.1:59730 -> 127.0.0.1:3000 is 1
+2017-11-29 10:24:38 [GW_2][INFO]:[login_client.cpp:77]==>onVerify Return
+2017-11-29 10:24:38 [GW_2][DEBUG]:[gate_server.cpp:166]==>onConnection 192.168.81.128:49504 -> 192.168.81.128:3202 is 1
+2017-11-29 10:24:38 [GW_2][DEBUG]:[gate_server.cpp:210]==>onVerify 192.168.81.128:49504 -> 192.168.81.128:3202 is 1 cid:21474836481 Pid:45399
+2017-11-29 10:24:38 [GW_2][DEBUG]:[gate_server.cpp:179]==>current pid:45395 status:connect
+2017-11-29 10:30:19 [GW_2][INFO]:[login_client.cpp:54]==>onDisconnect 127.0.0.1:59730 -> 127.0.0.1:3000 is 0
+2017-11-29 10:30:19 [GW_2][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GW_2] - Reconnecting to 127.0.0.1:3000
+2017-11-29 10:30:19 [GW_2][WARN]:[channel.cpp:113]==>fd=41 Channel::HandleEvent() POLLHUP
+2017-11-29 10:30:19 [GW_2][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-29 10:30:19 [GW_2][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-11-29 10:30:19 [GW_2][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:41 Retry connecting to 127.0.0.1:3000 in 500 milliseconds. 
+2017-11-29 10:30:19 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x26772e0 stop looping
+2017-11-29 10:30:19 [GW_2][DEBUG]:[gate_server.cpp:171]==>onDisconnect 192.168.81.128:49504 -> 192.168.81.128:3202 is 0
+2017-11-29 10:30:19 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f3bdc101910 stop looping
+2017-11-29 10:30:19 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f3bdb900910 stop looping
+2017-11-29 10:30:19 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f3bdb0ff910 stop looping
+2017-11-29 10:30:19 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f3bda8fe910 stop looping
+2017-11-29 10:30:19 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f3bda0fd910 stop looping
+2017-11-29 10:30:19 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f3bd98fc910 stop looping
+2017-11-29 10:30:19 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f3bd90fb910 stop looping
+2017-11-29 10:30:19 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f3bd88fa910 stop looping
+2017-11-29 10:30:19 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f3bbbfee910 stop looping
+2017-11-29 10:30:19 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f3bbb7ed910 stop looping

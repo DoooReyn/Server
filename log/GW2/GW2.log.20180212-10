@@ -1,0 +1,5 @@
+2018-02-12 10:14:58 [GW_2][INFO]:[gate_main.cpp:27]==>[pid = 2593 tid =2593]
+2018-02-12 10:14:58 [GW_2][DEBUG]:[gate_login_client.cpp:40]==>onConnection 127.0.0.1:59304 -> 127.0.0.1:3000
+2018-02-12 10:14:58 [GW_2][INFO]:[gate_login_client.cpp:79]==>Verify Return Src IP:127.0.0.1:3000
+2018-02-12 10:14:58 [GW_2][INFO]:[gate_server.cpp:206]==>onVerify 192.168.81.128:49274 -> 192.168.81.128:3202
+2018-02-12 10:14:58 [GW_2][INFO]:[gate_server.cpp:175]==>current pid:2593 status:connect

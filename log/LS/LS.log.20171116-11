@@ -1,0 +1,266 @@
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0xb25e78 stop looping
+2017-11-16 11:01:54 [LS][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[LS] - connector 0xb2b090
+2017-11-16 11:01:54 [LS][DEBUG]:[connector.cpp:23]==>Connector dctor[0xb2b090]
+2017-11-16 11:01:54 [LS][DEBUG]:[tcp_server.cpp:25]==>TcpServer::~TcpServer [ LS ] destructing
+2017-11-16 11:01:54 [LS][DEBUG]:[login_server.cpp:167]==>onDisconnect 127.0.0.1:37320 -> 127.0.0.1:3000 is 0
+2017-11-16 11:01:54 [LS][DEBUG]:[login_server.cpp:167]==>onDisconnect 127.0.0.1:37318 -> 127.0.0.1:3000 is 0
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fbff0398910 stop looping
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7fbff0398910 of thread : 3964 destructs in thread : 3964
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fbfefb97910 stop looping
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7fbfefb97910 of thread : 3965 destructs in thread : 3965
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fbfef396910 stop looping
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7fbfef396910 of thread : 3966 destructs in thread : 3966
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fbfeeb95910 stop looping
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7fbfeeb95910 of thread : 3967 destructs in thread : 3967
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fbfee394910 stop looping
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7fbfee394910 of thread : 3968 destructs in thread : 3968
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fbfedb93910 stop looping
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7fbfedb93910 of thread : 3969 destructs in thread : 3969
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fbfed392910 stop looping
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7fbfed392910 of thread : 3970 destructs in thread : 3970
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fbfecb91910 stop looping
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7fbfecb91910 of thread : 3971 destructs in thread : 3971
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fbfcffee910 stop looping
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7fbfcffee910 of thread : 3972 destructs in thread : 3972
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fbfcf7ed910 stop looping
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7fbfcf7ed910 of thread : 3973 destructs in thread : 3973
+2017-11-16 11:01:54 [LS][DEBUG]:[login_main.cpp:17]==>pid = 4171, tid =4171
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0xfc0e78 in thread :4171
+2017-11-16 11:01:54 [LS][INFO]:[login_server.cpp:94]==>Mysql Connect Success
+2017-11-16 11:01:54 [LS][INFO]:[account_client.cpp:43]==>AccountServer IP:127.0.0.1 Port:3100
+2017-11-16 11:01:54 [LS][DEBUG]:[connector.cpp:18]==>Connector ctor[0xfc6090]
+2017-11-16 11:01:54 [LS][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[LS] - connector 0xfc6090
+2017-11-16 11:01:54 [LS][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[LS] - connecting to 127.0.0.1:3100
+2017-11-16 11:01:54 [LS][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f7f1b4da910 in thread :4175
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f7f1acd9910 in thread :4176
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f7f1a4d8910 in thread :4177
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f7f19cd7910 in thread :4178
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f7f194d6910 in thread :4179
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f7f18cd5910 in thread :4180
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f7f03fee910 in thread :4181
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f7f037ed910 in thread :4182
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f7f02fec910 in thread :4183
+2017-11-16 11:01:54 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f7f027eb910 in thread :4184
+2017-11-16 11:01:54 [LS][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[LS:127.0.0.1:3100#1] at 0x7f7f1d656010 fd=10
+2017-11-16 11:01:54 [LS][INFO]:[account_client.cpp:50]==>onConnection 127.0.0.1:54594 -> 127.0.0.1:3100 is 1
+2017-11-16 11:01:54 [LS][INFO]:[account_client.cpp:51]==>current tid :4171
+2017-11-16 11:01:55 [LS][INFO]:[login_server.cpp:236]==>onVerify Return
+2017-11-16 11:01:55 [LS][INFO]:[tcp_server.cpp:72]==>new connect [LS-0.0.0.0:3000#1] form 127.0.0.1:37342
+2017-11-16 11:01:55 [LS][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[LS-0.0.0.0:3000#1] at 0x7f7f1d62d010 fd=41
+2017-11-16 11:01:55 [LS][DEBUG]:[login_server.cpp:162]==>onConnection 127.0.0.1:37342 -> 127.0.0.1:3000 is 1
+2017-11-16 11:01:55 [LS][DEBUG]:[login_server.cpp:201]==>onVerify 127.0.0.1:37342 -> 127.0.0.1:3000 is 1 cid:17179869185 Pid:4175
+2017-11-16 11:01:55 [LS][DEBUG]:[login_server.cpp:173]==>current pid:4171 status:connect
+2017-11-16 11:01:55 [LS][INFO]:[tcp_server.cpp:72]==>new connect [LS-0.0.0.0:3000#2] form 127.0.0.1:37344
+2017-11-16 11:01:55 [LS][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[LS-0.0.0.0:3000#2] at 0x7f7f1d604010 fd=42
+2017-11-16 11:01:55 [LS][DEBUG]:[login_server.cpp:162]==>onConnection 127.0.0.1:37344 -> 127.0.0.1:3000 is 1
+2017-11-16 11:01:55 [LS][DEBUG]:[login_server.cpp:201]==>onVerify 127.0.0.1:37344 -> 127.0.0.1:3000 is 1 cid:17179869186 Pid:4176
+2017-11-16 11:01:55 [LS][DEBUG]:[login_server.cpp:173]==>current pid:4171 status:connect
+2017-11-16 11:01:55 [LS][DEBUG]:[gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2017-11-16 11:01:55 [LS][DEBUG]:[gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2017-11-16 11:02:51 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0xfc0e78 stop looping
+2017-11-16 11:02:51 [LS][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[LS] - connector 0xfc6090
+2017-11-16 11:02:51 [LS][DEBUG]:[connector.cpp:23]==>Connector dctor[0xfc6090]
+2017-11-16 11:02:51 [LS][DEBUG]:[tcp_server.cpp:25]==>TcpServer::~TcpServer [ LS ] destructing
+2017-11-16 11:02:51 [LS][DEBUG]:[login_server.cpp:167]==>onDisconnect 127.0.0.1:37342 -> 127.0.0.1:3000 is 0
+2017-11-16 11:02:51 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f7f1b4da910 stop looping
+2017-11-16 11:02:51 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f7f1b4da910 of thread : 4175 destructs in thread : 4175
+2017-11-16 11:02:51 [LS][DEBUG]:[login_server.cpp:167]==>onDisconnect 127.0.0.1:37344 -> 127.0.0.1:3000 is 0
+2017-11-16 11:02:51 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f7f1acd9910 stop looping
+2017-11-16 11:02:51 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f7f1acd9910 of thread : 4176 destructs in thread : 4176
+2017-11-16 11:02:51 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f7f1a4d8910 stop looping
+2017-11-16 11:02:51 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f7f1a4d8910 of thread : 4177 destructs in thread : 4177
+2017-11-16 11:02:51 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f7f19cd7910 stop looping
+2017-11-16 11:02:51 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f7f19cd7910 of thread : 4178 destructs in thread : 4178
+2017-11-16 11:02:51 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f7f194d6910 stop looping
+2017-11-16 11:02:51 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f7f194d6910 of thread : 4179 destructs in thread : 4179
+2017-11-16 11:02:51 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f7f18cd5910 stop looping
+2017-11-16 11:02:51 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f7f18cd5910 of thread : 4180 destructs in thread : 4180
+2017-11-16 11:02:51 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f7f03fee910 stop looping
+2017-11-16 11:02:51 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f7f03fee910 of thread : 4181 destructs in thread : 4181
+2017-11-16 11:02:51 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f7f037ed910 stop looping
+2017-11-16 11:02:51 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f7f037ed910 of thread : 4182 destructs in thread : 4182
+2017-11-16 11:02:51 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f7f02fec910 stop looping
+2017-11-16 11:02:51 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f7f02fec910 of thread : 4183 destructs in thread : 4183
+2017-11-16 11:02:51 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f7f027eb910 stop looping
+2017-11-16 11:02:51 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f7f027eb910 of thread : 4184 destructs in thread : 4184
+2017-11-16 11:03:01 [LS][DEBUG]:[login_main.cpp:17]==>pid = 4420, tid =4420
+2017-11-16 11:03:01 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x258ae78 in thread :4420
+2017-11-16 11:03:01 [LS][INFO]:[login_server.cpp:94]==>Mysql Connect Success
+2017-11-16 11:03:01 [LS][INFO]:[account_client.cpp:43]==>AccountServer IP:127.0.0.1 Port:3100
+2017-11-16 11:03:01 [LS][DEBUG]:[connector.cpp:18]==>Connector ctor[0x2590090]
+2017-11-16 11:03:01 [LS][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[LS] - connector 0x2590090
+2017-11-16 11:03:01 [LS][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[LS] - connecting to 127.0.0.1:3100
+2017-11-16 11:03:01 [LS][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:03:01 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f62592ae910 in thread :4423
+2017-11-16 11:03:01 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f6258aad910 in thread :4424
+2017-11-16 11:03:01 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f6253fee910 in thread :4425
+2017-11-16 11:03:01 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f62537ed910 in thread :4426
+2017-11-16 11:03:01 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f6252fec910 in thread :4427
+2017-11-16 11:03:01 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f62527eb910 in thread :4428
+2017-11-16 11:03:01 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f6251fea910 in thread :4429
+2017-11-16 11:03:01 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f62517e9910 in thread :4430
+2017-11-16 11:03:01 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f6250fe8910 in thread :4431
+2017-11-16 11:03:01 [LS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f622ffee910 in thread :4432
+2017-11-16 11:03:01 [LS][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[LS:127.0.0.1:3100#1] at 0x7f625b42a010 fd=10
+2017-11-16 11:03:01 [LS][INFO]:[account_client.cpp:50]==>onConnection 127.0.0.1:54620 -> 127.0.0.1:3100 is 1
+2017-11-16 11:03:01 [LS][INFO]:[account_client.cpp:51]==>current tid :4420
+2017-11-16 11:03:01 [LS][INFO]:[login_server.cpp:236]==>onVerify Return
+2017-11-16 11:03:04 [LS][INFO]:[tcp_server.cpp:72]==>new connect [LS-0.0.0.0:3000#1] form 127.0.0.1:37368
+2017-11-16 11:03:04 [LS][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[LS-0.0.0.0:3000#1] at 0x7f625b401010 fd=41
+2017-11-16 11:03:04 [LS][DEBUG]:[login_server.cpp:162]==>onConnection 127.0.0.1:37368 -> 127.0.0.1:3000 is 1
+2017-11-16 11:03:04 [LS][DEBUG]:[login_server.cpp:201]==>onVerify 127.0.0.1:37368 -> 127.0.0.1:3000 is 1 cid:17179869185 Pid:4423
+2017-11-16 11:03:04 [LS][DEBUG]:[login_server.cpp:173]==>current pid:4420 status:connect
+2017-11-16 11:03:19 [LS][INFO]:[tcp_server.cpp:72]==>new connect [LS-0.0.0.0:3000#2] form 127.0.0.1:37370
+2017-11-16 11:03:19 [LS][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[LS-0.0.0.0:3000#2] at 0x7f625b3d8010 fd=42
+2017-11-16 11:03:19 [LS][DEBUG]:[login_server.cpp:162]==>onConnection 127.0.0.1:37370 -> 127.0.0.1:3000 is 1
+2017-11-16 11:03:19 [LS][DEBUG]:[login_server.cpp:201]==>onVerify 127.0.0.1:37370 -> 127.0.0.1:3000 is 1 cid:17179869186 Pid:4424
+2017-11-16 11:03:19 [LS][DEBUG]:[login_server.cpp:173]==>current pid:4420 status:connect
+2017-11-16 11:03:25 [LS][DEBUG]:[gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2017-11-16 11:03:25 [LS][DEBUG]:[gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2017-11-16 11:03:45 [LS][DEBUG]:[gate_parse.cpp:101]==>ParseZoneState Success id:1 state:0
+2017-11-16 11:03:45 [LS][DEBUG]:[gate_parse.cpp:101]==>ParseZoneState Success id:1 state:0
+2017-11-16 11:04:45 [LS][DEBUG]:[login_server.cpp:167]==>onDisconnect 127.0.0.1:37368 -> 127.0.0.1:3000 is 0
+2017-11-16 11:04:45 [LS][DEBUG]:[login_server.cpp:173]==>current pid:4420 status:disconnect
+2017-11-16 11:04:45 [LS][INFO]:[tcp_server.cpp:94]==>TcpServer::removeConnectionInLoop [LS] - connection LS-0.0.0.0:3000#1
+2017-11-16 11:04:45 [LS][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[LS-0.0.0.0:3000#1] at 0x7f625b401010 fd=41 state=kDisconnected
+2017-11-16 11:04:47 [LS][DEBUG]:[login_server.cpp:167]==>onDisconnect 127.0.0.1:37370 -> 127.0.0.1:3000 is 0
+2017-11-16 11:04:47 [LS][DEBUG]:[login_server.cpp:173]==>current pid:4420 status:disconnect
+2017-11-16 11:04:47 [LS][INFO]:[tcp_server.cpp:94]==>TcpServer::removeConnectionInLoop [LS] - connection LS-0.0.0.0:3000#2
+2017-11-16 11:04:47 [LS][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[LS-0.0.0.0:3000#2] at 0x7f625b3d8010 fd=42 state=kDisconnected
+2017-11-16 11:04:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x258ae78 stop looping
+2017-11-16 11:04:50 [LS][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[LS] - connector 0x2590090
+2017-11-16 11:04:50 [LS][DEBUG]:[connector.cpp:23]==>Connector dctor[0x2590090]
+2017-11-16 11:04:50 [LS][DEBUG]:[tcp_server.cpp:25]==>TcpServer::~TcpServer [ LS ] destructing
+2017-11-16 11:04:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f62592ae910 stop looping
+2017-11-16 11:04:50 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f62592ae910 of thread : 4423 destructs in thread : 4423
+2017-11-16 11:04:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f6258aad910 stop looping
+2017-11-16 11:04:50 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f6258aad910 of thread : 4424 destructs in thread : 4424
+2017-11-16 11:04:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f6253fee910 stop looping
+2017-11-16 11:04:50 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f6253fee910 of thread : 4425 destructs in thread : 4425
+2017-11-16 11:04:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f62537ed910 stop looping
+2017-11-16 11:04:50 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f62537ed910 of thread : 4426 destructs in thread : 4426
+2017-11-16 11:04:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f6252fec910 stop looping
+2017-11-16 11:04:50 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f6252fec910 of thread : 4427 destructs in thread : 4427
+2017-11-16 11:04:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f62527eb910 stop looping
+2017-11-16 11:04:50 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f62527eb910 of thread : 4428 destructs in thread : 4428
+2017-11-16 11:04:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f6251fea910 stop looping
+2017-11-16 11:04:50 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f6251fea910 of thread : 4429 destructs in thread : 4429
+2017-11-16 11:04:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f62517e9910 stop looping
+2017-11-16 11:04:50 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f62517e9910 of thread : 4430 destructs in thread : 4430
+2017-11-16 11:04:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f6250fe8910 stop looping
+2017-11-16 11:04:50 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f6250fe8910 of thread : 4431 destructs in thread : 4431
+2017-11-16 11:04:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f622ffee910 stop looping
+2017-11-16 11:04:50 [LS][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f622ffee910 of thread : 4432 destructs in thread : 4432
+2017-11-16 11:05:46 [LS][DEBUG]:[login_main.cpp:17]==>pid = 4673, tid =4673
+2017-11-16 11:05:46 [LS][INFO]:[login_server.cpp:94]==>Mysql Connect Success
+2017-11-16 11:05:46 [LS][INFO]:[account_client.cpp:43]==>AccountServer IP:127.0.0.1 Port:3100
+2017-11-16 11:05:46 [LS][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[LS] - connector 0xe19090
+2017-11-16 11:05:46 [LS][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[LS] - connecting to 127.0.0.1:3100
+2017-11-16 11:05:46 [LS][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:05:46 [LS][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[LS:127.0.0.1:3100#1] at 0x7fd0e5ee6010 fd=10
+2017-11-16 11:05:46 [LS][INFO]:[account_client.cpp:50]==>onConnection 127.0.0.1:54636 -> 127.0.0.1:3100 is 1
+2017-11-16 11:05:46 [LS][INFO]:[account_client.cpp:51]==>current tid :4673
+2017-11-16 11:05:46 [LS][INFO]:[login_server.cpp:236]==>onVerify Return
+2017-11-16 11:05:46 [LS][INFO]:[tcp_server.cpp:72]==>new connect [LS-0.0.0.0:3000#1] form 127.0.0.1:37384
+2017-11-16 11:05:46 [LS][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[LS-0.0.0.0:3000#1] at 0x7fd0e5ebd010 fd=41
+2017-11-16 11:05:46 [LS][DEBUG]:[login_server.cpp:162]==>onConnection 127.0.0.1:37384 -> 127.0.0.1:3000 is 1
+2017-11-16 11:05:46 [LS][DEBUG]:[login_server.cpp:201]==>onVerify 127.0.0.1:37384 -> 127.0.0.1:3000 is 1 cid:17179869185 Pid:4677
+2017-11-16 11:05:46 [LS][DEBUG]:[login_server.cpp:173]==>current pid:4673 status:connect
+2017-11-16 11:05:46 [LS][INFO]:[tcp_server.cpp:72]==>new connect [LS-0.0.0.0:3000#2] form 127.0.0.1:37386
+2017-11-16 11:05:46 [LS][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[LS-0.0.0.0:3000#2] at 0x7fd0e5e94010 fd=42
+2017-11-16 11:05:46 [LS][DEBUG]:[login_server.cpp:162]==>onConnection 127.0.0.1:37386 -> 127.0.0.1:3000 is 1
+2017-11-16 11:05:46 [LS][DEBUG]:[login_server.cpp:201]==>onVerify 127.0.0.1:37386 -> 127.0.0.1:3000 is 1 cid:17179869186 Pid:4678
+2017-11-16 11:05:46 [LS][DEBUG]:[login_server.cpp:173]==>current pid:4673 status:connect
+2017-11-16 11:05:47 [LS][DEBUG]:[gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2017-11-16 11:05:47 [LS][DEBUG]:[gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2017-11-16 11:06:17 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0xe13e78 stop looping
+2017-11-16 11:06:17 [LS][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[LS] - connector 0xe19090
+2017-11-16 11:06:17 [LS][DEBUG]:[tcp_server.cpp:25]==>TcpServer::~TcpServer [ LS ] destructing
+2017-11-16 11:06:17 [LS][DEBUG]:[login_server.cpp:167]==>onDisconnect 127.0.0.1:37386 -> 127.0.0.1:3000 is 0
+2017-11-16 11:06:17 [LS][DEBUG]:[login_server.cpp:167]==>onDisconnect 127.0.0.1:37384 -> 127.0.0.1:3000 is 0
+2017-11-16 11:06:17 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fd0e3d6a910 stop looping
+2017-11-16 11:06:17 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fd0e3569910 stop looping
+2017-11-16 11:06:17 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fd0e2d68910 stop looping
+2017-11-16 11:06:17 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fd0e2567910 stop looping
+2017-11-16 11:06:17 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fd0e1d66910 stop looping
+2017-11-16 11:06:17 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fd0e1565910 stop looping
+2017-11-16 11:06:17 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fd0e0d64910 stop looping
+2017-11-16 11:06:17 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fd0c3fee910 stop looping
+2017-11-16 11:06:17 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fd0c37ed910 stop looping
+2017-11-16 11:06:17 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7fd0c2fec910 stop looping
+2017-11-16 11:06:21 [LS][DEBUG]:[login_main.cpp:17]==>pid = 4826, tid =4826
+2017-11-16 11:06:21 [LS][INFO]:[login_server.cpp:94]==>Mysql Connect Success
+2017-11-16 11:06:21 [LS][INFO]:[account_client.cpp:43]==>AccountServer IP:127.0.0.1 Port:3100
+2017-11-16 11:06:21 [LS][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[LS] - connector 0x2582090
+2017-11-16 11:06:21 [LS][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[LS] - connecting to 127.0.0.1:3100
+2017-11-16 11:06:21 [LS][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:06:21 [LS][INFO]:[account_client.cpp:50]==>onConnection 127.0.0.1:54660 -> 127.0.0.1:3100 is 1
+2017-11-16 11:06:21 [LS][INFO]:[account_client.cpp:51]==>current tid :4826
+2017-11-16 11:06:21 [LS][INFO]:[login_server.cpp:236]==>onVerify Return
+2017-11-16 11:06:21 [LS][INFO]:[tcp_server.cpp:72]==>new connect [LS-0.0.0.0:3000#1] form 127.0.0.1:37408
+2017-11-16 11:06:21 [LS][DEBUG]:[login_server.cpp:162]==>onConnection 127.0.0.1:37408 -> 127.0.0.1:3000 is 1
+2017-11-16 11:06:21 [LS][DEBUG]:[login_server.cpp:201]==>onVerify 127.0.0.1:37408 -> 127.0.0.1:3000 is 1 cid:17179869185 Pid:4830
+2017-11-16 11:06:21 [LS][DEBUG]:[login_server.cpp:173]==>current pid:4826 status:connect
+2017-11-16 11:06:21 [LS][INFO]:[tcp_server.cpp:72]==>new connect [LS-0.0.0.0:3000#2] form 127.0.0.1:37410
+2017-11-16 11:06:21 [LS][DEBUG]:[login_server.cpp:162]==>onConnection 127.0.0.1:37410 -> 127.0.0.1:3000 is 1
+2017-11-16 11:06:21 [LS][DEBUG]:[login_server.cpp:201]==>onVerify 127.0.0.1:37410 -> 127.0.0.1:3000 is 1 cid:17179869186 Pid:4831
+2017-11-16 11:06:21 [LS][DEBUG]:[login_server.cpp:173]==>current pid:4826 status:connect
+2017-11-16 11:06:21 [LS][DEBUG]:[gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2017-11-16 11:06:21 [LS][DEBUG]:[gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2017-11-16 11:06:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x257ce78 stop looping
+2017-11-16 11:06:50 [LS][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[LS] - connector 0x2582090
+2017-11-16 11:06:50 [LS][DEBUG]:[tcp_server.cpp:25]==>TcpServer::~TcpServer [ LS ] destructing
+2017-11-16 11:06:50 [LS][DEBUG]:[login_server.cpp:167]==>onDisconnect 127.0.0.1:37408 -> 127.0.0.1:3000 is 0
+2017-11-16 11:06:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f62710da910 stop looping
+2017-11-16 11:06:50 [LS][DEBUG]:[login_server.cpp:167]==>onDisconnect 127.0.0.1:37410 -> 127.0.0.1:3000 is 0
+2017-11-16 11:06:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f62708d9910 stop looping
+2017-11-16 11:06:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f626bfee910 stop looping
+2017-11-16 11:06:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f626b7ed910 stop looping
+2017-11-16 11:06:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f626afec910 stop looping
+2017-11-16 11:06:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f626a7eb910 stop looping
+2017-11-16 11:06:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f6269fea910 stop looping
+2017-11-16 11:06:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f62697e9910 stop looping
+2017-11-16 11:06:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f6268fe8910 stop looping
+2017-11-16 11:06:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f6247fee910 stop looping
+2017-11-16 11:06:50 [LS][DEBUG]:[login_main.cpp:17]==>pid = 5026, tid =5026
+2017-11-16 11:06:50 [LS][INFO]:[login_server.cpp:94]==>Mysql Connect Success
+2017-11-16 11:06:50 [LS][INFO]:[account_client.cpp:43]==>AccountServer IP:127.0.0.1 Port:3100
+2017-11-16 11:06:50 [LS][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[LS] - connecting to 127.0.0.1:3100
+2017-11-16 11:06:50 [LS][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:06:50 [LS][INFO]:[account_client.cpp:50]==>onConnection 127.0.0.1:54684 -> 127.0.0.1:3100 is 1
+2017-11-16 11:06:50 [LS][INFO]:[account_client.cpp:51]==>current tid :5026
+2017-11-16 11:06:50 [LS][INFO]:[login_server.cpp:236]==>onVerify Return
+2017-11-16 11:06:50 [LS][INFO]:[tcp_server.cpp:72]==>new connect [LS-0.0.0.0:3000#1] form 127.0.0.1:37432
+2017-11-16 11:06:50 [LS][DEBUG]:[login_server.cpp:162]==>onConnection 127.0.0.1:37432 -> 127.0.0.1:3000 is 1
+2017-11-16 11:06:50 [LS][DEBUG]:[login_server.cpp:201]==>onVerify 127.0.0.1:37432 -> 127.0.0.1:3000 is 1 cid:17179869185 Pid:5030
+2017-11-16 11:06:50 [LS][DEBUG]:[login_server.cpp:173]==>current pid:5026 status:connect
+2017-11-16 11:06:50 [LS][INFO]:[tcp_server.cpp:72]==>new connect [LS-0.0.0.0:3000#2] form 127.0.0.1:37434
+2017-11-16 11:06:50 [LS][DEBUG]:[login_server.cpp:162]==>onConnection 127.0.0.1:37434 -> 127.0.0.1:3000 is 1
+2017-11-16 11:06:50 [LS][DEBUG]:[login_server.cpp:201]==>onVerify 127.0.0.1:37434 -> 127.0.0.1:3000 is 1 cid:17179869186 Pid:5031
+2017-11-16 11:06:50 [LS][DEBUG]:[login_server.cpp:173]==>current pid:5026 status:connect
+2017-11-16 11:06:51 [LS][DEBUG]:[gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2017-11-16 11:06:51 [LS][DEBUG]:[gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2017-11-16 11:06:55 [LS][INFO]:[tcp_server.cpp:72]==>new connect [LS-0.0.0.0:3000#3] form 127.0.0.1:37442
+2017-11-16 11:06:55 [LS][DEBUG]:[login_server.cpp:162]==>onConnection 127.0.0.1:37442 -> 127.0.0.1:3000 is 1
+2017-11-16 11:06:55 [LS][DEBUG]:[login_server.cpp:201]==>onVerify 127.0.0.1:37442 -> 127.0.0.1:3000 is 1 cid:4294967300 Pid:5032
+2017-11-16 11:06:55 [LS][DEBUG]:[login_server.cpp:173]==>current pid:5026 status:connect
+2017-11-16 11:06:55 [LS][DEBUG]:[login_server.cpp:220]==>ModifyConnThisid current id:5026
+2017-11-16 11:06:55 [LS][DEBUG]:[login_server.cpp:260]==>ParseZoneInfoRequest accid:13 best gateid:1
+2017-11-16 11:06:55 [LS][DEBUG]:[login_server.cpp:167]==>onDisconnect 127.0.0.1:37442 -> 127.0.0.1:3000 is 0
+2017-11-16 11:06:55 [LS][DEBUG]:[login_server.cpp:173]==>current pid:5026 status:disconnect
+2017-11-16 11:06:55 [LS][INFO]:[tcp_server.cpp:94]==>TcpServer::removeConnectionInLoop [LS] - connection LS-0.0.0.0:3000#3
+2017-11-16 11:07:48 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x1c90e78 stop looping
+2017-11-16 11:07:48 [LS][DEBUG]:[tcp_server.cpp:25]==>TcpServer::~TcpServer [ LS ] destructing
+2017-11-16 11:07:48 [LS][DEBUG]:[login_server.cpp:167]==>onDisconnect 127.0.0.1:37432 -> 127.0.0.1:3000 is 0
+2017-11-16 11:07:48 [LS][DEBUG]:[login_server.cpp:167]==>onDisconnect 127.0.0.1:37434 -> 127.0.0.1:3000 is 0
+2017-11-16 11:07:48 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f216fdc7910 stop looping
+2017-11-16 11:07:48 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f216f5c6910 stop looping
+2017-11-16 11:07:48 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f216edc5910 stop looping
+2017-11-16 11:07:48 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f216e5c4910 stop looping
+2017-11-16 11:07:48 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f216ddc3910 stop looping
+2017-11-16 11:07:48 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f216d5c2910 stop looping
+2017-11-16 11:07:48 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f216cdc1910 stop looping
+2017-11-16 11:07:48 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f214ffee910 stop looping
+2017-11-16 11:07:48 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f214f7ed910 stop looping
+2017-11-16 11:07:48 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f214efec910 stop looping

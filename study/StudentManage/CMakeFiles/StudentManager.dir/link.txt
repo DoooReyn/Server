@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/StudentManager.dir/STMS.cpp.o CMakeFiles/StudentManager.dir/List.cpp.o CMakeFiles/StudentManager.dir/CmdProc.cpp.o CMakeFiles/StudentManager.dir/String.cpp.o CMakeFiles/StudentManager.dir/Input.cpp.o CMakeFiles/StudentManager.dir/Node.cpp.o  -o bin/StudentManager -rdynamic 

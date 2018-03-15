@@ -1,0 +1,301 @@
+2017-11-16 11:01:54 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3202 -> 192.168.81.128:41136 is 0 Pid:4002
+2017-11-16 11:01:54 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3202
+2017-11-16 11:01:54 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:01:54 [GS_1][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GS_1:192.168.81.128:3202#1] at 0x7f0867dc4010 fd=8 state=kDisconnected
+2017-11-16 11:01:54 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3201 -> 192.168.81.128:37542 is 0 Pid:4002
+2017-11-16 11:01:54 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3201
+2017-11-16 11:01:54 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:01:54 [GS_1][WARN]:[channel.cpp:113]==>fd=9 Channel::HandleEvent() POLLHUP
+2017-11-16 11:01:54 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-16 11:01:54 [GS_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-11-16 11:01:54 [GS_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:9 Retry connecting to 192.168.81.128:3202 in 500 milliseconds. 
+2017-11-16 11:01:54 [GS_1][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GS_1:192.168.81.128:3201#1] at 0x7f0867ded010 fd=7 state=kDisconnected
+2017-11-16 11:01:54 [GS_1][WARN]:[channel.cpp:113]==>fd=8 Channel::HandleEvent() POLLHUP
+2017-11-16 11:01:54 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-16 11:01:54 [GS_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-11-16 11:01:54 [GS_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:8 Retry connecting to 192.168.81.128:3201 in 500 milliseconds. 
+2017-11-16 11:01:54 [GS_1][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x1c9fe78 stop looping
+2017-11-16 11:01:54 [GS_1][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[GS_1] - connector 0x1ca4d50
+2017-11-16 11:01:54 [GS_1][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[GS_1] - connector 0x1ca5430
+2017-11-16 11:01:55 [GS_1][DEBUG]:[game_main.cpp:28]==>pid = 4213, tid =4213 ServerId:1
+2017-11-16 11:01:55 [GS_1][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x9a9e78 in thread :4213
+2017-11-16 11:01:55 [GS_1][DEBUG]:[mysql_pool.cpp:123]==>FinalHandle():The mysql connect will been closed... way:1
+2017-11-16 11:01:55 [GS_1][DEBUG]:[connector.cpp:18]==>Connector ctor[0x9aed50]
+2017-11-16 11:01:55 [GS_1][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[GS_1] - connector 0x9aed50
+2017-11-16 11:01:55 [GS_1][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[GS_1] - connecting to 192.168.81.128:3201
+2017-11-16 11:01:55 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:01:55 [GS_1][DEBUG]:[connector.cpp:18]==>Connector ctor[0x9af430]
+2017-11-16 11:01:55 [GS_1][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[GS_1] - connector 0x9af430
+2017-11-16 11:01:55 [GS_1][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[GS_1] - connecting to 192.168.81.128:3202
+2017-11-16 11:01:55 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:01:55 [GS_1][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GS_1:192.168.81.128:3201#1] at 0x7fbde83b5010 fd=7
+2017-11-16 11:01:55 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:37566 -> 192.168.81.128:3201 is 1 Pid:4213
+2017-11-16 11:01:55 [GS_1][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GS_1:192.168.81.128:3202#1] at 0x7fbde838c010 fd=8
+2017-11-16 11:01:55 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:41160 -> 192.168.81.128:3202 is 1 Pid:4213
+2017-11-16 11:01:55 [GS_1][INFO]:[gate_client.cpp:128]==>onVerify Return
+2017-11-16 11:01:55 [GS_1][INFO]:[gate_client.cpp:128]==>onVerify Return
+2017-11-16 11:02:51 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3201 -> 192.168.81.128:37566 is 0 Pid:4213
+2017-11-16 11:02:51 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3201
+2017-11-16 11:02:51 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:02:51 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3202 -> 192.168.81.128:41160 is 0 Pid:4213
+2017-11-16 11:02:51 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3202
+2017-11-16 11:02:51 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:02:51 [GS_1][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GS_1:192.168.81.128:3201#1] at 0x7fbde83b5010 fd=7 state=kDisconnected
+2017-11-16 11:02:51 [GS_1][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GS_1:192.168.81.128:3202#1] at 0x7fbde838c010 fd=8 state=kDisconnected
+2017-11-16 11:02:51 [GS_1][WARN]:[channel.cpp:113]==>fd=9 Channel::HandleEvent() POLLHUP
+2017-11-16 11:02:51 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-16 11:02:51 [GS_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-11-16 11:02:51 [GS_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:9 Retry connecting to 192.168.81.128:3201 in 500 milliseconds. 
+2017-11-16 11:02:51 [GS_1][WARN]:[channel.cpp:113]==>fd=10 Channel::HandleEvent() POLLHUP
+2017-11-16 11:02:51 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-16 11:02:51 [GS_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-11-16 11:02:51 [GS_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:10 Retry connecting to 192.168.81.128:3202 in 500 milliseconds. 
+2017-11-16 11:02:51 [GS_1][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x9a9e78 stop looping
+2017-11-16 11:02:51 [GS_1][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[GS_1] - connector 0x9aed50
+2017-11-16 11:02:51 [GS_1][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[GS_1] - connector 0x9af430
+2017-11-16 11:03:25 [GS_1][DEBUG]:[game_main.cpp:28]==>pid = 4459, tid =4459 ServerId:1
+2017-11-16 11:03:25 [GS_1][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x929e78 in thread :4459
+2017-11-16 11:03:25 [GS_1][DEBUG]:[mysql_pool.cpp:123]==>FinalHandle():The mysql connect will been closed... way:1
+2017-11-16 11:03:25 [GS_1][DEBUG]:[connector.cpp:18]==>Connector ctor[0x92ed50]
+2017-11-16 11:03:25 [GS_1][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[GS_1] - connector 0x92ed50
+2017-11-16 11:03:25 [GS_1][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[GS_1] - connecting to 192.168.81.128:3201
+2017-11-16 11:03:25 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:03:25 [GS_1][DEBUG]:[connector.cpp:18]==>Connector ctor[0x92f430]
+2017-11-16 11:03:25 [GS_1][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[GS_1] - connector 0x92f430
+2017-11-16 11:03:25 [GS_1][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[GS_1] - connecting to 192.168.81.128:3202
+2017-11-16 11:03:25 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:03:25 [GS_1][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GS_1:192.168.81.128:3201#1] at 0x7f75aa301010 fd=7
+2017-11-16 11:03:25 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:37592 -> 192.168.81.128:3201 is 1 Pid:4459
+2017-11-16 11:03:25 [GS_1][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GS_1:192.168.81.128:3202#1] at 0x7f75aa2d8010 fd=8
+2017-11-16 11:03:25 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:41186 -> 192.168.81.128:3202 is 1 Pid:4459
+2017-11-16 11:03:25 [GS_1][INFO]:[gate_client.cpp:128]==>onVerify Return
+2017-11-16 11:03:25 [GS_1][INFO]:[gate_client.cpp:128]==>onVerify Return
+2017-11-16 11:03:45 [GS_1][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x929e78 stop looping
+2017-11-16 11:03:45 [GS_1][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[GS_1] - connector 0x92ed50
+2017-11-16 11:03:45 [GS_1][DEBUG]:[connector.cpp:23]==>Connector dctor[0x92ed50]
+2017-11-16 11:03:45 [GS_1][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[GS_1] - connector 0x92f430
+2017-11-16 11:03:45 [GS_1][DEBUG]:[connector.cpp:23]==>Connector dctor[0x92f430]
+2017-11-16 11:05:47 [GS_1][DEBUG]:[game_main.cpp:28]==>pid = 4715, tid =4715 ServerId:1
+2017-11-16 11:05:47 [GS_1][DEBUG]:[mysql_pool.cpp:123]==>FinalHandle():The mysql connect will been closed... way:1
+2017-11-16 11:05:47 [GS_1][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[GS_1] - connector 0xe59d50
+2017-11-16 11:05:47 [GS_1][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[GS_1] - connecting to 192.168.81.128:3201
+2017-11-16 11:05:47 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:05:47 [GS_1][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[GS_1] - connector 0xe5a430
+2017-11-16 11:05:47 [GS_1][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[GS_1] - connecting to 192.168.81.128:3202
+2017-11-16 11:05:47 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:05:47 [GS_1][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GS_1:192.168.81.128:3201#1] at 0x7faef0bda010 fd=7
+2017-11-16 11:05:47 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:37608 -> 192.168.81.128:3201 is 1 Pid:4715
+2017-11-16 11:05:47 [GS_1][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GS_1:192.168.81.128:3202#1] at 0x7faef0bb1010 fd=8
+2017-11-16 11:05:47 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:41202 -> 192.168.81.128:3202 is 1 Pid:4715
+2017-11-16 11:05:47 [GS_1][INFO]:[gate_client.cpp:128]==>onVerify Return
+2017-11-16 11:05:47 [GS_1][INFO]:[gate_client.cpp:128]==>onVerify Return
+2017-11-16 11:06:17 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3201 -> 192.168.81.128:37608 is 0 Pid:4715
+2017-11-16 11:06:17 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3201
+2017-11-16 11:06:17 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:06:17 [GS_1][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GS_1:192.168.81.128:3201#1] at 0x7faef0bda010 fd=7 state=kDisconnected
+2017-11-16 11:06:17 [GS_1][WARN]:[channel.cpp:113]==>fd=9 Channel::HandleEvent() POLLHUP
+2017-11-16 11:06:17 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-16 11:06:17 [GS_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-11-16 11:06:17 [GS_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:9 Retry connecting to 192.168.81.128:3201 in 500 milliseconds. 
+2017-11-16 11:06:17 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3202 -> 192.168.81.128:41202 is 0 Pid:4715
+2017-11-16 11:06:17 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3202
+2017-11-16 11:06:17 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:06:17 [GS_1][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GS_1:192.168.81.128:3202#1] at 0x7faef0bb1010 fd=8 state=kDisconnected
+2017-11-16 11:06:17 [GS_1][WARN]:[channel.cpp:113]==>fd=7 Channel::HandleEvent() POLLHUP
+2017-11-16 11:06:17 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-16 11:06:17 [GS_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-11-16 11:06:17 [GS_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:7 Retry connecting to 192.168.81.128:3202 in 500 milliseconds. 
+2017-11-16 11:06:17 [GS_1][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0xe54e78 stop looping
+2017-11-16 11:06:17 [GS_1][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[GS_1] - connector 0xe59d50
+2017-11-16 11:06:17 [GS_1][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[GS_1] - connector 0xe5a430
+2017-11-16 11:06:21 [GS_1][DEBUG]:[game_main.cpp:28]==>pid = 4868, tid =4868 ServerId:1
+2017-11-16 11:06:21 [GS_1][DEBUG]:[mysql_pool.cpp:123]==>FinalHandle():The mysql connect will been closed... way:1
+2017-11-16 11:06:21 [GS_1][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[GS_1] - connector 0x20d2d50
+2017-11-16 11:06:21 [GS_1][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[GS_1] - connecting to 192.168.81.128:3201
+2017-11-16 11:06:21 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:06:21 [GS_1][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[GS_1] - connector 0x20d3430
+2017-11-16 11:06:21 [GS_1][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[GS_1] - connecting to 192.168.81.128:3202
+2017-11-16 11:06:21 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:06:21 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:37632 -> 192.168.81.128:3201 is 1 Pid:4868
+2017-11-16 11:06:21 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:41226 -> 192.168.81.128:3202 is 1 Pid:4868
+2017-11-16 11:06:21 [GS_1][INFO]:[gate_client.cpp:128]==>onVerify Return
+2017-11-16 11:06:21 [GS_1][INFO]:[gate_client.cpp:128]==>onVerify Return
+2017-11-16 11:06:50 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3201 -> 192.168.81.128:37632 is 0 Pid:4868
+2017-11-16 11:06:50 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3201
+2017-11-16 11:06:50 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:06:50 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3202 -> 192.168.81.128:41226 is 0 Pid:4868
+2017-11-16 11:06:50 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3202
+2017-11-16 11:06:50 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:06:50 [GS_1][WARN]:[channel.cpp:113]==>fd=9 Channel::HandleEvent() POLLHUP
+2017-11-16 11:06:50 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-16 11:06:50 [GS_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-11-16 11:06:50 [GS_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:9 Retry connecting to 192.168.81.128:3201 in 500 milliseconds. 
+2017-11-16 11:06:50 [GS_1][WARN]:[channel.cpp:113]==>fd=7 Channel::HandleEvent() POLLHUP
+2017-11-16 11:06:50 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-16 11:06:50 [GS_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-11-16 11:06:50 [GS_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:7 Retry connecting to 192.168.81.128:3202 in 500 milliseconds. 
+2017-11-16 11:06:50 [GS_1][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x20cde78 stop looping
+2017-11-16 11:06:50 [GS_1][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[GS_1] - connector 0x20d2d50
+2017-11-16 11:06:50 [GS_1][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[GS_1] - connector 0x20d3430
+2017-11-16 11:06:51 [GS_1][DEBUG]:[game_main.cpp:28]==>pid = 5068, tid =5068 ServerId:1
+2017-11-16 11:06:51 [GS_1][DEBUG]:[mysql_pool.cpp:123]==>FinalHandle():The mysql connect will been closed... way:1
+2017-11-16 11:06:51 [GS_1][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[GS_1] - connecting to 192.168.81.128:3201
+2017-11-16 11:06:51 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:06:51 [GS_1][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[GS_1] - connecting to 192.168.81.128:3202
+2017-11-16 11:06:51 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:06:51 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:37656 -> 192.168.81.128:3201 is 1 Pid:5068
+2017-11-16 11:06:51 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:41250 -> 192.168.81.128:3202 is 1 Pid:5068
+2017-11-16 11:06:51 [GS_1][INFO]:[gate_client.cpp:128]==>onVerify Return
+2017-11-16 11:06:51 [GS_1][INFO]:[gate_client.cpp:128]==>onVerify Return
+2017-11-16 11:06:58 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:06:58 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:06:58 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:06:58 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:06:58 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:06:58 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:06:59 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:06:59 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:06:59 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:06:59 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:00 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:00 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:00 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:00 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:00 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:00 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:00 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:00 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:01 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:01 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:01 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:01 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:02 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:02 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:02 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:02 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:02 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:02 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:02 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:02 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:03 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:03 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:03 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:03 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:04 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:04 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:04 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:04 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:04 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:04 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:04 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:04 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:05 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:05 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:05 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:05 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:05 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:05 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:05 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:05 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:06 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:06 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:06 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:06 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:07 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:07 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:07 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:07 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:07 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:07 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:07 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:07 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:08 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:08 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:08 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:08 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:09 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:09 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:09 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:09 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:09 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:09 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:09 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:09 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:10 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:10 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:10 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:10 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:10 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:10 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:10 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:10 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:11 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:11 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:11 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:11 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:12 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:12 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:12 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:12 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:12 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:12 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:12 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:12 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:13 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:13 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:13 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:13 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:14 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:14 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:14 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:14 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:14 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:14 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:14 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:14 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:15 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:15 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:15 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:15 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:16 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:16 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:16 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:16 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:16 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:16 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:16 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:16 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:17 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:17 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:17 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:17 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:17 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:17 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:17 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:17 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:18 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:18 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:18 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:0
+2017-11-16 11:07:18 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-11-16 11:07:19 [GS_1][DEBUG]:[gate_client.cpp:50]==>5678 message:我们 Test:99999
+2017-11-16 11:07:19 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:33 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:33 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:33 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:33 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:34 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-11-16 11:07:48 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3201 -> 192.168.81.128:37656 is 0 Pid:5068
+2017-11-16 11:07:48 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3201
+2017-11-16 11:07:48 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:07:48 [GS_1][WARN]:[channel.cpp:113]==>fd=9 Channel::HandleEvent() POLLHUP
+2017-11-16 11:07:48 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-16 11:07:48 [GS_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-11-16 11:07:48 [GS_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:9 Retry connecting to 192.168.81.128:3201 in 500 milliseconds. 
+2017-11-16 11:07:48 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3202 -> 192.168.81.128:41250 is 0 Pid:5068
+2017-11-16 11:07:48 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3202
+2017-11-16 11:07:48 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 11:07:48 [GS_1][WARN]:[channel.cpp:113]==>fd=7 Channel::HandleEvent() POLLHUP
+2017-11-16 11:07:48 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-16 11:07:48 [GS_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-11-16 11:07:48 [GS_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:7 Retry connecting to 192.168.81.128:3202 in 500 milliseconds. 
+2017-11-16 11:07:48 [GS_1][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x1b12e78 stop looping

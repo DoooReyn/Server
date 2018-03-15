@@ -1,0 +1,150 @@
+syntax = "proto2";
+package Cmd;
+
+
+//通知区服状态改变
+message CmdZoneStateChange
+{
+	required int32 zoneid = 1;      //区服id
+	required int32 state  = 2;      //区服状态
+};
+
+//测试消息 无用
+message CmdTest
+{
+	required string  str	= 1;	//测试字符串
+}
+
+
+
+message CmdRedisTest
+{
+	required int32 count = 1;				//
+	repeated CmdZoneStateChange list = 2;	//
+}
+
+//账号验证
+message AccoutVerifyRequest
+{
+	required string user	= 1;	//用户名
+	required string passwd	= 2;	//密码
+	optional int64  cid	    = 3;	//临时id
+}
+
+//回复账号验证的结果
+message AccoutVerifyReturn
+{
+	required uint32 result	= 1;	// 1:用户名错误  2:密码错误 0:成功
+	required string user	= 2;	// 用户名
+	required uint32 accid	= 3;	// 账号id
+	optional int64  cid	    = 4;	// 临时id
+
+}
+
+
+//账号注册
+message AccountRegisterRequest
+{
+	required string user	= 1;	//账号
+	required string passwd	= 2;	//密码
+	optional int64  cid	    = 3;	//临时id
+}
+
+//回复账号注册结果
+message AccountRegisterReturn
+{
+	required uint32 result	= 1;	// 1:用户名错误  2:密码错误 0:成功
+	required string user	= 2;	// 用户名
+	optional int64  cid	    = 3;	// 临时id
+}
+
+//通用请求消息
+message CmdRequest
+{
+	required uint32 id      = 1 [default = 0];	//通用请求;
+}
+
+//区服信息
+message ZoneList
+{
+	required uint32 zoneid	= 1;	//区服ID
+	required uint32 state	= 2;	//区服状态
+	required string name	= 3;	//区服名称
+}
+
+//网关信息返回
+message ZoneListReturn
+{
+	repeated ZoneList zonelist  = 1;	//区分列表
+}
+
+//网关地址信息
+message GateUrlNotify
+{
+	required int32 gateid	= 1;	//网关ID
+	required int32 zoneid	= 2;	//区服ID
+	required string gateurl = 3;	//网关外网IP
+}
+
+//区服信息请求
+message ZoneInfoRequest
+{
+	required int32 zoneid   = 1;    //区服id
+	required int32 accid    = 2;    //账号id
+}
+
+//区服信息返回
+message ZoneInfoReturn
+{
+	required string gateurl = 1;	//网关地址
+	required uint32 zoneid  = 2;	//区服ID
+	required uint32 gateid  = 3;	//网关ID
+}
+
+//区服登陆
+message ZoneLoginRequest
+{
+    required int32 zoneid   = 1;    // 区服id
+    required int32 accid    = 2;    // 账号id
+}
+
+message ZoneLoginReturn
+{
+	required bool result	= 1;    //登陆是否成功true:成功
+    required int32 accid    = 2;    //账号id
+    required int32 zoneid   = 3;    //区服id
+}
+
+message RoleListRequest
+{
+	required uint32 accid	= 1;	//账号ID
+	required uint32 zoneid	= 2;	//分区ID
+}
+
+message RoleInfo
+{
+    required uint32 accid   = 1;    //账号ID
+    required uint32 roleid  = 2;    //角色ID
+    required string name    = 3;    //角色名字
+}
+
+message RoleListReturn
+{
+    repeated RoleInfo rolelist = 1; //角色列表
+}
+
+message RoleCreateRequest
+{
+    required uint32 zoneid  = 1;     //区服Id
+    required uint32 accid   = 2;     //账号id
+    required string name    = 3;     //角色名称
+}
+
+message RoleCreateReturn
+{
+    required uint32 result  = 1;     //0 成功 1名字重复
+    required uint32 roleid  = 2;     //角色id
+    required string name    = 3;     //名字
+    required uint32 zoneid  = 4;     //区服Id
+    required uint32 accid   = 5;     //账号Id
+}

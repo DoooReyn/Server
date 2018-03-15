@@ -1,0 +1,215 @@
+2017-12-09 14:43:07 [GS_1][INFO]:[game_main.cpp:28]==>[pid = 5691 tid =5691]
+2017-12-09 14:43:07 [GS_1][DEBUG]:[game_server.cpp:116]==>onConnection 192.168.81.128:44486 -> 192.168.81.128:3201
+2017-12-09 14:43:07 [GS_1][DEBUG]:[game_server.cpp:116]==>onConnection 192.168.81.128:57948 -> 192.168.81.128:3202
+2017-12-09 14:43:07 [GS_1][INFO]:[gate_client.cpp:140]==>Verify Return Src IP:192.168.81.128:3201
+2017-12-09 14:43:07 [GS_1][INFO]:[gate_client.cpp:140]==>Verify Return Src IP:192.168.81.128:3202
+2017-12-09 14:43:17 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:0
+2017-12-09 14:43:17 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:43:18 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:99999
+2017-12-09 14:43:18 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:43:18 [GS_1][WARN]:[gate_client.cpp:49]==>TestMessage Micro Second :-1512803444943023 
+2017-12-09 14:44:18 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:0
+2017-12-09 14:44:18 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:44:19 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:99999
+2017-12-09 14:44:19 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:44:19 [GS_1][WARN]:[gate_client.cpp:49]==>TestMessage Micro Second :-1512803445066189 
+2017-12-09 14:44:34 [GS_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x2322e78 stop looping
+2017-12-09 14:45:02 [GS_1][INFO]:[game_main.cpp:28]==>[pid = 5869 tid =5869]
+2017-12-09 14:45:02 [GS_1][DEBUG]:[game_server.cpp:116]==>onConnection 192.168.81.128:44510 -> 192.168.81.128:3201
+2017-12-09 14:45:02 [GS_1][DEBUG]:[game_server.cpp:116]==>onConnection 192.168.81.128:57972 -> 192.168.81.128:3202
+2017-12-09 14:45:02 [GS_1][INFO]:[gate_client.cpp:140]==>Verify Return Src IP:192.168.81.128:3201
+2017-12-09 14:45:02 [GS_1][INFO]:[gate_client.cpp:140]==>Verify Return Src IP:192.168.81.128:3202
+2017-12-09 14:45:05 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:0
+2017-12-09 14:45:05 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:45:06 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:99999
+2017-12-09 14:45:06 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:45:06 [GS_1][WARN]:[gate_client.cpp:49]==>TestMessage Micro Second :694480 
+2017-12-09 14:45:45 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:0
+2017-12-09 14:45:45 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:45:46 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:99999
+2017-12-09 14:45:46 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:45:46 [GS_1][WARN]:[gate_client.cpp:49]==>TestMessage Micro Second :890720 
+2017-12-09 14:45:46 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:0
+2017-12-09 14:45:46 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:45:46 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:99999
+2017-12-09 14:45:46 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:45:46 [GS_1][WARN]:[gate_client.cpp:49]==>TestMessage Micro Second :608751 
+2017-12-09 14:45:46 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:0
+2017-12-09 14:45:46 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:45:47 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:99999
+2017-12-09 14:45:47 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:45:47 [GS_1][WARN]:[gate_client.cpp:49]==>TestMessage Micro Second :813129 
+2017-12-09 14:45:47 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:0
+2017-12-09 14:45:47 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:45:48 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:99999
+2017-12-09 14:45:48 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:45:48 [GS_1][WARN]:[gate_client.cpp:49]==>TestMessage Micro Second :639657 
+2017-12-09 14:45:48 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:0
+2017-12-09 14:45:48 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:45:48 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:99999
+2017-12-09 14:45:48 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:45:48 [GS_1][WARN]:[gate_client.cpp:49]==>TestMessage Micro Second :551145 
+2017-12-09 14:45:58 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:0
+2017-12-09 14:45:58 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:45:59 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:99999
+2017-12-09 14:45:59 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:45:59 [GS_1][WARN]:[gate_client.cpp:49]==>TestMessage Micro Second :799707 
+2017-12-09 14:46:03 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:0
+2017-12-09 14:46:03 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:46:04 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:99999
+2017-12-09 14:46:04 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:46:04 [GS_1][WARN]:[gate_client.cpp:49]==>TestMessage Micro Second :915901 
+2017-12-09 14:46:06 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:0
+2017-12-09 14:46:06 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:46:07 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:99999
+2017-12-09 14:46:07 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:46:07 [GS_1][WARN]:[gate_client.cpp:49]==>TestMessage Micro Second :662160 
+2017-12-09 14:46:13 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:0
+2017-12-09 14:46:13 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:46:14 [GS_1][DEBUG]:[gate_client.cpp:60]==>5678 message:我们 Test:99999
+2017-12-09 14:46:14 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:46:14 [GS_1][WARN]:[gate_client.cpp:49]==>TestMessage Micro Second :807283 
+2017-12-09 14:49:23 [GS_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x81be78 stop looping
+2017-12-09 14:49:24 [GS_1][INFO]:[game_main.cpp:28]==>[pid = 6269 tid =6269]
+2017-12-09 14:49:24 [GS_1][DEBUG]:[game_server.cpp:116]==>onConnection 192.168.81.128:44530 -> 192.168.81.128:3201
+2017-12-09 14:49:24 [GS_1][DEBUG]:[game_server.cpp:116]==>onConnection 192.168.81.128:57992 -> 192.168.81.128:3202
+2017-12-09 14:49:24 [GS_1][INFO]:[gate_client.cpp:144]==>Verify Return Src IP:192.168.81.128:3201
+2017-12-09 14:49:24 [GS_1][INFO]:[gate_client.cpp:144]==>Verify Return Src IP:192.168.81.128:3202
+2017-12-09 14:49:30 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:49:30 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:49:31 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:49:31 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:49:31 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:1 average:878581.000000
+2017-12-09 14:49:31 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:49:31 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:49:32 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:49:32 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:49:32 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:2 average:912737.500000
+2017-12-09 14:49:32 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:49:32 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:49:32 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:49:32 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:49:32 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:3 average:761479.666667
+2017-12-09 14:49:32 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:49:32 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:49:33 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:49:33 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:49:33 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:4 average:760024.500000
+2017-12-09 14:49:40 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:49:40 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:49:41 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:49:41 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:49:41 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:5 average:789000.200000
+2017-12-09 14:49:41 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:49:41 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:49:42 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:49:42 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:49:42 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:6 average:777521.666667
+2017-12-09 14:49:42 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:49:42 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:49:42 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:49:42 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:49:42 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:7 average:752093.285714
+2017-12-09 14:49:42 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:49:42 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:49:43 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:49:43 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:49:43 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:8 average:759335.000000
+2017-12-09 14:49:43 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:49:43 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:49:44 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:49:44 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:49:44 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:9 average:748564.777778
+2017-12-09 14:49:44 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:49:44 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:49:45 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:49:45 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:49:45 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:10 average:756425.000000
+2017-12-09 14:49:45 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:49:45 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:49:45 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:49:45 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:49:45 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:11 average:752739.818182
+2017-12-09 14:49:45 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:49:45 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:49:46 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:49:46 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:49:46 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:12 average:757139.333333
+2017-12-09 14:49:46 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:49:46 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:49:47 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:49:47 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:49:47 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:13 average:744708.153846
+2017-12-09 14:49:47 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:49:47 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:49:47 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:49:47 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:49:47 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:14 average:727614.142857
+2017-12-09 14:49:47 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:49:47 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:49:48 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:49:48 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:49:48 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:15 average:716151.066667
+2017-12-09 14:50:11 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:50:11 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:50:11 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:50:11 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:50:11 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:16 average:729645.562500
+2017-12-09 14:50:11 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:50:11 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:50:12 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:50:12 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:50:12 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:17 average:720971.470588
+2017-12-09 14:50:12 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:50:12 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:50:13 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:50:13 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:50:13 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:18 average:721131.722222
+2017-12-09 14:50:13 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:50:13 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:50:13 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:50:13 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:50:13 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:19 average:718846.894737
+2017-12-09 14:50:13 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:50:13 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:50:14 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:50:14 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:50:14 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:20 average:726502.200000
+2017-12-09 14:50:14 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:50:14 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:50:15 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:50:15 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:50:15 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:21 average:727285.571429
+2017-12-09 14:50:15 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:50:15 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:50:16 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:50:16 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:50:16 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:22 average:739396.818182
+2017-12-09 14:50:16 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:50:16 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:50:17 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:50:17 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:50:17 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:23 average:736628.304348
+2017-12-09 14:50:17 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:50:17 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:50:17 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:50:17 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:50:17 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:24 average:732497.500000
+2017-12-09 14:50:17 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2017-12-09 14:50:17 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2017-12-09 14:50:18 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2017-12-09 14:50:18 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2017-12-09 14:50:18 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:25 average:722693.920000
+2017-12-09 14:50:57 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3201 -> 192.168.81.128:44530 is 0 Pid:6269
+2017-12-09 14:50:57 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3201
+2017-12-09 14:50:57 [GS_1][WARN]:[channel.cpp:113]==>fd=9 Channel::HandleEvent() POLLHUP
+2017-12-09 14:50:57 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-12-09 14:50:57 [GS_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-12-09 14:50:57 [GS_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:9 Retry connecting to 192.168.81.128:3201 in 500 milliseconds. 
+2017-12-09 14:50:57 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3202 -> 192.168.81.128:57992 is 0 Pid:6269
+2017-12-09 14:50:57 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3202
+2017-12-09 14:50:57 [GS_1][WARN]:[channel.cpp:113]==>fd=7 Channel::HandleEvent() POLLHUP
+2017-12-09 14:50:57 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-12-09 14:50:57 [GS_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-12-09 14:50:57 [GS_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:7 Retry connecting to 192.168.81.128:3202 in 500 milliseconds. 
+2017-12-09 14:50:57 [GS_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x1b51e78 stop looping

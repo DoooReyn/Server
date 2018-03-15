@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -Werror -g -D _DEBUG -std=c++11   CMakeFiles/write.dir/share_memory.cpp.o CMakeFiles/write.dir/write.cpp.o  -o write -rdynamic -lrt 

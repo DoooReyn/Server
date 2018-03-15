@@ -1,0 +1,20 @@
+2017-12-13 16:25:41 [LS][INFO]:[login_main.cpp:17]==>[pid = 10273 tid =10273]
+2017-12-13 16:25:41 [LS][DEBUG]:[account_client.cpp:49]==>tid:10273 onConnection 127.0.0.1:58426 -> 127.0.0.1:3100
+2017-12-13 16:25:41 [LS][INFO]:[login_server.cpp:236]==>Verify Return Src IP:127.0.0.1:3100
+2017-12-13 16:25:41 [LS][INFO]:[login_server.cpp:200]==>onVerify 127.0.0.1:35120 -> 127.0.0.1:3000
+2017-12-13 16:25:41 [LS][INFO]:[login_server.cpp:172]==>current pid:10273 status:connect
+2017-12-13 16:25:42 [LS][INFO]:[login_server.cpp:200]==>onVerify 127.0.0.1:35122 -> 127.0.0.1:3000
+2017-12-13 16:25:42 [LS][INFO]:[login_server.cpp:172]==>current pid:10273 status:connect
+2017-12-13 16:25:42 [LS][DEBUG]:[gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2017-12-13 16:25:42 [LS][DEBUG]:[gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2017-12-13 16:42:34 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x14dfe78 stop looping
+2017-12-13 16:42:34 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fe16921c910 stop looping
+2017-12-13 16:42:34 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fe168a1b910 stop looping
+2017-12-13 16:42:34 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fe163fee910 stop looping
+2017-12-13 16:42:34 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fe1637ed910 stop looping
+2017-12-13 16:42:34 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fe162fec910 stop looping
+2017-12-13 16:42:34 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fe1627eb910 stop looping
+2017-12-13 16:42:34 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fe161fea910 stop looping
+2017-12-13 16:42:34 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fe1617e9910 stop looping
+2017-12-13 16:42:34 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fe160fe8910 stop looping
+2017-12-13 16:42:34 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fe13ffee910 stop looping

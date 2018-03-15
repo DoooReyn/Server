@@ -1,0 +1,146 @@
+2017-11-06 10:24:24 [GS_1][DEBUG]:[game_main.cpp:27]==>pid = 2831, tid =2831 ServerId:1
+2017-11-06 10:24:24 [GS_1][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x14a8e78 in thread :2831
+2017-11-06 10:24:24 [GS_1][DEBUG]:[mysql_pool.cpp:106]==>MysqlHandle InitMysql:2
+2017-11-06 10:24:24 [GS_1][INFO]:[game_server.cpp:84]==>Mysql Connect Success
+2017-11-06 10:24:24 [GS_1][DEBUG]:[mysql_pool.cpp:123]==>FinalHandle():The mysql connect will been closed... way:1
+2017-11-06 10:29:28 [GS_1][DEBUG]:[game_main.cpp:27]==>pid = 3196, tid =3196 ServerId:1
+2017-11-06 10:29:28 [GS_1][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x24c1e78 in thread :3196
+2017-11-06 10:29:28 [GS_1][DEBUG]:[mysql_pool.cpp:106]==>MysqlHandle InitMysql:2
+2017-11-06 10:29:28 [GS_1][DEBUG]:[mysql_pool.cpp:123]==>FinalHandle():The mysql connect will been closed... way:1
+2017-11-06 10:29:28 [GS_1][DEBUG]:[connector.cpp:18]==>Connector ctor[0x24c6d50]
+2017-11-06 10:29:28 [GS_1][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[GS_1] - connector 0x24c6d50
+2017-11-06 10:29:28 [GS_1][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[GS_1] - connecting to 192.168.81.128:3201
+2017-11-06 10:29:28 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-06 10:29:28 [GS_1][DEBUG]:[connector.cpp:18]==>Connector ctor[0x24c7430]
+2017-11-06 10:29:28 [GS_1][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[GS_1] - connector 0x24c7430
+2017-11-06 10:29:28 [GS_1][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[GS_1] - connecting to 192.168.81.128:3202
+2017-11-06 10:29:28 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-06 10:29:28 [GS_1][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GS_1:192.168.81.128:3201#1] at 0x7f4a26eea010 fd=7
+2017-11-06 10:29:28 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:55896 -> 192.168.81.128:3201 is 1 Pid:3196
+2017-11-06 10:29:28 [GS_1][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GS_1:192.168.81.128:3202#1] at 0x7f4a26ec1010 fd=8
+2017-11-06 10:29:28 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:57706 -> 192.168.81.128:3202 is 1 Pid:3196
+2017-11-06 10:29:28 [GS_1][INFO]:[gate_client.cpp:128]==>onVerify Return
+2017-11-06 10:29:28 [GS_1][INFO]:[gate_client.cpp:128]==>onVerify Return
+2017-11-06 10:29:49 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3201 -> 192.168.81.128:55896 is 0 Pid:3196
+2017-11-06 10:29:49 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3201
+2017-11-06 10:29:49 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-06 10:29:49 [GS_1][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GS_1:192.168.81.128:3201#1] at 0x7f4a26eea010 fd=7 state=kDisconnected
+2017-11-06 10:29:49 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3202 -> 192.168.81.128:57706 is 0 Pid:3196
+2017-11-06 10:29:49 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3202
+2017-11-06 10:29:49 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-06 10:29:49 [GS_1][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GS_1:192.168.81.128:3201#2] at 0x24d9960 fd=9
+2017-11-06 10:29:49 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:55912 -> 192.168.81.128:3201 is 1 Pid:3196
+2017-11-06 10:29:49 [GS_1][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GS_1:192.168.81.128:3202#1] at 0x7f4a26ec1010 fd=8 state=kDisconnected
+2017-11-06 10:29:49 [GS_1][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GS_1:192.168.81.128:3202#2] at 0x2501b80 fd=7
+2017-11-06 10:29:49 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:57722 -> 192.168.81.128:3202 is 1 Pid:3196
+2017-11-06 10:29:49 [GS_1][ERROR]:[tcp_connection.cpp:407]==>TcpConnection::handleError [ GS_1:192.168.81.128:3201#2 ] - SO_ERROR = 104 -- Connection reset by peer
+2017-11-06 10:29:49 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3201 -> 192.168.81.128:55912 is 0 Pid:3196
+2017-11-06 10:29:49 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3201
+2017-11-06 10:29:49 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-06 10:29:49 [GS_1][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GS_1:192.168.81.128:3201#2] at 0x24d9960 fd=9 state=kDisconnected
+2017-11-06 10:29:49 [GS_1][WARN]:[channel.cpp:113]==>fd=8 Channel::HandleEvent() POLLHUP
+2017-11-06 10:29:49 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-06 10:29:49 [GS_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-11-06 10:29:49 [GS_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:8 Retry connecting to 192.168.81.128:3201 in 500 milliseconds. 
+2017-11-06 10:29:49 [GS_1][ERROR]:[tcp_connection.cpp:407]==>TcpConnection::handleError [ GS_1:192.168.81.128:3202#2 ] - SO_ERROR = 104 -- Connection reset by peer
+2017-11-06 10:29:49 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3202 -> 192.168.81.128:57722 is 0 Pid:3196
+2017-11-06 10:29:49 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3202
+2017-11-06 10:29:49 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-06 10:29:49 [GS_1][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GS_1:192.168.81.128:3202#2] at 0x2501b80 fd=7 state=kDisconnected
+2017-11-06 10:29:49 [GS_1][WARN]:[channel.cpp:113]==>fd=8 Channel::HandleEvent() POLLHUP
+2017-11-06 10:29:49 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-06 10:29:49 [GS_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-11-06 10:29:49 [GS_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:8 Retry connecting to 192.168.81.128:3202 in 500 milliseconds. 
+2017-11-06 10:29:49 [GS_1][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x24c1e78 stop looping
+2017-11-06 10:29:49 [GS_1][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[GS_1] - connector 0x24c6d50
+2017-11-06 10:29:49 [GS_1][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[GS_1] - connector 0x24c7430
+2017-11-06 10:30:00 [GS_1][DEBUG]:[game_main.cpp:27]==>pid = 3319, tid =3319 ServerId:1
+2017-11-06 10:30:00 [GS_1][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x2195e78 in thread :3319
+2017-11-06 10:30:00 [GS_1][DEBUG]:[mysql_pool.cpp:106]==>MysqlHandle InitMysql:2
+2017-11-06 10:30:00 [GS_1][DEBUG]:[mysql_pool.cpp:123]==>FinalHandle():The mysql connect will been closed... way:1
+2017-11-06 10:30:00 [GS_1][DEBUG]:[connector.cpp:18]==>Connector ctor[0x219ad50]
+2017-11-06 10:30:00 [GS_1][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[GS_1] - connector 0x219ad50
+2017-11-06 10:30:00 [GS_1][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[GS_1] - connecting to 192.168.81.128:3201
+2017-11-06 10:30:00 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-06 10:30:00 [GS_1][DEBUG]:[connector.cpp:18]==>Connector ctor[0x219b430]
+2017-11-06 10:30:00 [GS_1][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[GS_1] - connector 0x219b430
+2017-11-06 10:30:00 [GS_1][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[GS_1] - connecting to 192.168.81.128:3202
+2017-11-06 10:30:00 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-06 10:30:00 [GS_1][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GS_1:192.168.81.128:3201#1] at 0x7f782a754010 fd=7
+2017-11-06 10:30:00 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:55932 -> 192.168.81.128:3201 is 1 Pid:3319
+2017-11-06 10:30:00 [GS_1][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GS_1:192.168.81.128:3202#1] at 0x7f782a72b010 fd=8
+2017-11-06 10:30:00 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:57742 -> 192.168.81.128:3202 is 1 Pid:3319
+2017-11-06 10:30:00 [GS_1][INFO]:[gate_client.cpp:128]==>onVerify Return
+2017-11-06 10:30:00 [GS_1][INFO]:[gate_client.cpp:128]==>onVerify Return
+2017-11-06 10:33:53 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3201 -> 192.168.81.128:55932 is 0 Pid:3319
+2017-11-06 10:33:53 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3201
+2017-11-06 10:33:53 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-06 10:33:53 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3202 -> 192.168.81.128:57742 is 0 Pid:3319
+2017-11-06 10:33:53 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3202
+2017-11-06 10:33:53 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-06 10:33:53 [GS_1][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GS_1:192.168.81.128:3201#1] at 0x7f782a754010 fd=7 state=kDisconnected
+2017-11-06 10:33:53 [GS_1][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GS_1:192.168.81.128:3202#1] at 0x7f782a72b010 fd=8 state=kDisconnected
+2017-11-06 10:33:53 [GS_1][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GS_1:192.168.81.128:3201#2] at 0x21ad960 fd=9
+2017-11-06 10:33:53 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:55948 -> 192.168.81.128:3201 is 1 Pid:3319
+2017-11-06 10:33:53 [GS_1][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GS_1:192.168.81.128:3202#2] at 0x21d5b80 fd=10
+2017-11-06 10:33:53 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:57758 -> 192.168.81.128:3202 is 1 Pid:3319
+2017-11-06 10:33:53 [GS_1][ERROR]:[tcp_connection.cpp:407]==>TcpConnection::handleError [ GS_1:192.168.81.128:3202#2 ] - SO_ERROR = 104 -- Connection reset by peer
+2017-11-06 10:33:53 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3202 -> 192.168.81.128:57758 is 0 Pid:3319
+2017-11-06 10:33:53 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3202
+2017-11-06 10:33:53 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-06 10:33:53 [GS_1][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GS_1:192.168.81.128:3202#2] at 0x21d5b80 fd=10 state=kDisconnected
+2017-11-06 10:33:53 [GS_1][WARN]:[channel.cpp:113]==>fd=7 Channel::HandleEvent() POLLHUP
+2017-11-06 10:33:53 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-06 10:33:53 [GS_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-11-06 10:33:53 [GS_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:7 Retry connecting to 192.168.81.128:3202 in 500 milliseconds. 
+2017-11-06 10:33:53 [GS_1][ERROR]:[tcp_connection.cpp:407]==>TcpConnection::handleError [ GS_1:192.168.81.128:3201#2 ] - SO_ERROR = 104 -- Connection reset by peer
+2017-11-06 10:33:53 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3201 -> 192.168.81.128:55948 is 0 Pid:3319
+2017-11-06 10:33:53 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3201
+2017-11-06 10:33:53 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-06 10:33:53 [GS_1][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GS_1:192.168.81.128:3201#2] at 0x21ad960 fd=9 state=kDisconnected
+2017-11-06 10:33:53 [GS_1][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x2195e78 stop looping
+2017-11-06 10:33:53 [GS_1][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[GS_1] - connector 0x219ad50
+2017-11-06 10:33:53 [GS_1][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[GS_1] - connector 0x219b430
+2017-11-06 10:34:28 [GS_1][ERROR]:[tcp_connection.cpp:407]==>TcpConnection::handleError [ GS_1:192.168.81.128:3202#2 ] - SO_ERROR = 104 -- Connection reset by peer
+2017-11-06 10:34:28 [GS_1][ERROR]:[tcp_connection.cpp:407]==>TcpConnection::handleError [ GS_1:192.168.81.128:3201#2 ] - SO_ERROR = 104 -- Connection reset by peer
+2017-11-06 10:34:28 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-06 10:34:28 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-06 10:34:30 [GS_1][DEBUG]:[game_main.cpp:28]==>pid = 3861, tid =3861 ServerId:1
+2017-11-06 10:34:30 [GS_1][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x2557e78 in thread :3861
+2017-11-06 10:34:30 [GS_1][DEBUG]:[mysql_pool.cpp:106]==>MysqlHandle InitMysql:2
+2017-11-06 10:34:30 [GS_1][DEBUG]:[mysql_pool.cpp:123]==>FinalHandle():The mysql connect will been closed... way:1
+2017-11-06 10:34:30 [GS_1][DEBUG]:[connector.cpp:18]==>Connector ctor[0x255cd50]
+2017-11-06 10:34:30 [GS_1][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[GS_1] - connector 0x255cd50
+2017-11-06 10:34:30 [GS_1][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[GS_1] - connecting to 192.168.81.128:3201
+2017-11-06 10:34:30 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-06 10:34:30 [GS_1][DEBUG]:[connector.cpp:18]==>Connector ctor[0x255d430]
+2017-11-06 10:34:30 [GS_1][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[GS_1] - connector 0x255d430
+2017-11-06 10:34:30 [GS_1][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[GS_1] - connecting to 192.168.81.128:3202
+2017-11-06 10:34:30 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-06 10:34:30 [GS_1][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GS_1:192.168.81.128:3201#1] at 0x7f239cf01010 fd=7
+2017-11-06 10:34:30 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:56004 -> 192.168.81.128:3201 is 1 Pid:3861
+2017-11-06 10:34:30 [GS_1][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GS_1:192.168.81.128:3202#1] at 0x7f239ced8010 fd=8
+2017-11-06 10:34:30 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:57814 -> 192.168.81.128:3202 is 1 Pid:3861
+2017-11-06 10:34:30 [GS_1][INFO]:[gate_client.cpp:128]==>onVerify Return
+2017-11-06 10:34:30 [GS_1][INFO]:[gate_client.cpp:128]==>onVerify Return
+2017-11-06 10:34:35 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3201 -> 192.168.81.128:56004 is 0 Pid:3861
+2017-11-06 10:34:35 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3201
+2017-11-06 10:34:35 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-06 10:34:35 [GS_1][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GS_1:192.168.81.128:3201#1] at 0x7f239cf01010 fd=7 state=kDisconnected
+2017-11-06 10:34:35 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3202 -> 192.168.81.128:57814 is 0 Pid:3861
+2017-11-06 10:34:35 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3202
+2017-11-06 10:34:35 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-06 10:34:35 [GS_1][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GS_1:192.168.81.128:3201#2] at 0x256f960 fd=9
+2017-11-06 10:34:35 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:56016 -> 192.168.81.128:3201 is 1 Pid:3861
+2017-11-06 10:34:35 [GS_1][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GS_1:192.168.81.128:3202#1] at 0x7f239ced8010 fd=8 state=kDisconnected
+2017-11-06 10:34:35 [GS_1][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GS_1:192.168.81.128:3202#2] at 0x2597b80 fd=7
+2017-11-06 10:34:35 [GS_1][INFO]:[game_server.cpp:116]==>onConnection 192.168.81.128:57826 -> 192.168.81.128:3202 is 1 Pid:3861
+2017-11-06 10:34:35 [GS_1][ERROR]:[tcp_connection.cpp:407]==>TcpConnection::handleError [ GS_1:192.168.81.128:3202#2 ] - SO_ERROR = 104 -- Connection reset by peer
+2017-11-06 10:34:35 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3202 -> 192.168.81.128:57826 is 0 Pid:3861
+2017-11-06 10:34:35 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3202
+2017-11-06 10:34:35 [GS_1][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-06 10:34:35 [GS_1][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GS_1:192.168.81.128:3202#2] at 0x2597b80 fd=7 state=kDisconnected
+2017-11-06 10:34:35 [GS_1][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x2557e78 stop looping
+2017-11-06 10:34:35 [GS_1][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[GS_1] - connector 0x255cd50
+2017-11-06 10:34:35 [GS_1][DEBUG]:[connector.cpp:23]==>Connector dctor[0x255cd50]
+2017-11-06 10:34:35 [GS_1][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[GS_1] - connector 0x255d430

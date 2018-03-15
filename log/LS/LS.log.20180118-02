@@ -1,0 +1,36 @@
+2018-01-18 02:34:16 [LS][INFO]:[login_main.cpp:17]==>[pid = 3721 tid =3721]
+2018-01-18 02:34:16 [LS][DEBUG]:[login_account_client.cpp:49]==>tid:3721 onConnection 127.0.0.1:46820 -> 127.0.0.1:3100
+2018-01-18 02:34:16 [LS][INFO]:[login_server.cpp:252]==>Verify Return Src IP:127.0.0.1:3100
+2018-01-18 02:34:16 [LS][INFO]:[login_server.cpp:209]==>onVerify 127.0.0.1:48334 -> 127.0.0.1:3000
+2018-01-18 02:34:16 [LS][INFO]:[login_server.cpp:173]==>current pid:3721 status:connect conntype:4
+2018-01-18 02:34:16 [LS][INFO]:[login_server.cpp:209]==>onVerify 127.0.0.1:48336 -> 127.0.0.1:3000
+2018-01-18 02:34:16 [LS][INFO]:[login_server.cpp:173]==>current pid:3721 status:connect conntype:4
+2018-01-18 02:34:16 [LS][INFO]:[login_server.cpp:209]==>onVerify 127.0.0.1:48344 -> 127.0.0.1:3000
+2018-01-18 02:34:16 [LS][INFO]:[login_server.cpp:173]==>current pid:3721 status:connect conntype:5
+2018-01-18 02:34:16 [LS][DEBUG]:[login_gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2018-01-18 02:34:16 [LS][DEBUG]:[login_gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2018-01-18 02:34:24 [LS][INFO]:[login_server.cpp:209]==>onVerify 127.0.0.1:48346 -> 127.0.0.1:3000
+2018-01-18 02:34:24 [LS][INFO]:[login_server.cpp:173]==>current pid:3721 status:connect conntype:1
+2018-01-18 02:34:39 [LS][DEBUG]:[login_server.cpp:283]==>ParseZoneInfoRequest accid:15 best gateid:1
+2018-01-18 02:35:37 [LS][INFO]:[login_server.cpp:173]==>current pid:3721 status:disconnect conntype:0
+2018-01-18 02:35:42 [LS][DEBUG]:[login_account_client.cpp:63]==>onDisconnect 127.0.0.1:46820 -> 127.0.0.1:3100
+2018-01-18 02:35:42 [LS][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[LS] - Reconnecting to 127.0.0.1:3100
+2018-01-18 02:35:42 [LS][DEBUG]:[login_account_client.cpp:49]==>tid:3721 onConnection 127.0.0.1:46836 -> 127.0.0.1:3100
+2018-01-18 02:35:42 [LS][ERROR]:[tcp_connection.cpp:421]==>TcpConnection::handleError [ LS:127.0.0.1:3100#2 ] - SO_ERROR = 104 -- Connection reset by peer
+2018-01-18 02:35:42 [LS][DEBUG]:[login_account_client.cpp:63]==>onDisconnect 127.0.0.1:46836 -> 127.0.0.1:3100
+2018-01-18 02:35:42 [LS][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[LS] - Reconnecting to 127.0.0.1:3100
+2018-01-18 02:35:42 [LS][WARN]:[channel.cpp:113]==>fd=10 Channel::HandleEvent() POLLHUP
+2018-01-18 02:35:42 [LS][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2018-01-18 02:35:42 [LS][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2018-01-18 02:35:42 [LS][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:10 Retry connecting to 127.0.0.1:3100 in 500 milliseconds. 
+2018-01-18 02:35:42 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x1b53258 stop looping
+2018-01-18 02:35:42 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fd5af718910 stop looping
+2018-01-18 02:35:42 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fd5aef17910 stop looping
+2018-01-18 02:35:42 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fd5ae716910 stop looping
+2018-01-18 02:35:42 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fd5adf15910 stop looping
+2018-01-18 02:35:42 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fd5ad714910 stop looping
+2018-01-18 02:35:42 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fd5acf13910 stop looping
+2018-01-18 02:35:42 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fd597fee910 stop looping
+2018-01-18 02:35:42 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fd5977ed910 stop looping
+2018-01-18 02:35:42 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fd596fec910 stop looping
+2018-01-18 02:35:42 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fd5967eb910 stop looping

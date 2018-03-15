@@ -1,0 +1,41 @@
+2017-11-22 15:59:35 [LS][DEBUG]:[login_main.cpp:17]==>pid = 9911, tid =9911
+2017-11-22 15:59:35 [LS][INFO]:[login_server.cpp:94]==>Mysql Connect Success
+2017-11-22 15:59:35 [LS][INFO]:[account_client.cpp:43]==>AccountServer IP:127.0.0.1 Port:3100
+2017-11-22 15:59:35 [LS][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[LS] - connecting to 127.0.0.1:3100
+2017-11-22 15:59:35 [LS][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-22 15:59:35 [LS][WARN]:[channel.cpp:113]==>fd=10 Channel::HandleEvent() POLLHUP
+2017-11-22 15:59:35 [LS][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-22 15:59:35 [LS][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-11-22 15:59:35 [LS][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:10 Retry connecting to 127.0.0.1:3100 in 500 milliseconds. 
+2017-11-22 15:59:35 [LS][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-22 15:59:35 [LS][WARN]:[channel.cpp:113]==>fd=10 Channel::HandleEvent() POLLHUP
+2017-11-22 15:59:35 [LS][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-22 15:59:35 [LS][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-11-22 15:59:35 [LS][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:10 Retry connecting to 127.0.0.1:3100 in 1000 milliseconds. 
+2017-11-22 15:59:36 [LS][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-22 15:59:36 [LS][WARN]:[channel.cpp:113]==>fd=10 Channel::HandleEvent() POLLHUP
+2017-11-22 15:59:36 [LS][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-22 15:59:36 [LS][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-11-22 15:59:36 [LS][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:10 Retry connecting to 127.0.0.1:3100 in 2000 milliseconds. 
+2017-11-22 15:59:38 [LS][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-22 15:59:38 [LS][WARN]:[channel.cpp:113]==>fd=10 Channel::HandleEvent() POLLHUP
+2017-11-22 15:59:38 [LS][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-22 15:59:38 [LS][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-11-22 15:59:38 [LS][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:10 Retry connecting to 127.0.0.1:3100 in 4000 milliseconds. 
+2017-11-22 15:59:42 [LS][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-22 15:59:42 [LS][WARN]:[channel.cpp:113]==>fd=10 Channel::HandleEvent() POLLHUP
+2017-11-22 15:59:42 [LS][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-22 15:59:42 [LS][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-11-22 15:59:42 [LS][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:10 Retry connecting to 127.0.0.1:3100 in 8000 milliseconds. 
+2017-11-22 15:59:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0xd35e78 stop looping
+2017-11-22 15:59:50 [LS][DEBUG]:[tcp_server.cpp:25]==>TcpServer::~TcpServer [ LS ] destructing
+2017-11-22 15:59:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f6a4f584910 stop looping
+2017-11-22 15:59:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f6a4ed83910 stop looping
+2017-11-22 15:59:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f6a4e582910 stop looping
+2017-11-22 15:59:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f6a4dd81910 stop looping
+2017-11-22 15:59:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f6a4d580910 stop looping
+2017-11-22 15:59:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f6a4cd7f910 stop looping
+2017-11-22 15:59:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f6a37fee910 stop looping
+2017-11-22 15:59:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f6a377ed910 stop looping
+2017-11-22 15:59:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f6a36fec910 stop looping
+2017-11-22 15:59:50 [LS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f6a367eb910 stop looping

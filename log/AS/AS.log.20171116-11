@@ -1,0 +1,56 @@
+2017-11-16 11:01:54 [AS][INFO]:[tcp_server.cpp:94]==>TcpServer::removeConnectionInLoop [AS] - connection AS-0.0.0.0:3100#1
+2017-11-16 11:01:54 [AS][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[AS-0.0.0.0:3100#1] at 0x7f9ff2b23010 fd=10 state=kDisconnected
+2017-11-16 11:01:54 [AS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x1276658 stop looping
+2017-11-16 11:01:54 [AS][DEBUG]:[tcp_server.cpp:25]==>TcpServer::~TcpServer [ AS ] destructing
+2017-11-16 11:01:54 [AS][DEBUG]:[account_main.cpp:18]==>pid = 4167, tid =4167
+2017-11-16 11:01:54 [AS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x2254658 in thread :4167
+2017-11-16 11:01:54 [AS][INFO]:[account_server.cpp:71]==>Mysql Connect Success
+2017-11-16 11:01:54 [AS][INFO]:[tcp_server.cpp:72]==>new connect [AS-0.0.0.0:3100#1] form 127.0.0.1:54594
+2017-11-16 11:01:54 [AS][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[AS-0.0.0.0:3100#1] at 0x7f6de5fd0010 fd=10
+2017-11-16 11:01:54 [AS][DEBUG]:[account_server.cpp:41]==>onDisconnect 127.0.0.1:54594 -> 127.0.0.1:3100 is 1
+2017-11-16 11:01:54 [AS][DEBUG]:[account_server.cpp:47]==>onVerify 127.0.0.1:54594 -> 127.0.0.1:3100 is 1 cid:12884901889
+2017-11-16 11:02:48 [AS][DEBUG]:[account_main.cpp:18]==>pid = 4403, tid =4403
+2017-11-16 11:02:48 [AS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x2461658 in thread :4403
+2017-11-16 11:02:48 [AS][INFO]:[account_server.cpp:71]==>Mysql Connect Success
+2017-11-16 11:02:48 [AS][ERROR]:[socket_ops.cpp:51]==>bind error
+2017-11-16 11:02:48 [AS][ERROR]:[account_server.cpp:90]==>TcpServer Bind Failed IP:0.0.0.0:3100
+2017-11-16 11:02:51 [AS][INFO]:[tcp_server.cpp:94]==>TcpServer::removeConnectionInLoop [AS] - connection AS-0.0.0.0:3100#1
+2017-11-16 11:02:51 [AS][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[AS-0.0.0.0:3100#1] at 0x7f6de5fd0010 fd=10 state=kDisconnected
+2017-11-16 11:02:51 [AS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x2254658 stop looping
+2017-11-16 11:02:51 [AS][DEBUG]:[tcp_server.cpp:25]==>TcpServer::~TcpServer [ AS ] destructing
+2017-11-16 11:02:57 [AS][DEBUG]:[account_main.cpp:18]==>pid = 4417, tid =4417
+2017-11-16 11:02:57 [AS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x182d658 in thread :4417
+2017-11-16 11:02:57 [AS][INFO]:[account_server.cpp:71]==>Mysql Connect Success
+2017-11-16 11:03:01 [AS][INFO]:[tcp_server.cpp:72]==>new connect [AS-0.0.0.0:3100#1] form 127.0.0.1:54620
+2017-11-16 11:03:01 [AS][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[AS-0.0.0.0:3100#1] at 0x7f556371c010 fd=10
+2017-11-16 11:03:01 [AS][DEBUG]:[account_server.cpp:41]==>onDisconnect 127.0.0.1:54620 -> 127.0.0.1:3100 is 1
+2017-11-16 11:03:01 [AS][DEBUG]:[account_server.cpp:47]==>onVerify 127.0.0.1:54620 -> 127.0.0.1:3100 is 1 cid:12884901889
+2017-11-16 11:04:50 [AS][INFO]:[tcp_server.cpp:94]==>TcpServer::removeConnectionInLoop [AS] - connection AS-0.0.0.0:3100#1
+2017-11-16 11:04:50 [AS][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[AS-0.0.0.0:3100#1] at 0x7f556371c010 fd=10 state=kDisconnected
+2017-11-16 11:04:53 [AS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x182d658 stop looping
+2017-11-16 11:04:53 [AS][DEBUG]:[tcp_server.cpp:25]==>TcpServer::~TcpServer [ AS ] destructing
+2017-11-16 11:05:46 [AS][DEBUG]:[account_main.cpp:18]==>pid = 4669, tid =4669
+2017-11-16 11:05:46 [AS][INFO]:[account_server.cpp:71]==>Mysql Connect Success
+2017-11-16 11:05:46 [AS][INFO]:[tcp_server.cpp:72]==>new connect [AS-0.0.0.0:3100#1] form 127.0.0.1:54636
+2017-11-16 11:05:46 [AS][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[AS-0.0.0.0:3100#1] at 0x7f1c6a5aa010 fd=10
+2017-11-16 11:05:46 [AS][DEBUG]:[account_server.cpp:41]==>onDisconnect 127.0.0.1:54636 -> 127.0.0.1:3100 is 1
+2017-11-16 11:05:46 [AS][DEBUG]:[account_server.cpp:47]==>onVerify 127.0.0.1:54636 -> 127.0.0.1:3100 is 1 cid:12884901889
+2017-11-16 11:06:17 [AS][INFO]:[tcp_server.cpp:94]==>TcpServer::removeConnectionInLoop [AS] - connection AS-0.0.0.0:3100#1
+2017-11-16 11:06:17 [AS][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[AS-0.0.0.0:3100#1] at 0x7f1c6a5aa010 fd=10 state=kDisconnected
+2017-11-16 11:06:17 [AS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x14a4658 stop looping
+2017-11-16 11:06:17 [AS][DEBUG]:[tcp_server.cpp:25]==>TcpServer::~TcpServer [ AS ] destructing
+2017-11-16 11:06:20 [AS][DEBUG]:[account_main.cpp:18]==>pid = 4822, tid =4822
+2017-11-16 11:06:20 [AS][INFO]:[account_server.cpp:71]==>Mysql Connect Success
+2017-11-16 11:06:21 [AS][INFO]:[tcp_server.cpp:72]==>new connect [AS-0.0.0.0:3100#1] form 127.0.0.1:54660
+2017-11-16 11:06:21 [AS][DEBUG]:[account_server.cpp:41]==>onDisconnect 127.0.0.1:54660 -> 127.0.0.1:3100 is 1
+2017-11-16 11:06:21 [AS][DEBUG]:[account_server.cpp:47]==>onVerify 127.0.0.1:54660 -> 127.0.0.1:3100 is 1 cid:12884901889
+2017-11-16 11:06:50 [AS][INFO]:[tcp_server.cpp:94]==>TcpServer::removeConnectionInLoop [AS] - connection AS-0.0.0.0:3100#1
+2017-11-16 11:06:50 [AS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0xf88658 stop looping
+2017-11-16 11:06:50 [AS][DEBUG]:[tcp_server.cpp:25]==>TcpServer::~TcpServer [ AS ] destructing
+2017-11-16 11:06:50 [AS][DEBUG]:[account_main.cpp:18]==>pid = 5022, tid =5022
+2017-11-16 11:06:50 [AS][INFO]:[account_server.cpp:71]==>Mysql Connect Success
+2017-11-16 11:06:50 [AS][INFO]:[tcp_server.cpp:72]==>new connect [AS-0.0.0.0:3100#1] form 127.0.0.1:54684
+2017-11-16 11:06:50 [AS][DEBUG]:[account_server.cpp:41]==>onDisconnect 127.0.0.1:54684 -> 127.0.0.1:3100 is 1
+2017-11-16 11:06:50 [AS][DEBUG]:[account_server.cpp:47]==>onVerify 127.0.0.1:54684 -> 127.0.0.1:3100 is 1 cid:12884901889
+2017-11-16 11:07:48 [AS][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0xf84658 stop looping
+2017-11-16 11:07:48 [AS][DEBUG]:[tcp_server.cpp:25]==>TcpServer::~TcpServer [ AS ] destructing

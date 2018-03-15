@@ -1,0 +1,3 @@
+2018-02-12 10:14:57 [AS][INFO]:[account_main.cpp:18]==>[pid = 2560 tid =2560]
+2018-02-12 10:14:57 [AS][DEBUG]:[account_server.cpp:41]==>onConnection 127.0.0.1:50554 -> 127.0.0.1:3100
+2018-02-12 10:14:57 [AS][INFO]:[account_server.cpp:48]==>onVerify 127.0.0.1:50554 -> 127.0.0.1:3100

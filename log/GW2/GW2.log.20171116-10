@@ -1,0 +1,82 @@
+2017-11-16 10:46:45 [GW_2][DEBUG]:[gate_main.cpp:27]==>pid = 3584, tid =3584 ServerId:2
+2017-11-16 10:46:45 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0xeb02e0 in thread :3584
+2017-11-16 10:46:45 [GW_2][INFO]:[login_client.cpp:33]==>LoginServer IP:127.0.0.1 Port:3000
+2017-11-16 10:46:45 [GW_2][DEBUG]:[connector.cpp:18]==>Connector ctor[0xeaf440]
+2017-11-16 10:46:45 [GW_2][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[GW_2] - connector 0xeaf440
+2017-11-16 10:46:45 [GW_2][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[GW_2] - connecting to 127.0.0.1:3000
+2017-11-16 10:46:45 [GW_2][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 10:46:45 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f9fb4579910 in thread :3588
+2017-11-16 10:46:45 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f9fb3d78910 in thread :3589
+2017-11-16 10:46:45 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f9fb3577910 in thread :3590
+2017-11-16 10:46:45 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f9fb2d76910 in thread :3591
+2017-11-16 10:46:45 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f9fb2575910 in thread :3592
+2017-11-16 10:46:45 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f9fb1d74910 in thread :3593
+2017-11-16 10:46:45 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f9fb1573910 in thread :3594
+2017-11-16 10:46:45 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f9fb0d72910 in thread :3595
+2017-11-16 10:46:45 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f9f93fee910 in thread :3596
+2017-11-16 10:46:45 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f9f937ed910 in thread :3597
+2017-11-16 10:46:45 [GW_2][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GW_2:127.0.0.1:3000#1] at 0x7f9fb5cd0010 fd=9
+2017-11-16 10:46:45 [GW_2][INFO]:[login_client.cpp:40]==>onConnection 127.0.0.1:37288 -> 127.0.0.1:3000 is 1
+2017-11-16 10:46:45 [GW_2][INFO]:[login_client.cpp:77]==>onVerify Return
+2017-11-16 10:46:45 [GW_2][INFO]:[tcp_server.cpp:72]==>new connect [GW_2-0.0.0.0:3202#1] form 192.168.81.128:41104
+2017-11-16 10:46:45 [GW_2][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GW_2-0.0.0.0:3202#1] at 0x7f9fb5ca7010 fd=40
+2017-11-16 10:46:45 [GW_2][DEBUG]:[gate_server.cpp:170]==>onConnection 192.168.81.128:41104 -> 192.168.81.128:3202 is 1
+2017-11-16 10:46:45 [GW_2][DEBUG]:[gate_server.cpp:196]==>onVerify 192.168.81.128:41104 -> 192.168.81.128:3202 is 1 cid:21474836481 Pid:3588
+2017-11-16 10:51:33 [GW_2][INFO]:[login_client.cpp:54]==>onDisconnect 127.0.0.1:37288 -> 127.0.0.1:3000 is 0
+2017-11-16 10:51:33 [GW_2][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GW_2] - Reconnecting to 127.0.0.1:3000
+2017-11-16 10:51:33 [GW_2][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 10:51:33 [GW_2][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GW_2:127.0.0.1:3000#1] at 0x7f9fb5cd0010 fd=9 state=kDisconnected
+2017-11-16 10:51:33 [GW_2][WARN]:[channel.cpp:113]==>fd=41 Channel::HandleEvent() POLLHUP
+2017-11-16 10:51:33 [GW_2][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2017-11-16 10:51:33 [GW_2][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2017-11-16 10:51:33 [GW_2][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:41 Retry connecting to 127.0.0.1:3000 in 500 milliseconds. 
+2017-11-16 10:51:33 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0xeb02e0 stop looping
+2017-11-16 10:51:33 [GW_2][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[GW_2] - connector 0xeaf440
+2017-11-16 10:51:33 [GW_2][DEBUG]:[tcp_server.cpp:25]==>TcpServer::~TcpServer [ GW_2 ] destructing
+2017-11-16 10:51:33 [GW_2][DEBUG]:[gate_server.cpp:175]==>onDisconnect 192.168.81.128:41104 -> 192.168.81.128:3202 is 0
+2017-11-16 10:51:33 [GW_2][DEBUG]:[tcp_connection.cpp:63]==>TcpConnection::dctor[GW_2-0.0.0.0:3202#1] at 0x7f9fb5ca7010 fd=40 state=kDisconnected
+2017-11-16 10:51:33 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f9fb4579910 stop looping
+2017-11-16 10:51:33 [GW_2][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f9fb4579910 of thread : 3588 destructs in thread : 3588
+2017-11-16 10:51:33 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f9fb3d78910 stop looping
+2017-11-16 10:51:33 [GW_2][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f9fb3d78910 of thread : 3589 destructs in thread : 3589
+2017-11-16 10:51:33 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f9fb3577910 stop looping
+2017-11-16 10:51:33 [GW_2][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f9fb3577910 of thread : 3590 destructs in thread : 3590
+2017-11-16 10:51:33 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f9fb2d76910 stop looping
+2017-11-16 10:51:33 [GW_2][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f9fb2d76910 of thread : 3591 destructs in thread : 3591
+2017-11-16 10:51:33 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f9fb2575910 stop looping
+2017-11-16 10:51:33 [GW_2][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f9fb2575910 of thread : 3592 destructs in thread : 3592
+2017-11-16 10:51:33 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f9fb1d74910 stop looping
+2017-11-16 10:51:33 [GW_2][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f9fb1d74910 of thread : 3593 destructs in thread : 3593
+2017-11-16 10:51:33 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f9fb1573910 stop looping
+2017-11-16 10:51:33 [GW_2][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f9fb1573910 of thread : 3594 destructs in thread : 3594
+2017-11-16 10:51:33 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f9fb0d72910 stop looping
+2017-11-16 10:51:33 [GW_2][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f9fb0d72910 of thread : 3595 destructs in thread : 3595
+2017-11-16 10:51:33 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f9f93fee910 stop looping
+2017-11-16 10:51:33 [GW_2][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f9f93fee910 of thread : 3596 destructs in thread : 3596
+2017-11-16 10:51:33 [GW_2][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x7f9f937ed910 stop looping
+2017-11-16 10:51:33 [GW_2][DEBUG]:[event_loop.cpp:56]==>EventLoop 0x7f9f937ed910 of thread : 3597 destructs in thread : 3597
+2017-11-16 10:58:24 [GW_2][DEBUG]:[gate_main.cpp:27]==>pid = 3988, tid =3988 ServerId:2
+2017-11-16 10:58:24 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x12902e0 in thread :3988
+2017-11-16 10:58:24 [GW_2][INFO]:[login_client.cpp:33]==>LoginServer IP:127.0.0.1 Port:3000
+2017-11-16 10:58:24 [GW_2][DEBUG]:[connector.cpp:18]==>Connector ctor[0x1290420]
+2017-11-16 10:58:24 [GW_2][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[GW_2] - connector 0x1290420
+2017-11-16 10:58:24 [GW_2][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[GW_2] - connecting to 127.0.0.1:3000
+2017-11-16 10:58:24 [GW_2][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-16 10:58:24 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7fd672037910 in thread :3992
+2017-11-16 10:58:24 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7fd671836910 in thread :3993
+2017-11-16 10:58:24 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7fd671035910 in thread :3994
+2017-11-16 10:58:24 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7fd670834910 in thread :3995
+2017-11-16 10:58:24 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7fd663fee910 in thread :3996
+2017-11-16 10:58:24 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7fd6637ed910 in thread :3997
+2017-11-16 10:58:24 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7fd662fec910 in thread :3998
+2017-11-16 10:58:24 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7fd6627eb910 in thread :3999
+2017-11-16 10:58:24 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7fd661fea910 in thread :4000
+2017-11-16 10:58:24 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7fd6617e9910 in thread :4001
+2017-11-16 10:58:24 [GW_2][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GW_2:127.0.0.1:3000#1] at 0x7fd67378e010 fd=9
+2017-11-16 10:58:24 [GW_2][INFO]:[login_client.cpp:40]==>onConnection 127.0.0.1:37320 -> 127.0.0.1:3000 is 1
+2017-11-16 10:58:24 [GW_2][INFO]:[login_client.cpp:77]==>onVerify Return
+2017-11-16 10:58:24 [GW_2][INFO]:[tcp_server.cpp:72]==>new connect [GW_2-0.0.0.0:3202#1] form 192.168.81.128:41136
+2017-11-16 10:58:24 [GW_2][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GW_2-0.0.0.0:3202#1] at 0x7fd673765010 fd=40
+2017-11-16 10:58:24 [GW_2][DEBUG]:[gate_server.cpp:166]==>onConnection 192.168.81.128:41136 -> 192.168.81.128:3202 is 1
+2017-11-16 10:58:24 [GW_2][DEBUG]:[gate_server.cpp:210]==>onVerify 192.168.81.128:41136 -> 192.168.81.128:3202 is 1 cid:21474836481 Pid:3992
+2017-11-16 10:58:24 [GW_2][DEBUG]:[gate_server.cpp:179]==>current pid:3988 status:connect

@@ -1,0 +1,15 @@
+2018-02-26 09:57:40 [LS][INFO]:[login_main.cpp:17]==>[pid = 18398 tid =18398]
+2018-02-26 09:57:40 [LS][DEBUG]:[login_account_client.cpp:49]==>tid:18398 onConnection 127.0.0.1:55230 -> 127.0.0.1:3100
+2018-02-26 09:57:40 [LS][INFO]:[login_server.cpp:252]==>Verify Return Src IP:127.0.0.1:3100
+2018-02-26 09:57:40 [LS][INFO]:[login_server.cpp:209]==>onVerify 127.0.0.1:45030 -> 127.0.0.1:3000
+2018-02-26 09:57:40 [LS][INFO]:[login_server.cpp:173]==>current pid:18398 status:connect conntype:4
+2018-02-26 09:57:41 [LS][INFO]:[login_server.cpp:209]==>onVerify 127.0.0.1:45032 -> 127.0.0.1:3000
+2018-02-26 09:57:41 [LS][INFO]:[login_server.cpp:173]==>current pid:18398 status:connect conntype:4
+2018-02-26 09:57:41 [LS][INFO]:[login_server.cpp:209]==>onVerify 127.0.0.1:45040 -> 127.0.0.1:3000
+2018-02-26 09:57:41 [LS][INFO]:[login_server.cpp:173]==>current pid:18398 status:connect conntype:5
+2018-02-26 09:57:41 [LS][DEBUG]:[login_gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2018-02-26 09:57:41 [LS][DEBUG]:[login_gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2018-02-26 09:57:44 [LS][INFO]:[login_server.cpp:209]==>onVerify 127.0.0.1:45042 -> 127.0.0.1:3000
+2018-02-26 09:57:44 [LS][INFO]:[login_server.cpp:173]==>current pid:18398 status:connect conntype:1
+2018-02-26 09:58:08 [LS][DEBUG]:[login_server.cpp:283]==>ParseZoneInfoRequest accid:15 best gateid:1
+2018-02-26 09:58:16 [LS][INFO]:[login_server.cpp:173]==>current pid:18398 status:disconnect conntype:0

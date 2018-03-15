@@ -1,0 +1,24 @@
+2018-01-17 12:04:47 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x9d0818 stop looping
+2018-01-17 12:04:47 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f76016dd910 stop looping
+2018-01-17 12:04:47 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f7600edc910 stop looping
+2018-01-17 12:04:47 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f75fbfee910 stop looping
+2018-01-17 12:04:47 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f75fb7ed910 stop looping
+2018-01-17 12:04:47 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f75fafec910 stop looping
+2018-01-17 12:04:47 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f75fa7eb910 stop looping
+2018-01-17 12:04:47 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f75f9fea910 stop looping
+2018-01-17 12:04:47 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f75f97e9910 stop looping
+2018-01-17 12:04:47 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f75f8fe8910 stop looping
+2018-01-17 12:04:47 [LS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f75d7fee910 stop looping
+2018-01-17 12:04:48 [LS][INFO]:[login_main.cpp:17]==>[pid = 4831 tid =4831]
+2018-01-17 12:04:48 [LS][DEBUG]:[account_client.cpp:49]==>tid:4831 onConnection 127.0.0.1:43438 -> 127.0.0.1:3100
+2018-01-17 12:04:48 [LS][INFO]:[login_server.cpp:236]==>Verify Return Src IP:127.0.0.1:3100
+2018-01-17 12:04:48 [LS][INFO]:[login_server.cpp:200]==>onVerify 127.0.0.1:50006 -> 127.0.0.1:3000
+2018-01-17 12:04:48 [LS][INFO]:[login_server.cpp:172]==>current pid:4831 status:connect
+2018-01-17 12:04:48 [LS][INFO]:[login_server.cpp:200]==>onVerify 127.0.0.1:50008 -> 127.0.0.1:3000
+2018-01-17 12:04:48 [LS][INFO]:[login_server.cpp:172]==>current pid:4831 status:connect
+2018-01-17 12:04:48 [LS][DEBUG]:[gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2018-01-17 12:04:48 [LS][DEBUG]:[gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2018-01-17 12:04:52 [LS][INFO]:[login_server.cpp:200]==>onVerify 127.0.0.1:50016 -> 127.0.0.1:3000
+2018-01-17 12:04:52 [LS][INFO]:[login_server.cpp:172]==>current pid:4831 status:connect
+2018-01-17 12:05:00 [LS][DEBUG]:[login_server.cpp:260]==>ParseZoneInfoRequest accid:13 best gateid:1
+2018-01-17 12:05:27 [LS][INFO]:[login_server.cpp:172]==>current pid:4831 status:disconnect

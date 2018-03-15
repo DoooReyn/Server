@@ -1,0 +1,5 @@
+2017-11-04 16:08:15 [GS_1][DEBUG]:[event_loop.cpp:92]==>EvnetLoop 0x2456e78 stop looping
+2017-11-04 16:08:15 [GS_1][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[GS_1] - connector 0x245bd80
+2017-11-04 16:08:15 [GS_1][DEBUG]:[connector.cpp:23]==>Connector dctor[0x245bd80]
+2017-11-04 16:08:15 [GS_1][DEBUG]:[tcp_client.cpp:37]==>TCPClient::~TcpClient[GS_1] - connector 0x245c430
+2017-11-04 16:08:15 [GS_1][DEBUG]:[connector.cpp:23]==>Connector dctor[0x245c430]

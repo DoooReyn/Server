@@ -1,0 +1,9 @@
+2018-01-18 02:34:16 [GS_1][INFO]:[game_main.cpp:28]==>[pid = 3764 tid =3764]
+2018-01-18 02:34:16 [GS_1][DEBUG]:[game_server.cpp:145]==>onConnection 192.168.81.128:44050 -> 192.168.81.128:3201
+2018-01-18 02:34:16 [GS_1][DEBUG]:[game_server.cpp:145]==>onConnection 192.168.81.128:37556 -> 192.168.81.128:3202
+2018-01-18 02:34:16 [GS_1][DEBUG]:[game_login_client.cpp:36]==>tid:3764 onConnection 127.0.0.1:48344 -> 127.0.0.1:3000
+2018-01-18 02:34:16 [GS_1][INFO]:[game_gate_client.cpp:144]==>Verify Return Src IP:192.168.81.128:3201
+2018-01-18 02:34:16 [GS_1][INFO]:[game_gate_client.cpp:144]==>Verify Return Src IP:192.168.81.128:3202
+2018-01-18 02:34:16 [GS_1][INFO]:[game_gate_client.cpp:144]==>Verify Return Src IP:127.0.0.1:3000
+2018-01-18 02:34:51 [GS_1][DEBUG]:[game_login_client.cpp:58]==>ParseRoleCreateReturn zoneid:1 accid:15 name:test45 roleid:11
+2018-01-18 02:35:42 [GS_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x1fe6280 stop looping

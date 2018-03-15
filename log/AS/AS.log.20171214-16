@@ -1,0 +1,4 @@
+2017-12-14 16:13:09 [AS][INFO]:[account_main.cpp:18]==>[pid = 5629 tid =5629]
+2017-12-14 16:13:09 [AS][DEBUG]:[account_server.cpp:41]==>onConnection 127.0.0.1:52610 -> 127.0.0.1:3100
+2017-12-14 16:13:09 [AS][INFO]:[account_server.cpp:48]==>onVerify 127.0.0.1:52610 -> 127.0.0.1:3100
+2017-12-14 16:13:50 [AS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x26c8658 stop looping

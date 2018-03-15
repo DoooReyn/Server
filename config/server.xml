@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Server>
+	<LS>
+		<MySQL>mysql://root:123456@127.0.0.1:3306/LBF</MySQL>
+		<IP>127.0.0.1</IP>
+		<Port>3000</Port>
+		<Log>/root/oschina/Server/log/LS/LS.log</Log>
+		<LogLevel>debug</LogLevel>
+	</LS>
+
+	<AS>
+		<MySQL>mysql://root:123456@127.0.0.1:3306/LBF</MySQL>
+		<IP>127.0.0.1</IP>
+		<Port>3100</Port>
+		<Log>/root/oschina/Server/log/AS/AS.log</Log>
+		<LogLevel>debug</LogLevel>
+	</AS>
+
+	<GW_1>
+		<MySQL>mysql://root:123456@127.0.0.1:3306/LBF</MySQL>
+		<IP>127.0.0.1</IP>
+		<MaxThreadNum>10</MaxThreadNum>
+		<Port>3201</Port>
+		<Log>/root/oschina/Server/log/GW1/GW1.log</Log>
+		<LogLevel>debug</LogLevel>
+	</GW_1>
+
+	<GW_2>
+		<MySQL>mysql://root:123456@127.0.0.1:3306/LBF</MySQL>
+		<IP>127.0.0.1</IP>
+		<MaxThreadNum>10</MaxThreadNum>
+		<Port>3202</Port>
+		<Log>/root/oschina/Server/log/GW2/GW2.log</Log>
+		<LogLevel>debug</LogLevel>
+	</GW_2>
+
+	<GS_1>
+		<MySQL>mysql://root:123456@127.0.0.1:3306/LBF</MySQL>
+		<IP>127.0.0.1</IP>
+		<Port>3301</Port>
+		<Log>/root/oschina/Server/log/GS1/GS1.log</Log>
+		<LogLevel>debug</LogLevel>
+	</GS_1>
+
+	<Client>
+		<Log>/root/oschina/Server/log/Client/Client.log</Log>
+		<LogLevel>debug</LogLevel>
+	</Client>
+
+
+</Server>

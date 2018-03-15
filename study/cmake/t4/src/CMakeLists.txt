@@ -1,0 +1,5 @@
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+INCLUDE_DIRECTORIES(/root/study/LIB/cmake/t3/lib)
+LINK_DIRECTORIES(/root/study/LIB/cmake/t3/build/so)
+ADD_EXECUTABLE(main main.c)
+TARGET_LINK_LIBRARIES(main libhello.a)

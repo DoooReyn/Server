@@ -1,0 +1,49 @@
+2018-01-18 15:40:31 [GW_1][INFO]:[gate_main.cpp:27]==>[pid = 3509 tid =3509]
+2018-01-18 15:40:31 [GW_1][DEBUG]:[gate_login_client.cpp:40]==>onConnection 127.0.0.1:60274 -> 127.0.0.1:3000
+2018-01-18 15:40:31 [GW_1][INFO]:[gate_login_client.cpp:79]==>Verify Return Src IP:127.0.0.1:3000
+2018-01-18 15:40:31 [GW_1][INFO]:[gate_server.cpp:206]==>onVerify 192.168.81.128:58838 -> 192.168.81.128:3201
+2018-01-18 15:40:31 [GW_1][INFO]:[gate_server.cpp:175]==>current pid:3509 status:connect
+2018-01-18 15:42:42 [GW_1][INFO]:[gate_login_client.cpp:54]==>onDisconnect 127.0.0.1:60274 -> 127.0.0.1:3000
+2018-01-18 15:42:42 [GW_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GW_1] - Reconnecting to 127.0.0.1:3000
+2018-01-18 15:42:42 [GW_1][WARN]:[channel.cpp:113]==>fd=41 Channel::HandleEvent() POLLHUP
+2018-01-18 15:42:42 [GW_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2018-01-18 15:42:42 [GW_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2018-01-18 15:42:42 [GW_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:41 Retry connecting to 127.0.0.1:3000 in 500 milliseconds. 
+2018-01-18 15:42:42 [GW_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0xb27260 stop looping
+2018-01-18 15:42:42 [GW_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f6eb808e910 stop looping
+2018-01-18 15:42:42 [GW_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f6eb788d910 stop looping
+2018-01-18 15:42:42 [GW_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f6eb708c910 stop looping
+2018-01-18 15:42:42 [GW_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f6eb688b910 stop looping
+2018-01-18 15:42:42 [GW_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f6eb608a910 stop looping
+2018-01-18 15:42:42 [GW_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f6eb5889910 stop looping
+2018-01-18 15:42:42 [GW_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f6eb5088910 stop looping
+2018-01-18 15:42:42 [GW_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f6eb4887910 stop looping
+2018-01-18 15:42:42 [GW_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f6e97fee910 stop looping
+2018-01-18 15:42:42 [GW_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f6e977ed910 stop looping
+2018-01-18 15:42:43 [GW_1][INFO]:[gate_main.cpp:27]==>[pid = 3834 tid =3834]
+2018-01-18 15:42:43 [GW_1][DEBUG]:[gate_login_client.cpp:40]==>onConnection 127.0.0.1:60302 -> 127.0.0.1:3000
+2018-01-18 15:42:43 [GW_1][INFO]:[gate_login_client.cpp:79]==>Verify Return Src IP:127.0.0.1:3000
+2018-01-18 15:42:43 [GW_1][INFO]:[gate_server.cpp:206]==>onVerify 192.168.81.128:58866 -> 192.168.81.128:3201
+2018-01-18 15:42:43 [GW_1][INFO]:[gate_server.cpp:175]==>current pid:3834 status:connect
+2018-01-18 15:45:59 [GW_1][INFO]:[gate_login_client.cpp:54]==>onDisconnect 127.0.0.1:60302 -> 127.0.0.1:3000
+2018-01-18 15:45:59 [GW_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GW_1] - Reconnecting to 127.0.0.1:3000
+2018-01-18 15:45:59 [GW_1][WARN]:[channel.cpp:113]==>fd=41 Channel::HandleEvent() POLLHUP
+2018-01-18 15:45:59 [GW_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2018-01-18 15:45:59 [GW_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2018-01-18 15:45:59 [GW_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:41 Retry connecting to 127.0.0.1:3000 in 500 milliseconds. 
+2018-01-18 15:45:59 [GW_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x1524260 stop looping
+2018-01-18 15:45:59 [GW_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fb896d84910 stop looping
+2018-01-18 15:45:59 [GW_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fb896583910 stop looping
+2018-01-18 15:45:59 [GW_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fb895d82910 stop looping
+2018-01-18 15:45:59 [GW_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fb895581910 stop looping
+2018-01-18 15:45:59 [GW_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fb894d80910 stop looping
+2018-01-18 15:45:59 [GW_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fb87ffee910 stop looping
+2018-01-18 15:45:59 [GW_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fb87f7ed910 stop looping
+2018-01-18 15:45:59 [GW_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fb87efec910 stop looping
+2018-01-18 15:45:59 [GW_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fb87e7eb910 stop looping
+2018-01-18 15:45:59 [GW_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7fb87dfea910 stop looping
+2018-01-18 15:46:00 [GW_1][INFO]:[gate_main.cpp:27]==>[pid = 4105 tid =4105]
+2018-01-18 15:46:00 [GW_1][DEBUG]:[gate_login_client.cpp:40]==>onConnection 127.0.0.1:60330 -> 127.0.0.1:3000
+2018-01-18 15:46:00 [GW_1][INFO]:[gate_login_client.cpp:79]==>Verify Return Src IP:127.0.0.1:3000
+2018-01-18 15:46:00 [GW_1][INFO]:[gate_server.cpp:206]==>onVerify 192.168.81.128:58894 -> 192.168.81.128:3201
+2018-01-18 15:46:00 [GW_1][INFO]:[gate_server.cpp:175]==>current pid:4105 status:connect

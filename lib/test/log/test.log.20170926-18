@@ -1,0 +1,15 @@
+2017-09-26 18:09:33 [][INFO]:[redis_test.cpp:13]==>redis connect success!
+2017-09-26 18:09:33 [][DEBUG]:[redis_test.cpp:15]==>Redis name:Mayuyu
+2017-09-26 18:09:33 [][DEBUG]:[redis_test.cpp:24]==>CRedisClient name:Mayuyu
+2017-09-26 18:10:01 [][INFO]:[redis_test.cpp:13]==>redis connect success!
+2017-09-26 18:10:01 [][DEBUG]:[redis_test.cpp:15]==>Redis name:Mayuyu
+2017-09-26 18:10:01 [][DEBUG]:[redis_test.cpp:24]==>CRedisClient name:Mayuyu
+2017-09-26 18:10:05 [][INFO]:[redis_test.cpp:13]==>redis connect success!
+2017-09-26 18:10:05 [][DEBUG]:[redis_test.cpp:15]==>Redis name:Mayuyu
+2017-09-26 18:10:05 [][DEBUG]:[redis_test.cpp:24]==>CRedisClient name:Mayuyu
+2017-09-26 18:10:06 [][INFO]:[redis_test.cpp:13]==>redis connect success!
+2017-09-26 18:10:06 [][DEBUG]:[redis_test.cpp:15]==>Redis name:Mayuyu
+2017-09-26 18:10:06 [][DEBUG]:[redis_test.cpp:24]==>CRedisClient name:Mayuyu
+2017-09-26 18:11:26 [][INFO]:[redis_test.cpp:13]==>redis connect success!
+2017-09-26 18:11:26 [][DEBUG]:[redis_test.cpp:15]==>Redis name:Mayuyu
+2017-09-26 18:11:26 [][DEBUG]:[redis_test.cpp:24]==>CRedisClient name:Mayuyu

@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -Werror -g -D _DEBUG -std=c++11   CMakeFiles/read.dir/share_memory.cpp.o CMakeFiles/read.dir/read.cpp.o  -o read -rdynamic -lrt 

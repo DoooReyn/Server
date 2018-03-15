@@ -1,0 +1,12 @@
+2017-12-09 14:43:06 [AS][INFO]:[account_main.cpp:18]==>[pid = 5644 tid =5644]
+2017-12-09 14:43:06 [AS][DEBUG]:[account_server.cpp:41]==>onConnection 127.0.0.1:59092 -> 127.0.0.1:3100
+2017-12-09 14:43:06 [AS][INFO]:[account_server.cpp:48]==>onVerify 127.0.0.1:59092 -> 127.0.0.1:3100
+2017-12-09 14:44:34 [AS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x20e3658 stop looping
+2017-12-09 14:45:01 [AS][INFO]:[account_main.cpp:18]==>[pid = 5823 tid =5823]
+2017-12-09 14:45:01 [AS][DEBUG]:[account_server.cpp:41]==>onConnection 127.0.0.1:59116 -> 127.0.0.1:3100
+2017-12-09 14:45:01 [AS][INFO]:[account_server.cpp:48]==>onVerify 127.0.0.1:59116 -> 127.0.0.1:3100
+2017-12-09 14:49:23 [AS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x1389658 stop looping
+2017-12-09 14:49:23 [AS][INFO]:[account_main.cpp:18]==>[pid = 6223 tid =6223]
+2017-12-09 14:49:23 [AS][DEBUG]:[account_server.cpp:41]==>onConnection 127.0.0.1:59136 -> 127.0.0.1:3100
+2017-12-09 14:49:23 [AS][INFO]:[account_server.cpp:48]==>onVerify 127.0.0.1:59136 -> 127.0.0.1:3100
+2017-12-09 14:50:57 [AS][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x1da8658 stop looping

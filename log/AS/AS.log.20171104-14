@@ -1,0 +1,8 @@
+2017-11-04 14:42:29 [AS][DEBUG]:[account_main.cpp:18]==>pid = 12156, tid =12156
+2017-11-04 14:42:29 [AS][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x1bf0658 in thread :12156
+2017-11-04 14:42:29 [AS][DEBUG]:[mysql_pool.cpp:106]==>MysqlHandle InitMysql:2
+2017-11-04 14:42:29 [AS][INFO]:[account_server.cpp:71]==>Mysql Connect Success
+2017-11-04 14:42:29 [AS][INFO]:[tcp_server.cpp:72]==>new connect [AS-0.0.0.0:3100#1] form 127.0.0.1:38144
+2017-11-04 14:42:29 [AS][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[AS-0.0.0.0:3100#1] at 0x7f01c1d3e010 fd=10
+2017-11-04 14:42:29 [AS][DEBUG]:[account_server.cpp:41]==>onDisconnect 127.0.0.1:38144 -> 127.0.0.1:3100 is 1
+2017-11-04 14:42:29 [AS][DEBUG]:[account_server.cpp:47]==>onVerify 127.0.0.1:38144 -> 127.0.0.1:3100 is 1 cid:12884901889

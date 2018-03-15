@@ -1,0 +1,5 @@
+2017-09-26 17:58:34 [][INFO]:[redis_test.cpp:13]==>redis connect success!
+2017-09-26 17:58:34 [][DEBUG]:[redis_test.cpp:15]==>Redis name:Mayuyu
+2017-09-26 17:59:04 [][INFO]:[redis_test.cpp:13]==>redis connect success!
+2017-09-26 17:59:04 [][DEBUG]:[redis_test.cpp:15]==>Redis name:Mayuyu
+2017-09-26 17:59:04 [][DEBUG]:[redis_test.cpp:24]==>CRedisClient name:Mayuyu

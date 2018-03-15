@@ -1,0 +1,21 @@
+2018-02-12 11:38:02 [LS][INFO]:[login_server.cpp:173]==>current pid:2564 status:disconnect conntype:0
+2018-02-12 11:38:07 [LS][INFO]:[login_server.cpp:173]==>current pid:2564 status:disconnect conntype:0
+2018-02-12 11:38:32 [LS][INFO]:[login_server.cpp:173]==>current pid:2564 status:disconnect conntype:0
+2018-02-12 11:38:56 [LS][INFO]:[login_server.cpp:209]==>onVerify 192.168.81.1:17443 -> 192.168.81.128:3000
+2018-02-12 11:38:56 [LS][INFO]:[login_server.cpp:173]==>current pid:2564 status:connect conntype:1
+2018-02-12 11:39:04 [LS][ERROR]:[tcp_connection.cpp:421]==>TcpConnection::handleError [ LS-0.0.0.0:3000#10 ] - SO_ERROR = 104 -- Connection reset by peer
+2018-02-12 11:39:04 [LS][INFO]:[login_server.cpp:173]==>current pid:2564 status:disconnect conntype:1
+2018-02-12 11:47:43 [LS][INFO]:[login_server.cpp:173]==>current pid:2564 status:disconnect conntype:0
+2018-02-12 11:48:11 [LS][INFO]:[login_server.cpp:173]==>current pid:2564 status:disconnect conntype:0
+2018-02-12 11:48:43 [LS][INFO]:[login_server.cpp:209]==>onVerify 192.168.81.1:51108 -> 192.168.81.128:3000
+2018-02-12 11:48:43 [LS][INFO]:[login_server.cpp:173]==>current pid:2564 status:connect conntype:1
+2018-02-12 11:48:51 [LS][ERROR]:[tcp_connection.cpp:421]==>TcpConnection::handleError [ LS-0.0.0.0:3000#13 ] - SO_ERROR = 104 -- Connection reset by peer
+2018-02-12 11:48:51 [LS][INFO]:[login_server.cpp:173]==>current pid:2564 status:disconnect conntype:1
+2018-02-12 11:48:52 [LS][INFO]:[login_server.cpp:209]==>onVerify 192.168.81.1:51109 -> 192.168.81.128:3000
+2018-02-12 11:48:52 [LS][INFO]:[login_server.cpp:173]==>current pid:2564 status:connect conntype:1
+2018-02-12 11:48:54 [LS][ERROR]:[tcp_connection.cpp:421]==>TcpConnection::handleError [ LS-0.0.0.0:3000#14 ] - SO_ERROR = 104 -- Connection reset by peer
+2018-02-12 11:48:54 [LS][INFO]:[login_server.cpp:173]==>current pid:2564 status:disconnect conntype:1
+2018-02-12 11:50:08 [LS][INFO]:[login_server.cpp:209]==>onVerify 192.168.81.1:51121 -> 192.168.81.128:3000
+2018-02-12 11:50:08 [LS][INFO]:[login_server.cpp:173]==>current pid:2564 status:connect conntype:1
+2018-02-12 11:50:13 [LS][ERROR]:[tcp_connection.cpp:421]==>TcpConnection::handleError [ LS-0.0.0.0:3000#15 ] - SO_ERROR = 104 -- Connection reset by peer
+2018-02-12 11:50:13 [LS][INFO]:[login_server.cpp:173]==>current pid:2564 status:disconnect conntype:1

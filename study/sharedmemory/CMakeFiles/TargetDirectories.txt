@@ -1,0 +1,4 @@
+/root/oschina/Server/study/sharedmemory/CMakeFiles/edit_cache.dir
+/root/oschina/Server/study/sharedmemory/CMakeFiles/rebuild_cache.dir
+/root/oschina/Server/study/sharedmemory/CMakeFiles/read.dir
+/root/oschina/Server/study/sharedmemory/CMakeFiles/write.dir

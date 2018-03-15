@@ -1,0 +1,41 @@
+2018-01-17 11:23:45 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3202 -> 192.168.81.128:33638 is 0 Pid:3140
+2018-01-17 11:23:45 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3202
+2018-01-17 11:23:45 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3201 -> 192.168.81.128:49438 is 0 Pid:3140
+2018-01-17 11:23:45 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3201
+2018-01-17 11:23:45 [GS_1][WARN]:[channel.cpp:113]==>fd=9 Channel::HandleEvent() POLLHUP
+2018-01-17 11:23:45 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2018-01-17 11:23:45 [GS_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2018-01-17 11:23:45 [GS_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:9 Retry connecting to 192.168.81.128:3202 in 500 milliseconds. 
+2018-01-17 11:23:45 [GS_1][WARN]:[channel.cpp:113]==>fd=8 Channel::HandleEvent() POLLHUP
+2018-01-17 11:23:45 [GS_1][ERROR]:[connector.cpp:161]==>Connector::handleError state=1
+2018-01-17 11:23:45 [GS_1][DEBUG]:[connector.cpp:166]==>SO_ERROR = 111 Connection refused
+2018-01-17 11:23:45 [GS_1][INFO]:[connector.cpp:177]==>Connector::retry -sockfd:8 Retry connecting to 192.168.81.128:3201 in 500 milliseconds. 
+2018-01-17 11:23:45 [GS_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0xb5b818 stop looping
+2018-01-17 11:23:46 [GS_1][INFO]:[game_main.cpp:28]==>[pid = 4160 tid =4160]
+2018-01-17 11:23:46 [GS_1][DEBUG]:[game_server.cpp:116]==>onConnection 192.168.81.128:49510 -> 192.168.81.128:3201
+2018-01-17 11:23:46 [GS_1][DEBUG]:[game_server.cpp:116]==>onConnection 192.168.81.128:33710 -> 192.168.81.128:3202
+2018-01-17 11:23:46 [GS_1][INFO]:[gate_client.cpp:144]==>Verify Return Src IP:192.168.81.128:3201
+2018-01-17 11:23:46 [GS_1][INFO]:[gate_client.cpp:144]==>Verify Return Src IP:192.168.81.128:3202
+2018-01-17 11:23:48 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3202 -> 192.168.81.128:33710 is 0 Pid:4160
+2018-01-17 11:23:48 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3202
+2018-01-17 11:23:48 [GS_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x1a71818 stop looping
+2018-01-17 11:23:49 [GS_1][INFO]:[game_main.cpp:28]==>[pid = 4262 tid =4262]
+2018-01-17 11:23:49 [GS_1][DEBUG]:[game_server.cpp:116]==>onConnection 192.168.81.128:49532 -> 192.168.81.128:3201
+2018-01-17 11:23:49 [GS_1][DEBUG]:[game_server.cpp:116]==>onConnection 192.168.81.128:33732 -> 192.168.81.128:3202
+2018-01-17 11:23:49 [GS_1][INFO]:[gate_client.cpp:144]==>Verify Return Src IP:192.168.81.128:3201
+2018-01-17 11:23:49 [GS_1][INFO]:[gate_client.cpp:144]==>Verify Return Src IP:192.168.81.128:3202
+2018-01-17 11:23:52 [GS_1][DEBUG]:[game_server.cpp:139]==>onDisconnect 192.168.81.128:3202 -> 192.168.81.128:33732 is 0 Pid:4262
+2018-01-17 11:23:52 [GS_1][INFO]:[tcp_client.cpp:132]==>TCPClient::Connect[GS_1] - Reconnecting to 192.168.81.128:3202
+2018-01-17 11:23:52 [GS_1][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x1495818 stop looping
+2018-01-17 11:23:53 [GS_1][INFO]:[game_main.cpp:28]==>[pid = 4363 tid =4363]
+2018-01-17 11:23:53 [GS_1][DEBUG]:[game_server.cpp:116]==>onConnection 192.168.81.128:49554 -> 192.168.81.128:3201
+2018-01-17 11:23:53 [GS_1][DEBUG]:[game_server.cpp:116]==>onConnection 192.168.81.128:33754 -> 192.168.81.128:3202
+2018-01-17 11:23:53 [GS_1][INFO]:[gate_client.cpp:144]==>Verify Return Src IP:192.168.81.128:3201
+2018-01-17 11:23:53 [GS_1][INFO]:[gate_client.cpp:144]==>Verify Return Src IP:192.168.81.128:3202
+2018-01-17 11:51:36 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:0
+2018-01-17 11:51:36 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:0
+2018-01-17 11:51:37 [GS_1][DEBUG]:[gate_client.cpp:64]==>5678 message:我们 Test:99999
+2018-01-17 11:51:37 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2018-01-17 11:51:37 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:1 average:631354.000000
+2018-01-17 11:51:37 [GS_1][DEBUG]:[gate_client.cpp:39]==>1234 message:WL Test:99999
+2018-01-17 11:51:37 [GS_1][WARN]:[gate_client.cpp:53]==>TestMessage count:2 average:669526.000000

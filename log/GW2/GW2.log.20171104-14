@@ -1,0 +1,24 @@
+2017-11-04 14:42:30 [GW_2][DEBUG]:[gate_main.cpp:27]==>pid = 12190, tid =12190 ServerId:2
+2017-11-04 14:42:30 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x1d3b2e0 in thread :12190
+2017-11-04 14:42:30 [GW_2][INFO]:[login_client.cpp:33]==>LoginServer IP:127.0.0.1 Port:3000
+2017-11-04 14:42:30 [GW_2][DEBUG]:[connector.cpp:18]==>Connector ctor[0x1d3a440]
+2017-11-04 14:42:30 [GW_2][DEBUG]:[tcp_client.cpp:32]==>TCPClient::TcpClient[GW_2] - connector 0x1d3a440
+2017-11-04 14:42:30 [GW_2][DEBUG]:[tcp_client.cpp:67]==>TCPClient::Connect[GW_2] - connecting to 127.0.0.1:3000
+2017-11-04 14:42:30 [GW_2][DEBUG]:[connector.cpp:124]==>connecting
+2017-11-04 14:42:30 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f2dfbcce910 in thread :12194
+2017-11-04 14:42:30 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f2dfb4cd910 in thread :12195
+2017-11-04 14:42:30 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f2dfaccc910 in thread :12196
+2017-11-04 14:42:30 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f2dfa4cb910 in thread :12197
+2017-11-04 14:42:30 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f2df9cca910 in thread :12198
+2017-11-04 14:42:30 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f2df94c9910 in thread :12199
+2017-11-04 14:42:30 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f2df8cc8910 in thread :12200
+2017-11-04 14:42:30 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f2ddbfee910 in thread :12201
+2017-11-04 14:42:30 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f2ddb7ed910 in thread :12202
+2017-11-04 14:42:30 [GW_2][DEBUG]:[event_loop.cpp:40]==>EventLoop created : 0x7f2ddafec910 in thread :12203
+2017-11-04 14:42:30 [GW_2][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GW_2:127.0.0.1:3000#1] at 0x7f2dfd425010 fd=9
+2017-11-04 14:42:30 [GW_2][INFO]:[login_client.cpp:40]==>onConnection 127.0.0.1:40678 -> 127.0.0.1:3000 is 1
+2017-11-04 14:42:30 [GW_2][INFO]:[login_client.cpp:77]==>onVerify Return
+2017-11-04 14:42:30 [GW_2][INFO]:[tcp_server.cpp:72]==>new connect [GW_2-0.0.0.0:3202#1] form 192.168.81.128:56120
+2017-11-04 14:42:30 [GW_2][DEBUG]:[tcp_connection.cpp:56]==>TcpConnection::ctor[GW_2-0.0.0.0:3202#1] at 0x7f2dfd3fc010 fd=40
+2017-11-04 14:42:30 [GW_2][DEBUG]:[gate_server.cpp:154]==>onConnection 192.168.81.128:56120 -> 192.168.81.128:3202 is 1
+2017-11-04 14:42:30 [GW_2][DEBUG]:[gate_server.cpp:180]==>onVerify 192.168.81.128:56120 -> 192.168.81.128:3202 is 1 cid:21474836481

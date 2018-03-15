@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/gameserver.dir/STMS.cpp.o CMakeFiles/gameserver.dir/List.cpp.o CMakeFiles/gameserver.dir/CmdProc.cpp.o CMakeFiles/gameserver.dir/String.cpp.o CMakeFiles/gameserver.dir/Input.cpp.o CMakeFiles/gameserver.dir/Node.cpp.o  -o bin/gameserver -rdynamic 

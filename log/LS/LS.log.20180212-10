@@ -1,0 +1,14 @@
+2018-02-12 10:14:57 [LS][INFO]:[login_main.cpp:17]==>[pid = 2564 tid =2564]
+2018-02-12 10:14:57 [LS][DEBUG]:[login_account_client.cpp:49]==>tid:2564 onConnection 127.0.0.1:50554 -> 127.0.0.1:3100
+2018-02-12 10:14:57 [LS][INFO]:[login_server.cpp:252]==>Verify Return Src IP:127.0.0.1:3100
+2018-02-12 10:14:57 [LS][INFO]:[login_server.cpp:209]==>onVerify 127.0.0.1:59302 -> 127.0.0.1:3000
+2018-02-12 10:14:57 [LS][INFO]:[login_server.cpp:173]==>current pid:2564 status:connect conntype:4
+2018-02-12 10:14:58 [LS][INFO]:[login_server.cpp:209]==>onVerify 127.0.0.1:59304 -> 127.0.0.1:3000
+2018-02-12 10:14:58 [LS][INFO]:[login_server.cpp:173]==>current pid:2564 status:connect conntype:4
+2018-02-12 10:14:58 [LS][INFO]:[login_server.cpp:209]==>onVerify 127.0.0.1:59312 -> 127.0.0.1:3000
+2018-02-12 10:14:58 [LS][INFO]:[login_server.cpp:173]==>current pid:2564 status:connect conntype:5
+2018-02-12 10:14:58 [LS][DEBUG]:[login_gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2018-02-12 10:14:58 [LS][DEBUG]:[login_gate_parse.cpp:101]==>ParseZoneState Success id:1 state:1
+2018-02-12 10:15:26 [LS][INFO]:[login_server.cpp:173]==>current pid:2564 status:disconnect conntype:0
+2018-02-12 10:18:42 [LS][INFO]:[login_server.cpp:173]==>current pid:2564 status:disconnect conntype:0
+2018-02-12 10:19:59 [LS][INFO]:[login_server.cpp:173]==>current pid:2564 status:disconnect conntype:0

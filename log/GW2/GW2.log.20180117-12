@@ -1,0 +1,16 @@
+2018-01-17 12:04:47 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x16b1620 stop looping
+2018-01-17 12:04:47 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f850b698910 stop looping
+2018-01-17 12:04:47 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f850ae97910 stop looping
+2018-01-17 12:04:47 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f850a696910 stop looping
+2018-01-17 12:04:47 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f8509e95910 stop looping
+2018-01-17 12:04:47 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f8509694910 stop looping
+2018-01-17 12:04:47 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f8508e93910 stop looping
+2018-01-17 12:04:47 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f84f3fee910 stop looping
+2018-01-17 12:04:47 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f84f37ed910 stop looping
+2018-01-17 12:04:47 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f84f2fec910 stop looping
+2018-01-17 12:04:47 [GW_2][DEBUG]:[event_loop.cpp:93]==>EvnetLoop 0x7f84f27eb910 stop looping
+2018-01-17 12:04:48 [GW_2][INFO]:[gate_main.cpp:27]==>[pid = 4859 tid =4859]
+2018-01-17 12:04:48 [GW_2][DEBUG]:[login_client.cpp:40]==>onConnection 127.0.0.1:50008 -> 127.0.0.1:3000
+2018-01-17 12:04:48 [GW_2][INFO]:[login_client.cpp:79]==>Verify Return Src IP:127.0.0.1:3000
+2018-01-17 12:04:48 [GW_2][INFO]:[gate_server.cpp:210]==>onVerify 192.168.81.128:33778 -> 192.168.81.128:3202
+2018-01-17 12:04:48 [GW_2][INFO]:[gate_server.cpp:179]==>current pid:4859 status:connect
