@@ -9,7 +9,7 @@ void TestVarType()
 	char szName[10] = {0};
 
 	DataSet* ret_set = new DataSet(nRow, nField);
-	if(ret_set == NULL)
+	if(ret_set == nullptr)
 	{
 		printf("error dataset new\n");
 	}
@@ -54,7 +54,7 @@ void TestVarType()
 
 	}
 	delete ret_set;
-	ret_set = NULL;
+	ret_set = nullptr;
 	*/
 }
 

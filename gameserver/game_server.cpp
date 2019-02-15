@@ -25,12 +25,16 @@ void onServerQuit(int32 signum)
 GameServer::GameServer()
 	: m_ServerName(GS)
 	, m_ServerId(0)
+	, m_thr(std::bind(&GameServer::ThreadFunc, this))
+	, m_pLoop(nullptr)
+	, m_quit(false)
 {
 	NetworkManager::newInstance();
 	GameGateClient::newInstance();
 	GameLoginClient::newInstance();
 
 	registerMessageHandle();
+	registerTimerHandle();
 }
 
 GameServer::~GameServer()
@@ -52,6 +56,17 @@ void GameServer::SetServerID(uint32 serverid)
 void GameServer::registerMessageHandle()
 {
 	NetworkManager::getInstance().RegisterMessageHandle(CMD_CONNECT_VERIFY_RETURN, &GameServer::ParseConnectVerifyReturn, this);
+}
+
+void GameServer::registerTimerHandle()
+{
+	//m_Loop.RunEvery(5, std::bind(&GameServer::FiveTimer, this));
+	//m_pLoop.RunAtDay(12, 11, 0, std::bind(&GameServer::FiveTimer, this));
+}
+
+void GameServer::FiveTimer()
+{
+	DEBUG("FiveTimer");
 }
 
 bool GameServer::Init(XMLParse& xmlparse)
@@ -77,13 +92,13 @@ bool GameServer::initGameServer(XMLParse& xmlparse)
 }
 
 
-void GameServer::connectGate()
+void GameServer::connectGate(EventLoop& Loop)
 {
 	MapGateinfo mapGateInfo = GameGateClient::getInstance().GetGateInfoMap();
 	for (std::map<uint32, GateInfo>::iterator it = mapGateInfo.begin(); it != mapGateInfo.end(); ++it)
 	{
 		InetAddress GateAddr(it->second.m_ipzone, it->second.m_port, false);
-		std::shared_ptr<TCPClient> pGate(new TCPClient(&m_Loop, GateAddr, m_ServerName));
+		std::shared_ptr<TCPClient> pGate(new TCPClient(&Loop, GateAddr, m_ServerName));
 		pGate->SetConnectionCallback(std::bind(&GameGateClient::onConnection, GameGateClient::getInstancePtr(), _1));
 		pGate->SetDisconnectCallback(std::bind(&GameGateClient::onDisconnect, GameGateClient::getInstancePtr(), _1));
 		pGate->SetMessageCallback(std::bind(&NetworkManager::OnMessage, NetworkManager::getInstancePtr(), _1, _2, _3));
@@ -93,13 +108,12 @@ void GameServer::connectGate()
 	}
 }
 
-void GameServer::connectLogin()
+void GameServer::connectLogin(EventLoop& Loop)
 {
 	string strIp = GameLoginClient::getInstance().GetIP();
 	uint32 nPort = GameLoginClient::getInstance().GetPort();
 	InetAddress LoginAddr(strIp, nPort, false);
-	std::shared_ptr<TCPClient> pLogin(new TCPClient(&m_Loop, LoginAddr, m_ServerName));
-	m_pLogin = pLogin;
+	m_pLogin = std::shared_ptr<TCPClient>(new TCPClient(&Loop, LoginAddr, m_ServerName));
 	m_pLogin->SetConnectionCallback(std::bind(&GameLoginClient::onConnection, GameLoginClient::getInstancePtr(), _1));
 	m_pLogin->SetDisconnectCallback(std::bind(&GameLoginClient::onDisconnect, GameLoginClient::getInstancePtr(), _1));
 	m_pLogin->SetMessageCallback(std::bind(&NetworkManager::OnMessage, NetworkManager::getInstancePtr(), _1, _2, _3));
@@ -110,22 +124,30 @@ void GameServer::connectLogin()
 
 void GameServer::Loop()
 {
+	m_thr.Start();
+	while (m_quit == false)
+	{
+		NetworkManager::getInstance().ParseMsg();
+		::usleep(UPDATETIME * 1000);
+	}
+	m_thr.Join();
+}
+
+
+void GameServer::ThreadFunc()
+{
+	EventLoop Loop;
+	m_pLoop = &Loop;
+
 	//链接网关服务器
-	connectGate();
+	connectGate(Loop);
 
 	//链接登陆服务器
-	connectLogin();
+	connectLogin(Loop);
 
-	m_Loop.RunEvery(UPDATETIME, std::bind(&GameServer::onUpdate, this));
-	//m_Loop.RunEvery(5, std::bind(&GameServer::onUpdate2, this));
-	m_Loop.Loop();
-
+	Loop.Loop();
 }
 
-void GameServer::onUpdate()
-{
-	NetworkManager::getInstance().ParseMsg();
-}
 
 
 void GameServer::onUpdate2()
@@ -136,7 +158,8 @@ void GameServer::onUpdate2()
 
 void GameServer::OnExit(int32 signum)
 {
-	m_Loop.Quit();
+	m_pLoop->Quit();
+	m_quit = true;
 }
 
 
@@ -157,8 +180,6 @@ void GameServer::ParseConnectVerifyReturn(MessagePack* pPack)
 
 void GameServer::NotifyLoginGateUrl()
 {
-	//WARN("NotifyLoginGateUrl");
-
 	MapConnPtr& mapGate = GameGateClient::getInstance().GetGateConnectMap();
 	itConnPtr it = mapGate.begin();
 	int32 serverid = GameServer::getInstance().GetServerID();

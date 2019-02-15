@@ -25,22 +25,22 @@ public:
 
 	void removeConsole()
 	{
-		_need_console = false;
+		m_need_console = false;
 	}
 	void remvoeLogFile()
 	{
-		_need_logfile = false;
+		m_need_logfile = false;
 	}
 
 	void setLevel(const char* level);
 	void setLogFileName(const std::string& name)
 	{
-		_filename = name;
+		m_filename = name;
 	}
 
 	static LoggerLevel getLoggerLevel()
 	{
-		return _level;
+		return m_level;
 	}
 private:
 	void log(const char* msg, LoggerLevel level);
@@ -48,16 +48,16 @@ private:
 	void writeLogToFile(const char* msg);
 private:
 
-	std::string _filename;
-	std::string _servername;
-	std::ofstream* _ofile;
-	uint32 _lastWriteTime;
+	std::string m_filename;
+	std::string m_servername;
+	std::ofstream* m_ofile;
+	uint32 m_lastWriteTime;
 
-	Mutex _mutex;
-	Time _time;
-	static LoggerLevel _level;
-	static bool _need_console;
-	static bool _need_logfile;
+	Mutex m_mutex;
+	Time m_time;
+	static LoggerLevel m_level;
+	static bool m_need_console;
+	static bool m_need_logfile;
 };
 
 Logger& SetLoggerHead(Logger& logger, const char* filename, const uint32 line);

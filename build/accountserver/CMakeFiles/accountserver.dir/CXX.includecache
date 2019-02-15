@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -66,6 +66,14 @@ timer.h
 mutex.h
 ../accountserver/../lib/mutex.h
 
+../accountserver/../lib/memory_pool.h
+type_define.h
+../accountserver/../lib/type_define.h
+singleton.h
+../accountserver/../lib/singleton.h
+mutex.h
+../accountserver/../lib/mutex.h
+
 ../accountserver/../lib/message_queue.h
 type_define.h
 ../accountserver/../lib/type_define.h
@@ -107,6 +115,8 @@ common.h
 ../accountserver/../lib/common.h
 logger.h
 ../accountserver/../lib/logger.h
+memory_pool.h
+../accountserver/../lib/memory_pool.h
 
 ../accountserver/../lib/nocopyable.h
 iostream
@@ -183,6 +193,8 @@ assert.h
 -
 map
 -
+unordered_map
+-
 set
 -
 utility
@@ -192,6 +204,10 @@ queue
 deque
 -
 vector
+-
+new
+-
+functional
 -
 string.h
 -
@@ -275,7 +291,13 @@ string
 -
 google/protobuf/stubs/common.h
 -
+google/protobuf/arena.h
+-
+google/protobuf/arenastring.h
+-
 google/protobuf/generated_message_util.h
+-
+google/protobuf/metadata.h
 -
 google/protobuf/message.h
 -
@@ -339,6 +361,8 @@ algorithm
 -
 google/protobuf/stubs/common.h
 -
+google/protobuf/stubs/port.h
+-
 google/protobuf/stubs/once.h
 -
 google/protobuf/io/coded_stream.h
@@ -359,7 +383,13 @@ string
 -
 google/protobuf/stubs/common.h
 -
+google/protobuf/arena.h
+-
+google/protobuf/arenastring.h
+-
 google/protobuf/generated_message_util.h
+-
+google/protobuf/metadata.h
 -
 google/protobuf/message.h
 -

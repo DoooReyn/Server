@@ -33,7 +33,7 @@ bool Regex::Compile(const char* szRegex, int nFlags)
 
 bool Regex::Match(const char* szMatch)
 {
-	if(szMatch == NULL)
+	if(szMatch == nullptr)
 	{
 		return false;
 	}
@@ -53,7 +53,7 @@ bool Regex::Match(const char* szMatch)
 
 bool Regex::Match_Mt(const char* szMatch)
 {
-	if(szMatch == NULL)
+	if(szMatch == nullptr)
 	{
 		return false;
 	}

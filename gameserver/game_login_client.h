@@ -5,6 +5,7 @@
 #include "singleton.h"
 #include "xml_parse.h"
 #include "callback.h"
+#include "mutex.h"
 #include "message_queue.h"
 
 class GameLoginClient : public SingletonBase <GameLoginClient>
@@ -30,7 +31,7 @@ public:
 
 	bool IsConnected()
 	{
-		return m_connPtr.get() != NULL;
+		return m_connPtr.get() != nullptr;
 	}
 
 
@@ -51,6 +52,7 @@ private:
 	void registerMessageHandle();
 
 private:
+	Mutex m_mutex;
 	std::string m_strIP;		//登陆服IP
 	uint32 m_nPort;				//登陆服端口
 	TcpConnectionPtr m_connPtr;	//登陆服链接

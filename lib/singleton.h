@@ -34,7 +34,7 @@ public:
 		if(m_instance)
 		{
 			delete m_instance;
-			m_instance = NULL;
+			m_instance = nullptr;
 		}
 	}
 
@@ -50,6 +50,6 @@ protected:
 };
 
 template<typename T>
-T* SingletonBase<T>::m_instance = NULL;
+T* SingletonBase<T>::m_instance = nullptr;
 
 #endif

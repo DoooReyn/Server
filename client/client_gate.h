@@ -1,4 +1,4 @@
-#ifndef __CLIENT_GATE_H__
+﻿#ifndef __CLIENT_GATE_H__
 #define __CLIENT_GATE_H__
 #include "tcp_client.h"
 #include "thread.h"
@@ -21,7 +21,7 @@ public:
 
 	void Init(const string& strLSIP, const uint16& nPort);
 
-	void SetUser(int32 accid, int32 zoneid);
+	void SetUser(int32 accid, int32 zoneid, int32 roleid);
 	void registerMessageHandle();
 
 
@@ -48,6 +48,7 @@ private:
 	Thread m_thr;
 	bool m_quit;
 
+	int32 m_roleid;
 	int32 m_zoneid;
 	int32 m_accid;
 };

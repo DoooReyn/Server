@@ -9,7 +9,7 @@ ScriptManager::ScriptManager(ToLuaInitGame pfun)
 {
 	m_currentid = CurrentThread::Tid();
 	DEBUG("init ScriptManager");
-	m_pLua = NULL;
+	m_pLua = nullptr;
 	assert(pfun);
 
 #ifdef LUA_VERSION_NUM /* lua 5.1 */
@@ -118,7 +118,7 @@ bool ScriptManager::getFileFullPath(const std::string& fileName, std::string& fu
 //------------------------------------------------------------------------------------
 bool ScriptManager::LoadLuaFile(const char* fileName)
 {
-	if (fileName == NULL)
+	if (fileName == nullptr)
 	{
 		return false;
 	}
@@ -151,7 +151,7 @@ bool ScriptManager::LoadLuaFile(const char* fileName)
 //---------------------------------------------------------------------------------------
 bool  ScriptManager::hasLuaFunction(const char* fun)
 {
-	if (fun == NULL)
+	if (fun == nullptr)
 	{
 		return false;
 	}
@@ -180,7 +180,7 @@ bool  ScriptManager::CallLuaFuction(const char* func, const char* sig, ...)
 
 	va_start(vl, sig);
 	uint32 callnumber = 0;
-	if (m_pLua == NULL)
+	if (m_pLua == nullptr)
 	{
 		va_end(vl);
 		return false;
@@ -191,7 +191,7 @@ bool  ScriptManager::CallLuaFuction(const char* func, const char* sig, ...)
 	{
 
 		uint32 narg, nres;
-		if (sig == NULL)
+		if (sig == nullptr)
 		{
 			va_end(vl);
 			return false;

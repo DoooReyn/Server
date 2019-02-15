@@ -135,22 +135,22 @@ inline VarType::operator int() const
 
 inline VarType::operator unsigned long() const
 {
-	return strtoul((const char*)(*this), NULL, 10);
+	return strtoul((const char*)(*this), nullptr, 10);
 }
 
 inline VarType::operator long() const
 {
-	return strtol((const char*)(*this), NULL, 10);
+	return strtol((const char*)(*this), nullptr, 10);
 }
 
 inline VarType::operator unsigned long long() const
 {
-	return strtoull((const char*)(*this), NULL, 10);
+	return strtoull((const char*)(*this), nullptr, 10);
 }
 
 inline VarType::operator long long() const
 {
-	return strtoll((const char*)(*this), NULL, 10);
+	return strtoll((const char*)(*this), nullptr, 10);
 }
 
 inline VarType::operator float() const

@@ -1,8 +1,6 @@
-﻿
-#include "game_login_client.h"
+﻿#include "game_login_client.h"
 #include "logger.h"
 #include "network_manager.h"
-#include "string_tool.h"
 #include "command.h"
 #include "platcmd.pb.h"
 
@@ -26,13 +24,14 @@ void GameLoginClient::registerMessageHandle()
 bool GameLoginClient::Init(XMLParse& xmlparse)
 {
 	m_strIP = xmlparse.GetNode(LS, "IP");
-	m_nPort = StringTool::StoI(xmlparse.GetNode(LS, "Port"));
+	m_nPort = stoi(xmlparse.GetNode(LS, "Port"));
 	return true;
 }
 
 
 void GameLoginClient::onConnection(const TcpConnectionPtr& conn)
 {
+	MutexLockGuard lock(m_mutex);
 	DEBUG("tid:%d onConnection %s -> %s", CurrentThread::Tid(), conn->GetLocalAddr().ToIPPort().c_str(), conn->GetPeerAddr().ToIPPort().c_str());
 	if (conn->Connected())
 	{
@@ -47,6 +46,7 @@ void GameLoginClient::onConnection(const TcpConnectionPtr& conn)
 
 void GameLoginClient::onDisconnect(const TcpConnectionPtr& conn)
 {
+	MutexLockGuard lock(m_mutex);
 	DEBUG("onDisconnect %s -> %s", conn->GetLocalAddr().ToIPPort().c_str(), conn->GetPeerAddr().ToIPPort().c_str());
 	m_connPtr.reset();
 }

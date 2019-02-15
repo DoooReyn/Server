@@ -20,7 +20,7 @@ void TestMysqlPool()
 
 	string strSql = "select * from SERVERLIST";
 	DataSet ret_set;
-	handle()->ExecSelect(strSql.c_str(), strSql.length(), ret_set);
+	handle()->Select(strSql.c_str(), strSql.length(), ret_set);
 
 
 	for (uint32 i = 0 ; i < ret_set.Size() ; i++)
@@ -39,7 +39,7 @@ void TestMysqlPool()
 
 	string strSql2 = "select FunctionTest(7,8) as result";
 	DataSet ret_set2;
-	handle()->ExecSelect(strSql2.c_str(), strSql2.length(), ret_set2);
+	handle()->Select(strSql2.c_str(), strSql2.length(), ret_set2);
 	for (uint32 i = 0 ; i < ret_set2.Size() ; i++)
 	{
 		int result = ret_set2.GetValue(i, "result");

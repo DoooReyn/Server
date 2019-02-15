@@ -1,17 +1,28 @@
 #include "client_player.h"
 #include "network_manager.h"
-#include "string_tool.h"
+#include "signal_catch.h"
 
+void onServerQuit(int signnum)
+{
+	ClientPlayer::getInstance().Quit(signnum);
+}
 
 ClientPlayer::ClientPlayer()
 	: m_login_client(&m_loop, this)
 	, m_Gate_client(&m_loop, this)
 {
+	CatchCallback cb = onServerQuit;
+	SetSignedCatched(cb);
 }
 
 ClientPlayer::~ClientPlayer()
 {
 
+}
+
+void ClientPlayer::Quit(int signnum)
+{
+	m_loop.Quit();
 }
 
 void ClientPlayer::StartLogin()
@@ -26,8 +37,8 @@ void ClientPlayer::StartGate()
 
 void ClientPlayer::InitLogin(XMLParse& xml)
 {
-	string strLSIP = xml.GetNode("LS", "IP");
-	uint16 nPort = StringTool::StoI(xml.GetNode("LS", "Port"));
+	string strLSIP = xml.GetNode("Client", "LOGGIN_IP");
+	uint16 nPort = stoi(xml.GetNode("Client", "LOGGIN_PORT"));
 	m_login_client.Init(strLSIP, nPort);
 }
 

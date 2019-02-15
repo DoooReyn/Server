@@ -76,9 +76,10 @@ void Connector::connect()
 	int32 sockfd = CreateNonblockingOrDie(m_servAddr.Family());
 	int32 ret = ::Connect(sockfd, m_servAddr.GetSockAddr());
 	int32 savedErrno = (ret == 0) ? 0 : errno;
+	//WARN("connect 1 sockfd:%d ret:%d saveError:%d", sockfd, ret, savedErrno);
+
 	switch (savedErrno)
 	{
-
 		case 0:
 		case EINPROGRESS:
 		case EINTR:

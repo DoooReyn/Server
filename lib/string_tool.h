@@ -11,8 +11,6 @@ public:
 	static string& Format(string& resultOut, const char* fmt, ...);
 	static string  Format(const char* fmt, ...);
 	static string  VFormat(string& resultOut, const char* fmt, va_list argptr, int32 default_size = DEFAULT_BUFFER_SIZE);
-
-	static uint32  StoI(const string& str);
 	static void Split(const string& src, const string& delim, std::vector<string >& vecStr);
 
 };

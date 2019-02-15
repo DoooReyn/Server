@@ -29,7 +29,7 @@ VarType& MysqlRow::GetValue(uint32 nField)
 	}
 	else
 	{
-		return VAR_NULL;
+		return VAR_nullptr;
 	}
 }
 
@@ -70,7 +70,7 @@ VarType& DataSet::GetValue(uint32 nRow, string strName)
 	map<string, uint32>::iterator iter = m_field_map.find(strName);
 	if (iter == m_field_map.end() || nRow >= m_record.size())
 	{
-		return VAR_NULL;
+		return VAR_nullptr;
 	}
 
 	MysqlRow& row =  m_record[nRow];
@@ -90,14 +90,14 @@ MysqlHandle::MysqlHandle(const MysqlUrl* url, MysqlPool* pool, uint32 id)
 	m_url = url;
 	m_state = HandleState_Invalid;
 	m_count = 0;
-	m_mysql = NULL;
+	m_mysql = nullptr;
 	m_timet_out = 10000L;
 	m_mysql_pool = pool;
 }
 MysqlHandle::~MysqlHandle()
 {
 	FinalHandle(1);
-	m_url = NULL;
+	m_url = nullptr;
 }
 
 
@@ -122,7 +122,7 @@ void MysqlHandle::FinalHandle(int32 way)
 	{
 		//DEBUG("FinalHandle():The mysql connect will been closed... way:%d", way);
 		mysql_close(m_mysql);
-		m_mysql = NULL;
+		m_mysql = nullptr;
 	}
 	m_state = HandleState_Invalid;
 	m_count = 0;
@@ -174,7 +174,7 @@ bool MysqlHandle::ExecProduct(string& sql, string& result, DataSet& dataSet, boo
 		return false;
 	}
 
-	return ExecSelect(result, dataSet);
+	return Select(result, dataSet);
 }
 
 int MysqlHandle::ExecSql(string& sql, bool need_errlog)
@@ -184,30 +184,31 @@ int MysqlHandle::ExecSql(string& sql, bool need_errlog)
 
 int MysqlHandle::ExecSql(const char* szSql, uint32 nLen, bool need_errlog)
 {
-	if (szSql == NULL || nLen == 0 || m_mysql == NULL)
+	if (szSql == nullptr || nLen == 0 || m_mysql == nullptr)
 	{
 		return -1;
 	}
+
 	m_last_sql = szSql;
 	int nRet = mysql_real_query(m_mysql, szSql, nLen);
 	if (nRet && need_errlog)
 	{
-		ERROR("SQL:%s  Error:%s", szSql, mysql_error(m_mysql));
+		ERROR("SQL:%s--->Desc:%s", szSql, mysql_error(m_mysql));
 	}
 	return nRet;
 }
 
 
-bool MysqlHandle::ExecSelect(string strSql, DataSet& dataSet)
+bool MysqlHandle::Select(string strSql, DataSet& dataSet)
 {
-	return ExecSelect(strSql.c_str(), strSql.length(), dataSet);
+	return Select(strSql.c_str(), strSql.length(), dataSet);
 }
 
-bool MysqlHandle::ExecSelect(const char* szSql, unsigned int nLen, DataSet& dataSet)
+bool MysqlHandle::Select(const char* szSql, unsigned int nLen, DataSet& dataSet)
 {
-	if (m_mysql == NULL)
+	if (m_mysql == nullptr)
 	{
-		ERROR("NULL m_mysql Error. ---- %s", szSql);
+		ERROR("nullptr m_mysql Error. ---- %s", szSql);
 		return false;
 	}
 	m_select_time.Now();
@@ -217,7 +218,7 @@ bool MysqlHandle::ExecSelect(const char* szSql, unsigned int nLen, DataSet& data
 	}
 
 	MYSQL_RES* result = mysql_store_result(m_mysql);
-	if (result == NULL)
+	if (result == nullptr)
 	{
 		ERROR("Result Get Error:%s", mysql_error(m_mysql));
 		return false;
@@ -264,9 +265,9 @@ bool MysqlHandle::ExecSelect(const char* szSql, unsigned int nLen, DataSet& data
 
 char* MysqlHandle::escapeString(const char* szSrc, char* szDest, unsigned int size)
 {
-	if (szSrc == NULL || szDest == NULL || m_mysql == NULL)
+	if (szSrc == nullptr || szDest == nullptr || m_mysql == nullptr)
 	{
-		return NULL;
+		return nullptr;
 	}
 	char* end = szDest;
 	mysql_real_escape_string(m_mysql, end, szSrc, size == 0 ? strlen(szSrc) : size);
@@ -275,7 +276,7 @@ char* MysqlHandle::escapeString(const char* szSrc, char* szDest, unsigned int si
 
 string& MysqlHandle::escapeString(const std::string& src, string& dest)
 {
-	if (m_mysql == NULL)
+	if (m_mysql == nullptr)
 	{
 		return dest;
 	}
@@ -298,17 +299,17 @@ bool MysqlHandle::InitHandle()
 	{
 		printf("InitHandle():The mysql connect will been closed...\n");
 		mysql_close(m_mysql);
-		m_mysql = NULL;
+		m_mysql = nullptr;
 	}
 
-	m_mysql = mysql_init(NULL);
-	if (m_mysql == NULL)
+	m_mysql = mysql_init(nullptr);
+	if (m_mysql == nullptr)
 	{
 		printf("InitHandle():Initiate mysql MERROR...\n");
 		return false;
 	}
 
-	if (mysql_real_connect(m_mysql, m_url->m_host.c_str(), m_url->m_user.c_str(), m_url->m_passwd.c_str(), m_url->m_dbname.c_str(), m_url->m_port, NULL, CLIENT_COMPRESS | CLIENT_INTERACTIVE) == NULL)
+	if (mysql_real_connect(m_mysql, m_url->m_host.c_str(), m_url->m_user.c_str(), m_url->m_passwd.c_str(), m_url->m_dbname.c_str(), m_url->m_port, nullptr, CLIENT_COMPRESS | CLIENT_INTERACTIVE) == nullptr)
 	{
 		printf("InitHandle():connect mysql://%s:%u/%s failed...\n", m_url->m_host.c_str(), m_url->m_port, m_url->m_dbname.c_str());
 		return false;
@@ -350,7 +351,7 @@ MysqlPool::~MysqlPool()
 bool MysqlPool::PutUrl(const char* szUrl, const uint32 id)
 {
 	MysqlUrl* mysql_url = new MysqlUrl(szUrl);
-	if (mysql_url == NULL)
+	if (mysql_url == nullptr)
 	{
 		return false;
 	}
@@ -358,7 +359,7 @@ bool MysqlPool::PutUrl(const char* szUrl, const uint32 id)
 	m_murl.AddEntry(mysql_url);
 
 	MysqlHandle* handle = new MysqlHandle(mysql_url, this, id);
-	if (handle == NULL)
+	if (handle == nullptr)
 	{
 		m_murl.RemoveEntry(mysql_url);
 		return false;
@@ -375,7 +376,7 @@ bool MysqlPool::PutUrl(const char* szUrl, const uint32 id)
 		m_murl.RemoveEntry(mysql_url);
 		handle->FinalHandle(4);
 		delete handle;
-		handle = NULL;
+		handle = nullptr;
 		return false;
 	}
 	return true;
@@ -388,7 +389,7 @@ MysqlHandle* MysqlPool::GetHandle(uint32 id)
 	struct GetHandleExec : public Callback<MysqlHandle>
 	{
 		MysqlHandle* _handle;
-		GetHandleExec(): _handle(NULL) {}
+		GetHandleExec(): _handle(nullptr) {}
 		bool exec(MysqlHandle* entry)
 		{
 			switch (entry->m_state)
@@ -425,37 +426,37 @@ MysqlHandle* MysqlPool::GetHandle(uint32 id)
 		if (m_mum.Size() < m_max_handle)
 		{
 			MysqlUrl* url = m_murl.GetEntryById(id);
-			if (url == NULL)
+			if (url == nullptr)
 			{
-				return NULL;
+				return nullptr;
 			}
 
 			MysqlHandle* handle = new MysqlHandle(url, this, id);
-			if (handle == NULL)
+			if (handle == nullptr)
 			{
-				return NULL;
+				return nullptr;
 			}
 
 			if (handle->InitMysql(3) == false)
 			{
 				delete handle;
-				handle = NULL;
-				return NULL;
+				handle = nullptr;
+				return nullptr;
 			}
 
 			if (m_mum.AddEntry(handle) == false)
 			{
 				handle->FinalHandle(5);
 				delete handle;
-				handle = NULL;
-				return NULL;
+				handle = nullptr;
+				return nullptr;
 			}
 			return handle;
 		}
 		usleep(1000 * 50);
 
 	}
-	return NULL;
+	return nullptr;
 }
 
 void MysqlPool::PutHandle(MysqlHandle* handle)

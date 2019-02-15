@@ -3,7 +3,7 @@
 #include "timer_queue.h"
 #include "logger.h"
 
-__thread EventLoop* t_loopInThisThread = NULL;
+__thread EventLoop* t_loopInThisThread = nullptr;
 const int kPollTimeMs = 10000;
 
 
@@ -35,7 +35,7 @@ EventLoop::EventLoop()
 	, m_timerQueue(new TimerQueue(this))
 	, m_wakeupFd(createEventfd())
 	, m_wakeupChannel(new Channel(this, m_wakeupFd))
-	, m_currentActiveChannel(NULL)
+	, m_currentActiveChannel(nullptr)
 {
 	//DEBUG("EventLoop created : %p in thread :%d", this, m_threadId);
 	if(t_loopInThisThread)
@@ -57,7 +57,7 @@ EventLoop::~EventLoop()
 	m_wakeupChannel->DisableAll();
 	m_wakeupChannel->Remove();
 	::close(m_wakeupFd);
-	t_loopInThisThread = NULL;
+	t_loopInThisThread = nullptr;
 
 }
 
@@ -85,12 +85,12 @@ void EventLoop::Loop()
 			m_currentActiveChannel = *it;
 			m_currentActiveChannel->HandleEvent(m_pollReturnTime);
 		}
-		m_currentActiveChannel = NULL;
+		m_currentActiveChannel = nullptr;
 		m_eventHanding = false;
 		doPendingFunctor();
 
 	}
-	DEBUG("EvnetLoop %p stop looping", this);
+	//DEBUG("EvnetLoop %p stop looping", this);
 	m_looping = false;
 }
 
@@ -152,6 +152,20 @@ TimerId EventLoop::RunEvery(double interval, const TimerCallback& cb)
 	Timestamp time(addTime(Timestamp::Now(), interval));
 	return m_timerQueue->AddTimer(cb, time, interval);
 }
+
+TimerId EventLoop::RunAtDay(int32 hour, int32 min, int32 sec, const TimerCallback& cb)
+{
+	Timestamp time(Timestamp::FromUnixTime(hour, min, sec));
+	//cout << time.GetSeconds() << endl;
+	if (time < Timestamp::Now())
+	{
+		time.AddDelay(ONE_DAY);
+	}
+	//cout << time.GetSeconds() << endl;
+
+	return m_timerQueue->AddTimer(cb, time, ONE_DAY);
+}
+
 
 void EventLoop::Cancel(TimerId timerId)
 {

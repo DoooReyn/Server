@@ -4,11 +4,14 @@
 #include <iostream>
 #include <assert.h>
 #include <map>
+#include <unordered_map>
 #include <set>
 #include <utility>
 #include <queue>
 #include <deque>
 #include <vector>
+#include <new>
+#include <functional>
 #include <string.h>
 #include <strings.h>
 #include <pthread.h>
@@ -52,14 +55,14 @@ typedef double f64;
 typedef char int8;
 typedef signed short int16;
 typedef signed int int32;
-typedef signed long int64;
+typedef signed long long int64;
 typedef unsigned char uint8;
 typedef unsigned short uint16;
 typedef unsigned int uint32;
-typedef unsigned long uint64;
+typedef unsigned long long uint64;
 
 #ifdef _DEBUG
-#define HEART_BEAT_TIME		600
+#define HEART_BEAT_TIME		60
 #else
 #define HEART_BEAT_TIME		60
 #endif
@@ -71,7 +74,10 @@ typedef unsigned long uint64;
 #define ONE_DAY				86400
 
 template <bool x> struct STATIC_ASSERTION_FAILURE;
-template <> struct STATIC_ASSERTION_FAILURE<true> { enum {value = 1};};
+template <> struct STATIC_ASSERTION_FAILURE<true>
+{
+	enum {value = 1};
+};
 template <int x> struct static_assert_test {};
 
 #define JOIN_TEST(a,b) a##b
@@ -81,7 +87,7 @@ template <int x> struct static_assert_test {};
 	JOIN_TEST(st_assert_test,__LINE__) __attribute__((unused))
 
 
-#define DELETE(x) { if(x != NULL) {delete x; x = NULL;} }
+#define DELETE(x) { if(x != nullptr) {delete x; x = nullptr;} }
 
 #define CHECKERR_AND_RETURN(x)  { if ((x) == false) { ERROR("Check Error"); return;}  }
 
@@ -89,5 +95,9 @@ template <int x> struct static_assert_test {};
 
 #define CHECKERR_AND_RETURN_VALUE(x,ret)  { if ((x) == false) { ERROR("Check Error"); return ret;}  }
 
+#define NOWTIME time(NULL)
+
+#define		ARRAY_SIZE(a) (sizeof(a) / sizeof((a)[0]))
+#define		CONTAINER_OF(ptr, type, member)  ((type *) ((char *) (ptr) - offsetof(type, member)))
 
 #endif

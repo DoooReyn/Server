@@ -32,11 +32,11 @@ PROGRAM = 	buffer_ex_test \
 		  	redis_test \
 		  	blocking_queue_test \
 		  	logger_test \
-			thread_test \
 			threadpool_test \
 			timer_queue_test \
 			list_test \
-			csv_test
+			csv_test \
+			memory_pool_test
 
 
 
@@ -135,6 +135,8 @@ tcpclient_reg3_test:tcpclient_reg3_test.o
 csv_test:csv_test.o
 	$(CC) $(FLAGS) -o $@ $^ $(LIBS)
 
+memory_pool_test:memory_pool_test.o
+	$(CC) $(FLAGS) -o $@ $^ $(LIBS)
 
 .PHONY:clean
 clean:

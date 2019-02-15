@@ -125,8 +125,12 @@ void CSVParser::parseHeader(void)
 
 void CSVParser::parseContent()
 {
+	if (m_orgFile.size() == 0 )
+	{
+		return;
+	}
 	vector<string>::iterator it = m_orgFile.begin();
-	it++;
+	++it;
 
 	for (; it !=  m_orgFile.end(); ++it)
 	{

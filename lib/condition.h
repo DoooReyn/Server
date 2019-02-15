@@ -9,7 +9,7 @@ class Condition : private Nocopyable
 public:
 	explicit Condition(Mutex& mutex) : m_mutex(mutex)
 	{
-		pthread_cond_init(&m_cond, NULL);
+		pthread_cond_init(&m_cond, nullptr);
 	}
 	~Condition()
 	{

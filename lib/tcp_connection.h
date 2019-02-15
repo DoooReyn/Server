@@ -134,6 +134,7 @@ public:
 	void SetHeartBeat()
 	{
 		m_heart_beat = Timestamp::Now().GetSeconds();
+		m_timeouts = 0;
 	}
 	void CheckHeartBeat();
 private:
@@ -197,6 +198,8 @@ private:
 	BufferEx m_OutPutBuff;
 
 	MsgQueue m_msg_queue;
+
+	int32 m_timeouts;
 };
 
 

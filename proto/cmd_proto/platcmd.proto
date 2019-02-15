@@ -106,6 +106,7 @@ message ZoneLoginRequest
 {
     required int32 zoneid   = 1;    // 区服id
     required int32 accid    = 2;    // 账号id
+	required int32 roleid   = 3;	// 角色id
 }
 
 message ZoneLoginReturn
@@ -113,6 +114,7 @@ message ZoneLoginReturn
 	required bool result	= 1;    //登陆是否成功true:成功
     required int32 accid    = 2;    //账号id
     required int32 zoneid   = 3;    //区服id
+    required int32 roleid   = 4;    //角色id
 }
 
 message RoleListRequest

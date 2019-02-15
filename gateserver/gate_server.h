@@ -19,6 +19,8 @@ public:
 	//设置网关ID
 	void SetServerID(uint32 serverid);
 
+	void GetConnectZoneId(vector<int32>& vecZone);
+
 	//获取网关ID
 	uint32 GetServerID()
 	{
@@ -49,7 +51,6 @@ public:
 	//发送数据
 	void SendProtoBuf(const uint32 messageid, int64 cid, ::google::protobuf::Message& data, uint32 messtype);
 	void Send(const TcpConnectionPtr& conn, PackHead* pHead, const char* data);
-
 
 	void ParseZoneLoginReturn(MessagePack* pPack);
 

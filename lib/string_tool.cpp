@@ -41,11 +41,6 @@ string  StringTool::VFormat(string& resultOut, const char* fmt, va_list argptr, 
 	return resultOut;
 }
 
-uint32 StringTool::StoI(const string& str)
-{
-	return stoi(str);
-}
-
 void StringTool::Split(const string& src, const string& delim, std::vector<string >& vecStr)
 {
 	size_t last = 0;

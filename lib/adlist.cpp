@@ -5,16 +5,16 @@
 list* listCreate(void)
 {
 	struct list* list;
-	if ((list = (struct list*)malloc(sizeof(*list))) == NULL)
+	if ((list = (struct list*)malloc(sizeof(*list))) == nullptr)
 	{
-		return NULL;
+		return nullptr;
 	}
 
-	list->head = list->tail = NULL;
+	list->head = list->tail = nullptr;
 	list->len = 0;
-	list->dup = NULL;
-	list->free = NULL;
-	list->match = NULL;
+	list->dup = nullptr;
+	list->free = nullptr;
+	list->match = nullptr;
 	return list;
 }
 
@@ -41,19 +41,19 @@ list* listAddNodeHead(list* list, void* value)
 {
 	listNode* node;
 
-	if ((node = (listNode*)malloc(sizeof(*node))) == NULL)
+	if ((node = (listNode*)malloc(sizeof(*node))) == nullptr)
 	{
-		return NULL;
+		return nullptr;
 	}
 	node->value = value;
 	if (list->len == 0)
 	{
 		list->head = list->tail = node;
-		node->prev = node->next = NULL;
+		node->prev = node->next = nullptr;
 	}
 	else
 	{
-		node->prev = NULL;
+		node->prev = nullptr;
 		node->next = list->head;
 		list->head->prev = node;
 		list->head = node;
@@ -67,20 +67,21 @@ list* listAddNodeTail(list* list, void* value)
 
 	listNode* node;
 
-	if ((node = (listNode*)malloc(sizeof(*node))) == NULL)
+	if ((node = (listNode*)malloc(sizeof(*node))) == nullptr)
 	{
-		return NULL;
+		return nullptr;
 	}
 	node->value = value;
 	if (list->len == 0)
 	{
 		list->head = list->tail = node;
-		node->prev = node->next = NULL;
+		list->head->prev = NULL;
+		list->tail->next = NULL;
 	}
 	else
 	{
 		node->prev = list->tail;
-		node->next = NULL;
+		node->next = nullptr;
 		list->tail->next = node;
 		list->tail = node;
 	}
@@ -93,9 +94,9 @@ list* listInsertNode(list* list, listNode* old_node, void* value, int after)
 {
 	listNode* node;
 
-	if ((node = (listNode*)malloc(sizeof(*node))) == NULL)
+	if ((node = (listNode*)malloc(sizeof(*node))) == nullptr)
 	{
-		return NULL;
+		return nullptr;
 	}
 
 	node->value = value;
@@ -117,11 +118,11 @@ list* listInsertNode(list* list, listNode* old_node, void* value, int after)
 			list->head = node;
 		}
 	}
-	if (node->prev != NULL)
+	if (node->prev != nullptr)
 	{
 		node->prev->next = node;
 	}
-	if (node->next != NULL)
+	if (node->next != nullptr)
 	{
 		node->next->prev = node;
 	}
@@ -161,9 +162,9 @@ listIter* listGetIterator(list* list, int direction)
 {
 	listIter* iter;
 
-	if ((iter = (listIter*)malloc(sizeof(*iter))) == NULL)
+	if ((iter = (listIter*)malloc(sizeof(*iter))) == nullptr)
 	{
-		return NULL;
+		return nullptr;
 	}
 
 	if (direction == AL_START_HEAD)
@@ -199,7 +200,7 @@ listNode* listNext(listIter* iter)
 {
 	listNode* current = iter->next;
 
-	if (current != NULL)
+	if (current != nullptr)
 	{
 		if (iter->direction == AL_START_HEAD)
 		{
@@ -219,37 +220,37 @@ list* listDup(list* orig)
 	listIter* iter;
 	listNode* node;
 
-	if ((copy = listCreate()) == NULL)
+	if ((copy = listCreate()) == nullptr)
 	{
-		return NULL;
+		return nullptr;
 	}
 	copy->dup = orig->dup;
 	copy->free = orig->free;
 	copy->match = orig->match;
 	iter = listGetIterator(orig, AL_START_HEAD);
-	while ((node = listNext(iter)) != NULL)
+	while ((node = listNext(iter)) != nullptr)
 	{
 		void* value;
 
 		if (copy->dup)
 		{
 			value = copy->dup(node->value);
-			if (value == NULL)
+			if (value == nullptr)
 			{
 				listRelease(copy);
 				listReleaseIterator(iter);
-				return NULL;
+				return nullptr;
 			}
 		}
 		else
 		{
 			value = node->value;
 		}
-		if (listAddNodeTail(copy, value) == NULL)
+		if (listAddNodeTail(copy, value) == nullptr)
 		{
 			listRelease(copy);
 			listReleaseIterator(iter);
-			return NULL;
+			return nullptr;
 		}
 	}
 	listReleaseIterator(iter);
@@ -262,7 +263,7 @@ listNode* listSearchKey(list* list, void* key)
 	listNode* node;
 
 	iter = listGetIterator(list, AL_START_HEAD);
-	while ((node = listNext(iter)) != NULL)
+	while ((node = listNext(iter)) != nullptr)
 	{
 		if (list->match)
 		{
@@ -282,7 +283,7 @@ listNode* listSearchKey(list* list, void* key)
 		}
 	}
 	listReleaseIterator(iter);
-	return NULL;
+	return nullptr;
 }
 
 listNode* listIndex(list* list, long index)
@@ -320,10 +321,10 @@ void listRotate(list* list)
 
 	/* Detach current tail */
 	list->tail = tail->prev;
-	list->tail->next = NULL;
+	list->tail->next = nullptr;
 	/* Move it as head */
 	list->head->prev = tail;
-	tail->prev = NULL;
+	tail->prev = nullptr;
 	tail->next = list->head;
 	list->head = tail;
 }

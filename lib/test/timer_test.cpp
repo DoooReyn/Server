@@ -100,7 +100,7 @@ int main(int argc, char const* argv[])
 	TestVirtual();
 	return 0;
 	//TestTimer();
-	time_t Now = time(NULL);
+	time_t Now = time(nullptr);
 	time_t Now1 = Now - 12 * 3600;
 	time_t Now2 = Now - 8 * 3600;
 	time_t Now3 = Now + 10 * 3600;
@@ -152,7 +152,7 @@ int main(int argc, char const* argv[])
 		cout << endl;
 	}
 	*/
-	time_t nowTime = time(NULL);
+	time_t nowTime = time(nullptr);
 	cout << nowTime << endl;
 	string strTime;
 	UTCToStr(nowTime, strTime);

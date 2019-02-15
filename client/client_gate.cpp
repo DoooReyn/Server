@@ -9,7 +9,7 @@
 extern std::map<int32, int32> g_map_parma;
 
 ClientGateClient::ClientGateClient(EventLoop* pLoop, ClientPlayer* client_player)
-	: m_client(NULL)
+	: m_client(nullptr)
 	, m_loop(pLoop)
 	, m_client_player(client_player)
 	, m_thr(std::bind(&ClientGateClient::threadFunc, this))
@@ -41,7 +41,7 @@ void ClientGateClient::threadFunc()
 		doMessage(op);
 		cin.clear();
 		cin.ignore();
-		setbuf(stdin, NULL);
+		setbuf(stdin, nullptr);
 	}
 }
 
@@ -60,8 +60,9 @@ void ClientGateClient::Init(const string& strLSIP, const uint16& nPort)
 	m_client->SetMessageCallback(std::bind(&NetworkManager::OnMessage, NetworkManager::getInstancePtr(), _1, _2, _3));
 }
 
-void ClientGateClient::SetUser(int32 accid, int32 zoneid)
+void ClientGateClient::SetUser(int32 accid, int32 zoneid, int32 roleid)
 {
+	m_roleid = roleid;
 	m_accid = accid;
 	m_zoneid = zoneid;
 }
@@ -123,13 +124,13 @@ void ClientGateClient::doMessage(int32 op)
 void ClientGateClient::TestCmd()
 {
 	TcpConnectionPtr conn = m_client->GetConnection();
-	for (int32 i = 0; i < 100000; i++)
+	for (int32 i = 1; i <= 10000000; i++)
 	{
 		Cmd::CmdTest sendPack;
-		sendPack.set_str(StringTool::Format("我们 Test:%d", i));
+		sendPack.set_str(StringTool::Format("我们测试数据在哪 :%d", i));
 		conn->SendProtoBuf(CMD_CONNECT_TEST2, sendPack);
 
-		string sendStr = StringTool::Format("WL Test:%d", i);
+		string sendStr = StringTool::Format("SS测试数据在这里 :%d", i);
 		conn->Send(CMD_CONNECT_TEST1, sendStr.c_str(), sendStr.length());
 	}
 }
@@ -137,8 +138,12 @@ void ClientGateClient::TestCmd()
 void ClientGateClient::TestCmd2()
 {
 	TcpConnectionPtr conn = m_client->GetConnection();
-	string sendStr = "WL Test:99999";
-	conn->Send(CMD_CONNECT_TEST1, sendStr.c_str(), sendStr.length());
+	for(int i = 0; i <= 10000000; i++)
+	{
+		Cmd::CmdTest sendPack;
+		sendPack.set_str(StringTool::Format("我们测试数据在哪 :%d", i));
+		conn->SendProtoBuf(CMD_CONNECT_TEST2, sendPack);
+	}
 }
 
 void ClientGateClient::TestRedis()
@@ -176,6 +181,7 @@ void ClientGateClient::ZoneLogin()
 	Cmd::ZoneLoginRequest sendPack;
 	sendPack.set_zoneid(m_zoneid);
 	sendPack.set_accid(m_accid);
+	sendPack.set_roleid(m_roleid);
 	conn->SendProtoBuf(CLIENT_ZONE_LOGIN_REQUEST, sendPack);
 }
 
@@ -190,6 +196,6 @@ void ClientGateClient::ParseZoneLoginReturn(MessagePack* pPack)
 		return;
 	}
 
-	INFO("ZoneLoginReturn Success zoneid:%d accid:%d", recvPack.zoneid(), recvPack.accid());
+	INFO("ZoneLoginReturn Success zoneid:%d accid:%d roleid:%d", recvPack.zoneid(), recvPack.accid(), recvPack.roleid());
 }
 

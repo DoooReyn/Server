@@ -48,6 +48,7 @@ TcpConnection::TcpConnection(EventLoop* loop, const string& name, int32 sockfd, 
 	, m_peerAddr(peer_addr)
 	, m_thisid(0)
 	, m_heart_beat(0)
+	, m_timeouts(0)
 {
 	m_channel->SetReadCallBack(std::bind(&TcpConnection::handleRead, this, _1));
 	m_channel->SetWriteCallBack(std::bind(&TcpConnection::handleWrite, this));
@@ -81,7 +82,8 @@ void TcpConnection::Send(const uint32 messageid, const void* message, int32 len,
 {
 	if (m_state == kConnected)
 	{
-		BufferEx buf;
+		static BufferEx buf;
+		buf.RetrieveAll();
 		struct PackHead pack_head;
 		pack_head.messageid = messageid;
 		pack_head.size = len;
@@ -97,7 +99,8 @@ void TcpConnection::Send(const PackHead* pack_head, const void* message)
 {
 	if (m_state == kConnected)
 	{
-		BufferEx buf;
+		static BufferEx buf;
+		buf.RetrieveAll();
 		buf.EnsureWriteableBytes(pack_head->size + PACK_HEAD_LEN);
 		buf.append((const char*)(pack_head), PACK_HEAD_LEN);
 		buf.append(message, pack_head->size);
@@ -116,7 +119,8 @@ void TcpConnection::SendProtoBuf(const uint32 messageid, ::google::protobuf::Mes
 {
 	if (m_state == kConnected)
 	{
-		BufferEx buf;
+		static BufferEx buf;
+		buf.RetrieveAll();
 		int32 len = message.ByteSize();
 		struct PackHead pack_head;
 		pack_head.messageid = messageid;
@@ -440,10 +444,15 @@ void TcpConnection::CheckHeartBeat()
 	if (m_heart_beat == 0)
 	{
 		m_heart_beat = requesttime;
+		m_timeouts = 0;
 		return;
 	}
 
-	if (requesttime - m_heart_beat  >= 2 * HEART_BEAT_TIME)
+	if (requesttime - m_heart_beat  >  HEART_BEAT_TIME)
+	{
+		m_timeouts++;
+	}
+	if (m_timeouts >= 3)
 	{
 		handleClose();
 	}

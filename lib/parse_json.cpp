@@ -1,7 +1,7 @@
 #include "parse_json.h"
 #include "logger.h"
 
-JSonParse::JSonParse() : m_filebuf(NULL), m_pJson(NULL)
+JSonParse::JSonParse() : m_filebuf(nullptr), m_pJson(nullptr)
 {
 
 }
@@ -10,7 +10,7 @@ JSonParse::~JSonParse()
 	if(m_filebuf)
 	{
 		delete m_filebuf;
-		m_filebuf = NULL;
+		m_filebuf = nullptr;
 	}
 	if(m_pJson)
 	{
@@ -22,7 +22,7 @@ bool JSonParse::LoadFile(const char* szFileName)
 {
 	/* 若要一个byte不漏地读入整个文件，只能采用二进制方式打开 */
 	FILE* pFile = fopen(szFileName, "rb");
-	if(pFile == NULL)
+	if(pFile == nullptr)
 	{
 		ERROR("File error");
 		return false;
@@ -35,7 +35,7 @@ bool JSonParse::LoadFile(const char* szFileName)
 
 	/* 分配内存存储整个文件 */
 	m_filebuf = new char [lSize + 1];
-	if(m_filebuf == NULL)
+	if(m_filebuf == nullptr)
 	{
 		ERROR("Memory error");
 		fclose(pFile);
@@ -60,13 +60,13 @@ bool JSonParse::LoadFile(const char* szFileName)
 
 bool JSonParse::Parse()
 {
-	if(NULL == m_filebuf)
+	if(nullptr == m_filebuf)
 	{
 		printf("m_filebuf is null\n");
 		return false;
 	}
 	m_pJson = cJSON_Parse(m_filebuf);
-	if(NULL == m_pJson)
+	if(nullptr == m_pJson)
 	{
 		printf("cJSON_Parse is failed\n");
 		return false;

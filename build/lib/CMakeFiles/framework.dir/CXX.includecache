@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -270,9 +270,23 @@ timer.h
 mutex.h
 /root/oschina/Server/lib/mutex.h
 
+/root/oschina/Server/lib/memory_pool.cpp
+memory_pool.h
+/root/oschina/Server/lib/memory_pool.h
+
+/root/oschina/Server/lib/memory_pool.h
+type_define.h
+/root/oschina/Server/lib/type_define.h
+singleton.h
+/root/oschina/Server/lib/singleton.h
+mutex.h
+/root/oschina/Server/lib/mutex.h
+
 /root/oschina/Server/lib/message_queue.cpp
 message_queue.h
 /root/oschina/Server/lib/message_queue.h
+memory_pool.h
+/root/oschina/Server/lib/memory_pool.h
 
 /root/oschina/Server/lib/message_queue.h
 type_define.h
@@ -705,6 +719,8 @@ assert.h
 -
 map
 -
+unordered_map
+-
 set
 -
 utility
@@ -714,6 +730,10 @@ queue
 deque
 -
 vector
+-
+new
+-
+functional
 -
 string.h
 -

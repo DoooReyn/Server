@@ -76,14 +76,14 @@ static __thread char t_resolveBuffer[64 * 1024] = {0};
 
 bool InetAddress::Resolve(string hostname, InetAddress* result)
 {
-	assert(result != NULL);
+	assert(result != nullptr);
 	struct hostent hent;
 	struct hostent* he;
 	int32 herrno = 0;
 	bzero(&hent, sizeof(hent));
 
 	int32 ret = gethostbyname_r(hostname.c_str(), &hent, t_resolveBuffer, sizeof(t_resolveBuffer), &he, &herrno);
-	if (ret == 0 && he != NULL)
+	if (ret == 0 && he != nullptr)
 	{
 		assert(he->h_addrtype == AF_INET && he->h_length == sizeof(uint32_t));
 		result->m_addr.sin_addr = *reinterpret_cast<struct in_addr*>(he->h_addr);

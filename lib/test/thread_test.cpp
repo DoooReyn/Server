@@ -10,7 +10,7 @@ std::map<int, int> g_delays;
 void mysleep(int seconds)
 {
 	timespec t = { seconds, 0 };
-	nanosleep(&t, NULL);
+	nanosleep(&t, nullptr);
 }
 
 void threadFunc()
@@ -78,7 +78,7 @@ void forkBench()
 		}
 		else
 		{
-			waitpid(child, NULL, 0);
+			waitpid(child, nullptr, 0);
 		}
 	}
 

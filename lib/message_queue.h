@@ -13,7 +13,7 @@ public:
 		, size(0)
 		, connid(0)
 		, accid(0)
-		, data(NULL)
+		, data(nullptr)
 	{
 	}
 	MessagePack(uint32 mid, uint32 nLen, const int64 cid, uint32 account, char* cmd)
@@ -49,10 +49,9 @@ public:
 	{
 		cout << "read:" << m_cmd_read << " write:" << m_cmd_write << " size:" << m_queue.size() << endl;
 	}
-private:
 	void Clear();
+private:
 	bool PutQueueToArray();
-
 
 	CmdQueue m_cmd[MAX_QUEUE_SIZE];
 	std::queue<MessagePack> m_queue;

@@ -5,8 +5,9 @@
 #include "xml_parse.h"
 #include "client_login.h"
 #include "client_gate.h"
+#include "singleton.h"
 
-class ClientPlayer
+class ClientPlayer : public SingletonBase<ClientPlayer>
 {
 public:
 
@@ -14,6 +15,7 @@ public:
 	~ClientPlayer();
 
 
+	void Quit(int signnum);
 	void InitLogin(XMLParse& xml);
 	void InitGate(string ip, uint16 nPort);
 	void StartLogin();

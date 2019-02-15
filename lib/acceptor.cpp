@@ -55,7 +55,7 @@ void Acceptor::handleRead()
 		if (errno == EMFILE)
 		{
 			::close(m_idleFd);
-			m_idleFd = ::accept(m_acceptSock.GetFd(), NULL, NULL);
+			m_idleFd = ::accept(m_acceptSock.GetFd(), nullptr, nullptr);
 			::close(m_idleFd);
 			m_idleFd = ::open("/dev/null", O_RDONLY | O_CLOEXEC);
 		}

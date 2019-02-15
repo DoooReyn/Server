@@ -36,12 +36,11 @@ public:
 
 	//消息循环
 	void Loop();
+	void ThreadFunc();
 
 	void onUpdate2();
-	void onUpdate();
 	//服务器退出
 	void OnExit(int32 signum);
-
 
 	//连接确认消息
 	void ParseConnectVerifyReturn(MessagePack* pPack);
@@ -51,10 +50,17 @@ public:
 private:
 
 	//链接网关
-	void connectGate();
+	void connectGate(EventLoop& Loop);
 
 	//链接登陆
-	void connectLogin();
+	void connectLogin(EventLoop& Loop);
+
+
+	//注册定时器
+	void registerTimerHandle();
+
+	//5秒定时器测试
+	void FiveTimer();
 
 	//消息注册
 	void registerMessageHandle();
@@ -67,7 +73,9 @@ private:
 
 	std::string m_ServerName;		//服务器名字
 	uint32 m_ServerId;				//服务器ID
-	EventLoop m_Loop;				//循环事件
+	Thread m_thr;					//收发包线程
+	EventLoop* m_pLoop;				//循环事件
+	bool m_quit;					//是否退出
 
 	bool m_bSendUrl = false;	    //通知地址是否完成
 };

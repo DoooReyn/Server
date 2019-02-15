@@ -10,7 +10,7 @@ public:
 	Helper()
 	{
 		tzset();
-		seedp = time(NULL);
+		seedp = time(nullptr);
 	}
 };
 

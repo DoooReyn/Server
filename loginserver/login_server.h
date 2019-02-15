@@ -25,6 +25,7 @@ public:
 		return m_ServerName;
 	}
 
+	void ThreadFunc();
 	//主循环
 	void Loop();
 	//消息解析
@@ -78,7 +79,11 @@ private:
 	std::string m_ServerName;			//区服名称
 	uint32 m_nMaxThread;				//线程池最大线程数
 	uint32 m_nPort;						//LoginServer 监控端口号
-	EventLoop m_Loop;					//主循环
+	EventLoop* m_pLoop;					//主循环
+	Thread m_thr;
+	bool m_bquit;
+	Mutex m_mutex;
+
 	//Mutex m_mutexConn;				//网络连接锁
 	MapConnPtr m_mapClientConnPtr;		//Client网络连接Map
 	MapConnPtr m_mapGateConnPtr;		//gate网络连接Map

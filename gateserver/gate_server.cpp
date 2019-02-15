@@ -1,4 +1,4 @@
-
+﻿
 #include "logger.h"
 #include "string_tool.h"
 #include "inet_address.h"
@@ -44,6 +44,15 @@ void GateServer::SetServerID(uint32 serverid)
 	StringTool::Format(m_ServerName, "%s_%d", GW, m_ServerId);
 }
 
+
+void GateServer::GetConnectZoneId(vector<int32>& vecZone)
+{
+	for (MapConnPtr::iterator it = m_mapGameConnPtr.begin(); it != m_mapGameConnPtr.end(); ++it)
+	{
+		vecZone.emplace_back(it->first);
+	}
+}
+
 void GateServer::registerMessageHandle()
 {
 	//这里注册的消息要写到 OnTransmit 判断类型中，不需要转发
@@ -86,8 +95,8 @@ bool GateServer::Init(XMLParse& xmlparse)
 
 bool GateServer::initGateServer(XMLParse& xmlparse)
 {
-	m_nPort = StringTool::StoI(xmlparse.GetNode(m_ServerName, "Port"));
-	m_nMaxThread = StringTool::StoI(xmlparse.GetNode(m_ServerName, "MaxThreadNum"));
+	m_nPort = stoi(xmlparse.GetNode(m_ServerName, "Port"));
+	m_nMaxThread = stoi(xmlparse.GetNode(m_ServerName, "MaxThreadNum"));
 	return true;
 }
 
@@ -172,13 +181,14 @@ void GateServer::onDisconnect(const TcpConnectionPtr& conn)
 
 void GateServer::ConnectChange(int32 conntype, const TcpConnectionPtr& conn, bool status)
 {
-	INFO("current pid:%d status:%s", CurrentThread::Tid(), status ? "connect" : "disconnect");
+	INFO("current pid:%d status:%s type:%d", CurrentThread::Tid(), status ? "connect" : "disconnect", conntype);
 	if (status)
 	{
 		if (conntype == CONNECT_GAME)
 		{
 			m_mapGameConnPtr.insert(std::make_pair(conn->GetId(), conn));
 			GateLoginClient::getInstance().SetZoneState(conn->GetId(), ZONE_NORMAL);
+			//WARN("SetZoneState %d", ZONE_NORMAL);
 		}
 		if (conntype == CONNECT_CLIENT)
 		{
@@ -191,6 +201,7 @@ void GateServer::ConnectChange(int32 conntype, const TcpConnectionPtr& conn, boo
 		{
 			m_mapGameConnPtr.erase(conn->GetId());
 			GateLoginClient::getInstance().SetZoneState(conn->GetId(), ZONE_SHUTDOWN);
+			//WARN("SetZoneState %d", ZONE_SHUTDOWN);
 		}
 		if (conntype == CONNECT_CLIENT)
 		{
@@ -199,6 +210,7 @@ void GateServer::ConnectChange(int32 conntype, const TcpConnectionPtr& conn, boo
 		}
 	}
 }
+
 
 void GateServer::onVerify(const TcpConnectionPtr& conn, int32 id, int32 conntype)
 {
@@ -281,6 +293,7 @@ void GateServer::ParseZoneLoginReturn(MessagePack* pPack)
 	CHECKERR_AND_RETURN(recvPack.ParseFromArray(pPack->data, pPack->size));
 	int32 zoneid = recvPack.zoneid();
 	int32 accid = recvPack.accid();
+	int32 roleid = recvPack.roleid();
 
 	itConnPtr itFind = m_mapClientConnPtr.find(accid);
 	if (itFind == m_mapClientConnPtr.end())
@@ -302,5 +315,7 @@ void GateServer::ParseZoneLoginReturn(MessagePack* pPack)
 	sendPack.set_result(bFind);
 	sendPack.set_accid(accid);
 	sendPack.set_zoneid(zoneid);
+	sendPack.set_roleid(roleid);
+
 	itFind->second->SendProtoBuf(CLIENT_ZONE_LOGIN_RETURN, sendPack);
 }

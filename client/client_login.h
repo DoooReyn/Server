@@ -1,4 +1,4 @@
-#ifndef __CLIENT_LOGIN_H__
+﻿#ifndef __CLIENT_LOGIN_H__
 #define __CLIENT_LOGIN_H__
 #include "tcp_client.h"
 #include "thread.h"
@@ -69,6 +69,7 @@ private:
 	bool m_quit;
 	MapZoneInfo m_mapZoneList;
 
+	int32 m_roleid;
 	int32 m_zoneid;
 	int32 m_accid;
 	string m_gateurl;

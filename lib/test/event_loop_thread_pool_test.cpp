@@ -3,7 +3,7 @@
 #include "thread.h"
 #include "logger.h"
 
-void print(EventLoop* p = NULL)
+void print(EventLoop* p = nullptr)
 {
 	printf("main(): pid = %d, tid = %d, loop = %p\n", getpid(), CurrentThread::Tid(), p);
 }

@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -56,6 +56,14 @@ timer.h
 mutex.h
 ../client/../lib/mutex.h
 
+../client/../lib/memory_pool.h
+type_define.h
+../client/../lib/type_define.h
+singleton.h
+../client/../lib/singleton.h
+mutex.h
+../client/../lib/mutex.h
+
 ../client/../lib/message_queue.h
 type_define.h
 ../client/../lib/type_define.h
@@ -81,6 +89,8 @@ common.h
 ../client/../lib/common.h
 logger.h
 ../client/../lib/logger.h
+memory_pool.h
+../client/../lib/memory_pool.h
 
 ../client/../lib/nocopyable.h
 iostream
@@ -109,6 +119,10 @@ string
 -
 vector
 -
+
+../client/../lib/signal_catch.h
+type_define.h
+../client/../lib/type_define.h
 
 ../client/../lib/singleton.h
 nocopyable.h
@@ -173,6 +187,8 @@ assert.h
 -
 map
 -
+unordered_map
+-
 set
 -
 utility
@@ -182,6 +198,10 @@ queue
 deque
 -
 vector
+-
+new
+-
+functional
 -
 string.h
 -
@@ -261,7 +281,13 @@ string
 -
 google/protobuf/stubs/common.h
 -
+google/protobuf/arena.h
+-
+google/protobuf/arenastring.h
+-
 google/protobuf/generated_message_util.h
+-
+google/protobuf/metadata.h
 -
 google/protobuf/message.h
 -
@@ -353,8 +379,8 @@ client_player.h
 /root/oschina/Server/client/client_player.h
 network_manager.h
 /root/oschina/Server/client/network_manager.h
-string_tool.h
-/root/oschina/Server/client/string_tool.h
+signal_catch.h
+/root/oschina/Server/client/signal_catch.h
 
 /root/oschina/Server/client/client_player.h
 event_loop.h
@@ -365,6 +391,8 @@ client_login.h
 /root/oschina/Server/client/client_login.h
 client_gate.h
 /root/oschina/Server/client/client_gate.h
+singleton.h
+/root/oschina/Server/client/singleton.h
 
 /root/oschina/Server/proto/gen_proto/platcmd.pb.cc
 platcmd.pb.h
@@ -372,6 +400,8 @@ platcmd.pb.h
 algorithm
 -
 google/protobuf/stubs/common.h
+-
+google/protobuf/stubs/port.h
 -
 google/protobuf/stubs/once.h
 -
@@ -393,7 +423,13 @@ string
 -
 google/protobuf/stubs/common.h
 -
+google/protobuf/arena.h
+-
+google/protobuf/arenastring.h
+-
 google/protobuf/generated_message_util.h
+-
+google/protobuf/metadata.h
 -
 google/protobuf/message.h
 -

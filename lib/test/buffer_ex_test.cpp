@@ -114,7 +114,7 @@ void TestBuff5()
 {
 	BufferEx buf;
 	buf.append(string(100000, 'x'));
-	const char* null = NULL;
+	const char* null = nullptr;
 	BOOST_CHECK_EQUAL(buf.FindEOL(), null);
 	BOOST_CHECK_EQUAL(buf.FindEOL(buf.Peek() + 90000), null);
 	cout << __FUNCTION__ << " success!!!" << endl;

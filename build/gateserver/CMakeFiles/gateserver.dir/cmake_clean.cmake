@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/gateserver.dir/gate_server.cpp.o"
   "CMakeFiles/gateserver.dir/gate_login_client.cpp.o"
   "CMakeFiles/gateserver.dir/gate_main.cpp.o"
+  "CMakeFiles/gateserver.dir/gate_server.cpp.o"
   "CMakeFiles/gateserver.dir/__/proto/gen_proto/platcmd.pb.cc.o"
   "../bin/gateserver.pdb"
   "../bin/gateserver"

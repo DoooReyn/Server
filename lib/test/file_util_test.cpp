@@ -8,7 +8,7 @@ int main()
 	int32 err = ReadFile(file, 1024, &result, &size);
 	printf("%d %lu %lld\n", err, result.size(), size);
 	file = "/proc/self";
-	err = ReadFile(file, 1024, &result, NULL);
+	err = ReadFile(file, 1024, &result, nullptr);
 	printf("%d %lu %lld\n", err, result.size(), size);
 
 	file = "/proc/self/cmdline";
@@ -30,7 +30,7 @@ int main()
 	printf("%d %zd %lld\n", err, result.size(), size);
 
 	file = "/dev/zero";
-	err = ReadFile(file, 102400, &result, NULL);
+	err = ReadFile(file, 102400, &result, nullptr);
 	printf("%d %zd %lld\n", err, result.size(), size);
 	return 0;
 }

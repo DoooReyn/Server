@@ -45,7 +45,7 @@ int32 CreateNonblockingOrDie(uint16 family)
 
 int32 BindOrDie(int32 sockfd, const struct sockaddr* addr)
 {
-	int32 ret = ::bind(sockfd, addr, static_cast<socklen_t>(sizeof(struct sockaddr_in6)));
+	int32 ret = ::bind(sockfd, addr, static_cast<socklen_t>(sizeof(struct sockaddr_in)));
 	if (ret  < 0)
 	{
 		ERROR("bind error");
@@ -67,6 +67,7 @@ int32 Accept(int32 sockfd, struct sockaddr_in6* addr)
 {
 	socklen_t addrlen = static_cast<socklen_t>(sizeof(*addr));
 	int32 connfd = ::accept4(sockfd, sockaddr_cast(addr), &addrlen, SOCK_NONBLOCK | SOCK_CLOEXEC);
+	//WARN("Accept fd:%d", connfd);
 	if (connfd < 0)
 	{
 		int32 savedErrno = errno;
@@ -106,7 +107,7 @@ int32 Accept(int32 sockfd, struct sockaddr_in6* addr)
 
 int Connect(int sockfd, const struct sockaddr* addr)
 {
-	return ::connect(sockfd, addr, static_cast<socklen_t>(sizeof(struct sockaddr_in6)));
+	return ::connect(sockfd, addr, static_cast<socklen_t>(sizeof(struct sockaddr_in)));
 }
 
 ssize_t Read(int sockfd, void* buf, size_t count)

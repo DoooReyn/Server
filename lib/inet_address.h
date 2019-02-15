@@ -8,7 +8,7 @@ class InetAddress
 public:
 	explicit InetAddress(uint16 port = 0, bool loopbackonly = false, bool ipv6 = false);
 
-	InetAddress(string ip, uint16 port, bool ipv6 = false);
+	explicit InetAddress(string ip, uint16 port, bool ipv6 = false);
 
 	explicit InetAddress(const struct sockaddr_in& addr) : m_addr(addr)
 	{}
@@ -16,7 +16,10 @@ public:
 	explicit InetAddress(const struct sockaddr_in6& addr) : m_addr6(addr)
 	{}
 
-	int16 Family() const { return m_addr.sin_family; }
+	int16 Family() const
+	{
+		return m_addr.sin_family;
+	}
 
 	std::string ToIP() const;
 

@@ -21,7 +21,7 @@ void TestMessage()
 	for (int i = 0 ; i < 20480; i++)
 	{
 		CmdPair* cmd_pair =  obj.Get();
-		if (cmd_pair == NULL) { continue; }
+		if (cmd_pair == nullptr) { continue; }
 		Cmd* cmd = (Cmd*)cmd_pair->second;
 		cout << cmd->first << "  " << cmd->second << endl;
 		obj.Erase();

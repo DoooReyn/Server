@@ -1,0 +1,12 @@
+log/
+lib/test/*_test
+lib/build/
+*.a
+*.o
+tags
+build/
+log/
+pb_proto/protobuf/
+proto/gen_proto
+CMakeFiles/
+study/python/pyquery/download/

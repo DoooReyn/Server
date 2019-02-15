@@ -159,7 +159,7 @@ ShareObject* SharedMemoryBase::NewObject(bool isNew)
 		else
 		{
 			ERROR("NewObject Error 1");
-			return NULL;
+			return nullptr;
 		}
 	}
 
@@ -168,7 +168,7 @@ ShareObject* SharedMemoryBase::NewObject(bool isNew)
 	{
 		_SMBlock* pBlock = it->second;
 		ShareObject* pObject = GetObjectByRawindex(pBlock->m_nID);
-		if (pObject == NULL)
+		if (pObject == nullptr)
 		{
 			++it;
 			ERROR("NewObject Error 2");
@@ -188,12 +188,12 @@ ShareObject* SharedMemoryBase::NewObject(bool isNew)
 		it++;
 	}
 	ERROR("NewObject Error 3");
-	return NULL;
+	return nullptr;
 }
 
 bool SharedMemoryBase::DestoryObject(ShareObject* pObject)
 {
-	if (pObject == NULL)
+	if (pObject == nullptr)
 	{
 		return false;
 	}
@@ -221,7 +221,7 @@ _SMBlock* SharedMemoryBase::GetSMBbyRawIndex(uint32 index)
 		if (pageNum > m_vecSharedPage.size() - 1)
 		{
 			ERROR("GetSMBbyRawIndex filename:%s index:%d count:%d", m_filename.c_str(), index, m_count);
-			return NULL;
+			return nullptr;
 		}
 
 		MemoryPage& mempage = m_vecSharedPage[pageNum];
@@ -231,5 +231,5 @@ _SMBlock* SharedMemoryBase::GetSMBbyRawIndex(uint32 index)
 	{
 		ERROR("GetSMBbyRawIndex filename:%s index:%d count:%d page:%d", m_filename.c_str(), index, m_count, m_pageNum);
 	}
-	return NULL;
+	return nullptr;
 }

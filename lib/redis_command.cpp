@@ -1,6 +1,6 @@
 #include "redis_command.h"
 
-Redis::Redis()  : m_connect(NULL), m_reply(NULL)
+Redis::Redis()  : m_connect(nullptr), m_reply(nullptr)
 {}
 
 Redis::~Redis()
@@ -8,15 +8,15 @@ Redis::~Redis()
 	if (m_connect)
 	{
 		redisFree(m_connect);
-		m_connect = NULL;
+		m_connect = nullptr;
 	}
-	m_reply = NULL;
+	m_reply = nullptr;
 }
 
 bool Redis::connect(string host, int port)
 {
 	m_connect = redisConnect(host.c_str(), port);
-	if(m_connect != NULL && m_connect->err)
+	if(m_connect != nullptr && m_connect->err)
 	{
 		printf("connect error: %s\n", m_connect->errstr);
 		return 0;

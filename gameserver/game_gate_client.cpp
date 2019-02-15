@@ -32,6 +32,7 @@ void GameGateClient::registerMessageHandle()
 
 void GameGateClient::onConnection(const TcpConnectionPtr& conn)
 {
+	MutexLockGuard lock(m_mutex);
 	DEBUG("onConnection %s -> %s", conn->GetLocalAddr().ToIPPort().c_str(), conn->GetPeerAddr().ToIPPort().c_str());
 
 	CmdConnectVerifyRequest sendPack;
@@ -48,6 +49,7 @@ void GameGateClient::onConnection(const TcpConnectionPtr& conn)
 
 void GameGateClient::onDisconnect(const TcpConnectionPtr& conn)
 {
+	MutexLockGuard lock(m_mutex);
 	DEBUG("onDisconnect %s -> %s is %d Pid:%d", conn->GetPeerAddr().ToIPPort().c_str(), conn->GetLocalAddr().ToIPPort().c_str(), conn->Connected(), CurrentThread::Tid());
 	m_mapGateConnPtr.erase(conn->GetThisid());
 }
@@ -59,23 +61,23 @@ void GameGateClient::onDisconnect(const TcpConnectionPtr& conn)
 void GameGateClient::TestMessage1(MessagePack* pPack)
 {
 	string str(pPack->data, pPack->size);
-	if (str == "WL Test:0" || str == "WL Test:99999")
+	if (str == "SS测试数据在这里 :1" || str == "SS测试数据在这里 :10000000")
 	{
 		DEBUG("1234 message:%s", str.c_str());
 	}
 	static int64 start = 0;
 	static int32 count = 0;
 	static int32 timecost = 0;
-	if (str == "WL Test:0")
+	if (str == "SS测试数据在这里 :1")
 	{
 		start = Timestamp::Now().GetMicroSeconds();
 	}
-	if (str == "WL Test:99999")
+	if (str == "SS测试数据在这里 :10000000")
 	{
 		int64 time2 = Timestamp::Now().GetMicroSeconds();
 		count++;
 		timecost += time2 - start;
-		WARN("TestMessage count:%d average:%f", count, double(timecost) / count);
+		WARN("TestMessage count:%d * 10000000 average:%f s", count, double(timecost) / (count * 1000000));
 	}
 	//g_map_parma[1]++;
 }
@@ -84,7 +86,7 @@ void GameGateClient::TestMessage2(MessagePack* pPack)
 {
 	Cmd::CmdTest recvPack;
 	CHECKERR_AND_RETURN(recvPack.ParseFromArray(pPack->data, pPack->size));
-	if (recvPack.str() == "我们 Test:0" || recvPack.str() == "我们 Test:99999")
+	if (recvPack.str() == "我们测试数据在哪 :1" || recvPack.str() == "我们测试数据在哪 :10000000")
 	{
 		DEBUG("5678 message:%s", recvPack.str().c_str());
 	}
@@ -131,7 +133,7 @@ bool GameGateClient::Init(XMLParse& xmlparse)
 
 	AutoHandle handle(MysqlPool::getInstancePtr());
 	DataSet data;
-	handle()->ExecSelect(sql, data);
+	handle()->Select(sql, data);
 	do
 	{
 		if (data.Size() == 0)
@@ -162,7 +164,7 @@ void GameGateClient::SendPBToGate(int64 cid, uint32 messageid, ::google::protobu
 	itConnPtr itFind = m_mapGateConnPtr.find(cid);
 	if (itFind == m_mapGateConnPtr.end())
 	{
-		ERROR("SendPBToGW Cid:%ld Not Find", cid);
+		ERROR("SendPBToGW Cid:%lld Not Find", cid);
 	}
 	else
 	{

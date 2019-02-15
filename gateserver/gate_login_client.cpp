@@ -1,5 +1,4 @@
-#include "gate_login_client.h"
-#include "string_tool.h"
+﻿#include "gate_login_client.h"
 #include "common.h"
 #include "command.h"
 #include "logger.h"
@@ -28,7 +27,7 @@ void GateLoginClient::registerMessageHandle()
 bool GateLoginClient::Init(XMLParse& xmlparse)
 {
 	m_strIP = xmlparse.GetNode(LS, "IP");
-	m_nPort = StringTool::StoI(xmlparse.GetNode(LS, "Port"));
+	m_nPort = stoi(xmlparse.GetNode(LS, "Port"));
 
 	//INFO("LoginServer IP:%s Port:%d", m_strIP.c_str(), m_nPort);
 	return true;
@@ -47,6 +46,7 @@ void GateLoginClient::onConnection(const TcpConnectionPtr& conn)
 		conn->Send(CMD_CONNECT_VERIFY_REQUEST, &sendPack, sizeof(sendPack));
 		m_connPtr->SetThisid(GateServer::getInstance().GetServerID(), CONNECT_GATE);
 	}
+	NotifyLoginGateStatus();
 }
 
 void GateLoginClient::onDisconnect(const TcpConnectionPtr& conn)
@@ -71,12 +71,18 @@ void GateLoginClient::Send(uint32 messageid, uint32 nLen, const char* data)
 	}
 }
 
-
-void GateLoginClient::ParseConnectVerifyReturn(MessagePack* pPack)
+void GateLoginClient::NotifyLoginGateStatus()
 {
-	CHECKERR_AND_RETURN(sizeof(CmdConnectVerifyReturn) == pPack->size);
-	CmdConnectVerifyReturn* recvPack = (CmdConnectVerifyReturn*)pPack->data;
-	INFO("Verify Return Src IP:%s", recvPack->src);
+	vector<int32> vecZone;
+	GateServer::getInstance().GetConnectZoneId(vecZone);
+	for (auto it : vecZone)
+	{
+		Cmd::CmdZoneStateChange sendPack;
+		sendPack.set_zoneid(it);
+		sendPack.set_state(ZONE_NORMAL);
+		SendProtoBuf(CMD_ZONE_STATE_CHANGE, sendPack);
+		WARN("NotifyLoginGateStatus zoneid:%d", it);
+	}
 }
 
 void GateLoginClient::SetZoneState(uint32 zoneid, uint32 state)
@@ -86,4 +92,13 @@ void GateLoginClient::SetZoneState(uint32 zoneid, uint32 state)
 	sendPack.set_state(state);
 	SendProtoBuf(CMD_ZONE_STATE_CHANGE, sendPack);
 }
+
+
+void GateLoginClient::ParseConnectVerifyReturn(MessagePack* pPack)
+{
+	CHECKERR_AND_RETURN(sizeof(CmdConnectVerifyReturn) == pPack->size);
+	CmdConnectVerifyReturn* recvPack = (CmdConnectVerifyReturn*)pPack->data;
+	INFO("Verify Return Src IP:%s", recvPack->src);
+}
+
 

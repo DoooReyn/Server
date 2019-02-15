@@ -17,7 +17,7 @@ include_directories(
 	)
 
 link_directories(
-	"/root/oschina/Server/build/bin"
+	${PROJECT_BINARY_DIR}/bin/
 	"/usr/local/lib"
 	)
 

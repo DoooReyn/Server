@@ -17,7 +17,7 @@ int main(int argc, char* argv[])
 	}
 
 	string strServerid = argv[1];
-	uint32 server_id = StringTool::StoI(strServerid);
+	uint32 server_id = stoi(strServerid);
 
 	string GSNode;
 	StringTool::Format(GSNode, "%s_%d", GS, server_id);

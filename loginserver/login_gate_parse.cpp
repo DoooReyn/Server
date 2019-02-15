@@ -34,7 +34,7 @@ bool GateLoginParse::InitZoneList()
 	AutoHandle handle(MysqlPool::getInstancePtr());
 
 	DataSet data;
-	bool bRet = handle()->ExecSelect(sql, data);
+	bool bRet = handle()->Select(sql, data);
 	if (bRet == false)
 	{
 		ERROR("initZoneList sql error");
@@ -64,7 +64,7 @@ bool GateLoginParse::InitZoneList()
 
 GateData* GateLoginParse::GetBestGate(uint32 zoneid)
 {
-	GateData* gw = NULL;
+	GateData* gw = nullptr;
 	MapGateIter it = m_mapGateList.begin();
 	for (; it != m_mapGateList.end(); ++it)
 	{
@@ -73,7 +73,7 @@ GateData* GateLoginParse::GetBestGate(uint32 zoneid)
 			continue;
 		}
 
-		if (gw == NULL)
+		if (gw == nullptr)
 		{
 			gw = &it->second;
 		}
@@ -114,6 +114,8 @@ void GateLoginParse::ParseGateUrlNotify(MessagePack* pPack)
 		gate_list.gateid = recvPack.gateid();
 		strncpy(gate_list.gateurl, recvPack.gateurl().c_str(), sizeof(gate_list.gateurl));
 		m_mapGateList.insert(std::make_pair(gate_list.gateid, gate_list));
+
+		DEBUG("ParseGateUrlNotify :%d", gate_list.gateid);
 	}
 	else
 	{
@@ -130,7 +132,7 @@ void GateLoginParse::ParseZoneStateRequest(MessagePack* pPack)
 	for (; itBegin != m_mapZoneList.end(); ++itBegin)
 	{
 		Cmd::ZoneList* pZoneList = sendPack.add_zonelist();
-		CHECKERR_AND_CONTINUE(pZoneList != NULL);
+		CHECKERR_AND_CONTINUE(pZoneList != nullptr);
 		pZoneList->set_zoneid(itBegin->second.zoneid);
 		pZoneList->set_state(itBegin->second.state);
 		pZoneList->set_name(itBegin->second.zonename);

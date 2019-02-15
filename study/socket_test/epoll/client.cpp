@@ -40,7 +40,7 @@ int main()
 	{
 		ERR_EXIT("connect error");
 	}
-
+	printf("connect ret:%d\n",ret);
 	struct sockaddr_in localaddr;
 	socklen_t addrlen = sizeof(localaddr);
 	ret = getsockname(sock, (struct sockaddr*)&localaddr, &addrlen);

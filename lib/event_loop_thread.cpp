@@ -2,7 +2,7 @@
 #include "event_loop.h"
 
 EventLoopThread::EventLoopThread(const ThreadInitCallback& cb /*= ThreadInitCallback()*/, const string& name /*= string()*/)
-	: m_pLoop(NULL)
+	: m_pLoop(nullptr)
 	, m_bExiting(false)
 	, m_thread(std::bind(&EventLoopThread::threadFunc, this), name)
 	, m_mutex()
@@ -16,7 +16,7 @@ EventLoopThread::EventLoopThread(const ThreadInitCallback& cb /*= ThreadInitCall
 EventLoopThread::~EventLoopThread()
 {
 	m_bExiting = true;
-	if (NULL != m_pLoop)
+	if (nullptr != m_pLoop)
 	{
 		m_pLoop->Quit();
 		m_thread.Join();
@@ -29,7 +29,7 @@ EventLoop* EventLoopThread::StartLoop()
 	m_thread.Start();
 	{
 		MutexLockGuard lock(m_mutex);
-		while (m_pLoop == NULL)
+		while (m_pLoop == nullptr)
 		{
 			m_cond.Wait();
 		}
@@ -53,5 +53,5 @@ void EventLoopThread::threadFunc()
 
 	loop.Loop();
 
-	m_pLoop = NULL;
+	m_pLoop = nullptr;
 }

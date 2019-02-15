@@ -43,6 +43,8 @@
 	</GS_1>
 
 	<Client>
+		<LOGGIN_IP>127.0.0.1</LOGGIN_IP>
+		<LOGGIN_PORT>3000</LOGGIN_PORT>
 		<Log>/root/oschina/Server/log/Client/Client.log</Log>
 		<LogLevel>debug</LogLevel>
 	</Client>

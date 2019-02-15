@@ -125,7 +125,7 @@ void Channel::handleEventWithGuard(Timestamp& receiveTime)
 	{
 		if(m_logHup)
 		{
-			WARN("fd=%d Channel::HandleEvent() POLLHUP", m_fd);
+			WARN("fd=%d Channel::HandleEvent() POLLHUP m_revents:%d", m_fd, m_revents);
 		}
 		if(m_closeCallBack)
 		{

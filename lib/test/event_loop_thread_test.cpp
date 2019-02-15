@@ -6,7 +6,7 @@
 
 EventLoop* g_loop;
 
-void print(EventLoop* p = NULL)
+void print(EventLoop* p = nullptr)
 {
 	printf("print: pid = %d, tid = %d, loop = %p\n", getpid(), CurrentThread::Tid(), p);
 }

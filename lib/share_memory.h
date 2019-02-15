@@ -54,8 +54,8 @@ struct _SMBlock
 
 struct MemoryPage
 {
-	char*        m_pdata = NULL;	//指定共享内存地址
-	_SMBlock*    m_pBlock = NULL;	//数据块的头位置
+	char*        m_pdata = nullptr;	//指定共享内存地址
+	_SMBlock*    m_pBlock = nullptr;	//数据块的头位置
 };
 
 
@@ -150,9 +150,9 @@ public:
 	{
 		T* pTmp = static_cast<T*>(SharedMemoryBase::NewObject(isNew));
 		new(pTmp)(T);
-		if (pTmp == NULL)
+		if (pTmp == nullptr)
 		{
-			ERROR("NewObject is return NULL");
+			ERROR("NewObject is return nullptr");
 		}
 
 		return pTmp;

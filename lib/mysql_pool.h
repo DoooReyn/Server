@@ -9,7 +9,7 @@
 #include "singleton.h"
 
 #include <mysql.h>
-static VarType VAR_NULL;
+static VarType VAR_nullptr;
 
 
 class MysqlRow : public Entry
@@ -107,8 +107,8 @@ public:
 	bool ExecProduct(string& sql, string& result, DataSet& dataSet, bool need_errlog = true);
 	int ExecSql(string& sql, bool need_errlog = true);
 	int ExecSql(const char* szSql, uint32 nLen, bool need_errlog = true);
-	bool ExecSelect(const char* szSql, unsigned int nLen, DataSet& dataSet);
-	bool ExecSelect(string strSql, DataSet& dataSet);
+	bool Select(const char* szSql, unsigned int nLen, DataSet& dataSet);
+	bool Select(string strSql, DataSet& dataSet);
 	char* escapeString(const char* szSrc, char* szDest, unsigned int size);
 	string& escapeString(const std::string& src, string& dest);
 	int GetLastInsertId();
@@ -174,6 +174,19 @@ public:
 	MysqlHandle* GetHandle()
 	{
 		return m_handle;
+	}
+
+	string EscapeString(string& sql)
+	{
+		MYSQL* mysql = m_handle->GetMysql();
+		if (sql.length() >= 2048)
+		{
+			return sql;
+		}
+		char szSql[2048] = { 0 };
+		mysql_real_escape_string(mysql, szSql, sql.c_str(), sql.length());
+		sql = szSql;
+		return sql;
 	}
 
 private:

@@ -20,6 +20,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/root/oschina/Server/lib/helper.cpp" "/root/oschina/Server/build/lib/CMakeFiles/framework.dir/helper.cpp.o"
   "/root/oschina/Server/lib/inet_address.cpp" "/root/oschina/Server/build/lib/CMakeFiles/framework.dir/inet_address.cpp.o"
   "/root/oschina/Server/lib/logger.cpp" "/root/oschina/Server/build/lib/CMakeFiles/framework.dir/logger.cpp.o"
+  "/root/oschina/Server/lib/memory_pool.cpp" "/root/oschina/Server/build/lib/CMakeFiles/framework.dir/memory_pool.cpp.o"
   "/root/oschina/Server/lib/message_queue.cpp" "/root/oschina/Server/build/lib/CMakeFiles/framework.dir/message_queue.cpp.o"
   "/root/oschina/Server/lib/mysql_pool.cpp" "/root/oschina/Server/build/lib/CMakeFiles/framework.dir/mysql_pool.cpp.o"
   "/root/oschina/Server/lib/parse_json.cpp" "/root/oschina/Server/build/lib/CMakeFiles/framework.dir/parse_json.cpp.o"

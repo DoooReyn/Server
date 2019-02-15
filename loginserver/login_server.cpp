@@ -1,7 +1,6 @@
 #include "login_server.h"
 #include "mysql_pool.h"
 #include "logger.h"
-#include "string_tool.h"
 #include "inet_address.h"
 #include "platcmd.pb.h"
 #include "common.h"
@@ -22,6 +21,9 @@ void onServerQuit(int32 signum)
 LoginServer::LoginServer()
 	: m_ServerName(LS)
 	, m_nMaxThread(10)
+	, m_pLoop(nullptr)
+	, m_thr(std::bind(&LoginServer::ThreadFunc, this))
+	, m_bquit(false)
 {
 
 	NetworkManager::newInstance();
@@ -29,10 +31,7 @@ LoginServer::LoginServer()
 	LoginAccountClient::newInstance();
 	GateLoginParse::newInstance();
 
-
-
 	registerMessageHandle();
-
 
 }
 
@@ -93,7 +92,7 @@ bool LoginServer::initLoginServer(XMLParse& xmlparse)
 		return bRet;
 	}
 	//INFO("Mysql Connect Success");
-	m_nPort = StringTool::StoI(xmlparse.GetNode(LS, "Port"));
+	m_nPort = stoi(xmlparse.GetNode(LS, "Port"));
 	return bRet;
 }
 
@@ -110,10 +109,12 @@ bool LoginServer::initAccountServer(XMLParse& xmlparse)
 }
 
 
-void LoginServer::Loop()
+void LoginServer::ThreadFunc()
 {
+	EventLoop Loop;
+	m_pLoop = &Loop;
 	InetAddress listenAddr(m_nPort, false, false);
-	TcpServer server(&m_Loop, listenAddr, m_ServerName);
+	TcpServer server(m_pLoop, listenAddr, m_ServerName);
 	if (server.IsBindSuccess() == false)
 	{
 		ERROR("TcpServer Bind Failed IP:%s", listenAddr.ToIPPort().c_str());
@@ -125,15 +126,12 @@ void LoginServer::Loop()
 
 	NetworkManager::getInstance().SetVerifyCallback(std::bind(&LoginServer::onVerify, this, _1, _2, _3));
 
-
 	server.SetMessageCallback(std::bind(&NetworkManager::OnMessage, NetworkManager::getInstancePtr(), _1, _2, _3));
-	m_Loop.RunEvery(UPDATETIME, std::bind(&LoginServer::onUpdate, this));
-
 
 	string accountIP = LoginAccountClient::getInstance().GetIP();
 	uint32 accountPort = LoginAccountClient::getInstance().GetPort();
 	InetAddress accountAddr(accountIP, accountPort, false);
-	TCPClient LoginAccountClient(&m_Loop, accountAddr, m_ServerName);
+	TCPClient LoginAccountClient(m_pLoop, accountAddr, m_ServerName);
 
 	LoginAccountClient.SetConnectionCallback(std::bind(&LoginAccountClient::onConnection, LoginAccountClient::getInstancePtr(), _1));
 	LoginAccountClient.SetDisconnectCallback(std::bind(&LoginAccountClient::onDisconnect, LoginAccountClient::getInstancePtr(), _1));
@@ -141,20 +139,28 @@ void LoginServer::Loop()
 	LoginAccountClient.EnableRetry();
 	LoginAccountClient.Connect();
 
-
 	server.SetThreadNum(m_nMaxThread);
 	server.Start();
-	m_Loop.Loop();
+	m_pLoop->Loop();
 }
 
-void LoginServer::onUpdate()
+
+void LoginServer::Loop()
 {
-	NetworkManager::getInstance().ParseMsg();
+	m_thr.Start();
+	while (m_bquit == false)
+	{
+		NetworkManager::getInstance().ParseMsg();
+		::usleep(UPDATETIME * 1000);
+	}
+	m_thr.Join();
 }
+
 
 void LoginServer::OnExit(int32 signum)
 {
-	m_Loop.Quit();
+	m_pLoop->Quit();
+	m_bquit = true;
 }
 
 void LoginServer::onConnection(const TcpConnectionPtr& conn)
@@ -165,11 +171,16 @@ void LoginServer::onConnection(const TcpConnectionPtr& conn)
 void LoginServer::onDisconnect(const TcpConnectionPtr& conn)
 {
 	//DEBUG("onDisconnect %s -> %s", conn->GetPeerAddr().ToIPPort().c_str(), conn->GetLocalAddr().ToIPPort().c_str());
-	m_Loop.RunInLoop(std::bind(&LoginServer::ConnectChange, this, conn->GetType(), conn, false));
+	ConnectChange(conn->GetType(), conn, false);
+	if(conn->GetType() == 0)
+	{
+		ERROR("onDisconnect current pid:%d", CurrentThread::Tid());
+	}
 }
 
 void LoginServer::ConnectChange(int32 conntype, const TcpConnectionPtr& conn, bool status)
 {
+	MutexLockGuard lock(m_mutex);
 	INFO("current pid:%d status:%s conntype:%d", CurrentThread::Tid(), status ? "connect" : "disconnect", conntype);
 	if (status)
 	{
@@ -206,8 +217,8 @@ void LoginServer::ConnectChange(int32 conntype, const TcpConnectionPtr& conn, bo
 void LoginServer::onVerify(const TcpConnectionPtr& conn, int32 id, int32 conntype)
 {
 	conn->SetThisid(id, conntype);
-	INFO("onVerify %s -> %s", conn->GetPeerAddr().ToIPPort().c_str(), conn->GetLocalAddr().ToIPPort().c_str());
-	m_Loop.RunInLoop(std::bind(&LoginServer::ConnectChange, this, conntype, conn, true));
+	//INFO("pid:%d onVerify %s -> %s", CurrentThread::Tid(), conn->GetPeerAddr().ToIPPort().c_str(), conn->GetLocalAddr().ToIPPort().c_str());
+	ConnectChange(conn->GetType(), conn, true);
 }
 
 void LoginServer::SendPBToClient(const uint32 messageid, int64 cid, ::google::protobuf::Message& data)
@@ -219,7 +230,7 @@ void LoginServer::SendPBToClient(const uint32 messageid, int64 cid, ::google::pr
 	}
 	else
 	{
-		ERROR("SendPBToClient cid:%ld", cid);
+		ERROR("SendPBToClient cid:%lld", cid);
 	}
 }
 
@@ -275,7 +286,7 @@ void LoginServer::ParseZoneInfoRequest(MessagePack* pPack)
 	}
 
 	GateData* gw = GateLoginParse::getInstance().GetBestGate(zoneid);
-	if (gw == NULL)
+	if (gw == nullptr)
 	{
 		ERROR("ParseZoneInfoRequest  gw is null");
 		return;
@@ -288,7 +299,5 @@ void LoginServer::ParseZoneInfoRequest(MessagePack* pPack)
 	sendPack.set_gateurl(gw->gateurl);
 	SendPBToClient(CLIENT_ZONE_INFO_RETURN, pPack->connid, sendPack);
 }
-
-
 
 

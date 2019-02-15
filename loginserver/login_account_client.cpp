@@ -1,5 +1,4 @@
 ﻿#include "login_account_client.h"
-#include "string_tool.h"
 #include "common.h"
 #include "command.h"
 #include "logger.h"
@@ -38,7 +37,7 @@ void LoginAccountClient::registerMessageHandle()
 bool LoginAccountClient::Init(XMLParse& xmlparse)
 {
 	m_strIP = xmlparse.GetNode(AS, "IP");
-	m_nPort = StringTool::StoI(xmlparse.GetNode(AS, "Port"));
+	m_nPort = stoi(xmlparse.GetNode(AS, "Port"));
 	//INFO("AccountServer IP:%s Port:%d", m_strIP.c_str(), m_nPort);
 	return true;
 }

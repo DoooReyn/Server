@@ -4,11 +4,11 @@
 #include "type_define.h"
 #include <fstream>
 #include "var_type.h"
-static VarType VAR_NULL;
+static VarType VAR_nullptr;
 class CSVRow
 {
 public:
-	CSVRow(const vector<string>& header): m_header(header)
+	explicit CSVRow(const vector<string>& header): m_header(header)
 	{
 
 	}
@@ -47,7 +47,7 @@ public:
 			}
 			pos++;
 		}
-		return VAR_NULL;
+		return VAR_nullptr;
 	}
 
 

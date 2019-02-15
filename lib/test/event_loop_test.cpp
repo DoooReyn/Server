@@ -14,7 +14,7 @@ void threadFunc()
 {
 	printf("threadFunc(): pid = %d, tid = %d\n", getpid(), CurrentThread::Tid());
 
-	assert(EventLoop::GetEventLoopOfCurrentThread() == NULL);
+	assert(EventLoop::GetEventLoopOfCurrentThread() == nullptr);
 	EventLoop loop;
 	assert(EventLoop::GetEventLoopOfCurrentThread() == &loop);
 	loop.RunAfter(1.0, callback);
@@ -26,7 +26,7 @@ int main()
 	InitLogger("../log/test.log", "error");
 	printf("main(): pid = %d, tid = %d\n", getpid(), CurrentThread::Tid());
 
-	assert(EventLoop::GetEventLoopOfCurrentThread() == NULL);
+	assert(EventLoop::GetEventLoopOfCurrentThread() == nullptr);
 	EventLoop loop;
 	assert(EventLoop::GetEventLoopOfCurrentThread() == &loop);
 	Thread thread(threadFunc);

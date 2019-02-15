@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -66,6 +66,14 @@ timer.h
 mutex.h
 ../loginserver/../lib/mutex.h
 
+../loginserver/../lib/memory_pool.h
+type_define.h
+../loginserver/../lib/type_define.h
+singleton.h
+../loginserver/../lib/singleton.h
+mutex.h
+../loginserver/../lib/mutex.h
+
 ../loginserver/../lib/message_queue.h
 type_define.h
 ../loginserver/../lib/type_define.h
@@ -107,6 +115,8 @@ common.h
 ../loginserver/../lib/common.h
 logger.h
 ../loginserver/../lib/logger.h
+memory_pool.h
+../loginserver/../lib/memory_pool.h
 
 ../loginserver/../lib/nocopyable.h
 iostream
@@ -129,10 +139,6 @@ assert.h
 -
 
 ../loginserver/../lib/string_piece.h
-type_define.h
-../loginserver/../lib/type_define.h
-
-../loginserver/../lib/string_tool.h
 type_define.h
 ../loginserver/../lib/type_define.h
 
@@ -191,6 +197,8 @@ assert.h
 -
 map
 -
+unordered_map
+-
 set
 -
 utility
@@ -200,6 +208,10 @@ queue
 deque
 -
 vector
+-
+new
+-
+functional
 -
 string.h
 -
@@ -283,7 +295,13 @@ string
 -
 google/protobuf/stubs/common.h
 -
+google/protobuf/arena.h
+-
+google/protobuf/arenastring.h
+-
 google/protobuf/generated_message_util.h
+-
+google/protobuf/metadata.h
 -
 google/protobuf/message.h
 -
@@ -297,8 +315,6 @@ google/protobuf/unknown_field_set.h
 /root/oschina/Server/loginserver/login_account_client.cpp
 login_account_client.h
 /root/oschina/Server/loginserver/login_account_client.h
-string_tool.h
-/root/oschina/Server/loginserver/string_tool.h
 common.h
 /root/oschina/Server/loginserver/common.h
 command.h
@@ -371,8 +387,6 @@ mysql_pool.h
 /root/oschina/Server/loginserver/mysql_pool.h
 logger.h
 /root/oschina/Server/loginserver/logger.h
-string_tool.h
-/root/oschina/Server/loginserver/string_tool.h
 inet_address.h
 /root/oschina/Server/loginserver/inet_address.h
 platcmd.pb.h
@@ -423,6 +437,8 @@ algorithm
 -
 google/protobuf/stubs/common.h
 -
+google/protobuf/stubs/port.h
+-
 google/protobuf/stubs/once.h
 -
 google/protobuf/io/coded_stream.h
@@ -443,7 +459,13 @@ string
 -
 google/protobuf/stubs/common.h
 -
+google/protobuf/arena.h
+-
+google/protobuf/arenastring.h
+-
 google/protobuf/generated_message_util.h
+-
+google/protobuf/metadata.h
 -
 google/protobuf/message.h
 -

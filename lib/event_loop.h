@@ -21,9 +21,15 @@ public:
 
 	void Loop();
 	void Quit();
-	Timestamp PollRetrunTime() const { return m_pollReturnTime;}
+	Timestamp PollRetrunTime() const
+	{
+		return m_pollReturnTime;
+	}
 
-	int64 Iteration() const { return m_iteration;}
+	int64 Iteration() const
+	{
+		return m_iteration;
+	}
 
 	void RunInLoop(const Functor& cb);
 
@@ -36,6 +42,8 @@ public:
 	TimerId RunAfter(double delay, const TimerCallback& cb);
 
 	TimerId RunEvery(double interval, const TimerCallback& cb);
+
+	TimerId RunAtDay(int32 hour, int32 min, int32 sec, const TimerCallback& cb);
 
 	void Cancel(TimerId timerId);
 
@@ -55,9 +63,15 @@ public:
 		}
 	}
 
-	bool IsInLoopThread() const { return m_threadId == CurrentThread::Tid();}
+	bool IsInLoopThread() const
+	{
+		return m_threadId == CurrentThread::Tid();
+	}
 
-	bool EventHandling() const { return m_eventHanding;}
+	bool EventHandling() const
+	{
+		return m_eventHanding;
+	}
 
 	static EventLoop* GetEventLoopOfCurrentThread();
 

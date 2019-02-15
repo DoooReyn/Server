@@ -1,4 +1,4 @@
-#include "account_server.h"
+﻿#include "account_server.h"
 #include "mysql_pool.h"
 #include "logger.h"
 #include "string_tool.h"
@@ -70,7 +70,7 @@ bool AccountServer::Init(XMLParse& xmlparse)
 	}
 	//INFO("Mysql Connect Success");
 
-	m_nPort = StringTool::StoI(xmlparse.GetNode(AS, "Port"));
+	m_nPort = stoi(xmlparse.GetNode(AS, "Port"));
 
 
 	CatchCallback cb = onServerQuit;
@@ -137,7 +137,7 @@ void AccountServer::ParseAccoutVerify(MessagePack* pPack)
 
 	AutoHandle handle(MysqlPool::getInstancePtr());
 	DataSet data;
-	bool bret = handle()->ExecSelect(sql, data);
+	bool bret = handle()->Select(sql, data);
 	if (bret == false)
 	{
 		ERROR(" ExecSelect Error sql:%s", sql.c_str());
@@ -177,17 +177,23 @@ void AccountServer::ParseAccoutRegister(MessagePack* pPack)
 	sendPack.set_result(0);
 	sendPack.set_user(recvPack.user());
 	sendPack.set_cid(recvPack.cid());
-	string sql = "select * from accounts where user = '" + recvPack.user() + "';";
-
+	string user = recvPack.user();
+	string passwd = recvPack.passwd();
 	AutoHandle handle(MysqlPool::getInstancePtr());
+	handle.EscapeString(user);
+	handle.EscapeString(passwd);
+	string sql = "select * from accounts where user = '" + user + "';";
+
 	DataSet data;
-	bool bret = handle()->ExecSelect(sql, data);
-	if (bret == false)
-	{
-		ERROR(" ExecSelect Error sql:%s", sql.c_str());
-	}
+	bool bret = handle()->Select(sql, data);
 	do
 	{
+		if (bret == false)
+		{
+			sendPack.set_result(2);
+			ERROR("select user:%s", recvPack.user().c_str());
+			break;
+		}
 		if (data.Size() > 0)
 		{
 			//DEBUG("no this user: %s", recvPack.user().c_str());
@@ -196,10 +202,14 @@ void AccountServer::ParseAccoutRegister(MessagePack* pPack)
 		}
 
 		sql.clear();
-		StringTool::Format(sql, "insert into accounts(user,passwd,time) values('%s','%s',now())", recvPack.user().c_str(), recvPack.passwd().c_str());
+		StringTool::Format(sql, "insert into accounts(user,passwd,time) values('%s','%s',now())", user.c_str(), passwd.c_str());
 
 		uint32 ret = handle()->ExecSql(sql);
-		sendPack.set_result(ret);
+		if (ret > 0)
+		{
+			sendPack.set_result(3);
+			break;
+		}
 	}
 	while (false);
 
@@ -217,7 +227,7 @@ void AccountServer::ParseRoleList(MessagePack* pPack)
 	//DEBUG("sql:%s", sql.c_str());
 	AutoHandle handle(MysqlPool::getInstancePtr());
 	DataSet data;
-	bool bret = handle()->ExecSelect(sql, data);
+	bool bret = handle()->Select(sql, data);
 	if (bret == false)
 	{
 		ERROR(" ExecSelect Error sql:%s", sql.c_str());
@@ -226,7 +236,7 @@ void AccountServer::ParseRoleList(MessagePack* pPack)
 	for (uint32 i = 0; i < data.Size(); i++)
 	{
 		Cmd::RoleInfo* roledata = sendPack.add_rolelist();
-		CHECKERR_AND_CONTINUE(roledata != NULL);
+		CHECKERR_AND_CONTINUE(roledata != nullptr);
 		roledata->set_accid(data.GetValue(i, "accid"));
 		roledata->set_roleid(data.GetValue(i, "roleid"));
 		string name = data.GetValue(i, "name");
@@ -247,14 +257,16 @@ void AccountServer::ParseRoleCreate(MessagePack* pPack)
 	sendPack.set_result(0);
 	sendPack.set_zoneid(recvPack.zoneid());
 	sendPack.set_accid(recvPack.accid());
-
-	string sql = "select count(*) as num from roles where name= '" + recvPack.name() + "'";
+	string name = recvPack.name();
 	AutoHandle handle(MysqlPool::getInstancePtr());
+	handle.EscapeString(name);
+	string sql = "select count(*) as num from roles where name= '" + name + "'";
 	DataSet data;
-	bool bret = handle()->ExecSelect(sql, data);
+	bool bret = handle()->Select(sql, data);
 	if (bret == false)
 	{
 		ERROR(" ExecSelect Error sql:%s", sql.c_str());
+		return;
 	}
 	int32 num = data.GetValue(0, "num");
 	if (num > 0)

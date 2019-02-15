@@ -7,6 +7,7 @@
 #include "message_queue.h"
 #include "common.h"
 #include "logger.h"
+#include "memory_pool.h"
 
 
 class CFunctionSlotBase
@@ -44,7 +45,7 @@ public:
 
 	virtual bool operator() (void* pdata)
 	{
-		if (m_this != NULL && m_funPtr != NULL)
+		if (m_this != nullptr && m_funPtr != nullptr)
 		{
 			(m_this->*m_funPtr)(reinterpret_cast<T2*>(pdata));
 			return true;
@@ -61,7 +62,7 @@ public:
 	}
 	virtual void EmptyThisAddr()
 	{
-		m_this = NULL;
+		m_this = nullptr;
 	}
 
 	virtual long GetFunAddr()
@@ -83,8 +84,9 @@ public:
 
 	NetworkManager()
 	{
-		m_transmit_cb = NULL;
+		m_transmit_cb = nullptr;
 		m_mapFunc.clear();
+		CMemPool::newInstance();
 	}
 
 	virtual ~NetworkManager()
@@ -226,18 +228,20 @@ public:
 	void ParseMsg()
 	{
 		m_mutex.Lock();
-		MsgQueue m_MsgQueue2;
+		static MsgQueue m_MsgQueue2;
+		m_MsgQueue2.Clear();
 		m_MsgQueue.GetAndSwapTo(m_MsgQueue2);
 		m_mutex.UnLock();
 
 		MessagePack* pPack = m_MsgQueue2.Get();
-		while (pPack != NULL)
+		while (pPack != nullptr)
 		{
 
 			NetworkManager::getInstance().FireMessage(pPack->messageid, pPack);
 			m_MsgQueue2.Erase();
 			pPack = m_MsgQueue2.Get();
 		}
+		//m_MsgQueue.Print();
 	}
 
 	void SetTransmitCallBack(const TransmitCallback& cb)

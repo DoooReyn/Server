@@ -32,6 +32,8 @@ public:
 		return m_nPort;
 	}
 
+	void NotifyLoginGateStatus();
+
 	//Login服链接成功回调
 	void onConnection(const TcpConnectionPtr& conn);
 

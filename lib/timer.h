@@ -149,6 +149,12 @@ public:
 
 	static Timestamp Now();
 
+	void AddDelay(time_t delay)
+	{
+		m_microSeconds += (delay * kMicroSecondsPerSecond);
+	}
+
+
 	static Timestamp Invalid()
 	{
 		return Timestamp();
@@ -157,6 +163,14 @@ public:
 	static Timestamp FromUnixTime(time_t t)
 	{
 		return FromUnixTime(t, 0);
+	}
+
+	static Timestamp FromUnixTime(int32 hour, int32 min, int32 sec)
+	{
+		Timestamp now = Now();
+		time_t zerotime = now.GetSeconds() - (now.GetSeconds() - timezone) % ONE_DAY;
+		zerotime += hour * HOUR + min * MINUTE + sec * SECOND;
+		return FromUnixTime(zerotime, 0);
 	}
 
 	static Timestamp FromUnixTime(time_t t, int microSeconds)
@@ -263,7 +277,7 @@ private:
 class TimerId
 {
 public:
-	TimerId() : m_timer(NULL), m_sequence(0) {}
+	TimerId() : m_timer(nullptr), m_sequence(0) {}
 
 	TimerId(TimerEx* timer, int64 seq) : m_timer(timer), m_sequence(seq) {}
 

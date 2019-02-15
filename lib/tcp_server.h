@@ -60,7 +60,7 @@ private:
 	ConnectionCallback m_connectionCallback;
 	DisConnectCallback m_disconnectCallback;
 
-	MessageCallback	m_messageCallback;
+	MessageCallback m_messageCallback;
 	WriteCompleteCallback m_writeCompleteCallback;
 	ThreadInitCallback m_threadInitCallback;
 	AtomicInt32 m_started;

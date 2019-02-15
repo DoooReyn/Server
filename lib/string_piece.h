@@ -8,7 +8,7 @@ private:
 	const char* m_pStr;
 	int32 m_length;
 public:
-	StringPiece() : m_pStr(NULL), m_length(0) {}
+	StringPiece() : m_pStr(nullptr), m_length(0) {}
 	explicit StringPiece(const char* str) : m_pStr(str), m_length(static_cast<int32>(strlen(str))) {}
 	explicit StringPiece(const unsigned char* str): m_pStr(reinterpret_cast<const char*>(str)), m_length(static_cast<int32>(strlen(m_pStr))) { }
 	explicit StringPiece(const string& str) : m_pStr(str.data()), m_length(static_cast<int32>(str.size())) { }
@@ -36,7 +36,7 @@ public:
 	}
 	void clear()
 	{
-		m_pStr = NULL;
+		m_pStr = nullptr;
 		m_length = 0;
 	}
 	void set(const char* buffer, int32 len)

@@ -66,7 +66,7 @@ public:
 	const char* FindCRLF() const
 	{
 		const char* crlf = std::search(Peek(), GetBeginWrite(), kCRLF, kCRLF + 2);
-		return crlf == GetBeginWrite() ? NULL : crlf;
+		return crlf == GetBeginWrite() ? nullptr : crlf;
 	}
 
 	//从start 位置开始 找到缓冲区中换行(\r\n)位置的指针
@@ -74,7 +74,7 @@ public:
 	{
 		assert(Peek() <= start && start <= GetBeginWrite());
 		const char* crlf = std::search(start, GetBeginWrite(), kCRLF, kCRLF + 2);
-		return crlf == GetBeginWrite() ? NULL : crlf;
+		return crlf == GetBeginWrite() ? nullptr : crlf;
 	}
 
 	//找到缓冲区中换行(\n)位置的指针

@@ -66,7 +66,7 @@ T* EntryManager<T, bInc>::GetEntryById(uint32 id)
 	EntryMapIter iter = m_mapEntry.find(id);
 	if(iter == m_mapEntry.end())
 	{
-		return NULL;
+		return nullptr;
 	}
 	else
 	{
@@ -104,7 +104,7 @@ bool EntryManager<T, bInc>::AddEntry(T* entry)
 template<typename T, bool bInc>
 void EntryManager<T, bInc>::RemoveEntry(T* entry)
 {
-	if(entry != NULL)
+	if(entry != nullptr)
 	{
 		m_mapEntry.erase(entry->GetId());
 		delete entry;
@@ -115,7 +115,7 @@ template<typename T, bool bInc>
 void EntryManager<T, bInc>::RemoveEntryById(uint32 id)
 {
 	T* entry = GetEntryById(id);
-	if(entry != NULL)
+	if(entry != nullptr)
 	{
 		RemoveEntry(entry);
 	}
@@ -132,10 +132,10 @@ void EntryManager<T, bInc>::ClearAll()
 {
 	for(EntryMapIter iter = m_mapEntry.begin(); iter != m_mapEntry.end(); iter++)
 	{
-		if(iter->second != NULL)
+		if(iter->second != nullptr)
 		{
 			delete iter->second;
-			iter->second = NULL;
+			iter->second = nullptr;
 		}
 	}
 	m_mapEntry.clear();

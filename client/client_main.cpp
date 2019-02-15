@@ -5,9 +5,9 @@
 #include "client_player.h"
 #include "network_manager.h"
 
+
 int32 g_zoneid;
 string g_accname;
-
 
 void Help()
 {
@@ -25,7 +25,7 @@ void Help()
 
 int main(int argc, char* argv[])
 {
-	Help();
+	//Help();
 	//解析配置文件
 	XMLParse xmlparse("config/server.xml");
 	/* -------- 自动登陆
@@ -43,13 +43,15 @@ int main(int argc, char* argv[])
 
 	//设置日志记录
 	InitLogger(xmlparse.GetNode("CLIENT", "Log"), xmlparse.GetNode("CLIENT", "LogLevel").c_str(), "CLIENT");
-	INFO("pid = %d ,tid = %d", getpid(), CurrentThread::Tid());
+	INFO("pid = %d ,tid = %d start", getpid(), CurrentThread::Tid());
+
 
 
 	NetworkManager::newInstance();
-	ClientPlayer Client;
-	Client.InitLogin(xmlparse);
-	Client.StartLogin();
-	Client.Loop();
+	ClientPlayer::newInstance();
+	ClientPlayer::getInstance().InitLogin(xmlparse);
+	ClientPlayer::getInstance().StartLogin();
+	ClientPlayer::getInstance().Loop();
+	INFO("pid = %d ,tid = %d end", getpid(), CurrentThread::Tid());
 	return 0;
 }

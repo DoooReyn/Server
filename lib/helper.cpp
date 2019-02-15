@@ -195,13 +195,13 @@ void ReadDir(string cate_dir, vector<string>& vecFile)
 	struct dirent* ptr;
 	string base;
 
-	if ((dir = opendir(cate_dir.c_str())) == NULL)
+	if ((dir = opendir(cate_dir.c_str())) == nullptr)
 	{
 		perror("Open dir error...");
 		exit(1);
 	}
 
-	while ((ptr = readdir(dir)) != NULL)
+	while ((ptr = readdir(dir)) != nullptr)
 	{
 		if(strcmp(ptr->d_name, ".") == 0 || strcmp(ptr->d_name, "..") == 0) ///current dir OR parrent dir
 		{

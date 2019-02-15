@@ -19,7 +19,7 @@ enum LogType
 
 #define MSGBUF_MAX 1024
 
-Logger* logger = NULL;
+Logger* logger = nullptr;
 
 __thread char	g_log_file_name[256];
 __thread int	g_log_line;
@@ -60,20 +60,20 @@ do{\
 }while(false)
 
 
-LoggerLevel Logger::_level = LoggerLevel_Debug;
-bool Logger::_need_logfile = true;
-bool Logger::_need_console = true;
+LoggerLevel Logger::m_level = LoggerLevel_Debug;
+bool Logger::m_need_logfile = true;
+bool Logger::m_need_console = true;
 
-Logger::Logger(const std::string& filename, const std::string& servername) : _filename(filename), _servername(servername)
+Logger::Logger(const std::string& filename, const std::string& servername) : m_filename(filename), m_servername(servername)
 {
-	_ofile = NULL;
-	_lastWriteTime = 0;
+	m_ofile = nullptr;
+	m_lastWriteTime = 0;
 }
 
 Logger::~Logger()
 {
-	delete _ofile;
-	_ofile = NULL;
+	delete m_ofile;
+	m_ofile = nullptr;
 }
 
 void Logger::debug(const char* pattern, ...)
@@ -106,14 +106,14 @@ void Logger::error(const char* pattern, ...)
 
 void Logger::log(const char* msg, LoggerLevel level)
 {
-	if(level < _level)
+	if(level < m_level)
 	{
 		return;
 	}
 
-	_time.Now();
+	m_time.Now();
 	char tbuf[64]  = {0};
-	_time.Format(tbuf, 64);
+	m_time.Format(tbuf, 64);
 	char lbuf[MSGBUF_MAX + 64];
 	std::string head_str;
 	FetchLoggerHead(head_str);
@@ -144,17 +144,17 @@ void Logger::log(const char* msg, LoggerLevel level)
 			break;
 	}
 
-	snprintf(lbuf, MSGBUF_MAX + 64, "%s [%s][%s]:[%s]==>%s", tbuf, _servername.c_str(), strLevel.c_str(), head_str.c_str(), msg);
-	_mutex.Lock();
-	if(_need_console)
+	snprintf(lbuf, MSGBUF_MAX + 64, "%s [%s][%s]:[%s]==>%s", tbuf, m_servername.c_str(), strLevel.c_str(), head_str.c_str(), msg);
+	m_mutex.Lock();
+	if(m_need_console)
 	{
 		writeLogToConsole(lbuf, level);
 	}
-	if(_need_logfile)
+	if(m_need_logfile)
 	{
 		writeLogToFile(lbuf);
 	}
-	_mutex.UnLock();
+	m_mutex.UnLock();
 }
 
 void Logger::writeLogToConsole(const char* msg, LoggerLevel level)
@@ -191,40 +191,40 @@ void Logger::writeLogToConsole(const char* msg, LoggerLevel level)
 
 void Logger::writeLogToFile(const char* msg)
 {
-	uint32 sec = _time.Sec();
-	if(!_ofile || sec / (60 * 60) != _lastWriteTime / (60 * 60))
+	uint32 sec = m_time.Sec();
+	if(!m_ofile || sec / (60 * 60) != m_lastWriteTime / (60 * 60))
 	{
-		if(_ofile != NULL)
+		if(m_ofile != nullptr)
 		{
-			delete _ofile;
-			_ofile = NULL;
+			delete m_ofile;
+			m_ofile = nullptr;
 		}
-		else if(_filename.empty())
+		else if(m_filename.empty())
 		{
 			return ;
 		}
 
-		_ofile = new std::ofstream;
+		m_ofile = new std::ofstream;
 		char buf[64];
-		_time.Format(buf, 64, "%Y%m%d-%H");
-		std::string of = _filename + "." + std::string(buf);
-		_ofile->open(of.c_str(), std::ios::out | std::ios::app);
-		if(!(*_ofile))
+		m_time.Format(buf, 64, "%Y%m%d-%H");
+		std::string of = m_filename + "." + std::string(buf);
+		m_ofile->open(of.c_str(), std::ios::out | std::ios::app);
+		if(!(*m_ofile))
 		{
 			printf("打开日志文件错误%s\n", of.c_str());
 			return;
 		}
 		std::ostringstream oss;
 		oss.str("");
-		oss << "ln --force -s " << of << " " << _filename;
+		oss << "ln --force -s " << of << " " << m_filename;
 		int ret = system(oss.str().c_str());
 		if(ret == -1)
 		{
 			printf("链接文件错误%s\n", oss.str().c_str());
 		}
 	}
-	(*_ofile) << msg << std::endl;
-	_lastWriteTime = sec;
+	(*m_ofile) << msg << std::endl;
+	m_lastWriteTime = sec;
 
 }
 
@@ -232,18 +232,18 @@ void Logger::setLevel(const char* level)
 {
 	if(strcmp(level, "debug") == 0)
 	{
-		_level = LoggerLevel_Debug;
+		m_level = LoggerLevel_Debug;
 	}
 	else if(strcmp(level, "info") == 0)
 	{
-		_level = LoggerLevel_Info;
+		m_level = LoggerLevel_Info;
 	}
 	else if(strcmp(level, "warn") == 0)
 	{
-		_level = LoggerLevel_Warn;
+		m_level = LoggerLevel_Warn;
 	}
 	else if(strcmp(level, "error") == 0)
 	{
-		_level = LoggerLevel_Error;
+		m_level = LoggerLevel_Error;
 	}
 }

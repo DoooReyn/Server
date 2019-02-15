@@ -21,25 +21,25 @@ private:
 /*
 char *makeJson()
 {
-	cJSON *pJsonRoot = NULL;
+	cJSON *pJsonRoot = nullptr;
 
 	pJsonRoot = cJSON_CreateObject();
-	if(NULL == pJsonRoot)
+	if(nullptr == pJsonRoot)
 	{
 		//error happend here
 		fputs("cJSON_CreateObject1", stderr);
-		return NULL;
+		return nullptr;
 	}
 	cJSON_AddStringToObject(pJsonRoot, "hello", "hello world");
 	cJSON_AddNumberToObject(pJsonRoot, "number", 10010);
 	cJSON_AddBoolToObject(pJsonRoot, "bool", 1);
-	cJSON *pSubJson = NULL;
+	cJSON *pSubJson = nullptr;
 	pSubJson = cJSON_CreateObject();
-	if(NULL == pSubJson)
+	if(nullptr == pSubJson)
 	{
 		fputs("cJSON_CreateObject2", stderr);
 		cJSON_Delete(pJsonRoot);
-		return NULL;
+		return nullptr;
 	}
 	cJSON_AddStringToObject(pSubJson, "subjsonobj", "a sub json string");
 	cJSON_AddItemToObject(pJsonRoot, "subobj", pSubJson);
@@ -47,12 +47,12 @@ char *makeJson()
 	char *p = cJSON_Print(pJsonRoot);
 	// else use :
 	// char * p = cJSON_PrintUnformatted(pJsonRoot);
-	if(NULL == p)
+	if(nullptr == p)
 	{
 		//convert json list to string faild, exit
 		//because sub json pSubJson han been add to pJsonRoot, so just delete pJsonRoot, if you also delete pSubJson, it will coredump, and error is : double free
 		cJSON_Delete(pJsonRoot);
-		return NULL;
+		return nullptr;
 	}
 	//free(p);
 
@@ -62,12 +62,12 @@ char *makeJson()
 
 void parseJson(char *pMsg)
 {
-	if(NULL == pMsg)
+	if(nullptr == pMsg)
 	{
 		return;
 	}
 	cJSON *pJson = cJSON_Parse(pMsg);
-	if(NULL == pJson)
+	if(nullptr == pJson)
 	{
 		// parse faild, return
 		return ;
@@ -75,7 +75,7 @@ void parseJson(char *pMsg)
 
 	// get string from json
 	cJSON *pSub = cJSON_GetObjectItem(pJson, "hello");
-	if(NULL == pSub)
+	if(nullptr == pSub)
 	{
 		//get object named "hello" faild
 	}
@@ -83,7 +83,7 @@ void parseJson(char *pMsg)
 
 	// get number from json
 	pSub = cJSON_GetObjectItem(pJson, "number");
-	if(NULL == pSub)
+	if(nullptr == pSub)
 	{
 		//get number from json faild
 	}
@@ -91,7 +91,7 @@ void parseJson(char *pMsg)
 
 	// get bool from json
 	pSub = cJSON_GetObjectItem(pJson, "bool");
-	if(NULL == pSub)
+	if(nullptr == pSub)
 	{
 		// get bool from json faild
 	}
@@ -99,12 +99,12 @@ void parseJson(char *pMsg)
 
 	// get sub object
 	pSub = cJSON_GetObjectItem(pJson, "subobj");
-	if(NULL == pSub)
+	if(nullptr == pSub)
 	{
 		// get sub object faild
 	}
 	cJSON *pSubSub = cJSON_GetObjectItem(pSub, "subjsonobj");
-	if(NULL == pSubSub)
+	if(nullptr == pSubSub)
 	{
 		// get object from subject object faild
 	}

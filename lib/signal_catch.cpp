@@ -8,17 +8,17 @@ void SetSignedCatched(CatchCallback& cb)
 	sigemptyset(&sig.sa_mask);
 	sig.sa_flags = 0;
 	sig.sa_handler = cb;
-	sigaction(SIGINT, &sig, NULL);
-	sigaction(SIGQUIT, &sig, NULL);
-	sigaction(SIGABRT, &sig, NULL);
-	sigaction(SIGTERM, &sig, NULL);
-	sigaction(SIGTERM, &sig, NULL);
-	sigaction(SIGUSR1, &sig, NULL);
-	sigaction(SIGUSR2, &sig, NULL);
+	sigaction(SIGINT, &sig, nullptr);
+	sigaction(SIGQUIT, &sig, nullptr);
+	sigaction(SIGABRT, &sig, nullptr);
+	sigaction(SIGTERM, &sig, nullptr);
+	sigaction(SIGTERM, &sig, nullptr);
+	sigaction(SIGUSR1, &sig, nullptr);
+	sigaction(SIGUSR2, &sig, nullptr);
 
 	// 忽略PIPE信号
 	sig.sa_handler = SIG_IGN;
-	sigaction(SIGPIPE, &sig, NULL);
-	sigaction(SIGHUP, &sig, NULL);
+	sigaction(SIGPIPE, &sig, nullptr);
+	sigaction(SIGHUP, &sig, nullptr);
 }
 

@@ -5,6 +5,7 @@
 #include "singleton.h"
 #include "xml_parse.h"
 #include "callback.h"
+#include "mutex.h"
 #include "message_queue.h"
 
 //网关信息
@@ -84,6 +85,7 @@ public:
 private:
 	MapGateinfo m_mapGateInfo;		//网关信息
 	MapConnPtr m_mapGateConnPtr;	//链接Map
+	Mutex m_mutex;
 
 };
 

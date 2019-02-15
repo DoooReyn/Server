@@ -1,4 +1,5 @@
 #include "message_queue.h"
+#include "memory_pool.h"
 
 MsgQueue::MsgQueue()
 {
@@ -12,8 +13,11 @@ MsgQueue::~MsgQueue()
 
 bool MsgQueue::Put(uint32 mid, uint32 nLen, const int64 cid, uint32 accid, const char* cmd)
 {
-	char* cmd_buf  = new char[nLen];
-	if (cmd_buf == NULL)
+
+	//char* cmd_buf  = new char[nLen];
+	//使用内存池
+	char* cmd_buf = (char*)CMemPool::getInstance().GetBuff(nLen);
+	if (cmd_buf == nullptr)
 	{
 		return false;
 	}
@@ -37,13 +41,13 @@ bool MsgQueue::Put(uint32 mid, uint32 nLen, const int64 cid, uint32 accid, const
 }
 MessagePack* MsgQueue::Get()
 {
-	MessagePack* cmdPack = NULL;
+	MessagePack* cmdPack = nullptr;
 	if(m_cmd[m_cmd_read].first)
 	{
 		cmdPack = &m_cmd[m_cmd_read].second;
 	}
 
-	if (cmdPack == NULL && m_queue.size() > 0)
+	if (cmdPack == nullptr && m_queue.size() > 0)
 	{
 		PutQueueToArray();
 		if (m_cmd[m_cmd_read].first)
@@ -55,7 +59,8 @@ MessagePack* MsgQueue::Get()
 }
 void MsgQueue::Erase()
 {
-	DELETE(m_cmd[m_cmd_read].second.data);
+	//DELETE(m_cmd[m_cmd_read].second.data);
+	CMemPool::getInstance().DelBuff(m_cmd[m_cmd_read].second.data, m_cmd[m_cmd_read].second.size);
 	m_cmd[m_cmd_read].first = false;
 	m_cmd_read = (m_cmd_read + 1) % MAX_QUEUE_SIZE;
 }
@@ -68,7 +73,9 @@ void MsgQueue::Clear()
 
 	while(!m_queue.empty())
 	{
-		DELETE(m_queue.front().data);
+		//DELETE(m_queue.front().data);
+		//使用内存池
+		CMemPool::getInstance().DelBuff(m_queue.front().data, m_queue.front().size);
 		m_queue.pop();
 	}
 	m_cmd_write = 0;

@@ -9,7 +9,7 @@ class Mutex : private Nocopyable
 public:
 	Mutex()
 	{
-		pthread_mutex_init(&m_mutex, NULL);
+		pthread_mutex_init(&m_mutex, nullptr);
 	}
 
 	~Mutex()
@@ -101,7 +101,7 @@ class RWLock : private Nocopyable
 public:
 	RWLock()
 	{
-		pthread_rwlock_init(&m_rwlock, NULL);
+		pthread_rwlock_init(&m_rwlock, nullptr);
 	}
 	~RWLock()
 	{

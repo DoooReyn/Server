@@ -231,7 +231,7 @@ string Timestamp::ToString() const
 	char buf[32] = {0};
 	int64 seconds = m_microSeconds / kMicroSecondsPerSecond;
 	int32 microseconds = m_microSeconds % kMicroSecondsPerSecond;
-	snprintf(buf, sizeof(buf) - 1, "%ld.%06d", seconds, microseconds);
+	snprintf(buf, sizeof(buf) - 1, "%lld.%06d", seconds, microseconds);
 	return buf;
 }
 
@@ -264,7 +264,7 @@ string Timestamp::ToForamttedString(bool showMicroseconds) const
 Timestamp Timestamp::Now()
 {
 	struct timeval tv;
-	gettimeofday(&tv, NULL);
+	gettimeofday(&tv, nullptr);
 	int64_t seconds = tv.tv_sec;
 	return Timestamp(seconds * kMicroSecondsPerSecond + tv.tv_usec);
 }

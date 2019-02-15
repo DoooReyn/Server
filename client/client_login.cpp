@@ -1,4 +1,4 @@
-
+﻿
 #include "logger.h"
 #include "string_tool.h"
 #include "xml_parse.h"
@@ -13,7 +13,7 @@
 
 
 ClientLoginClient::ClientLoginClient(EventLoop* pLoop, ClientPlayer* client_player)
-	: m_client(NULL)
+	: m_client(nullptr)
 	, m_loop(pLoop)
 	, m_client_player(client_player)
 	, m_thr(std::bind(&ClientLoginClient::threadFunc, this))
@@ -79,7 +79,7 @@ void ClientLoginClient::threadFunc()
 		doMessage(op);
 		cin.clear();
 		cin.ignore();
-		setbuf(stdin, NULL);
+		setbuf(stdin, nullptr);
 	}
 }
 
@@ -95,10 +95,10 @@ void ClientLoginClient::onConnection(const TcpConnectionPtr& conn)
 
 void ClientLoginClient::onDisconntion(const TcpConnectionPtr& conn)
 {
-	DEBUG("onDisconntion %s -> %s is %d", conn->GetLocalAddr().ToIPPort().c_str(), conn->GetPeerAddr().ToIPPort().c_str(), conn->Connected());
+	ERROR("onDisconntion %s -> %s is %d", conn->GetLocalAddr().ToIPPort().c_str(), conn->GetPeerAddr().ToIPPort().c_str(), conn->Connected());
 	m_quit = true;
 	//------------ 自动登陆
-	m_thr.Join();
+	//m_thr.Join();
 	//------------
 }
 
@@ -114,7 +114,7 @@ void ClientLoginClient::ParseConnectVerifyReturn(MessagePack* pPack)
 	CmdConnectVerifyReturn* recvPack = (CmdConnectVerifyReturn*)pPack->data;
 	INFO("Verify Return Src IP:%s", recvPack->src);
 	//------------ 自动登陆
-	m_thr.Start();
+	//m_thr.Start();
 	//------------
 	//doMessage(1);
 }
@@ -165,7 +165,7 @@ void ClientLoginClient::doMessage(int32 op)
 		{
 			m_client_player->InitGate(m_gateurl, m_gatePort);
 			m_client_player->StartGate();
-			m_client_player->m_Gate_client.SetUser(m_accid, m_zoneid);
+			m_client_player->m_Gate_client.SetUser(m_accid, m_zoneid, m_roleid);
 			m_client_player->m_Gate_client.registerMessageHandle();
 		}
 	}
@@ -233,6 +233,10 @@ void ClientLoginClient::ParseAccoutRegReturn(MessagePack* pPack)
 	if (result == 1)
 	{
 		ERROR("账号:%s--已被使用", recvPack.user().c_str());
+	}
+	else if (result == 2)
+	{
+		ERROR("数据错误:%s", recvPack.user().c_str());
 	}
 	else
 	{
@@ -318,7 +322,7 @@ void ClientLoginClient::ParseZoneInfoReturn(MessagePack* pPack)
 	StringTool::Split(gwUrl, ":", vecStr);
 	assert(vecStr.size() == 2);
 	m_gateurl = vecStr[0];
-	m_gatePort = StringTool::StoI(vecStr[1]);
+	m_gatePort = stoi(vecStr[1]);
 	//------------ 自动登陆
 	//doMessage(5);
 }
@@ -340,7 +344,7 @@ void ClientLoginClient::ParseRoleListReturn(MessagePack* pPack)
 	CHECKERR_AND_RETURN(recvPack.ParseFromArray(pPack->data, pPack->size));
 	if (recvPack.rolelist_size() == 0)
 	{
-		INFO("RoleList Is NULL");
+		INFO("RoleList Is nullptr");
 		return;
 	}
 
@@ -348,6 +352,7 @@ void ClientLoginClient::ParseRoleListReturn(MessagePack* pPack)
 	{
 		Cmd::RoleInfo roleinfo = recvPack.rolelist(i);
 		DEBUG("roleid:%d accid:%d name:%s", roleinfo.roleid(), roleinfo.accid(), roleinfo.name().c_str());
+		m_roleid = roleinfo.roleid();
 	}
 	//------------ 自动登陆
 	//doMessage(7);
@@ -385,5 +390,6 @@ void ClientLoginClient::ParseRoleCreateReturn(MessagePack* pPack)
 	else
 	{
 		INFO("Create Success roleid:%d name:%s", recvPack.roleid(), recvPack.name().c_str());
+		m_roleid = recvPack.roleid();
 	}
 }

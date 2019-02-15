@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <results>
-    <error id="missingInclude" severity="style" msg="Cppcheck cannot find all the include files (use --check-config for details)"/>
+    <error file="../lib/memory_pool.h" line="68" id="cstyleCast" severity="style" msg="C-style pointer casting"/>
+    <error file="../lib/memory_pool.cpp" line="107" id="cstyleCast" severity="style" msg="C-style pointer casting"/>
+    <error file="../lib/memory_pool.cpp" line="108" id="cstyleCast" severity="style" msg="C-style pointer casting"/>
+    <error file="../lib/memory_pool.cpp" line="145" id="cstyleCast" severity="style" msg="C-style pointer casting"/>
+    <error file="../lib/memory_pool.cpp" line="154" id="cstyleCast" severity="style" msg="C-style pointer casting"/>
+    <error file="../lib/memory_pool.cpp" line="192" id="cstyleCast" severity="style" msg="C-style pointer casting"/>
+    <error file="../lib/memory_pool.cpp" line="257" id="cstyleCast" severity="style" msg="C-style pointer casting"/>
+    <error file="../lib/memory_pool.cpp" line="267" id="cstyleCast" severity="style" msg="C-style pointer casting"/>
+    <error file="../lib/memory_pool.cpp" line="359" id="variableScope" severity="style" msg="The scope of the variable &apos;nUsedCount&apos; can be reduced."/>
+    <error file="../lib/memory_pool.cpp" line="360" id="variableScope" severity="style" msg="The scope of the variable &apos;nFreeCount&apos; can be reduced."/>
+    <error file="../lib/memory_pool.cpp" line="272" id="memleak" severity="error" msg="Memory leak: pMemoryList"/>
+    <error file="../lib/timer.cpp" line="234" id="invalidPrintfArgType_sint" severity="style" msg="%ld in format string (no. 1) requires &apos;long&apos; but the argument type is &apos;signed long long&apos;."/>
 </results>

@@ -19,12 +19,12 @@ void XMLParse::parseFile()
 	assert(XML_SUCCESS == xml_ret);
 
 	XMLElement* rootNode = doc.FirstChildElement();
-	assert(rootNode != NULL);
+	assert(rootNode != nullptr);
 	XMLElement* node = rootNode->FirstChildElement();
 	while (node)
 	{
 		XMLElement* subNode = node->FirstChildElement();
-		assert(subNode != NULL);
+		assert(subNode != nullptr);
 		string strName(node->Name());
 
 		while (subNode)

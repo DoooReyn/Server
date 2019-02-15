@@ -40,7 +40,7 @@ void CurrentThread::SleepUsec(int64 usec)
 	struct timespec ts = {0, 0};
 	ts.tv_sec = static_cast<time_t> (usec / 1000000);
 	ts.tv_nsec = static_cast<long>(usec % 1000000 * 1000);
-	::nanosleep(&ts, NULL);
+	::nanosleep(&ts, nullptr);
 }
 
 struct ThreadData
@@ -100,7 +100,7 @@ void* StartThread(void* obj)
 	{
 		data->RunInThread();
 		delete data;
-		data = NULL;
+		data = nullptr;
 	}
 	return data;
 }
@@ -131,18 +131,18 @@ void Thread::Start()
 	assert(!m_bStarted);
 	m_bStarted = true;
 	ThreadData* data = new ThreadData(m_func, m_strName, m_tid);
-	if(data == NULL)
+	if(data == nullptr)
 	{
 		fprintf(stderr, "new thread data failed!!!");
 		abort();
 	}
 
-	if(pthread_create(&m_pthreadId, NULL, StartThread, data) != 0)
+	if(pthread_create(&m_pthreadId, nullptr, StartThread, data) != 0)
 	{
 		m_bStarted = false;
 		fprintf(stderr, "create thread failed!!!");
 		delete data;
-		data = NULL;
+		data = nullptr;
 		abort();
 	}
 }
@@ -151,7 +151,7 @@ int32 Thread::Join()
 	assert(m_bStarted);
 	assert(!m_bJoined);
 	m_bJoined = true;
-	return pthread_join(m_pthreadId, NULL);
+	return pthread_join(m_pthreadId, nullptr);
 }
 void Thread::setDefaultName()
 {
